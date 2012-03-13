@@ -19,15 +19,13 @@
      * License along with this program.  If not, see <http://www.gnu.org/licenses/>.
      */
 
-     $sQuery = __(osc_get_preference('keyword_placeholder','seeker'),'seeker');
-?>
-<?php
-osc_add_hook('footer_js','fjs_search');
+    $sQuery = osc_get_preference('keyword_placeholder','seeker') ;
+    osc_add_hook('footer_js','fjs_search');
 if(!function_exists('fjs_search')){
     function fjs_search(){
         echo "\n";
 ?>
-    var sQuery = '<?php echo $sQuery; ?>' ;
+    var sQuery = '<?php echo osc_esc_js( osc_get_preference('keyword_placeholder','seeker') ) ; ?>' ;
     $(document).ready(function(){
                 var element = $('input[name="sPattern"]');
                 element.focus(function(){

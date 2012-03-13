@@ -31,8 +31,8 @@
 <link href="<?php echo osc_base_url(true) ; ?>?page=ajax&amp;action=custom&amp;ajaxfile=../themes/seeker/style.php" rel="stylesheet" type="text/css" />
 
 <script type="text/javascript">
-    var fileDefaultText = '<?php _e('No file selected','seeker'); ?>';
-    var fileBtnText     = '<?php _e('Choose File','seeker'); ?>';
+    var fileDefaultText = '<?php echo osc_esc_js(__('No file selected','seeker')); ?>';
+    var fileBtnText     = '<?php echo osc_esc_js(__('Choose File','seeker')); ?>';
 </script>
 
 <script type="text/javascript" src="<?php echo osc_current_web_theme_js_url('jquery.js') ; ?>"></script>
