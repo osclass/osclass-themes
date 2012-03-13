@@ -22,7 +22,7 @@
 <?php osc_show_widgets('footer'); ?>
 <div id="footer">
     <div class="inner">
-        <?php _e('This website is proudly using the <a title="OSClass web" href="http://osclass.org/">open source classifieds</a> software <strong>OSClass</strong>', 'seeker'); ?>.
+        <?php _e('This website is proudly using the <a title="OSClass" href="http://osclass.org/">classifieds scripts</a> software <strong>OSClass</strong>', 'seeker'); ?>.
     </div>
 </div>
 </div> <!-- wrapper -->
