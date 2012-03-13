@@ -1,2 +1,4 @@
 # Mac
 .DS_Store
+# Sublime2 config
+*sftp-config.json
