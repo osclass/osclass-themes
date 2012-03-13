@@ -132,6 +132,9 @@ option.pad{
 }
 #logo{
     float: left;
+    font-size: 30px;
+    text-decoration: none;
+    color:@color_1;
 }
 #nav{
     font-size:14px;
