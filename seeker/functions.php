@@ -43,12 +43,12 @@
     }
     osc_add_hook('footer','footer_js');
 
-
     if(!function_exists('theme_version_info')){
         function theme_version_info(){
             return array('name'=>'seeker_db_version', 'version'=>0.3);
         }
     }
+
     if(!function_exists('theme_install')){
         function theme_install() {
             $categories = osc_get_categories();
@@ -125,74 +125,86 @@
 
     //Define colors
     if(!function_exists('seeker_dynamic_styles')){
-    	function seeker_dynamic_styles(){
-    		$colors = array(
-    			array('key'=>'@background_color','value' =>'#ffffff', 'name'=>__('Background Color','seeker')),
-    			array('key'=>'@color_1','value' =>'#08737b', 'name'=>__('Main Color','seeker')),
-    			array('key'=>'@color_2','value' =>'#25cdd9', 'name'=>__('Secondary Color','seeker'))
-    		);
-    		return $colors;
-    	}
-    	$dynamic_styles = seeker_dynamic_styles();
-    	if($dynamic_styles){
-			foreach($dynamic_styles as $d_style){
-				if(!osc_get_preference($d_style['key'],'seeker')){
-					osc_set_preference($d_style['key'],$d_style['value'],'seeker');
-				}
-			}
-		}
+        function seeker_dynamic_styles(){
+            $colors = array(
+                array('key'=>'@background_color','value' =>'#ffffff', 'name'=>__('Background Color','seeker')),
+                array('key'=>'@color_1','value' =>'#08737b', 'name'=>__('Main Color','seeker')),
+                array('key'=>'@color_2','value' =>'#25cdd9', 'name'=>__('Secondary Color','seeker'))
+            );
+            return $colors;
+        }
+        $dynamic_styles = seeker_dynamic_styles();
+        if($dynamic_styles){
+            foreach($dynamic_styles as $d_style){
+                if(!osc_get_preference($d_style['key'],'seeker')){
+                    osc_set_preference($d_style['key'],$d_style['value'],'seeker');
+                }
+            }
+        }
     }
 
-    
     //Add body classes
     osc_add_hook('body_class','add_default_bodyclasses');
     if(!function_exists('add_default_bodyclasses')){
-    	function add_default_bodyclasses(){
-    		if(osc_is_ad_page()){
-    			echo 'ad-page';
-    		}
-    		if(osc_is_search_page()){
-    			echo 'search-page';
-    		}
-    		if(osc_is_static_page()){
-    			echo 'static-page';
-    		}
-    		if(osc_is_home_page()){
-    			echo 'home-page';
-    		}
-    		if(osc_is_user_dashboard()){
-    			echo 'user-dashboard';
-    		}
-    		if(osc_is_publish_page()){
-    			echo 'publish-page';
-    		}
-    		if(osc_is_login_form()){
-    			echo 'login-form';
-    		}
-            if(Params::getParam('page') == 'contact'){
+        function add_default_bodyclasses(){
+            if(osc_is_ad_page()){
+                echo 'ad-page';
+            }
+            if(osc_is_search_page()){
+                echo 'search-page';
+            }
+            if(osc_is_static_page()){
+                echo 'static-page';
+            }
+            if(osc_is_home_page()){
+                echo 'home-page';
+            }
+            if(osc_is_user_dashboard()){
+                echo 'user-dashboard';
+            }
+            if(osc_is_publish_page()){
+                echo 'publish-page';
+            }
+            if(osc_is_login_form()){
+                echo 'login-form';
+            }
+            if(osc_is_contact_page()){
                 echo 'contact-form';
             }
             if(Params::getParam('action') == 'send_friend'){
                 echo 'send-friend';
             }
-    	}
+        }
     }
-	if( !function_exists('is_current_page') ) {
-		function is_current_page($page_id){
-			if(osc_is_static_page() && Params::getParam("id") == $page_id){
-				return true;
-			}
-			return false;
-		}
-	}
+
+    if( !function_exists('osc_is_contact_page') ) {
+        function osc_is_contact_page() {
+            $location = Rewrite::newInstance()->get_location() ;
+            $section = Rewrite::newInstance()->get_section() ;
+            if( $location == 'contact' ) {
+                return true ;
+            }
+            return false ;
+        }
+    }
+
+    if( !function_exists('is_current_page') ) {
+        function is_current_page($page_id){
+            if(osc_is_static_page() && Params::getParam("id") == $page_id){
+                return true;
+            }
+            return false;
+        }
+    }
+
     if( !function_exists('logo_header') ) {
         function logo_header() {
              $html = '<img border="0" alt="' . osc_page_title() . '" src="' . osc_current_web_theme_url('images/logo.jpg') . '" />';
              if( file_exists( WebThemes::newInstance()->getCurrentThemePath() . "images/logo.jpg" ) ) {
                 return $html;
              } else {
-				return osc_page_title();
-			}
+                return osc_page_title();
+            }
         }
     }
 
@@ -206,7 +218,7 @@
 
         osc_add_hook('admin_menu', 'seeker_admin_menu');
     }
-    
+
     if( !function_exists('meta_title') ) {
         function meta_title( ) {
             $location = Rewrite::newInstance()->get_location();
@@ -371,10 +383,11 @@
             return ($text);
          }
      }
+
      if(!function_exists('mark_current_category_selected')){
-     	osc_add_hook('footer','mark_current_category_selected');
-     	function mark_current_category_selected(){
-     		echo '<script type="text/javascript">'.'$(\'select[name="sCategory"] option[value="'.Params::getParam("sCategory").'"]\').attr(\'selected\',\'selected\');</script>';
-     	}
+        osc_add_hook('footer','mark_current_category_selected');
+        function mark_current_category_selected(){
+            echo '<script type="text/javascript">'.'$(\'select[name="sCategory"] option[value="'.Params::getParam("sCategory").'"]\').attr(\'selected\',\'selected\');</script>';
+        }
      }
 ?>
