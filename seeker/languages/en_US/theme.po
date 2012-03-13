@@ -1,0 +1,419 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Seeker\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-03-13 11:51+0100\n"
+"PO-Revision-Date: 2012-03-13 11:51+0100\n"
+"Last-Translator: OSClass <info@osclass.org>\n"
+"Language-Team: OSClass <info@osclass.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-Language: English\n"
+"X-Poedit-Country: UNITED STATES\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-SearchPath-0: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker\n"
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/contact.php:27
+msgid "Contact us"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/contact.php:31
+msgid "Subject"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/contact.php:31
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/contact.php:32
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/inc.item.sidebar.php:49
+msgid "optional"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/contact.php:32
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/inc.item.sidebar.php:47
+msgid "Your name"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/contact.php:33
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/inc.item.sidebar.php:48
+msgid "Your e-mail address"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/contact.php:35
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/inc.item.sidebar.php:51
+msgid "Your CV"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/contact.php:37
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/inc.item.sidebar.php:53
+msgid "Message"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/contact.php:39
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/inc.item.sidebar.php:73
+msgid "Send"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/footer.php:25
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/functions.php:306
+msgid "Contact"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/footer.php:30
+msgid "This website is proudly using the <a title=\"OSClass web\" href=\"http://osclass.org/\">open source classifieds</a> software <strong>OSClass</strong>"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/functions.php:56
+msgid "Department or Unit"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/functions.php:59
+msgid "Employment Type"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/functions.php:60
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/functions.php:65
+msgid "Full Time"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/functions.php:61
+msgid "Part Time"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/functions.php:62
+msgid "Part Time to Full Time"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/functions.php:63
+msgid "Temporary"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/functions.php:64
+msgid "Temporary to Full Time"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/functions.php:66
+msgid "Contracted"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/functions.php:67
+msgid "Contracted to Full Time"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/functions.php:68
+msgid "Internship"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/functions.php:69
+msgid "Internship to Full Time"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/functions.php:70
+msgid "Seasonal"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/functions.php:71
+msgid "Volunteer"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/functions.php:75
+msgid "Minimum Experience"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/functions.php:76
+msgid "Student (High School)"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/functions.php:77
+msgid "Student (College)"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/functions.php:78
+msgid "Entry Level"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/functions.php:79
+msgid "Mid Level"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/functions.php:80
+msgid "Experienced"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/functions.php:81
+msgid "Manager/Supervisor"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/functions.php:82
+msgid "Senior Manager/Supervisor"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/functions.php:83
+msgid "Executive"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/functions.php:84
+msgid "Senior Executive"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/functions.php:88
+msgid "Number of positions"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/functions.php:91
+msgid "Salary"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/functions.php:131
+msgid "Background Color"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/functions.php:132
+msgid "Main Color"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/functions.php:133
+msgid "Secondary Color"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/functions.php:199
+msgid "seeker theme"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/functions.php:201
+msgid "Settings theme"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/functions.php:216
+msgid "Publish an item"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/functions.php:217
+msgid "Edit your item"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/functions.php:218
+msgid "Send to a friend"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/functions.php:219
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/inc.item.main.php:92
+msgid "Contact seller"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/functions.php:227
+msgid "Error"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/functions.php:239
+msgid "page"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/functions.php:249
+msgid "Show all items"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/functions.php:279
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/inc.search.php:84
+msgid "Search"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/functions.php:286
+msgid "Recover your password"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/functions.php:287
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/inc.item.sidebar.php:38
+msgid "Login"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/functions.php:291
+msgid "Create a new account"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/functions.php:295
+msgid "Dashboard"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/functions.php:296
+msgid "Manage my items"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/functions.php:297
+msgid "Manage my alerts"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/functions.php:298
+msgid "Update my profile"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/functions.php:299
+msgid "Change my email"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/functions.php:300
+msgid "Change my password"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/functions.php:301
+msgid "Recover my password"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/head.php:34
+msgid "No file selected"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/head.php:35
+msgid "Choose File"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/header.php:35
+msgid "Send us your CV and:"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/header.php:36
+msgid "We will automatically receive your information and we will study your candidature."
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/header.php:37
+msgid "Upload your CV now!"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/header.php:40
+msgid "Advertises"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/inc.item.main.php:42
+msgid "Country"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/inc.item.main.php:96
+msgid "Share"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/inc.item.sidebar.php:24
+msgid "Contact publisher"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/inc.item.sidebar.php:27
+msgid "The item is expired. You cannot contact the publisher."
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/inc.item.sidebar.php:31
+msgid "It's your own item, you cannot contact the publisher."
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/inc.item.sidebar.php:35
+msgid "You must login or register a new free account in order to contact the advertiser"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/inc.item.sidebar.php:39
+msgid "Register for a free account"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/inc.item.sidebar.php:49
+msgid "Phone number"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/inc.item.sidebar.php:67
+msgid "Enter the words above"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/inc.item.sidebar.php:69
+msgid "Help"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/inc.latest.php:25
+msgid "There aren't job offers available at this moment"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/inc.latest.php:30
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/inc.search_list.php:32
+msgid "Vacancy"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/inc.latest.php:31
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/inc.search_list.php:33
+msgid "Location"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/inc.latest.php:32
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/inc.search_list.php:34
+msgid "Date"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/inc.latest.php:44
+msgid "See all ads"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/inc.search.php:22
+msgid "ie. PHP Programmer"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/inc.search.php:76
+msgid "I'm looking for..."
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/inc.search.php:81
+msgid "Select a category"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/inc.search_list.php:23
+msgid "Search results"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/inc.search_list.php:27
+#, php-format
+msgid "There are no results matching \"%s\""
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/admin/admin_settings.php:57
+msgid "The preferred size of the logo is 600x100"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/admin/admin_settings.php:59
+msgid "Note: Uploading another logo will overwrite current logo"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/admin/admin_settings.php:66
+msgid "Logo image"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/admin/admin_settings.php:69
+msgid "Upload"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/admin/admin_settings.php:78
+msgid "Remove logo"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/admin/admin_settings.php:82
+msgid "Has not uploaded any logo image"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/admin/admin_settings.php:92
+#, php-format
+msgid "The images folder %s is not writable on your server"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/admin/admin_settings.php:93
+msgid "OSClass can't upload logo image from the administration panel"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/admin/admin_settings.php:94
+msgid "Please make the mentioned images folder writable"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/admin/admin_settings.php:99
+msgid "To make a directory writable under UNIX execute this command from the shell"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/admin/admin_settings.php:120
+msgid "Update colors"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/seeker/admin/admin_settings.php:124
+msgid "Reset default colors"
+msgstr ""
+
