@@ -174,6 +174,9 @@
             if(Params::getParam('action') == 'send_friend'){
                 echo 'send-friend';
             }
+            if(Params::getParam('action') == 'contact'){
+                echo 'item-contact';
+            }
         }
     }
 

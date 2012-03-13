@@ -433,11 +433,13 @@ body.search-page h1 strong{
 }
 /* Contact form */
 body.contact-form .user_forms,
-body.send-friend .user_forms{
+body.send-friend .user_forms,
+body.item-contact .user_forms{
     padding-top:30px;
 }
 body.contact-form #error_list,
-body.send-friend #error_list{
+body.send-friend #error_list,
+body.item-contact .user_forms{
     margin:10px auto;
     width:258px;
 }
