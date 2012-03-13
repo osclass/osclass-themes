@@ -24,7 +24,7 @@
     <div class="inner">
         <ul id="error_list"></ul>
         <form action="<?php echo osc_base_url(true) ; ?>" <?php if( osc_contact_attachment() ) { ?>enctype="multipart/form-data"<?php } ?> method="post" name="contact_form" id="contact">
-            <h1><?php _e('Contact us', 'seeker') ; ?></h1>
+            <h1><?php _e('Upload your CV', 'seeker') ; ?></h1>
             <input type="hidden" name="page" value="contact" />
             <input type="hidden" name="action" value="contact_post" />
             <fieldset>

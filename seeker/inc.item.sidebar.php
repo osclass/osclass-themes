@@ -22,7 +22,7 @@
 <div id="sidebar">
     <ul id="error_list"></ul>
     <div id="contact">
-        <h2><?php _e("Contact publisher", 'seeker') ; ?></h2>
+        <h2><?php _e("Apply for this job", 'seeker') ; ?></h2>
         <?php if( osc_item_is_expired () ) { ?>
             <p>
                 <?php _e('The item is expired. You cannot contact the publisher.', 'seeker') ; ?>
@@ -70,7 +70,7 @@
                     </div>
                     <?php } ?>
                     <?php osc_show_recaptcha(); ?>
-                    <button type="submit"><?php _e('Send', 'seeker') ; ?></button>
+                    <button type="submit"><?php _e('Apply', 'seeker') ; ?></button>
                 </fieldset>
             </form>
         <?php } ?>
