@@ -97,10 +97,10 @@
             if(!Field::newInstance()->findBySlug('s_salary')){
                 Field::newInstance()->insertField(__('Salary','seeker'), 'TEXT', 's_salary', 0, '', $categories_ids);
             }
-            
-            
+
+            $version = theme_version_info();
             //Save that theme has installed
-            osc_set_preference($version['name'],$version['version'],'seeker');
+            osc_set_preference($version['name'], $version['version'],'seeker');
         }
     }
 
