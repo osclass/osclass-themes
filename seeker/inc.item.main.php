@@ -46,11 +46,9 @@ foreach($fields as $field){
             <div class="clear"></div>
         </div>
     </div>
-
+    <div class="share-area"><a href="<?php echo osc_item_send_friend_url() ; ?>" rel="nofollow" class="mail_btn"><i class="icon-envelope"></i><?php _e('Send to a friend', 'seeker') ; ?></a><div class="clear"></div></div>
     <div id="description">
         <dl>
-            <dt>Vacancy</dt>
-            <dd><h3><?php echo osc_item_title(); ?></h3></dd>
             <dt>Description</dt>
             <dd><?php echo osc_item_description(); ?></dd>
 
@@ -85,16 +83,6 @@ foreach($fields as $field){
             <?php } ?>
         </div>
         <?php osc_run_hook('item_detail', osc_item() ) ; ?>
-        <p class="contact_button">
-            <?php if( !osc_item_is_expired () ) { ?>
-            <?php if( !( ( osc_logged_user_id() == osc_item_user_id() ) && osc_logged_user_id() != 0 ) ) { ?>
-                <?php     if(osc_reg_user_can_contact() && osc_is_web_user_logged_in() || !osc_reg_user_can_contact() ) { ?>
-                    <strong><a href="#contact"><?php _e('Contact seller', 'seeker') ; ?></a></strong>
-                <?php     } ?>
-            <?php     } ?>
-            <?php } ?>
-            <strong class="share"><a href="<?php echo osc_item_send_friend_url() ; ?>" rel="nofollow"><?php _e('Share', 'seeker') ; ?></a></strong>
-        </p>
         <?php osc_run_hook('location') ; ?>
     </div>
     <!-- plugins -->

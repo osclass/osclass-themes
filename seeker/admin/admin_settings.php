@@ -38,7 +38,9 @@
                 }else{
                     osc_add_flash_error_message( _m("Image not found"), 'admin');
                 }
-
+            break;
+            case('update_placeholder'):
+                osc_set_preference('keyword_placeholder',Params::getParam("placeholder"),'seeker');
             break;
         }
     }
@@ -155,3 +157,11 @@
 		});
 	});
 	</script>
+
+    <div id="settings_placeholder" style="border: 1px solid #ccc; background: #eee; margin-top:15px; padding:20px;">
+        <form action="<?php echo osc_admin_render_theme_url('oc-content/themes/seeker/admin/admin_settings.php');?>" method="post">
+            <input type="hidden" name="action_specific" value="update_placeholder" />
+            <input type="text" name="placeholder" value="<?php echo osc_get_preference('keyword_placeholder','seeker'); ?>">
+            <input id="button_remove" type="submit" value="<?php _e('Update placeholder','seeker'); ?>" />
+        </form>        
+    </div>

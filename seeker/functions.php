@@ -35,6 +35,9 @@
         function footer_js(){
             echo '<script type="text/javascript"><!--//--><![CDATA[//><!--';
             osc_run_hook('footer_js');
+            echo "\n";
+            echo "$('#error_list').append('<div class=\"hide_errors\">x</div>');\n";
+            echo "$('.hide_errors').click(function(){ $(this).parent().hide();});\n";
             echo '//--><!]]></script>';
         }
     }
@@ -43,7 +46,7 @@
 
     if(!function_exists('theme_version_info')){
         function theme_version_info(){
-            return array('name'=>'seeker_db_version', 'version'=>0.2);
+            return array('name'=>'seeker_db_version', 'version'=>0.3);
         }
     }
     if(!function_exists('theme_install')){
@@ -51,6 +54,10 @@
             $categories = osc_get_categories();
             $categories_ids = array();
             addSubCategoories($categories, $categories_ids);
+
+            if(!osc_get_preference('keyword_placeholder','seeker')){
+                osc_set_preference('keyword_placeholder',__('ie. PHP Programmer'),'seeker');
+            }
 
             if(!Field::newInstance()->findBySlug('s_department')){
                 Field::newInstance()->insertField(__('Department or Unit','seeker'), 'TEXT', 's_department', 0, '', $categories_ids);
@@ -107,7 +114,6 @@
             }
         }
     }
-    //osc_delete_preference('seeker_db_version','seeker');
     check_install_theme();
 
     osc_add_hook('admin_footer', 'job_form');
@@ -117,14 +123,7 @@
         }
     }
 
-    
-
-    
-    /*$("#catId").change*/
-
-
     //Define colors
-    //Pasar a funcion y quitar el global
     if(!function_exists('seeker_dynamic_styles')){
     	function seeker_dynamic_styles(){
     		$colors = array(
@@ -172,6 +171,9 @@
     		}
             if(Params::getParam('page') == 'contact'){
                 echo 'contact-form';
+            }
+            if(Params::getParam('action') == 'send_friend'){
+                echo 'send-friend';
             }
     	}
     }

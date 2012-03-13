@@ -252,6 +252,11 @@ option.pad{
     display:block;
     float:left;
 }
+#search-placeholder{
+    position: absolute;
+    left:10px; top:7px;
+    font-size:14px;
+}
 /* Footer */
 #footer{
     margin-top:40px;
@@ -397,10 +402,44 @@ body.search-page h1 strong{
 #item-content #description dd{
     margin-top:5px;
 }
+.share-area{
+    padding: 10px 0px;
+}
+.share-area a{
+    float: left; display: block;
+}
+.share-area .mail_btn{
+    text-decoration:none;
+    background-color: #49afcd;
+    background-image: -moz-linear-gradient(top, #25cdd9, #2f96b4);
+    background-image: -ms-linear-gradient(top, #25cdd9, #2f96b4);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#25cdd9), to(#2f96b4));
+    background-image: -webkit-linear-gradient(top, #25cdd9, #2f96b4);
+    background-image: -o-linear-gradient(top, #25cdd9, #2f96b4);
+    background-image: linear-gradient(top, #25cdd9, #2f96b4);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#25cdd9', endColorstr='#2f96b4', GradientType=0);
+    border-color: #2f96b4 #2f96b4 #1f6377;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+    padding:3px 10px 3px 7px;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    color: #ffffff;
+    @radius(3px);
+}
+.share-area .mail_btn:hover{
+    background-image:none;
+    background-color: #2f96b4;
+}
 /* Contact form */
-body.contact-form .user_forms{
+body.contact-form .user_forms,
+body.send-friend .user_forms{
     padding-top:30px;
-
+}
+body.contact-form #error_list,
+body.send-friend #error_list{
+    margin:10px auto;
+    width:258px;
 }
 #item-content #sidebar{
     width:290px;
@@ -965,4 +1004,35 @@ div.uploader input{
     border-bottom:1px dotted #DDDDDD;
     padding:8px;
     vertical-align:top;
+}
+/* Validation */
+#error_list label{
+    padding:0 !important;
+}
+#error_list{
+    position: relative;
+    display:none;
+    margin:10px 0; padding:8px 15px;
+    border:solid 1px #EED3D7;
+    background-color: #F2DEDE;
+    color:#B94A48;
+    font-size: 13px;
+
+    -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px;
+}
+.hide_errors{
+    cursor:pointer;
+    position: absolute;
+    right:7px; top:3px; color: #999;
+}
+/* ICONS 
+ ************/
+.icon-envelope{
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    line-height: 14px; margin-right:5px;
+    vertical-align: text-top;
+    background-image:url(@images/glyphicons-halflings-white.png);
+    background-position: -72px 0;
 }

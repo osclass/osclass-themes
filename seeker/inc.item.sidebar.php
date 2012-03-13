@@ -20,6 +20,7 @@
      */
 ?>
 <div id="sidebar">
+    <ul id="error_list"></ul>
     <div id="contact">
         <h2><?php _e("Contact publisher", 'seeker') ; ?></h2>
         <?php if( osc_item_is_expired () ) { ?>
@@ -39,7 +40,6 @@
                 <strong><a href="<?php echo osc_register_account_url() ; ?>"><?php _e('Register for a free account', 'seeker'); ?></a></strong>
             </p>
         <?php } else { ?>
-            <ul id="error_list"></ul>
             <?php ContactForm::js_validation(); ?>
             <form action="<?php echo osc_base_url(true) ; ?>" <?php if( osc_item_attachment() ) { ?>enctype="multipart/form-data"<?php } ?> method="post" name="contact_form" id="contact_form">
                 <?php osc_prepare_user_info() ; ?>

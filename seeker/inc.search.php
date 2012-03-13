@@ -19,7 +19,7 @@
      * License along with this program.  If not, see <http://www.gnu.org/licenses/>.
      */
 
-     $sQuery = __("ie. PHP Programmer", 'seeker');
+     $sQuery = __(osc_get_preference('keyword_placeholder','seeker'),'seeker');
 ?>
 <?php
 osc_add_hook('footer_js','fjs_search');
@@ -28,41 +28,25 @@ if(!function_exists('fjs_search')){
         echo "\n";
 ?>
     var sQuery = '<?php echo $sQuery; ?>' ;
-
     $(document).ready(function(){
-     var sPattern = $('input[name=sPattern]');
-        if(sPattern.val() == sQuery) {
-            sPattern.css('color', 'gray');
-        }
-        sPattern.click(function(){
-            if(sPattern.val() == sQuery) {
-                sPattern.val('').css('color', '');
-            }
-        });
-        sPattern.blur(function(){
-            if(sPattern.val() == '') {
-                sPattern.val(sQuery).css('color', 'gray');
-            }
-        });
-        sPattern.keypress(function(){
-            sPattern.css('background','');
-        });
-       var inputOriginalPaddings = parseInt(sPattern.css('padding-left'),10)+parseInt(sPattern.css('padding-right'),10);
-       var inputOriginalSize     = parseInt(sPattern.width(),10)+inputOriginalPaddings;
-        $('#sCategory').change(function(){
-            var rightPadding = parseInt(sPattern.css('padding-left'),10);
-            var selectWidth = parseInt($('#uniform-sCategory').outerWidth(),10)+inputOriginalPaddings;
-            finalWidth = inputOriginalSize-selectWidth-rightPadding;
-            sPattern.css({'width':finalWidth+'px','padding-right':selectWidth+'px'});
-        });
-    });
+                var element = $('input[name="sPattern"]');
+                element.focus(function(){
+                        $(this).prev().hide();
+                }).blur(function(){
+                    if($(this).val() == '') {
+                        $(this).prev().show();
+                    }
+                }).prev().click(function(){
+                        $(this).hide();
+                        $(this).next().focus();
+                });
+                if(element.val() != ''){
+                    element.prev().hide();
+                }
+            });
     function doSearch() {
         var sPattern = $('input[name=sPattern]');
-        if(sPattern.val() == sQuery){
-            return false;
-        }
-        if(sPattern.val().length < 3) {
-            sPattern.css('background', '#FFC6C6');
+        if(sPattern.val() == ''){
             return false;
         }
         return true;
@@ -76,7 +60,8 @@ if(!function_exists('fjs_search')){
 	<label for="query"><?php _e('I\'m looking for...','seeker'); ?></label>
     <input type="hidden" name="page" value="search" />
     <fieldset class="main">
-        <input type="text" name="sPattern"  id="query" value="<?php echo ( osc_search_pattern() != '' ) ? osc_search_pattern() : $sQuery; ?>" />
+        <span id="search-placeholder"><?php echo $sQuery; ?></span>
+        <input type="text" name="sPattern"  id="query" value="<?php echo osc_search_pattern(); ?>" />
         <?php  if ( osc_count_categories() ) { ?>
             <?php osc_categories_select('sCategory', null, __('Select a category', 'seeker')) ; ?>
         <?php  } ?>
