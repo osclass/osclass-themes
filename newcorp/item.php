@@ -19,7 +19,6 @@
      * License along with this program.  If not, see <http://www.gnu.org/licenses/>.
      */
 ?>
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
     <head>
@@ -76,7 +75,6 @@
                     <div id="contact">
                         <h2><?php _e('Apply for this job', 'newcorp') ?></h2>
                         <form <?php if( osc_item_attachment() ) { ?>enctype="multipart/form-data"<?php } ?> action="<?php echo osc_base_url(true) ; ?>" method="post" onsubmit="return validate_contact();">
-                            <?php osc_prepare_user_info() ; ?>
                             <fieldset>
                                 <h3><?php echo osc_user_name() ; ?></h3>
                                 <?php if ( osc_user_phone() != '' ) { ?>
@@ -92,7 +90,7 @@
                                 <input type="hidden" name="action" value="contact_post" />
                                 <input type="hidden" name="page" value="item" />
                                 <input type="hidden" name="id" value="<?php echo osc_item_id() ; ?>" />
-                                <button type="submit"><?php _e('Send', 'newcorp') ; ?></button>
+                                <button type="submit"><?php _e('Apply', 'newcorp') ; ?></button>
                             </fieldset>
                         </form>
                     </div>

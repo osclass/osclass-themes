@@ -19,7 +19,6 @@
      * License along with this program.  If not, see <http://www.gnu.org/licenses/>.
      */
  ?>
-
  <table border="0" cellspacing="0">
      <tbody>
         <?php $class = "even" ; ?>

@@ -19,7 +19,6 @@
      * License along with this program.  If not, see <http://www.gnu.org/licenses/>.
      */
 ?>
-
 <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 <meta name="generator" content="OSClass <?php echo OSCLASS_VERSION ; ?>" />
 
@@ -35,6 +34,7 @@
 
 <script type="text/javascript" src="<?php echo osc_current_web_theme_js_url('jquery.js') ; ?>"></script>
 <script type="text/javascript" src="<?php echo osc_current_web_theme_js_url('jquery-extends.js') ; ?>"></script>
+<script type="text/javascript" src="<?php echo osc_current_web_theme_js_url('jquery.validate.min.js') ; ?>"></script>
 <script type="text/javascript" src="<?php echo osc_current_web_theme_js_url('global.js') ; ?>"></script>
 
 <?php osc_run_hook('header') ; ?>

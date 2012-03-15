@@ -19,7 +19,6 @@
      * License along with this program.  If not, see <http://www.gnu.org/licenses/>.
      */
 ?>
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
     <head>
@@ -33,11 +32,10 @@
             <div class="content">
                 <div class="user_forms">
                     <div class="inner">
-                        <h1><?php _e('Contact with us', 'newcorp') ; ?></h1>
+                        <h1><?php _e('Upload your CV', 'newcorp') ; ?></h1>
                         <form <?php if( osc_contact_attachment () ) { ?>enctype="multipart/form-data"<?php } ?> action="<?php echo osc_base_url(true) ; ?>" method="post" onSubmit="javascript:return checkForm();">
                             <input type="hidden" name="page" value="contact" />
                             <input type="hidden" name="action" value="contact_post" />
-
                             <fieldset>
                                 <label for="subject"><?php _e('Subject', 'newcorp') ; ?></label> <?php ContactForm::the_subject() ; ?><br />
                                 <label for="message"><?php _e('Message', 'newcorp') ; ?></label> <?php ContactForm::your_message() ; ?><br />

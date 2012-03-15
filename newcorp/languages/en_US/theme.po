@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: OSClass 2.0\n"
+"Project-Id-Version: NewCorp 2.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-04-26 20:01+0100\n"
+"POT-Creation-Date: 2012-03-15 18:43+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Juan Ramón <juanramon@osclass.org>\n"
 "Language-Team: OSClass <info@osclass.org>\n"
@@ -13,286 +13,299 @@ msgstr ""
 "X-Poedit-SourceCharset: utf-8\n"
 "X-Poedit-KeywordsList: __;_e\n"
 "X-Poedit-Basepath: .\n"
-"X-Poedit-SearchPath-0: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/newcorp\n"
+"X-Poedit-Country: UNITED STATES\n"
+"X-Poedit-SearchPath-0: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp\n"
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/newcorp/404.php:24
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/404.php:34
 msgid "Page not found"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/newcorp/alert-form.php:4
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/alert-form.php:6
 msgid "You have sucessfully subscribed to the alert"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/newcorp/alert-form.php:4
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/alert-form.php:7
+msgid "Invalid email address"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/alert-form.php:8
 msgid "There was a problem with the alert"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/newcorp/alert-form.php:33
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/alert-form.php:39
 msgid "Subscribe to this search"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/newcorp/alert-form.php:49
-msgid "Subscribe now"
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/alert-form.php:52
+msgid "Subscribe now!"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/newcorp/contact.php:35
-msgid "Contact with us"
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/contact.php:35
+msgid "Upload your CV"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/newcorp/contact.php:41
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/contact.php:41
 msgid "Subject"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/newcorp/contact.php:42
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/newcorp/item-send-friend.php:47
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/newcorp/item.php:88
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/contact.php:42
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/item-send-friend.php:48
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/item.php:87
 msgid "Message"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/newcorp/contact.php:44
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/newcorp/item.php:90
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/contact.php:44
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/item.php:89
 msgid "Your CV"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/newcorp/contact.php:46
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/newcorp/item-send-friend.php:43
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/contact.php:46
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/item-send-friend.php:44
 msgid "Your name"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/newcorp/contact.php:46
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/contact.php:46
 msgid "optional"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/newcorp/contact.php:47
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/newcorp/item-send-friend.php:44
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/newcorp/item.php:86
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/contact.php:47
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/item-send-friend.php:45
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/item.php:85
 msgid "Your e-mail address"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/newcorp/contact.php:48
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/newcorp/item-send-friend.php:48
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/newcorp/item.php:95
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/contact.php:48
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/item-send-friend.php:49
 msgid "Send"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/newcorp/footer.php:26
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/newcorp/functions.php:117
-msgid "Contact"
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/footer.php:25
+msgid "This website is proudly using the <a title=\"OSClass web\" href=\"http://osclass.org/\">classifieds scripts</a> software <strong>OSClass</strong>"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/newcorp/footer.php:31
-msgid "This website is proudly using the <a title=\"OSClass web\" href=\"http://osclass.org/\">open source classifieds</a> software <strong>OSClass</strong>"
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/functions.php:47
+msgid "Newcorp theme"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/newcorp/functions.php:30
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/functions.php:49
+msgid "Settings theme"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/functions.php:64
 msgid "Publish an item"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/newcorp/functions.php:31
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/functions.php:65
 msgid "Edit your item"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/newcorp/functions.php:32
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/functions.php:66
 msgid "Send to a friend"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/newcorp/functions.php:33
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/functions.php:67
 msgid "Contact seller"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/newcorp/functions.php:50
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/functions.php:84
 msgid "page"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/newcorp/functions.php:60
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/functions.php:94
 msgid "Show all items"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/newcorp/functions.php:90
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/newcorp/inc.search.php:79
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/functions.php:124
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/inc.search.php:79
 msgid "Search"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/newcorp/functions.php:97
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/functions.php:131
 msgid "Recover your password"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/newcorp/functions.php:98
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/functions.php:132
 msgid "Login"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/newcorp/functions.php:102
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/functions.php:136
 msgid "Create a new account"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/newcorp/functions.php:106
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/functions.php:140
 msgid "Dashboard"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/newcorp/functions.php:107
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/functions.php:141
 msgid "Manage my items"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/newcorp/functions.php:108
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/functions.php:142
 msgid "Manage my alerts"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/newcorp/functions.php:109
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/functions.php:143
 msgid "Update my profile"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/newcorp/functions.php:110
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/functions.php:144
 msgid "Change my email"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/newcorp/functions.php:111
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/functions.php:145
 msgid "Change my password"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/newcorp/functions.php:112
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/functions.php:146
 msgid "Recover my password"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/newcorp/header.php:28
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/functions.php:151
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/header.php:33
+msgid "Contact"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/header.php:28
 msgid "Home"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/newcorp/header.php:39
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/header.php:40
 msgid "Language"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/newcorp/inc.search.php:23
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/inc.search.php:23
 msgid "Ej. Comercial"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/newcorp/inc.search.php:68
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/inc.search.php:68
 msgid "All Categories"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/newcorp/item-send-friend.php:35
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/newcorp/item.php:67
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/item-send-friend.php:36
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/item.php:67
 msgid "Recommend to a friend"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/newcorp/item-send-friend.php:42
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/item-send-friend.php:43
 msgid "Item"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/newcorp/item-send-friend.php:45
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/item-send-friend.php:46
 msgid "Your friend's name"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/newcorp/item-send-friend.php:46
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/item-send-friend.php:47
 msgid "Your friend's e-mail address"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/newcorp/item.php:45
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/item.php:45
 msgid "Added"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/newcorp/item.php:49
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/item.php:49
 msgid "Modified"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/newcorp/item.php:54
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/item.php:54
 msgid "Country"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/newcorp/item.php:55
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/newcorp/main.php:83
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/item.php:55
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/main.php:82
 msgid "Region"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/newcorp/item.php:56
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/newcorp/search.php:75
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/item.php:56
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/search.php:75
 msgid "City"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/newcorp/item.php:57
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/item.php:57
 msgid "City area"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/newcorp/item.php:58
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/item.php:58
 msgid "Address"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/newcorp/item.php:64
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/newcorp/item.php:77
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/item.php:64
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/item.php:77
 msgid "Apply for this job"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/newcorp/item.php:83
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/item.php:82
 msgid "Tel"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/newcorp/item.php:85
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/item.php:84
 msgid "Your name (optional)"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/newcorp/item.php:87
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/item.php:86
 msgid "Phone number"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/newcorp/main.php:37
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/item.php:94
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/search.php:106
+msgid "Apply"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/main.php:37
 msgid "Latest job offers"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/newcorp/main.php:39
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/main.php:39
 msgid "There aren't job offers available at this moment"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/newcorp/main.php:62
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/main.php:62
 msgid "See all job offers"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/newcorp/main.php:71
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/newcorp/page.php:41
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/main.php:70
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/page.php:41
 msgid "Upload your CV and"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/newcorp/main.php:72
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/newcorp/page.php:43
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/main.php:71
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/page.php:43
 msgid "We will automatically receive your information and we will study your candidature"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/newcorp/main.php:75
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/main.php:74
 msgid "Upload your CV now!"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/newcorp/main.php:98
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/main.php:97
 msgid "Categories"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/newcorp/page.php:45
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/page.php:45
 msgid "Upload your CV now"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/newcorp/search.php:44
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/search.php:44
 msgid "Search results"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/newcorp/search.php:49
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/search.php:49
 #, php-format
 msgid "There are no results matching \"%s\""
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/newcorp/search.php:69
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/search.php:69
 msgid "Your search"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/newcorp/search.php:73
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/search.php:73
 msgid "Location"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/newcorp/search.php:81
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/search.php:81
 msgid "Show only"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/newcorp/search.php:85
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/search.php:85
 msgid "Category"
-msgstr ""
-
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes/newcorp/search.php:106
-msgid "Apply"
 msgstr ""
 

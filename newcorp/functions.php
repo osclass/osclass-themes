@@ -19,40 +19,6 @@
      * License along with this program.  If not, see <http://www.gnu.org/licenses/>.
      */
 
-
-     if( !function_exists('add_logo_header') ) {
-         function add_logo_header() {
-              $html = '<img border="0" alt="' . osc_page_title() . '" src="' . osc_current_web_theme_url('images/logo.jpg') . '">';         
-              $title    = osc_page_title() ;
-              $logo_url = osc_current_web_theme_url('images/logo.jpg') ;
-              $js       = <<<JAVASCRIPT
-<script>
-    \$(document).ready(function () {
-        var img = $('<img>').attr('src', '$logo_url').attr('title', '$title').attr('alt', '$title');
-        \$('#logo').html(img);
-    });
-</script>
-JAVASCRIPT;
-
-              if( file_exists( WebThemes::newInstance()->getCurrentThemePath() . 'images/logo.jpg' ) ) {
-                 echo $js;
-              }
-         }
-
-         osc_add_hook("header", "add_logo_header");
-     }
-
-     if( !function_exists('newcorp_admin_menu') ) {
-         function newcorp_admin_menu() {
-             echo '<h3><a href="#">'. __('Newcorp theme', 'newcorp') .'</a></h3>
-             <ul>
-                 <li><a href="' . osc_admin_render_theme_url('oc-content/themes/newcorp/admin/settings.php') . '">&raquo; '.__('Settings theme', 'newcorp').'</a></li>
-             </ul>';
-         }
-
-         osc_add_hook('admin_menu', 'modern_admin_menu');
-     }
-
      if( !function_exists('meta_title') ) {
          function meta_title( ) {
             $location = Rewrite::newInstance()->get_location();
@@ -207,4 +173,5 @@ JAVASCRIPT;
             }
          }
      }
+
 ?>

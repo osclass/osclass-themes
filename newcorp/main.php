@@ -19,7 +19,6 @@
      * License along with this program.  If not, see <http://www.gnu.org/licenses/>.
      */
 ?>
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="<?php echo str_replace('_', '-', osc_current_user_locale()); ?>">
     <head>
@@ -65,7 +64,6 @@
                         <?php } ?>
                     </div>
                 </div>
-
                 <div id="sidebar">
                     <div class="publish_box companies">
                         <h2><strong><?php _e('Upload your CV and', 'newcorp') ; ?>:</strong></h2>
@@ -76,7 +74,6 @@
                             </a>
                         </strong>
                     </div>
-
                     <div class="navigation">
                         <?php if( osc_count_list_regions() > 0 ) { ?>
                             <div class="box location">
@@ -91,7 +88,6 @@
                                 </ul>
                             </div>
                         <?php } ?>
-
                         <?php if ( osc_count_categories() > 0 ) { ?>
                             <?php osc_goto_first_category() ; ?>
                             <div class="box categories">

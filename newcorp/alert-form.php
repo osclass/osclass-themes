@@ -33,7 +33,6 @@
         })
     });
 </script>
-
 <div class="alert_form">
     <h3>
         <strong><?php _e('Subscribe to this search', 'newcorp'); ?></strong>
