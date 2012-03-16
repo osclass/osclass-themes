@@ -28,7 +28,7 @@
 <meta http-equiv="Cache-Control" content="no-cache" />
 <meta http-equiv="Expires" content="Fri, Jan 01 1970 00:00:00 GMT" />
 
-<link href="<?php echo osc_base_url(true) ; ?>?page=ajax&amp;action=custom&amp;ajaxfile=../themes/seeker/style.php" rel="stylesheet" type="text/css" />
+<link href="<?php echo osc_current_web_theme_url('style.css') ; ?>" rel="stylesheet" type="text/css" />
 
 <script type="text/javascript">
     var fileDefaultText = '<?php echo osc_esc_js(__('No file selected','seeker')); ?>';

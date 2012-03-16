@@ -143,6 +143,62 @@
         }
     }
 
+    if( !function_exists('seeker_dynamic_css') ) {
+        function seeker_dynamic_css() {
+            $css = <<<CSS
+            <style>
+                /* Background */
+                body{
+                    background-color:@background_color;
+                }
+                /* Color 1 */
+                #logo,
+                #nav a,
+                .latest_ads .see_more_link a,
+                .ad_list table td a{
+                    color:@color_1;
+                }
+                #nav{
+                    border-bottom:solid 2px @color_1;
+                }
+                #nav li.current-menu-item{
+                    border-bottom-color:@color_1;
+                }
+                #upload-button{
+                    border:solid 1px @color_1;
+                }
+                .paginate a:hover,
+                #contact h2,
+                #contact h1{
+                    background-color:@color_1;
+                }
+                /* Color 2 */
+                .ad_list table th{
+                    background-color:@color_2;
+                }
+                .paginate .searchPaginationSelected{
+                    background-color:@color_2 !important;
+                }
+                #page-content h1,
+                #page-content h2,
+                #page-content h3,
+                #page-content h4,
+                #page-content h5,
+                #page-content h6{
+                    color:@color_2;
+                }
+            </style>
+CSS;
+
+            $css = str_replace('@color_1', osc_get_preference('@color_1', 'seeker'), $css) ;
+            $css = str_replace('@color_2', osc_get_preference('@color_2', 'seeker'), $css) ;
+            $css = str_replace('@background_color', osc_get_preference('@background_color', 'seeker'), $css) ;
+
+            echo $css ;
+        }
+        osc_add_hook('header', 'seeker_dynamic_css') ;
+    }
+
     //Add body classes
     osc_add_hook('body_class','add_default_bodyclasses');
     if(!function_exists('add_default_bodyclasses')){
@@ -329,11 +385,11 @@
             
             $text = str_replace('"', "'", $text);
             return ($text);
-         }
-     }
+        }
+    }
 
-     if( !function_exists('meta_description') ) {
-         function meta_description( ) {
+    if( !function_exists('meta_description') ) {
+        function meta_description( ) {
             $location = Rewrite::newInstance()->get_location();
             $section  = Rewrite::newInstance()->get_section();
             $text     = '';
@@ -384,13 +440,25 @@
             
             $text = str_replace('"', "'", $text);
             return ($text);
-         }
-     }
+        }
+    }
 
-     if(!function_exists('mark_current_category_selected')){
+    if(!function_exists('mark_current_category_selected')){
         osc_add_hook('footer','mark_current_category_selected');
         function mark_current_category_selected(){
             echo '<script type="text/javascript">'.'$(\'select[name="sCategory"] option[value="'.Params::getParam("sCategory").'"]\').attr(\'selected\',\'selected\');</script>';
         }
-     }
+    }
+
+    if( !function_exists('osc_esc_js') ) {
+        function osc_esc_js($str) {
+            $str = htmlspecialchars($str, ENT_COMPAT) ;
+            $str = str_replace("\r", '', $str) ;
+            $str = str_replace("\n", '\\n', $str) ;
+            $str = addslashes($str) ;
+
+            return $str ;
+        }
+    }
+
 ?>
