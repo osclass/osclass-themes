@@ -21,7 +21,7 @@
 
     function seeker_theme_info() {
         return array(
-             'name'        => 'Seeker theme'
+             'name'        => 'Seeker'
             ,'version'     => '1.0'
             ,'description' => 'This is the OSClass seeker theme'
             ,'author_name' => 'OSClass Team'

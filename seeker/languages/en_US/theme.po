@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Seeker\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-03-13 20:15+0100\n"
-"PO-Revision-Date: 2012-03-13 20:16+0100\n"
+"POT-Creation-Date: 2012-03-19 20:56+0100\n"
+"PO-Revision-Date: 2012-03-19 20:56+0100\n"
 "Last-Translator: Juan Ramón <juanramon@osclass.org>\n"
 "Language-Team: OSClass <info@osclass.org>\n"
 "MIME-Version: 1.0\n"
@@ -184,91 +184,91 @@ msgstr ""
 msgid "Secondary Color"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/seeker/functions.php:216
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/seeker/functions.php:272
 msgid "seeker theme"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/seeker/functions.php:218
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/seeker/functions.php:274
 msgid "Settings theme"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/seeker/functions.php:233
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/seeker/functions.php:289
 msgid "Publish an item"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/seeker/functions.php:234
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/seeker/functions.php:290
 msgid "Edit your item"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/seeker/functions.php:235
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/seeker/functions.php:291
 #: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/seeker/inc.item.main.php:49
 #: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/seeker/item-send-friend.php:28
 msgid "Send to a friend"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/seeker/functions.php:236
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/seeker/functions.php:292
 msgid "Contact seller"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/seeker/functions.php:244
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/seeker/functions.php:300
 msgid "Error"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/seeker/functions.php:256
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/seeker/functions.php:312
 msgid "page"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/seeker/functions.php:266
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/seeker/functions.php:322
 msgid "Show all items"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/seeker/functions.php:296
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/seeker/inc.search.php:69
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/seeker/functions.php:352
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/seeker/inc.search.php:67
 msgid "Search"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/seeker/functions.php:303
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/seeker/functions.php:359
 msgid "Recover your password"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/seeker/functions.php:304
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/seeker/functions.php:360
 #: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/seeker/inc.item.sidebar.php:39
 msgid "Login"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/seeker/functions.php:308
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/seeker/functions.php:364
 msgid "Create a new account"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/seeker/functions.php:312
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/seeker/functions.php:368
 msgid "Dashboard"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/seeker/functions.php:313
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/seeker/functions.php:369
 msgid "Manage my items"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/seeker/functions.php:314
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/seeker/functions.php:370
 msgid "Manage my alerts"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/seeker/functions.php:315
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/seeker/functions.php:371
 msgid "Update my profile"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/seeker/functions.php:316
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/seeker/functions.php:372
 msgid "Change my email"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/seeker/functions.php:317
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/seeker/functions.php:373
 msgid "Change my password"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/seeker/functions.php:318
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/seeker/functions.php:374
 msgid "Recover my password"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/seeker/functions.php:323
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/seeker/functions.php:379
 #: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/seeker/header.php:45
 msgid "Contact"
 msgstr ""
@@ -363,11 +363,11 @@ msgstr ""
 msgid "See all ads"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/seeker/inc.search.php:60
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/seeker/inc.search.php:58
 msgid "I'm looking for..."
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/seeker/inc.search.php:66
+#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/seeker/inc.search.php:64
 msgid "Select a category"
 msgstr ""
 
