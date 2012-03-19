@@ -25,7 +25,6 @@
         <?php osc_current_web_theme_path('head.php') ; ?>
     </head>
     <body>
-        <!--<div class="mega_banner"><img src="https://www.google.com/adsense/static/es/images/leaderboard_img.jpg" /></div>-->
         <div class="container">
             <?php osc_current_web_theme_path('header.php') ; ?>
             <div class="content list">
@@ -42,9 +41,7 @@
                             <p class="empty" ><?php printf(__('There are no results matching "%s"', 'masjob'), osc_search_pattern()) ; ?></p>
                         <?php } else { ?>
                             <?php osc_alert_form() ; ?>
-                            <div class="banner top"><img src="https://www.google.com/adsense/static/es/images/leaderboard.gif" /></div>
                             <?php osc_current_web_theme_path('search_list.php') ; ?>
-                            <div class="banner bottom"><img src="https://www.google.com/adsense/static/es/images/leaderboard.gif" /></div>
                             <?php osc_alert_form() ; ?>
                         <?php } ?>
                         <div class="paginate" >

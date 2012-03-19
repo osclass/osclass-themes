@@ -25,18 +25,12 @@
         <?php osc_current_web_theme_path('head.php') ; ?>
     </head>
     <body>
-        <!--<div class="mega_banner"><img src="https://www.google.com/adsense/static/es/images/leaderboard_img.jpg" /></div>-->
         <div class="container">
             <?php osc_current_web_theme_path('header.php') ; ?>
             <div class="content page">
                 <div id="main">
                     <h1><strong><?php echo osc_static_page_title() ; ?></strong></h1>
                     <div class="text">
-                        <!--
-                        <div class="banner">
-                            <img src="https://www.google.com/adsense/static/es/images/inline_rectangle.gif" />
-                        </div>
-                        -->
                         <?php echo osc_static_page_text() ; ?>
                     </div>
                 </div>

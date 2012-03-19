@@ -25,7 +25,6 @@
         <?php osc_current_web_theme_path('head.php') ; ?>
     </head>
     <body>
-        <!--<div class="mega_banner"><img src="https://www.google.com/adsense/static/es/images/leaderboard_img.jpg" /></div>-->
         <div class="container">
             <?php osc_current_web_theme_path('header.php') ; ?>
             <div class="content item">
@@ -60,11 +59,6 @@
                         </div>
                         <?php osc_run_hook('item_detail', osc_item() ) ; ?>
                         <?php osc_run_hook('location') ; ?>
-                        <!--
-                        <div class="banner">
-                            <img src="https://www.google.com/adsense/static/es/images/banner.gif" />
-                        </div>
-                        -->
                         <p class="contact_button">
                             <strong><a href="#contact" id="apply_for"><?php _e('Apply for this job', 'masjob') ; ?></a></strong>
                             <strong class="share"><a href="<?php echo osc_item_send_friend_url() ; ?>" rel="nofollow"><?php _e('Recommend to a friend', 'masjob') ; ?></a></strong>
@@ -72,11 +66,6 @@
                     </div>
                 </div>
                 <div id="sidebar">
-                    <!--
-                    <div class="banner">
-                        <img src="https://www.google.com/adsense/static/es/images/inline_rectangle.gif" />
-                    </div>
-                    -->
                     <div id="contact">
                         <h2><?php _e('Apply for this job', 'masjob') ?></h2>
                         <form <?php if( osc_contact_attachment() ) { ?>enctype="multipart/form-data"<?php } ?> action="<?php echo osc_base_url(true) ; ?>" method="post" onsubmit="return validate_contact();">

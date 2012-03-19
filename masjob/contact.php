@@ -25,7 +25,6 @@
         <?php osc_current_web_theme_path('head.php') ; ?>
     </head>
     <body>
-        <!--<div class="mega_banner"><img src="https://www.google.com/adsense/static/es/images/leaderboard_img.jpg" /></div>-->
         <div class="container">
             <?php osc_current_web_theme_path('header.php') ; ?>
             <div class="content user_forms">

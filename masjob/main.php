@@ -25,7 +25,6 @@
         <?php osc_current_web_theme_path('head.php') ; ?>
     </head>
     <body>
-        <!--<div class="mega_banner"><img src="https://www.google.com/adsense/static/es/images/leaderboard_img.jpg" /></div>-->
         <div class="container">
             <?php osc_current_web_theme_path('header.php') ; ?>
             <div class="content home">
@@ -38,18 +37,7 @@
                         <?php } else { ?>
                             <ul>
                                 <?php $class = "l1" ; ?>
-                                <?php $counter = 0 ; ?>
                                 <?php while ( osc_has_latest_items() ) { ?>
-                                    <?php if ( $counter == 4 ) { ?>
-                                        <!--
-                                        <li class="l1 banner">
-                                            <img src="https://www.google.com/adsense/static/es/images/inline_rectangle.gif" />
-                                        </li>
-                                        <li class="l2 banner">
-                                            <img src="https://www.google.com/adsense/static/es/images/inline_rectangle.gif" />
-                                        </li>
-                                    -->
-                                    <?php } ?>
                                     <li class="<?php echo $class ; ?>">
                                         <h2 class="title"><a href="<?php echo osc_item_url() ; ?>"><?php echo osc_item_title() ; ?></a></h2>                    
                                         <p class="meta">
@@ -61,7 +49,6 @@
                                         </p>
                                         <?php $class = ($class == 'l2') ? 'l1' : 'l2' ; ?>
                                     </li>
-                                    <?php $counter++; ?>
                                 <?php } ?>
                             </ul>
                             <?php if( osc_count_latest_items() == osc_max_latest_items() ) { ?>
