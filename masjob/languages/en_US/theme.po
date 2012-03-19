@@ -1,0 +1,229 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: MasJob 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-03-19 14:17+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Juan Ramón <juanramon@osclass.org>\n"
+"Language-Team: OSClass <info@osclass.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: English\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-Country: UNITED STATES\n"
+"X-Poedit-SearchPath-0: /var/www/osclass-themes-git/masjob\n"
+
+#: /var/www/osclass-themes-git/masjob/404.php:23
+msgid "Page not found"
+msgstr ""
+
+#: /var/www/osclass-themes-git/masjob/alert-form.php:11
+msgid "You have sucessfully subscribed to the alert"
+msgstr ""
+
+#: /var/www/osclass-themes-git/masjob/alert-form.php:13
+msgid "There was a problem with the alert"
+msgstr ""
+
+#: /var/www/osclass-themes-git/masjob/alert-form.php:43
+msgid "Subscribe to this search"
+msgstr ""
+
+#: /var/www/osclass-themes-git/masjob/alert-form.php:58
+msgid "Subscribe now!"
+msgstr ""
+
+#: /var/www/osclass-themes-git/masjob/contact.php:33
+msgid "Upload your CV"
+msgstr ""
+
+#: /var/www/osclass-themes-git/masjob/contact.php:38
+msgid "Subject"
+msgstr ""
+
+#: /var/www/osclass-themes-git/masjob/contact.php:39
+#: /var/www/osclass-themes-git/masjob/item-send-friend.php:45
+#: /var/www/osclass-themes-git/masjob/item.php:90
+msgid "Message"
+msgstr ""
+
+#: /var/www/osclass-themes-git/masjob/contact.php:41
+#: /var/www/osclass-themes-git/masjob/item.php:88
+msgid "Your CV"
+msgstr ""
+
+#: /var/www/osclass-themes-git/masjob/contact.php:43
+#: /var/www/osclass-themes-git/masjob/item.php:84
+msgid "Your name (optional)"
+msgstr ""
+
+#: /var/www/osclass-themes-git/masjob/contact.php:44
+#: /var/www/osclass-themes-git/masjob/item-send-friend.php:42
+#: /var/www/osclass-themes-git/masjob/item.php:85
+msgid "Your e-mail address"
+msgstr ""
+
+#: /var/www/osclass-themes-git/masjob/contact.php:45
+#: /var/www/osclass-themes-git/masjob/item.php:94
+msgid "Apply"
+msgstr ""
+
+#: /var/www/osclass-themes-git/masjob/footer.php:27
+msgid "This website is proudly using the <a title=\"OSClass web\" href=\"http://osclass.org/\">classifieds scripts</a> software <strong>OSClass</strong>"
+msgstr ""
+
+#: /var/www/osclass-themes-git/masjob/header.php:26
+msgid "Home"
+msgstr ""
+
+#: /var/www/osclass-themes-git/masjob/header.php:31
+msgid "Contact"
+msgstr ""
+
+#: /var/www/osclass-themes-git/masjob/header.php:39
+msgid "Language"
+msgstr ""
+
+#: /var/www/osclass-themes-git/masjob/inc.search.php:22
+msgid "ie. Comercial"
+msgstr ""
+
+#: /var/www/osclass-themes-git/masjob/inc.search.php:65
+msgid "What job are you looking for?"
+msgstr ""
+
+#: /var/www/osclass-themes-git/masjob/inc.search.php:70
+msgid "All areas"
+msgstr ""
+
+#: /var/www/osclass-themes-git/masjob/inc.search.php:81
+#: /var/www/osclass-themes-git/masjob/search.php:97
+msgid "Search"
+msgstr ""
+
+#: /var/www/osclass-themes-git/masjob/item-send-friend.php:33
+#: /var/www/osclass-themes-git/masjob/item.php:70
+msgid "Recommend to a friend"
+msgstr ""
+
+#: /var/www/osclass-themes-git/masjob/item-send-friend.php:40
+msgid "Job offer"
+msgstr ""
+
+#: /var/www/osclass-themes-git/masjob/item-send-friend.php:41
+msgid "Your name"
+msgstr ""
+
+#: /var/www/osclass-themes-git/masjob/item-send-friend.php:43
+msgid "Your friend's name"
+msgstr ""
+
+#: /var/www/osclass-themes-git/masjob/item-send-friend.php:44
+msgid "Your friend's e-mail address"
+msgstr ""
+
+#: /var/www/osclass-themes-git/masjob/item-send-friend.php:46
+msgid "Send"
+msgstr ""
+
+#: /var/www/osclass-themes-git/masjob/item.php:36
+msgid "Added"
+msgstr ""
+
+#: /var/www/osclass-themes-git/masjob/item.php:40
+msgid "Modified"
+msgstr ""
+
+#: /var/www/osclass-themes-git/masjob/item.php:46
+msgid "Country"
+msgstr ""
+
+#: /var/www/osclass-themes-git/masjob/item.php:47
+msgid "Region"
+msgstr ""
+
+#: /var/www/osclass-themes-git/masjob/item.php:48
+#: /var/www/osclass-themes-git/masjob/search.php:72
+msgid "City"
+msgstr ""
+
+#: /var/www/osclass-themes-git/masjob/item.php:49
+msgid "City area"
+msgstr ""
+
+#: /var/www/osclass-themes-git/masjob/item.php:50
+msgid "Address"
+msgstr ""
+
+#: /var/www/osclass-themes-git/masjob/item.php:69
+#: /var/www/osclass-themes-git/masjob/item.php:81
+msgid "Apply for this job"
+msgstr ""
+
+#: /var/www/osclass-themes-git/masjob/item.php:86
+msgid "Phone number"
+msgstr ""
+
+#: /var/www/osclass-themes-git/masjob/main.php:35
+msgid "<strong>Latest</strong> job offers"
+msgstr ""
+
+#: /var/www/osclass-themes-git/masjob/main.php:37
+msgid "There aren't job offers available at this moment"
+msgstr ""
+
+#: /var/www/osclass-themes-git/masjob/main.php:69
+msgid "See all job offers"
+msgstr ""
+
+#: /var/www/osclass-themes-git/masjob/main.php:77
+#: /var/www/osclass-themes-git/masjob/page.php:45
+msgid "Upload your CV and"
+msgstr ""
+
+#: /var/www/osclass-themes-git/masjob/main.php:78
+#: /var/www/osclass-themes-git/masjob/page.php:47
+msgid "We will automatically receive your information and we will study your candidature"
+msgstr ""
+
+#: /var/www/osclass-themes-git/masjob/main.php:81
+#: /var/www/osclass-themes-git/masjob/page.php:49
+msgid "Upload your CV now!"
+msgstr ""
+
+#: /var/www/osclass-themes-git/masjob/main.php:88
+msgid "<strong>Jobs</strong> by region"
+msgstr ""
+
+#: /var/www/osclass-themes-git/masjob/main.php:103
+msgid "<strong>Jobs</strong> by area"
+msgstr ""
+
+#: /var/www/osclass-themes-git/masjob/search.php:37
+msgid "<strong>Search</strong> results"
+msgstr ""
+
+#: /var/www/osclass-themes-git/masjob/search.php:42
+#, php-format
+msgid "There are no results matching \"%s\""
+msgstr ""
+
+#: /var/www/osclass-themes-git/masjob/search.php:65
+msgid "Your search"
+msgstr ""
+
+#: /var/www/osclass-themes-git/masjob/search.php:68
+msgid "Keyword"
+msgstr ""
+
+#: /var/www/osclass-themes-git/masjob/search.php:77
+msgid "Areas"
+msgstr ""
+
+#: /var/www/osclass-themes-git/masjob/search_list.php:30
+msgid "See job offer"
+msgstr ""
+
