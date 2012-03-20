@@ -23,8 +23,8 @@
 <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 
 <title><?php echo meta_title() ; ?></title>
-<meta name="title" content="<?php //echo meta_title() ; ?>" />
-<meta name="description" content="<?php //echo meta_description() ; ?>" />
+<meta name="title" content="<?php echo meta_title() ; ?>" />
+<meta name="description" content="<?php echo meta_description() ; ?>" />
 <meta http-equiv="Cache-Control" content="no-cache" />
 <meta http-equiv="Expires" content="Fri, Jan 01 1970 00:00:00 GMT" />
 

@@ -286,10 +286,8 @@ CSS;
             switch ($location) {
                 case ('item'):
                     switch ($section) {
-                        case 'item_add':    $text = __('Publish an item', 'seeker') . ' - ' . osc_page_title(); break;
-                        case 'item_edit':   $text = __('Edit your item', 'seeker') . ' - ' . osc_page_title(); break;
                         case 'send_friend': $text = __('Send to a friend', 'seeker') . ' - ' . osc_item_title() . ' - ' . osc_page_title(); break;
-                        case 'contact':     $text = __('Contact seller', 'seeker') . ' - ' . osc_item_title() . ' - ' . osc_page_title(); break;
+                        case 'contact':     $text = __('Apply for thhis job', 'seeker') . ' - ' . osc_item_title() . ' - ' . osc_page_title(); break;
                         default:            $text = osc_item_title() . ' - ' . osc_page_title(); break;
                     }
                 break;
@@ -354,37 +352,18 @@ CSS;
 
                     $text = $result . ' - ' . $s_page . osc_page_title();
                 break;
-                case('login'):
-                    switch ($section) {
-                        case('recover'): $text = __('Recover your password', 'seeker') . ' - ' . osc_page_title();
-                        default:         $text = __('Login', 'seeker') . ' - ' . osc_page_title();
-                    }
-                break;
-                case('register'):
-                    $text = __('Create a new account', 'seeker') . ' - ' . osc_page_title();
-                break;
-                case('user'):
-                    switch ($section) {
-                        case('dashboard'):       $text = __('Dashboard', 'seeker') . ' - ' . osc_page_title(); break;
-                        case('items'):           $text = __('Manage my items', 'seeker') . ' - ' . osc_page_title(); break;
-                        case('alerts'):          $text = __('Manage my alerts', 'seeker') . ' - ' . osc_page_title(); break;
-                        case('profile'):         $text = __('Update my profile', 'seeker') . ' - ' . osc_page_title(); break;
-                        case('change_email'):    $text = __('Change my email', 'seeker') . ' - ' . osc_page_title(); break;
-                        case('change_password'): $text = __('Change my password', 'seeker') . ' - ' . osc_page_title(); break;
-                        case('forgot'):          $text = __('Recover my password', 'seeker') . ' - ' . osc_page_title(); break;
-                        default:                 $text = osc_page_title(); break;
-                    }
-                break;
                 case('contact'):
-                    $text = __('Contact','seeker') . ' - ' . osc_page_title();
+                    $text = __('Upload your CV','seeker') . ' - ' . osc_page_title();
                 break;
                 default:
                     $text = osc_page_title();
                 break;
             }
             
-            $text = str_replace('"', "'", $text);
-            return ($text);
+            $text = str_replace("\n", '', $text) ;
+            $text = trim($text) ;
+            $text = osc_esc_html($text) ;
+            return $text ;
         }
     }
 
@@ -407,39 +386,31 @@ CSS;
                     }
                 break;
                 case('page'):
-                    $text = osc_highlight(strip_tags(osc_static_page_text()), 140);
+                    $text = osc_highlight(strip_tags(osc_static_page_text()), 140) ;
                 break;
                 case('search'):
                     $result = '';
 
-                    if(osc_count_items() == 0) {
+                    if( osc_count_items() == 0 ) {
                         $text = '';
                     }
 
-                    if(osc_has_items ()) {
+                    if( osc_has_items() ) {
                         $result = osc_item_category() . ', ' . osc_highlight(strip_tags(osc_item_description()), 140) . '..., ' . osc_item_category();
                     }
 
-                    osc_reset_items();
-                    $text = $result;
-                case(''): // home
-                    $result = '';
-
-                    if(osc_count_latest_items() == 0) {
-                        $text = '';
-                    }
-
-                    if(osc_has_latest_items()) {
-                        $result = osc_item_category() . ', ' . osc_highlight(strip_tags(osc_item_description()), 140) . '..., ' . osc_item_category();
-                    }
-
-                    osc_reset_items();
-                    $text = $result;
+                    osc_reset_items() ;
+                    $text = $result ;
+                break;
+                default: // home
+                    $text = osc_page_description() ;
                 break;
             }
             
-            $text = str_replace('"', "'", $text);
-            return ($text);
+            $text = str_replace("\n", '', $text) ;
+            $text = trim($text) ;
+            $text = osc_esc_html($text) ;
+            return $text ;
         }
     }
 
@@ -458,6 +429,32 @@ CSS;
             $str = addslashes($str) ;
 
             return $str ;
+        }
+    }
+
+    if( !function_exists('osc_esc_html') ) {
+        function osc_esc_html($str = '') {
+            if ($str === '') {
+                return '';
+            }
+
+            $temp = '__TEMP_AMPERSANDS__';
+
+            // Replace entities to temporary markers so that
+            // htmlspecialchars won't mess them up
+            $str = preg_replace("/&#(\d+);/", "$temp\\1;", $str);
+            $str = preg_replace("/&(\w+);/",  "$temp\\1;", $str);
+
+            $str = htmlspecialchars($str);
+
+            // In case htmlspecialchars misses these.
+            $str = str_replace(array("'", '"'), array("&#39;", "&quot;"), $str);
+
+            // Decode the temp markers back to entities
+            $str = preg_replace("/$temp(\d+);/","&#\\1;",$str);
+            $str = preg_replace("/$temp(\w+);/","&\\1;",$str);
+
+            return $str;
         }
     }
 

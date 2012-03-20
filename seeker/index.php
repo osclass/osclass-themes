@@ -22,7 +22,7 @@
     function seeker_theme_info() {
         return array(
              'name'        => 'Seeker'
-            ,'version'     => '1.0'
+            ,'version'     => '1.0.1'
             ,'description' => 'This is the OSClass seeker theme'
             ,'author_name' => 'OSClass Team'
             ,'author_url'  => 'http://osclass.org'

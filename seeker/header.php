@@ -23,8 +23,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="<?php echo str_replace('_', '-', osc_current_user_locale()); ?>">
     <head>
         <?php osc_current_web_theme_path('head.php') ; ?>
-        <meta name="robots" content="index, follow" />
-        <meta name="googlebot" content="index, follow" />
     </head>
     <body class="<?php osc_run_hook('body_class'); ?>">
     <div id="container">
