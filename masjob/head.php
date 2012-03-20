@@ -30,6 +30,3 @@
 <script type="text/javascript" src="<?php echo osc_current_web_theme_js_url('global.js') ; ?>"></script>
 
 <?php osc_run_hook('header') ; ?>
-
-<meta name="robots" content="index, follow" />
-<meta name="googlebot" content="index, follow" />
