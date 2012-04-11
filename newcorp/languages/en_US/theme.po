@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: NewCorp 2.2\n"
+"Project-Id-Version: NewCorp 2.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-03-15 18:43+0100\n"
+"POT-Creation-Date: 2012-04-11 10:03+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Juan Ramón <juanramon@osclass.org>\n"
 "Language-Team: OSClass <info@osclass.org>\n"
@@ -14,298 +14,343 @@ msgstr ""
 "X-Poedit-KeywordsList: __;_e\n"
 "X-Poedit-Basepath: .\n"
 "X-Poedit-Country: UNITED STATES\n"
-"X-Poedit-SearchPath-0: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp\n"
+"X-Poedit-SearchPath-0: /var/www/osclass-themes-git/newcorp\n"
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/404.php:34
+#: /var/www/osclass-themes-git/newcorp/404.php:33
 msgid "Page not found"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/alert-form.php:6
+#: /var/www/osclass-themes-git/newcorp/alert-form.php:6
 msgid "You have sucessfully subscribed to the alert"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/alert-form.php:7
+#: /var/www/osclass-themes-git/newcorp/alert-form.php:7
 msgid "Invalid email address"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/alert-form.php:8
+#: /var/www/osclass-themes-git/newcorp/alert-form.php:8
 msgid "There was a problem with the alert"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/alert-form.php:39
+#: /var/www/osclass-themes-git/newcorp/alert-form.php:38
 msgid "Subscribe to this search"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/alert-form.php:52
+#: /var/www/osclass-themes-git/newcorp/alert-form.php:51
 msgid "Subscribe now!"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/contact.php:35
+#: /var/www/osclass-themes-git/newcorp/contact.php:35
 msgid "Upload your CV"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/contact.php:41
+#: /var/www/osclass-themes-git/newcorp/contact.php:40
 msgid "Subject"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/contact.php:42
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/item-send-friend.php:48
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/item.php:87
+#: /var/www/osclass-themes-git/newcorp/contact.php:41
+#: /var/www/osclass-themes-git/newcorp/item-send-friend.php:47
+#: /var/www/osclass-themes-git/newcorp/item.php:86
 msgid "Message"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/contact.php:44
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/item.php:89
+#: /var/www/osclass-themes-git/newcorp/contact.php:43
+#: /var/www/osclass-themes-git/newcorp/item.php:88
 msgid "Your CV"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/contact.php:46
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/item-send-friend.php:44
+#: /var/www/osclass-themes-git/newcorp/contact.php:45
+#: /var/www/osclass-themes-git/newcorp/item-send-friend.php:43
 msgid "Your name"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/contact.php:46
+#: /var/www/osclass-themes-git/newcorp/contact.php:45
 msgid "optional"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/contact.php:47
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/item-send-friend.php:45
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/item.php:85
+#: /var/www/osclass-themes-git/newcorp/contact.php:46
+#: /var/www/osclass-themes-git/newcorp/item-send-friend.php:44
+#: /var/www/osclass-themes-git/newcorp/item.php:84
 msgid "Your e-mail address"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/contact.php:48
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/item-send-friend.php:49
+#: /var/www/osclass-themes-git/newcorp/contact.php:47
+#: /var/www/osclass-themes-git/newcorp/item-send-friend.php:48
 msgid "Send"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/footer.php:25
+#: /var/www/osclass-themes-git/newcorp/footer.php:26
 msgid "This website is proudly using the <a title=\"OSClass web\" href=\"http://osclass.org/\">classifieds scripts</a> software <strong>OSClass</strong>"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/functions.php:47
-msgid "Newcorp theme"
+#: /var/www/osclass-themes-git/newcorp/functions.php:45
+msgid "Settings"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/functions.php:49
-msgid "Settings theme"
-msgstr ""
-
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/functions.php:64
+#: /var/www/osclass-themes-git/newcorp/functions.php:60
 msgid "Publish an item"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/functions.php:65
+#: /var/www/osclass-themes-git/newcorp/functions.php:61
 msgid "Edit your item"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/functions.php:66
+#: /var/www/osclass-themes-git/newcorp/functions.php:62
 msgid "Send to a friend"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/functions.php:67
+#: /var/www/osclass-themes-git/newcorp/functions.php:63
 msgid "Contact seller"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/functions.php:84
+#: /var/www/osclass-themes-git/newcorp/functions.php:80
 msgid "page"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/functions.php:94
+#: /var/www/osclass-themes-git/newcorp/functions.php:90
 msgid "Show all items"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/functions.php:124
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/inc.search.php:79
+#: /var/www/osclass-themes-git/newcorp/functions.php:120
+#: /var/www/osclass-themes-git/newcorp/inc.search.php:79
 msgid "Search"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/functions.php:131
+#: /var/www/osclass-themes-git/newcorp/functions.php:127
 msgid "Recover your password"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/functions.php:132
+#: /var/www/osclass-themes-git/newcorp/functions.php:128
 msgid "Login"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/functions.php:136
+#: /var/www/osclass-themes-git/newcorp/functions.php:132
 msgid "Create a new account"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/functions.php:140
+#: /var/www/osclass-themes-git/newcorp/functions.php:136
 msgid "Dashboard"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/functions.php:141
+#: /var/www/osclass-themes-git/newcorp/functions.php:137
 msgid "Manage my items"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/functions.php:142
+#: /var/www/osclass-themes-git/newcorp/functions.php:138
 msgid "Manage my alerts"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/functions.php:143
+#: /var/www/osclass-themes-git/newcorp/functions.php:139
 msgid "Update my profile"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/functions.php:144
+#: /var/www/osclass-themes-git/newcorp/functions.php:140
 msgid "Change my email"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/functions.php:145
+#: /var/www/osclass-themes-git/newcorp/functions.php:141
 msgid "Change my password"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/functions.php:146
+#: /var/www/osclass-themes-git/newcorp/functions.php:142
 msgid "Recover my password"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/functions.php:151
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/header.php:33
+#: /var/www/osclass-themes-git/newcorp/functions.php:147
+#: /var/www/osclass-themes-git/newcorp/header.php:33
 msgid "Contact"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/header.php:28
+#: /var/www/osclass-themes-git/newcorp/header.php:28
 msgid "Home"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/header.php:40
+#: /var/www/osclass-themes-git/newcorp/header.php:40
 msgid "Language"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/inc.search.php:23
+#: /var/www/osclass-themes-git/newcorp/inc.search.php:23
 msgid "Ej. Comercial"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/inc.search.php:68
+#: /var/www/osclass-themes-git/newcorp/inc.search.php:68
 msgid "All Categories"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/item-send-friend.php:36
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/item.php:67
+#: /var/www/osclass-themes-git/newcorp/item-send-friend.php:35
+#: /var/www/osclass-themes-git/newcorp/item.php:66
 msgid "Recommend to a friend"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/item-send-friend.php:43
+#: /var/www/osclass-themes-git/newcorp/item-send-friend.php:42
 msgid "Item"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/item-send-friend.php:46
+#: /var/www/osclass-themes-git/newcorp/item-send-friend.php:45
 msgid "Your friend's name"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/item-send-friend.php:47
+#: /var/www/osclass-themes-git/newcorp/item-send-friend.php:46
 msgid "Your friend's e-mail address"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/item.php:45
+#: /var/www/osclass-themes-git/newcorp/item.php:44
 msgid "Added"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/item.php:49
+#: /var/www/osclass-themes-git/newcorp/item.php:48
 msgid "Modified"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/item.php:54
+#: /var/www/osclass-themes-git/newcorp/item.php:53
 msgid "Country"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/item.php:55
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/main.php:82
+#: /var/www/osclass-themes-git/newcorp/item.php:54
+#: /var/www/osclass-themes-git/newcorp/main.php:80
 msgid "Region"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/item.php:56
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/search.php:75
+#: /var/www/osclass-themes-git/newcorp/item.php:55
+#: /var/www/osclass-themes-git/newcorp/search.php:74
 msgid "City"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/item.php:57
+#: /var/www/osclass-themes-git/newcorp/item.php:56
 msgid "City area"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/item.php:58
+#: /var/www/osclass-themes-git/newcorp/item.php:57
 msgid "Address"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/item.php:64
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/item.php:77
+#: /var/www/osclass-themes-git/newcorp/item.php:63
+#: /var/www/osclass-themes-git/newcorp/item.php:76
 msgid "Apply for this job"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/item.php:82
+#: /var/www/osclass-themes-git/newcorp/item.php:81
 msgid "Tel"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/item.php:84
+#: /var/www/osclass-themes-git/newcorp/item.php:83
 msgid "Your name (optional)"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/item.php:86
+#: /var/www/osclass-themes-git/newcorp/item.php:85
 msgid "Phone number"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/item.php:94
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/search.php:106
+#: /var/www/osclass-themes-git/newcorp/item.php:93
+#: /var/www/osclass-themes-git/newcorp/search.php:105
 msgid "Apply"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/main.php:37
+#: /var/www/osclass-themes-git/newcorp/main.php:36
 msgid "Latest job offers"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/main.php:39
+#: /var/www/osclass-themes-git/newcorp/main.php:38
 msgid "There aren't job offers available at this moment"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/main.php:62
+#: /var/www/osclass-themes-git/newcorp/main.php:61
 msgid "See all job offers"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/main.php:70
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/page.php:41
+#: /var/www/osclass-themes-git/newcorp/main.php:69
+#: /var/www/osclass-themes-git/newcorp/page.php:40
 msgid "Upload your CV and"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/main.php:71
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/page.php:43
+#: /var/www/osclass-themes-git/newcorp/main.php:70
+#: /var/www/osclass-themes-git/newcorp/page.php:42
 msgid "We will automatically receive your information and we will study your candidature"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/main.php:74
+#: /var/www/osclass-themes-git/newcorp/main.php:73
 msgid "Upload your CV now!"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/main.php:97
+#: /var/www/osclass-themes-git/newcorp/main.php:94
 msgid "Categories"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/page.php:45
+#: /var/www/osclass-themes-git/newcorp/page.php:44
 msgid "Upload your CV now"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/search.php:44
+#: /var/www/osclass-themes-git/newcorp/search.php:43
 msgid "Search results"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/search.php:49
+#: /var/www/osclass-themes-git/newcorp/search.php:48
 #, php-format
 msgid "There are no results matching \"%s\""
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/search.php:69
+#: /var/www/osclass-themes-git/newcorp/search.php:68
 msgid "Your search"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/search.php:73
+#: /var/www/osclass-themes-git/newcorp/search.php:72
 msgid "Location"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/search.php:81
+#: /var/www/osclass-themes-git/newcorp/search.php:80
 msgid "Show only"
 msgstr ""
 
-#: /Applications/XAMPP/xamppfiles/htdocs/osclass-themes-git/newcorp/search.php:85
+#: /var/www/osclass-themes-git/newcorp/search.php:84
 msgid "Category"
+msgstr ""
+
+#: /var/www/osclass-themes-git/newcorp/admin/settings.php:20
+msgid "The logo image has been removed"
+msgstr ""
+
+#: /var/www/osclass-themes-git/newcorp/admin/settings.php:22
+msgid "Image not found"
+msgstr ""
+
+#: /var/www/osclass-themes-git/newcorp/admin/settings.php:34
+msgid "Note: Uploading another logo will overwrite current logo."
+msgstr ""
+
+#: /var/www/osclass-themes-git/newcorp/admin/settings.php:40
+msgid "Logo image"
+msgstr ""
+
+#: /var/www/osclass-themes-git/newcorp/admin/settings.php:43
+msgid "Upload"
+msgstr ""
+
+#: /var/www/osclass-themes-git/newcorp/admin/settings.php:48
+msgid "Preview:"
+msgstr ""
+
+#: /var/www/osclass-themes-git/newcorp/admin/settings.php:52
+msgid "Remove logo"
+msgstr ""
+
+#: /var/www/osclass-themes-git/newcorp/admin/settings.php:56
+msgid "Has not uploaded any logo image"
+msgstr ""
+
+#: /var/www/osclass-themes-git/newcorp/admin/settings.php:64
+#, php-format
+msgid "The images folder %s is not writable on your server"
+msgstr ""
+
+#: /var/www/osclass-themes-git/newcorp/admin/settings.php:65
+msgid "OSClass can't upload logo image from the administration panel."
+msgstr ""
+
+#: /var/www/osclass-themes-git/newcorp/admin/settings.php:66
+msgid "Please make the mentioned images folder writable."
+msgstr ""
+
+#: /var/www/osclass-themes-git/newcorp/admin/settings.php:71
+msgid "To make a directory writable under UNIX execute this command from the shell"
 msgstr ""
 
