@@ -22,7 +22,7 @@
 <div class="wrapper_header">
     <div id="header">
         <a id="logo" href="<?php echo osc_base_url() ; ?>">
-            <strong><?php echo osc_page_title() ; ?></strong>
+            <strong><?php echo logo_header() ; ?></strong>
         </a>
         <ul id="main_menu">
             <li><a href="<?php echo osc_base_url() ; ?>"><?php _e('Home', 'newcorp') ; ?></a></li>
