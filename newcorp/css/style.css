@@ -12,7 +12,7 @@ table {border-collapse: collapse;border-spacing: 0; }
 input:focus { outline:none; }
 
 /* -- GLOBAL STYLES --------------------------------------- */
-body { background:#eaebe7; color:#000; font: 12px Lucida Grande, Lucida Sans Unicode, Arial, Helvetica, sans-serif; padding:15px 0; }
+body { background:#eaebe7; color:#000; font: 12px Lucida Grande, Lucida Sans Unicode, Arial, Helvetica, sans-serif; }
 a { color:#1a80cc; text-decoration:underline; }
 a:hover { color:#F60; }
 option.pad { margin-left:10px; }
@@ -27,10 +27,10 @@ option.pad { margin-left:10px; }
 .clear { clear:both; }
 
 /* Header */
-#header { width:990px; margin:0 auto; position: relative; height: 84px; }
-#header #logo { display:block; float:left; text-decoration: none; margin: 10px 0 0 20px;}
+#header { width:990px; margin:0 auto; position: relative; }
+#header #logo { display:block; text-decoration: none; padding: 10px 0 10px 20px; min-height: 75px; }
 #header #logo strong { font-weight:300; font-size: 3.5em; color: white; }
-#header #main_menu { top: 50px; right: 0px; position: absolute; }
+#header #main_menu { bottom: 0px; right: 0px; position: absolute; }
 #header #main_menu li { display:inline; }
 #header #main_menu li a { background:#005e93; color:#FFF; font-size:11px; font-weight:bold; float:left; margin-right:5px; padding:10px 15px; text-decoration:none; text-transform: uppercase; -moz-border-radius-topleft: 7px; -moz-border-radius-topright: 7px; border-top-left-radius: 7px; border-top-right-radius: 7px; text-shadow: 1px 1px 0px #002b44; filter: dropshadow(color=#002b44, offx=1, offy=1); }
 #header #main_menu li a:hover { background:#005e93; color:#FFF; text-shadow: 0px 0px 0px #111111; filter: dropshadow(color=#111111, offx=0, offy=0);}
