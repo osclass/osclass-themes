@@ -1,5 +1,5 @@
 /* Flash message */
-.define-ui-input-text(@width: auto, @height: 33px){
+.define-ui-input-text(@width: auto, @height: @input-height){
     border:@border-gray;
     height:@height;
     width:@width;
@@ -250,7 +250,7 @@
 .slider { margin-bottom:10px; }
 .slider h6 { margin-bottom:0px;}
 .slider input { background:transparent; border:none; color:#999; margin-bottom:3px; text-align: center; width:90%; }*/
-.ui-slider { margin:0px 10px 0 0; position: relative;margin-top: 10px;}
+.ui-slider { margin:0px; position: relative; margin-top: 10px;}
 .ui-slider-range { position: absolute; background-color:#55d3e3;  height:5px; border:solid 1px #229ab5; }
 .ui-slider {
     background-color:#FFFFFF;  height:5px; border:@border-gray;
@@ -259,6 +259,7 @@
 .ui-slider-horizontal .ui-slider-handle {
     background:#55d3e3; border:solid 1px #229ab5; height:15px; top: -6px; margin-left:-2px; width:15px; position: absolute;
     .rounded-corners(15px);
+    margin-left:-7px
 }
 .ui-slider-box{
     position: relative;
@@ -276,7 +277,7 @@
     top:15px;
 
     border:@border-gray;
-    height:33px; width:50px;
+    height:@input-height; width:50px;
     text-align:center;
 
     .rounded-corners;
@@ -325,8 +326,8 @@
 }
 .ui-selectmenu-trigger{
     border: @border-gray;
-    height: 15px;
-    padding:8px 10px;
+    height: 16px;
+    padding:7px 10px 5px 10px;
 
     font-size: 13px;
     color: #595959;
@@ -337,11 +338,20 @@
     .rounded-corners;
     width:auto;
 }
+.ui-selectmenu select{
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:100%;
+    height:@input-height;
+    -webkit-appearance:none;
+
+}
 .ui-selectmenu-icon{
     z-index:0;
     position: absolute;
     right:13px;
-    top:13px;
+    top:10px;
     width:9px;
     height:9px;
 }
@@ -361,9 +371,8 @@
 
     display: none;
     position: absolute;
-    top:33px;
+    top:@input-height;
     left:0px;
-    width:186px;
 }
 ui-selectmenu-list li,
 .ui-autocomplete li{
@@ -388,7 +397,7 @@ ui-selectmenu-list li,
 
 .ui-actionbox{
     font-size:14px;
-    height:33px;
+    height:@input-height;
     line-height:17px;
     display:inline-block;
     zoom:1;
@@ -481,7 +490,7 @@ ui-selectmenu-list li,
     background-color:#f2f2f2;
 }
 .ui-generic-form{
-    padding:15px;
+    padding:20px 15px;
     border:@border-gray;
     .rounded-corners;
 
@@ -504,15 +513,14 @@ ui-selectmenu-list li,
 }
 .ui-generic-form .row{
     clear:both;
-    margin:10px 0;
+    margin:0px 0 10px 0;
     min-height:28px;
 }
 .ui-row-text input{
-    .define-ui-input-text(240px);
-    margin-top:-7px;
+    .define-ui-input-text(235px);
 }
 .ui-row-text textarea{
-    .define-ui-input-text(470px,200px);
+    .define-ui-input-text(458px,200px);
     margin-top:5px;
 }
 .ui-generic-form .actions{

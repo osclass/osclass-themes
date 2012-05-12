@@ -46,12 +46,13 @@
                         <?php require('search_gallery.php') ; ?>
                     <?php } ?>
                             <?php osc_alert_form() ; ?>
-
+                    <?php if(osc_search_pagination() != ''){ ?>
                     <div class="paginate" >
                         <div class="ui-actionbox">
                             <?php echo osc_search_pagination(); ?>
                         </div>
                     </div>
+                    <?php } ?>
                 </div>
             </div>
             <?php require('search_sidebar.php') ; ?>

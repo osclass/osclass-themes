@@ -41,41 +41,23 @@ $(function() {
     
     $('select').each(function(){
         var thatSelect = $(this);
-        thatSelect.hide();
-        var uiSelecBox = $('<div class="ui-selectmenu" id="ui-'+thatSelect.attr('name')+'"></div>"');
         var uiSelect = $('<a href="#" class="ui-selectmenu-trigger"></a>');
         var uiSelectIcon = $('<span class="ui-selectmenu-icon"></span>');
         var uiSelected = $('<span class="ui-selectmenu-label">'+thatSelect.find("option:selected").text()+'</span>');
-        var uiSelectList = $('<ul class="ui-selectmenu-list"/>');
 
-        var index = 0;
-        thatSelect.find('option').each(function(){
-            var thatOption = $(this);
-            var uiSelectOptionText = thatOption.text();
-            var uiSelectOption = $('<li><a href="#">'+uiSelectOptionText+'</a></li>');
-            uiSelectList.append(uiSelectOption);
-
-            uiSelectOption.click(function(e){
-                e.stopPropagation();
-                thatOption.attr('selected','selected').trigger('change');
-                uiSelected.html(uiSelectOptionText);
-                $('.ui-selectmenu-show').removeClass('ui-selectmenu-show');
-                return false;
-            });
-            index++;
-        });
+        thatSelect.css('filter', 'alpha(opacity=40)').css('opacity', '0');
+        thatSelect.wrap('<div class="ui-selectmenu" id="ui-'+thatSelect.attr('name')+'" />');
         
-        uiSelect.append(uiSelected).append(uiSelectIcon);
-        uiSelecBox.append(uiSelect).append(uiSelectList);
-        thatSelect.after(uiSelecBox);
 
+        uiSelect.append(uiSelected).append(uiSelectIcon);
+        thatSelect.parent().append(uiSelect);
         uiSelect.click(function(){
-            $('.ui-selectmenu-show').not($(this)).removeClass('ui-selectmenu-show');
-            uiSelect.parent().addClass('ui-selectmenu-show');
+            thatSelect[0].click();
             return false;
         });
-
-
+        thatSelect.change(function(){
+            uiSelected.text(thatSelect.find('option:selected').text());
+        });
     });
     
     //price range

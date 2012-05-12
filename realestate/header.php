@@ -19,7 +19,7 @@
      * License along with this program.  If not, see <http://www.gnu.org/licenses/>.
      */
 
-    osc_show_flash_message() ;
+    
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="<?php echo str_replace('_', '-', osc_current_user_locale()); ?>">
@@ -36,6 +36,7 @@
         <?php } ?>
     </head>
 <body>
+<?php osc_show_flash_message() ; ?>    
 <!-- header -->
 <div id="header">
     <a id="logo" href="<?php echo osc_base_url() ; ?>"><?php echo logo_header(); ?></a>
@@ -85,6 +86,7 @@
                     </ul>
                 </li>
             <?php } ?>
+            <div class="clear"></div>
         </ul>
         <?php if( osc_users_enabled() || ( !osc_users_enabled() && !osc_reg_user_post() )) { ?>
                 <a href="<?php echo osc_item_post_url_in_category() ; ?>" id="form_publish" class="ui-button"><?php _e("Publish your ad for free", 'realestate');?></a>
