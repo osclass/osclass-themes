@@ -44,8 +44,14 @@
         echo '<input id="'.$name.'" type="text" name="'.$name.'" value="'.osc_esc_html(htmlentities($field['value'][$locale['pk_c_code']], ENT_COMPAT, "UTF-8")).'" '.$fields['args'].' />' ;
     }
     function multilanguage_form_input_textarea($locale,$field){
-        $name = str_replace('%locale%',$locale['pk_c_code'],$field['name']);
-        echo '<textarea id="'.$name.'" name="'.$name.'" '.$fields['args'].'>'.$field['value'][$locale['pk_c_code']].'</textarea>';
+        $name = str_replace('%locale%', $locale['pk_c_code'], $field['name']);
+        $txt = '' ;
+        if( array_key_exists('value', $field) ) {
+            if( array_key_exists($locale['pk_c_code'], $field['value']) ) {
+                $txt = $field['value'][$locale['pk_c_code']];
+            }
+        }
+        echo '<textarea id="'.$name.'" name="'.$name.'" '.$fields['args'].'>'.$txt.'</textarea>';
     }
     function multilanguage_form_input_select($locale,$field){
         $name = str_replace('%locale%',$locale['pk_c_code'],$field['name']);

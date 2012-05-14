@@ -99,3 +99,10 @@
 <!-- container -->
 <div class="container">
 <?php osc_show_widgets('header') ; ?>
+<?php if( function_exists('breadcrumbs') ) { ?>
+    <?php if( !osc_is_home_page() ) { ?>
+    <div class="breadcrumb">
+        <?php breadcrumbs('&raquo;'); ?>
+    </div>
+    <?php } ?>
+<?php } ?>

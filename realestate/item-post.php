@@ -81,30 +81,39 @@
             </div>
             <div class="row ui-row-text">
                 <?php
-                $title = (isset($item) && isset($item['locale'][$locale['pk_c_code']]) && isset($item['locale'][$locale['pk_c_code']]['s_title'])) ? $item['locale'][$locale['pk_c_code']]['s_title'] : '' ;
-                if( Session::newInstance()->_getForm('title') != "" ) {
-                    $title_ = Session::newInstance()->_getForm('title');
-                    if( $title_[$locale['pk_c_code']] != "" ){
-                        $title = $title_[$locale['pk_c_code']];
+                if($locales==null) { $locales = osc_get_locales(); }
+                $value = array();
+                foreach($locales as $locale) {
+                    $title = (isset($item) && isset($item['locale'][$locale['pk_c_code']]) && isset($item['locale'][$locale['pk_c_code']]['s_title'])) ? $item['locale'][$locale['pk_c_code']]['s_title'] : '' ;
+                    if( Session::newInstance()->_getForm('title') != "" ) {
+                        $title_ = Session::newInstance()->_getForm('title');
+                        if( $title_[$locale['pk_c_code']] != "" ){
+                            $title = $title_[$locale['pk_c_code']];
+                        }
                     }
+                    $value[$locale['pk_c_code']] = $title;
                 }
                 $fields = array(
-                             array('name'=>'title[%locale%]','label'=>__('Title','realestate'),'type'=>'text','args'=>'','required'=>true,'value'=>$title)
+                             array('name'=>'title[%locale%]','label'=>__('Title','realestate'),'type'=>'text','args'=>'','required'=>true,'value'=>$value)
                           );
                 multilanguage_form($fields); ?>
             </div>
             <div class="row ui-row-text">
                 <?php
-                $description = (isset($item) && isset($item['locale'][$locale['pk_c_code']]) && isset($item['locale'][$locale['pk_c_code']]['s_description'])) ? $item['locale'][$locale['pk_c_code']]['s_description'] : '';
-                if( Session::newInstance()->_getForm('description') != "" ) {
-                    $description_ = Session::newInstance()->_getForm('description');
-                    if( $description_[$locale['pk_c_code']] != "" ){
-                        $description = $description_[$locale['pk_c_code']];
+                if($locales==null) { $locales = osc_get_locales(); }
+                $value = array();
+                foreach($locales as $locale) {
+                    $description = (isset($item) && isset($item['locale'][$locale['pk_c_code']]) && isset($item['locale'][$locale['pk_c_code']]['s_description'])) ? $item['locale'][$locale['pk_c_code']]['s_description'] : '';
+                    if( Session::newInstance()->_getForm('description') != "" ) {
+                        $description_ = Session::newInstance()->_getForm('description');
+                        if( $description_[$locale['pk_c_code']] != "" ){
+                            $description = $description_[$locale['pk_c_code']];
+                        }
                     }
+                    $value[$locale['pk_c_code']] = $description;
                 }
-
                 $fields = array(
-                            array('name'=>'description[%locale%]','label'=>__('Description','realestate'), 'type'=>'textarea','args'=>'','required'=>true,'value'=>$description)
+                            array('name'=>'description[%locale%]','label'=>__('Description','realestate'), 'type'=>'textarea','args'=>'','required'=>true,'value'=>$value)
                           );
                 multilanguage_form($fields); ?>
             </div>
