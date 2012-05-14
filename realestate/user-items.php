@@ -53,7 +53,7 @@
                         <div>
                         <a href="<?php echo osc_item_url(); ?>" class="ui-button ui-button-grey ui-button-mini"><?php _e('View item', 'realestate'); ?></a>
                         <a href="<?php echo osc_item_edit_url(); ?>" class="ui-button ui-button-grey ui-button-mini"><?php _e('Edit', 'realestate'); ?></a>
-                        <a class="ui-button ui-button-grey ui-button-mini" onclick="javascript:return confirm('<?php _e('This action can not be undone. Are you sure you want to continue?', 'realestate'); ?>')" href="<?php echo osc_item_delete_url();?>" ><?php _e('Delete', 'realestate'); ?></a>
+                        <a class="ui-button ui-button-red ui-button-mini" onclick="javascript:return confirm('<?php _e('This action can not be undone. Are you sure you want to continue?', 'realestate'); ?>')" href="<?php echo osc_item_delete_url();?>" ><?php _e('Delete', 'realestate'); ?></a>
                         <?php if(osc_item_is_inactive()) {?>
                         <a href="<?php echo osc_item_activate_url();?>" class="ui-button ui-button-grey ui-button-mini"><?php _e('Activate', 'realestate'); ?></a>
                         <?php } ?>
