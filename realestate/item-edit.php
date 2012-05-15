@@ -188,43 +188,9 @@
 <script>
 function themeUiHook(){
     $('#plugin-hook select').each(function(){
-       if($(this).parents('.tabbertab').length == 0){
-        var thatSelect = $(this);
-        thatSelect.hide();
-        var uiSelecBox = $('<div class="ui-selectmenu"></div>"');
-        var uiSelect = $('<a href="#" class="ui-selectmenu-trigger"></a>');
-        var uiSelectIcon = $('<span class="ui-selectmenu-icon"></span>');
-        var uiSelected = $('<span class="ui-selectmenu-label">'+thatSelect.find("option:selected").text()+'</span>');
-        var uiSelectList = $('<ul class="ui-selectmenu-list"/>');
-
-        var index = 0;
-        thatSelect.find('option').each(function(){
-            var thatOption = $(this);
-            var uiSelectOptionText = thatOption.text();
-            var uiSelectOption = $('<li><a href="#">'+uiSelectOptionText+'</a></li>');
-            uiSelectList.append(uiSelectOption);
-
-            uiSelectOption.click(function(e){
-                e.stopPropagation();
-                thatOption.attr('selected','selected').trigger('change');
-                uiSelected.html(uiSelectOptionText);
-                $('.ui-selectmenu-show').removeClass('ui-selectmenu-show');
-                return false;
-            });
-            index++;
-        });
-        
-        uiSelect.append(uiSelected).append(uiSelectIcon);
-        uiSelecBox.append(uiSelect).append(uiSelectList);
-        thatSelect.after(uiSelecBox);
-
-        uiSelect.click(function(){
-            $('.ui-selectmenu-show').not($(this)).removeClass('ui-selectmenu-show');
-            uiSelect.parent().addClass('ui-selectmenu-show');
-            return false;
-        });
+        if($(this).parents('.tabbertab').length == 0){
+            selectUi($(this));
         }
-
     });
     $('select[name="switch-language"]').trigger('change');
 }

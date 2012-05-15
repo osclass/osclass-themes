@@ -185,27 +185,9 @@
 <script>
 function themeUiHook(){
     $('#plugin-hook select').each(function(){
-       if($(this).parents('.tabbertab').length == 0){
-            var thatSelect = $(this);
-            var uiSelect = $('<a href="#" class="ui-selectmenu-trigger"></a>');
-            var uiSelectIcon = $('<span class="ui-selectmenu-icon"></span>');
-            var uiSelected = $('<span class="ui-selectmenu-label">'+thatSelect.find("option:selected").text()+'</span>');
-
-            thatSelect.css('filter', 'alpha(opacity=40)').css('opacity', '0');
-            thatSelect.wrap('<div class="ui-selectmenu" id="ui-'+thatSelect.attr('name')+'" />');
-            
-
-            uiSelect.append(uiSelected).append(uiSelectIcon);
-            thatSelect.parent().append(uiSelect);
-            uiSelect.click(function(){
-                thatSelect[0].click();
-                return false;
-            });
-            thatSelect.change(function(){
-                uiSelected.text(thatSelect.find('option:selected').text());
-            });
+        if($(this).parents('.tabbertab').length == 0){
+            selectUi($(this));
         }
-
     });
     $('select[name="switch-language"]').trigger('change');
 }

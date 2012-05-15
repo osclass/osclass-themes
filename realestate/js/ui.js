@@ -40,7 +40,9 @@ $(function() {
 
     
     $('select').each(function(){
-        var thatSelect = $(this);
+        selectUi($(this));
+    });
+    function selectUi(thatSelect){
         var uiSelect = $('<a href="#" class="ui-selectmenu-trigger"></a>');
         var uiSelectIcon = $('<span class="ui-selectmenu-icon"></span>');
         var uiSelected = $('<span class="ui-selectmenu-label">'+thatSelect.find("option:selected").text()+'</span>');
@@ -52,14 +54,12 @@ $(function() {
         uiSelect.append(uiSelected).append(uiSelectIcon);
         thatSelect.parent().append(uiSelect);
         uiSelect.click(function(){
-            thatSelect[0].click();
             return false;
         });
         thatSelect.change(function(){
             uiSelected.text(thatSelect.find('option:selected').text());
         });
-    });
-    
+    }
     //price range
     $("#price-range").slider({
         range: true,

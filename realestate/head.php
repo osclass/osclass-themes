@@ -37,7 +37,6 @@
 <script type="text/javascript" src="<?php echo osc_current_web_theme_js_url('jquery-ui.js') ; ?>"></script>
 <script type="text/javascript" src="<?php echo osc_current_web_theme_js_url('tabber-minimized.js') ; ?>"></script>
 <script type="text/javascript" src="<?php echo osc_current_web_theme_js_url('global.js') ; ?>"></script>
-<script type="text/javascript" src="<?php echo osc_current_web_theme_js_url('ui.selectmenu.js') ; ?>"></script>
 <script type="text/javascript" src="<?php echo osc_current_web_theme_js_url('ui.js') ; ?>"></script>
 
 <script type="text/javascript" src="<?php echo osc_current_web_theme_js_url('jquery.ad-gallery.1.2.5.js') ; ?>"></script>
