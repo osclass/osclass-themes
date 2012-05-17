@@ -190,7 +190,8 @@
             });
     function doSearch() {
         var sPattern = $('input[name=sPattern]');
-        if(sPattern.val() == ''){
+        if(sPattern.val() == '' || sPattern.val().length < 3) {
+            $('#message-seach').text('<?php echo osc_esc_js( __('Your search must be at least three characters long','realestate') ) ; ?>').show();
             return false;
         }
         return true;

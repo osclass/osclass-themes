@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: RealEstate\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-05-12 19:28+0100\n"
-"PO-Revision-Date: 2012-05-12 19:28+0100\n"
+"POT-Creation-Date: 2012-05-17 15:44+0100\n"
+"PO-Revision-Date: 2012-05-17 15:44+0100\n"
 "Last-Translator: OSClass <info@osclass.org>\n"
 "Language-Team: OSClass <info@osclass.org>\n"
 "MIME-Version: 1.0\n"
@@ -100,12 +100,16 @@ msgstr ""
 msgid "Luxury Villas"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/realestate/functions.php:153
+#: /Users/feralou/git/public/osclass-themes/realestate/functions.php:159
 msgid "Realstate theme"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/realestate/functions.php:155
+#: /Users/feralou/git/public/osclass-themes/realestate/functions.php:161
 msgid "Settings theme"
+msgstr ""
+
+#: /Users/feralou/git/public/osclass-themes/realestate/functions.php:194
+msgid "Your search must be at least three characters long"
 msgstr ""
 
 #: /Users/feralou/git/public/osclass-themes/realestate/head.php:33
@@ -175,13 +179,13 @@ msgstr ""
 msgid "ie. PHP Programmer"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/realestate/inc.search.php:65
+#: /Users/feralou/git/public/osclass-themes/realestate/inc.search.php:55
 #: /Users/feralou/git/public/osclass-themes/realestate/item-edit.php:82
 #: /Users/feralou/git/public/osclass-themes/realestate/item-post.php:80
 msgid "Select a category"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/realestate/inc.search.php:67
+#: /Users/feralou/git/public/osclass-themes/realestate/inc.search.php:57
 #: /Users/feralou/git/public/osclass-themes/realestate/main.php:28
 msgid "Search"
 msgstr ""
@@ -241,29 +245,29 @@ msgid "Category"
 msgstr ""
 
 #: /Users/feralou/git/public/osclass-themes/realestate/item-edit.php:99
-#: /Users/feralou/git/public/osclass-themes/realestate/item-post.php:92
+#: /Users/feralou/git/public/osclass-themes/realestate/item-post.php:97
 #: /Users/feralou/git/public/osclass-themes/realestate/item.php:182
 msgid "Title"
 msgstr ""
 
 #: /Users/feralou/git/public/osclass-themes/realestate/item-edit.php:118
-#: /Users/feralou/git/public/osclass-themes/realestate/item-post.php:107
+#: /Users/feralou/git/public/osclass-themes/realestate/item-post.php:116
 #: /Users/feralou/git/public/osclass-themes/realestate/item.php:73
 msgid "Description"
 msgstr ""
 
 #: /Users/feralou/git/public/osclass-themes/realestate/item-edit.php:124
-#: /Users/feralou/git/public/osclass-themes/realestate/item-post.php:113
+#: /Users/feralou/git/public/osclass-themes/realestate/item-post.php:122
 msgid "Price"
 msgstr ""
 
 #: /Users/feralou/git/public/osclass-themes/realestate/item-edit.php:131
-#: /Users/feralou/git/public/osclass-themes/realestate/item-post.php:121
+#: /Users/feralou/git/public/osclass-themes/realestate/item-post.php:130
 msgid "Photos"
 msgstr ""
 
 #: /Users/feralou/git/public/osclass-themes/realestate/item-edit.php:138
-#: /Users/feralou/git/public/osclass-themes/realestate/item-post.php:126
+#: /Users/feralou/git/public/osclass-themes/realestate/item-post.php:135
 msgid "Add new photo"
 msgstr ""
 
@@ -272,36 +276,36 @@ msgid "Update"
 msgstr ""
 
 #: /Users/feralou/git/public/osclass-themes/realestate/item-edit.php:159
-#: /Users/feralou/git/public/osclass-themes/realestate/item-post.php:147
+#: /Users/feralou/git/public/osclass-themes/realestate/item-post.php:156
 msgid "Item Location"
 msgstr ""
 
 #: /Users/feralou/git/public/osclass-themes/realestate/item-edit.php:164
-#: /Users/feralou/git/public/osclass-themes/realestate/item-post.php:152
+#: /Users/feralou/git/public/osclass-themes/realestate/item-post.php:161
 msgid "Country"
 msgstr ""
 
 #: /Users/feralou/git/public/osclass-themes/realestate/item-edit.php:168
-#: /Users/feralou/git/public/osclass-themes/realestate/item-post.php:156
+#: /Users/feralou/git/public/osclass-themes/realestate/item-post.php:165
 msgid "Region"
 msgstr ""
 
 #: /Users/feralou/git/public/osclass-themes/realestate/item-edit.php:172
-#: /Users/feralou/git/public/osclass-themes/realestate/item-post.php:160
+#: /Users/feralou/git/public/osclass-themes/realestate/item-post.php:169
 msgid "City"
 msgstr ""
 
 #: /Users/feralou/git/public/osclass-themes/realestate/item-edit.php:176
-#: /Users/feralou/git/public/osclass-themes/realestate/item-post.php:164
+#: /Users/feralou/git/public/osclass-themes/realestate/item-post.php:173
 msgid "City Area"
 msgstr ""
 
 #: /Users/feralou/git/public/osclass-themes/realestate/item-edit.php:180
-#: /Users/feralou/git/public/osclass-themes/realestate/item-post.php:168
+#: /Users/feralou/git/public/osclass-themes/realestate/item-post.php:177
 msgid "Address"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/realestate/item-post.php:140
+#: /Users/feralou/git/public/osclass-themes/realestate/item-post.php:149
 msgid "Publish"
 msgstr ""
 
@@ -472,11 +476,11 @@ msgstr ""
 msgid "Your search"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/realestate/search_sidebar.php:21
+#: /Users/feralou/git/public/osclass-themes/realestate/search_sidebar.php:22
 msgid "Only items with pictures"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/realestate/search_sidebar.php:69
+#: /Users/feralou/git/public/osclass-themes/realestate/search_sidebar.php:70
 msgid "Apply filters"
 msgstr ""
 
