@@ -187,7 +187,7 @@
                 if(element.val() != ''){
                     element.prev().hide();
                 }
-                <?php if(osc_locale_thousands_sep()!='' && osc_locale_dec_point() != '') { ?>
+                <?php if(osc_locale_thousands_sep()!='' || osc_locale_dec_point() != '') { ?>
                     $("#price").blur(function(event) {
                         var price = $("#price").attr("value");
                         <?php if(osc_locale_thousands_sep()!='') { ?>
