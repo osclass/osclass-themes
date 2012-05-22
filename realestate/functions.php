@@ -187,11 +187,29 @@
                 if(element.val() != ''){
                     element.prev().hide();
                 }
+                <?php if(osc_locale_thousands_sep()!='' && osc_locale_dec_point() != '') { ?>
+                    $("#price").blur(function(event) {
+                        var price = $("#price").attr("value");
+                        <?php if(osc_locale_thousands_sep()!='') { ?>
+                        while(price.indexOf('<?php echo osc_esc_js(osc_locale_thousands_sep());  ?>')!=-1) {
+                            price = price.replace('<?php echo osc_esc_js(osc_locale_thousands_sep());  ?>', '');
+                        }
+                        <?php }; ?>
+                        <?php if(osc_locale_dec_point!='') { ?>
+                        var tmp = price.split('<?php echo osc_esc_js(osc_locale_dec_point())?>');
+                        if(tmp.length>2) {
+                            price = tmp[0]+'<?php echo osc_esc_js(osc_locale_dec_point())?>'+tmp[1];
+                        }
+                        <?php }; ?>
+                        $("#price").attr("value", price);
+                    });
+                <?php }; ?>
             });
     function doSearch() {
         var sPattern = $('input[name=sPattern]');
-        if(sPattern.val() == '' || sPattern.val().length < 3) {
-            $('#message-seach').text('<?php echo osc_esc_js( __('Your search must be at least three characters long','realestate') ) ; ?>').show();
+        var text = '<?php echo osc_esc_js( __('Your search must be at least three characters long','realestate') ) ; ?>';
+        if((sPattern.hasClass('js-input-home') && sPattern.val() == '' && sPattern.val().length < 3) || (sPattern.val() != '' && sPattern.val().length < 3)) {
+            $('#message-seach').text(text).show();
             return false;
         }
         return true;

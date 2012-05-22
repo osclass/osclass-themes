@@ -44,7 +44,7 @@
                                     <?php } else { ?>
                                         <img src="<?php echo osc_current_web_theme_url('images/no_photo.gif') ; ?>" alt="" title=""/>
                                     <?php } ?>
-                                    <div class="type"><?php _e('For rent','realestate'); ?></div>
+                                    <div class="type"><?php echo osc_item_category(); ?></div>
                                     <?php if( osc_price_enabled_at_items() ) { ?><div class="price"><?php echo osc_item_formated_price() ; ?></div> <?php } ?>
                                     </a>
                                 </div>

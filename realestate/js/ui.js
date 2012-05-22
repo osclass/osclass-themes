@@ -92,7 +92,6 @@ $(function() {
         e.stopPropagation();
         $('.ui-selectmenu-show').removeClass('ui-selectmenu-show');
     });
-
 });
 
 function selectUi(thatSelect){
