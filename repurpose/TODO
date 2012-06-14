@@ -1,0 +1,15 @@
+- item.php {
+    - reCaptcha (issues because we have multiple forms)
+    - mark as
+}
+
+- search.php {
+    - improve filters
+}
+- search_gallery.php {
+    - missing
+}
+
+- item-edit.php, item-post.php {
+    - js validation
+}
