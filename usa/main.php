@@ -23,8 +23,18 @@
 <html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="<?php echo str_replace('_', '-', osc_current_user_locale()); ?>">
     <head>
         <?php osc_current_web_theme_path('head.php') ; ?>
+        <script type="text/javascript" src="<?php echo osc_current_web_theme_js_url('jquery.maphilight.min.js') ; ?>"></script>
         <meta name="robots" content="index, follow" />
         <meta name="googlebot" content="index, follow" />
+        <style>
+        #main-map canvas{
+            margin-top:2px;
+            margin-left:2px;
+        }
+        #sidebar .navigation{
+            height:420px;
+        }
+        </style>
     </head>
     <body>
         <?php osc_current_web_theme_path('header.php') ; ?>
@@ -134,5 +144,8 @@
             </div>
         </div>
         <?php osc_current_web_theme_path('footer.php') ; ?>
+        <script type="text/javascript">$(function() {
+            $('img[usemap]').maphilight({strokeColor:'de9200',strokeWidth:2,fillColor:'ffa800',fillOpacity:0.8});
+        });</script>
     </body>
 </html>
