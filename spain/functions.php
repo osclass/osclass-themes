@@ -19,7 +19,7 @@
      * License along with this program.  If not, see <http://www.gnu.org/licenses/>.
      */
 
-    define('MODERN_THEME_VERSION', '3.0');
+    define('spain_THEME_VERSION', '3.0');
 
     if( !OC_ADMIN ) {
         if( !function_exists('add_close_button_action') ) {
@@ -33,44 +33,55 @@
             osc_add_hook('footer', 'add_close_button_action') ;
         }
     }
-
-    function theme_modern_actions_admin() {
+    function theme_spain_regions_map_admin() {
+        $regions = unserialize(osc_get_preference('region_maps','spain_theme'));
+        switch( Params::getParam('action_specific') ) {
+            case('edit_region_map'):
+                $regions[Params::getParam('target-id')] = Params::getParam('region');
+                osc_set_preference('region_maps', serialize($regions), 'spain_theme');
+                osc_add_flash_ok_message(__('Region saved correctly', 'spain'), 'admin');
+                header('Location: ' . osc_admin_render_theme_url('oc-content/themes/spain/admin/settings.php')); exit;
+            break;
+        }
+    }
+    function theme_spain_actions_admin() {
         switch( Params::getParam('action_specific') ) {
             case('settings'):
                 $footerLink = Params::getParam('footer_link');
-                osc_set_preference('keyword_placeholder', Params::getParam('keyword_placeholder'), 'modern_theme');
-                osc_set_preference('footer_link', ($footerLink ? '1' : '0'), 'modern_theme');
+                osc_set_preference('keyword_placeholder', Params::getParam('keyword_placeholder'), 'spain_theme');
+                osc_set_preference('footer_link', ($footerLink ? '1' : '0'), 'spain_theme');
 
-                osc_add_flash_ok_message(__('Theme settings updated correctly', 'modern'), 'admin');
-                header('Location: ' . osc_admin_render_theme_url('oc-content/themes/modern/admin/settings.php')); exit;
+                osc_add_flash_ok_message(__('Theme settings updated correctly', 'spain'), 'admin');
+                header('Location: ' . osc_admin_render_theme_url('oc-content/themes/spain/admin/settings.php')); exit;
             break;
             case('upload_logo'):
                 $package = Params::getFiles('logo');
                 if( $package['error'] == UPLOAD_ERR_OK ) {
                     if( move_uploaded_file($package['tmp_name'], WebThemes::newInstance()->getCurrentThemePath() . "images/logo.jpg" ) ) {
-                        osc_add_flash_ok_message(__('The logo image has been uploaded correctly', 'modern'), 'admin');
+                        osc_add_flash_ok_message(__('The logo image has been uploaded correctly', 'spain'), 'admin');
                     } else {
-                        osc_add_flash_error_message(__("An error has occurred, please try again", 'modern'), 'admin');
+                        osc_add_flash_error_message(__("An error has occurred, please try again", 'spain'), 'admin');
                     }
                 } else {
-                    osc_add_flash_error_message(__("An error has occurred, please try again", 'modern'), 'admin');
+                    osc_add_flash_error_message(__("An error has occurred, please try again", 'spain'), 'admin');
                 }
-                header('Location: ' . osc_admin_render_theme_url('oc-content/themes/modern/admin/header.php')); exit;
+                header('Location: ' . osc_admin_render_theme_url('oc-content/themes/spain/admin/header.php')); exit;
             break;
             case('remove'):
                 if(file_exists( WebThemes::newInstance()->getCurrentThemePath() . "images/logo.jpg" ) ) {
                     @unlink( WebThemes::newInstance()->getCurrentThemePath() . "images/logo.jpg" );
-                    osc_add_flash_ok_message(__('The logo image has been removed', 'modern'), 'admin');
+                    osc_add_flash_ok_message(__('The logo image has been removed', 'spain'), 'admin');
                 } else {
-                    osc_add_flash_error_message(__("Image not found", 'modern'), 'admin');
+                    osc_add_flash_error_message(__("Image not found", 'spain'), 'admin');
                 }
-                header('Location: ' . osc_admin_render_theme_url('oc-content/themes/modern/admin/header.php')); exit;
+                header('Location: ' . osc_admin_render_theme_url('oc-content/themes/spain/admin/header.php')); exit;
             break;
         }
     }
-    osc_add_hook('init_admin', 'theme_modern_actions_admin');
-    osc_admin_menu_appearance(__('Header logo', 'modern'), osc_admin_render_theme_url('oc-content/themes/modern/admin/header.php'), 'header_modern');
-    osc_admin_menu_appearance(__('Theme settings', 'modern'), osc_admin_render_theme_url('oc-content/themes/modern/admin/settings.php'), 'settings_modern');
+    osc_add_hook('init_admin', 'theme_spain_actions_admin');
+    osc_add_hook('init_admin', 'theme_spain_regions_map_admin');
+    osc_admin_menu_appearance(__('Header logo', 'spain'), osc_admin_render_theme_url('oc-content/themes/spain/admin/header.php'), 'header_spain');
+    osc_admin_menu_appearance(__('Theme settings', 'spain'), osc_admin_render_theme_url('oc-content/themes/spain/admin/settings.php'), 'settings_spain');
 
     if( !function_exists('logo_header') ) {
         function logo_header() {
@@ -84,23 +95,23 @@
     }
 
     // install update options
-    if( !function_exists('modern_theme_install') ) {
-        function modern_theme_install() {
-            osc_set_preference('keyword_placeholder', __('ie. PHP Programmer', 'modern'), 'modern_theme');
-            osc_set_preference('version', MODERN_THEME_VERSION, 'modern_theme');
-            osc_set_preference('footer_link', true, 'modern_theme');
+    if( !function_exists('spain_theme_install') ) {
+        function spain_theme_install() {
+            osc_set_preference('keyword_placeholder', __('ie. PHP Programmer', 'spain'), 'spain_theme');
+            osc_set_preference('version', spain_THEME_VERSION, 'spain_theme');
+            osc_set_preference('footer_link', true, 'spain_theme');
         }
     }
 
-    if(!function_exists('check_install_modern_theme')) {
-        function check_install_modern_theme() {
-            $current_version = osc_get_preference('version', 'modern_theme');
+    if(!function_exists('check_install_spain_theme')) {
+        function check_install_spain_theme() {
+            $current_version = osc_get_preference('version', 'spain_theme');
             //check if current version is installed or need an update<
             if( !$current_version ) {
-                modern_theme_install();
+                spain_theme_install();
             }
         }
     }
-    check_install_modern_theme();
+    check_install_spain_theme();
 
 ?>

@@ -89,9 +89,9 @@
                     <?php } ?>
                </div>
                <div class="latest_ads">
-                    <h1><strong><?php _e('Latest Listings', 'modern') ; ?></strong></h1>
+                    <h1><strong><?php _e('Latest Listings', 'spain') ; ?></strong></h1>
                     <?php if( osc_count_latest_items() == 0) { ?>
-                        <p class="empty"><?php _e('No Latest Listings', 'modern') ; ?></p>
+                        <p class="empty"><?php _e('No Latest Listings', 'spain') ; ?></p>
                     <?php } else { ?>
                         <table border="0" cellspacing="0">
                              <tbody>
@@ -121,7 +121,7 @@
                         </table>
                         <?php if( osc_count_latest_items() == osc_max_latest_items() ) { ?>
                         <p class='pagination'><?php echo osc_search_pagination(); ?></p>
-                            <p class="see_more_link"><a href="<?php echo osc_search_show_all_url();?>"><strong><?php _e("See all offers", 'modern'); ?> &raquo;</strong></a></p>
+                            <p class="see_more_link"><a href="<?php echo osc_search_show_all_url();?>"><strong><?php _e("See all offers", 'spain'); ?> &raquo;</strong></a></p>
                         <?php } ?>
                     <?php View::newInstance()->_erase('items') ; } ?>
                 </div>
@@ -130,7 +130,7 @@
                 <div class="navigation">
                     <?php if(osc_count_list_regions() > 0 ) { ?>
                     <div class="box location">
-                        <h3><strong><?php _e("Location", 'modern') ; ?></strong></h3>
+                        <h3><strong><?php _e("Location", 'spain') ; ?></strong></h3>
                         <ul>
                         <?php while(osc_has_list_regions() ) { ?>
                             <li><a href="<?php echo osc_list_region_url() ; ?>"><?php echo osc_list_region_name() ; ?></a> <em>(<?php echo osc_list_region_items() ; ?>)</em></li>
@@ -144,6 +144,23 @@
         <?php osc_current_web_theme_path('footer.php') ; ?>
         <script type="text/javascript">$(function() {
             $('img[usemap]').maphilight({strokeColor:'de9200',strokeWidth:2,fillColor:'ffa800',fillOpacity:0.8});
-        });</script>
+        });
+        var linksRegions = new Array();
+        <?php
+        $regions = unserialize(osc_get_preference('region_maps','spain_theme'));
+        foreach($regions as $key => $value){
+            echo "linksRegions[$key] = '".osc_search_url( array( 'sRegion' => $value ) )."';\n";
+        }
+        ?>
+        $('area').each(function(){
+            $(this).click(function(){
+                var index = $('area').index($(this));
+                if(typeof linksRegions[index] != 'undefined'){
+                    window.location.href = linksRegions[index];
+                }
+                return false;
+            });
+        });
+        </script>
     </body>
 </html>
