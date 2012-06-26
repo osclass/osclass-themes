@@ -40,7 +40,7 @@
                 $regions[Params::getParam('target-id')] = Params::getParam('region');
                 osc_set_preference('region_maps', serialize($regions), 'spain_theme');
                 osc_add_flash_ok_message(__('Region saved correctly', 'spain'), 'admin');
-                header('Location: ' . osc_admin_render_theme_url('oc-content/themes/spain/admin/settings.php')); exit;
+                header('Location: ' . osc_admin_render_theme_url('oc-content/themes/spain/admin/map_settings.php')); exit;
             break;
         }
     }
@@ -82,6 +82,8 @@
     osc_add_hook('init_admin', 'theme_spain_regions_map_admin');
     osc_admin_menu_appearance(__('Header logo', 'spain'), osc_admin_render_theme_url('oc-content/themes/spain/admin/header.php'), 'header_spain');
     osc_admin_menu_appearance(__('Theme settings', 'spain'), osc_admin_render_theme_url('oc-content/themes/spain/admin/settings.php'), 'settings_spain');
+    osc_admin_menu_appearance(__('Map settings', 'spain'), osc_admin_render_theme_url('oc-content/themes/spain/admin/map_settings.php'), 'map_settings_spain');
+
 
     if( !function_exists('logo_header') ) {
         function logo_header() {
