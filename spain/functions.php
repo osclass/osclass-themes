@@ -19,7 +19,7 @@
      * License along with this program.  If not, see <http://www.gnu.org/licenses/>.
      */
 
-    define('spain_THEME_VERSION', '3.0');
+    define('SPAIN_THEME_VERSION', '1.0');
 
     if( !OC_ADMIN ) {
         if( !function_exists('add_close_button_action') ) {
@@ -33,6 +33,7 @@
             osc_add_hook('footer', 'add_close_button_action') ;
         }
     }
+
     function theme_spain_regions_map_admin() {
         $regions = json_decode(osc_get_preference('region_maps','spain_theme'),true);
         switch( Params::getParam('action_specific') ) {
@@ -44,6 +45,7 @@
             break;
         }
     }
+
     function map_region_url($region_id) {
         $regionData = Region::newInstance()->findByPrimaryKey($region_id);
         if ( osc_rewrite_enabled() ) {
@@ -57,6 +59,7 @@
             return osc_search_url( array( 'sRegion' => $regionData['s_name']) );
         }
     }
+
     function theme_spain_actions_admin() {
         switch( Params::getParam('action_specific') ) {
             case('settings'):
@@ -96,7 +99,6 @@
     osc_admin_menu_appearance(__('Header logo', 'spain'), osc_admin_render_theme_url('oc-content/themes/spain/admin/header.php'), 'header_spain');
     osc_admin_menu_appearance(__('Theme settings', 'spain'), osc_admin_render_theme_url('oc-content/themes/spain/admin/settings.php'), 'settings_spain');
     osc_admin_menu_appearance(__('Map settings', 'spain'), osc_admin_render_theme_url('oc-content/themes/spain/admin/map_settings.php'), 'map_settings_spain');
-
 
     if( !function_exists('logo_header') ) {
         function logo_header() {

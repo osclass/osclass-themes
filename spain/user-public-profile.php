@@ -61,17 +61,17 @@
             <div id="main">
                 <br />
                 <div id="description">
-                <h2><?php _e('Profile'); ?></h2>
+                <h2><?php _e('Profile', 'spain'); ?></h2>
                     <ul id="user_data">
-                        <li><?php _e('Full name'); ?>: <?php echo osc_user_name(); ?></li>
-                        <li><?php _e('Address'); ?>: <?php echo $address; ?></li>
-                        <li><?php _e('Location'); ?>: <?php echo $location; ?></li>
-                        <li><?php _e('Website'); ?>: <?php echo osc_user_website(); ?></li>
-                        <li><?php _e('User Description'); ?>: <?php echo osc_user_info(); ?></li>
+                        <li><?php _e('Full name', 'spain'); ?>: <?php echo osc_user_name(); ?></li>
+                        <li><?php _e('Address', 'spain'); ?>: <?php echo $address; ?></li>
+                        <li><?php _e('Location', 'spain'); ?>: <?php echo $location; ?></li>
+                        <li><?php _e('Website', 'spain'); ?>: <?php echo osc_user_website(); ?></li>
+                        <li><?php _e('User Description', 'spain'); ?>: <?php echo osc_user_info(); ?></li>
                     </ul>
                 </div>
                 <div id="description" class="latest_ads">
-                    <h2><?php _e('Latest listings'); ?></h2>
+                    <h2><?php _e('Latest listings', 'spain'); ?></h2>
                     <table border="0" cellspacing="0">
                         <tbody>
                             <?php $class = "even" ; ?>
