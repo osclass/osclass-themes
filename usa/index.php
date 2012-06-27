@@ -1,8 +1,8 @@
 <?php
 /*
-Theme Name: OSClass USA Modern Theme
+Theme Name: OSClass usa usa Theme
 Theme URI: http://www.osclass.org/
-Description: This is the OSClass USA modern theme
+Description: This is the OSClass usa usa theme
 Version: 1.0
 Author: OSClass team
 Author URI: http://www.osclass.org/
@@ -12,9 +12,9 @@ Theme update URI:
 
     function usa_theme_info() {
         return array(
-             'name'        => 'OSClass USA Modern Theme'
+             'name'        => 'OSClass usa usa Theme'
             ,'version'     => '1.0'
-            ,'description' => 'This is the OSClass USA modern theme'
+            ,'description' => 'This is the OSClass usa usa theme'
             ,'author_name' => 'OSClass Team'
             ,'author_url'  => 'http://osclass.org'
             ,'locations'   => array('header', 'footer')

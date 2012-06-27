@@ -30,7 +30,7 @@
         <?php osc_current_web_theme_path('header.php') ; ?>
         <div class="content user_forms">
             <div class="inner">
-                <h1><?php _e('Recover your password', 'modern') ; ?></h1>
+                <h1><?php _e('Recover your password', 'usa') ; ?></h1>
                 <form action="<?php echo osc_base_url(true) ; ?>" method="post" >
                     <input type="hidden" name="page" value="login" />
                     <input type="hidden" name="action" value="forgot_post" />
@@ -38,14 +38,14 @@
                     <input type="hidden" name="code" value="<?php echo osc_esc_html(Params::getParam('code')); ?>" />
                     <fieldset>
                         <p>
-                            <label for="new_email"><?php _e('New pasword', 'modern') ; ?></label><br />
+                            <label for="new_email"><?php _e('New pasword', 'usa') ; ?></label><br />
                             <input type="password" name="new_password" value="" />
                         </p>
                         <p>
-                            <label for="new_email"><?php _e('Repeat new pasword', 'modern') ; ?></label><br />
+                            <label for="new_email"><?php _e('Repeat new pasword', 'usa') ; ?></label><br />
                             <input type="password" name="new_password2" value="" />
                         </p>
-                        <button type="submit"><?php _e('Change password', 'modern') ; ?></button>
+                        <button type="submit"><?php _e('Change password', 'usa') ; ?></button>
                     </fieldset>
                 </form>
             </div>

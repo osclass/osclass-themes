@@ -7,12 +7,12 @@
     <?php if(file_exists( WebThemes::newInstance()->getCurrentThemePath() . "images/logo.jpg" ) ) { ?>
         <h3 class="render-title"><?php _e('Preview') ?></h3>
         <img border="0" alt="<?php echo osc_esc_html( osc_page_title() ); ?>" src="<?php echo osc_current_web_theme_url('images/logo.jpg');?>" />
-        <form action="<?php echo osc_admin_render_theme_url('oc-content/themes/modern/admin/header.php');?>" method="post" enctype="multipart/form-data">
+        <form action="<?php echo osc_admin_render_theme_url('oc-content/themes/usa/admin/header.php');?>" method="post" enctype="multipart/form-data">
             <input type="hidden" name="action_specific" value="remove" />
             <fieldset>
                 <div class="form-horizontal">
                     <div class="form-actions">
-                        <input id="button_remove" type="submit" value="<?php echo osc_esc_html(__('Remove logo','modern')); ?>" class="btn btn-red">
+                        <input id="button_remove" type="submit" value="<?php echo osc_esc_html(__('Remove logo','usa')); ?>" class="btn btn-red">
                     </div>
                 </div>
             </fieldset>
@@ -20,28 +20,28 @@
     </p>
     <?php } else { ?>
         <div class="flashmessage flashmessage-warning flashmessage-inline" style="display: block;">
-            <p><?php _e("There isn't any logo uploaded yet", 'modern'); ?></p>
+            <p><?php _e("There isn't any logo uploaded yet", 'usa'); ?></p>
         </div>
     <?php } ?>
     <h2 class="render-title separate-top"><?php _e('Upload logo') ?></h2>
     <p>
-        <?php _e('The preferred size of the logo is 600x100.', 'modern'); ?>
+        <?php _e('The preferred size of the logo is 600x100.', 'usa'); ?>
         <?php if( file_exists( WebThemes::newInstance()->getCurrentThemePath() . "images/logo.jpg" ) ) { ?>
-        <?php _e('<strong>Note:</strong> Uploading another logo will overwrite the current logo.', 'modern'); ?>
+        <?php _e('<strong>Note:</strong> Uploading another logo will overwrite the current logo.', 'usa'); ?>
         <?php } ?>
     </p>
-    <form action="<?php echo osc_admin_render_theme_url('oc-content/themes/modern/admin/header.php'); ?>" method="post" enctype="multipart/form-data">
+    <form action="<?php echo osc_admin_render_theme_url('oc-content/themes/usa/admin/header.php'); ?>" method="post" enctype="multipart/form-data">
         <input type="hidden" name="action_specific" value="upload_logo" />
         <fieldset>
             <div class="form-horizontal">
                 <div class="form-row">
-                    <div class="form-label"><?php _e('Logo image (png,gif,jpg)','modern'); ?></div>
+                    <div class="form-label"><?php _e('Logo image (png,gif,jpg)','usa'); ?></div>
                     <div class="form-controls">
                         <input type="file" name="logo" id="package" />
                     </div>
                 </div>
                 <div class="form-actions">
-                    <input id="button_save" type="submit" value="<?php echo osc_esc_html(__('Upload','modern')); ?>" class="btn btn-submit">
+                    <input id="button_save" type="submit" value="<?php echo osc_esc_html(__('Upload','usa')); ?>" class="btn btn-submit">
                 </div>
             </div>
         </fieldset>
@@ -50,14 +50,14 @@
     <div class="flashmessage flashmessage-error" style="display: block;">
         <p>
             <?php
-                $msg  = sprintf(__('The images folder <strong>%s</strong> is not writable on your server', 'modern'), WebThemes::newInstance()->getCurrentThemePath() ."images/" ) .", ";
-                $msg .= __("OSClass can't upload logo image from the administration panel.", 'modern') . ' ';
-                $msg .= __('Please make the mentioned image folder writable.', 'modern') . ' ';
+                $msg  = sprintf(__('The images folder <strong>%s</strong> is not writable on your server', 'usa'), WebThemes::newInstance()->getCurrentThemePath() ."images/" ) .", ";
+                $msg .= __("OSClass can't upload logo image from the administration panel.", 'usa') . ' ';
+                $msg .= __('Please make the mentioned image folder writable.', 'usa') . ' ';
                 echo $msg;
             ?>
         </p>
         <p>
-            <?php _e('To make a directory writable under UNIX execute this command from the shell:','modern'); ?>
+            <?php _e('To make a directory writable under UNIX execute this command from the shell:','usa'); ?>
         </p>
         <p class="command">
             chmod a+w <?php echo WebThemes::newInstance()->getCurrentThemePath() ."images/" ; ?>

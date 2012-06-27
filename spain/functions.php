@@ -44,6 +44,19 @@
             break;
         }
     }
+    function map_region_url($region_id) {
+        $regionData = Region::newInstance()->findByPrimaryKey($region_id);
+        if ( osc_rewrite_enabled() ) {
+            $url = osc_base_url();
+            if( osc_get_preference('seo_url_search_prefix') != '' ) {
+                $url .= osc_get_preference('seo_url_search_prefix') . '/';
+            }
+            $url .= osc_sanitizeString($regionData['s_name']) . '-r' . $regionData['pk_i_id'];
+            return $url;
+        } else {
+            return osc_search_url( array( 'sRegion' => $regionData['s_name']) );
+        }
+    }
     function theme_spain_actions_admin() {
         switch( Params::getParam('action_specific') ) {
             case('settings'):

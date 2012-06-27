@@ -36,8 +36,8 @@
 <link href="<?php echo osc_current_web_theme_url('tabs.css') ; ?>" rel="stylesheet" type="text/css" />
 
 <script type="text/javascript">
-    var fileDefaultText = '<?php echo osc_esc_js( __('No file selected', 'modern') ) ; ?>';
-    var fileBtnText     = '<?php echo osc_esc_js( __('Choose File', 'modern') ) ; ?>';
+    var fileDefaultText = '<?php echo osc_esc_js( __('No file selected', 'brasil') ) ; ?>';
+    var fileBtnText     = '<?php echo osc_esc_js( __('Choose File', 'brasil') ) ; ?>';
 </script>
 <script type="text/javascript" src="<?php echo osc_current_web_theme_js_url('jquery.js') ; ?>"></script>
 <script type="text/javascript" src="<?php echo osc_current_web_theme_js_url('jquery-ui.js') ; ?>"></script>

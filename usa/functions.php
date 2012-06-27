@@ -19,7 +19,7 @@
      * License along with this program.  If not, see <http://www.gnu.org/licenses/>.
      */
 
-    define('MODERN_THEME_VERSION', '3.0');
+    define('usa_THEME_VERSION', '3.0');
 
     if( !OC_ADMIN ) {
         if( !function_exists('add_close_button_action') ) {
@@ -33,44 +33,70 @@
             osc_add_hook('footer', 'add_close_button_action') ;
         }
     }
-
-    function theme_modern_actions_admin() {
+    function theme_usa_regions_map_admin() {
+        $regions = unserialize(osc_get_preference('region_maps','usa_theme'));
+        switch( Params::getParam('action_specific') ) {
+            case('edit_region_map'):
+                $regions[Params::getParam('target-id')] = Params::getParam('region');
+                osc_set_preference('region_maps', serialize($regions), 'usa_theme');
+                osc_add_flash_ok_message(__('Region saved correctly', 'usa'), 'admin');
+                header('Location: ' . osc_admin_render_theme_url('oc-content/themes/usa/admin/map_settings.php')); exit;
+            break;
+        }
+    }
+    function map_region_url($region_id) {
+        $regionData = Region::newInstance()->findByPrimaryKey($region_id);
+        if ( osc_rewrite_enabled() ) {
+            $url = osc_base_url();
+            if( osc_get_preference('seo_url_search_prefix') != '' ) {
+                $url .= osc_get_preference('seo_url_search_prefix') . '/';
+            }
+            $url .= osc_sanitizeString($regionData['s_name']) . '-r' . $regionData['pk_i_id'];
+            return $url;
+        } else {
+            return osc_search_url( array( 'sRegion' => $regionData['s_name']) );
+        }
+    }
+    function theme_usa_actions_admin() {
         switch( Params::getParam('action_specific') ) {
             case('settings'):
                 $footerLink = Params::getParam('footer_link');
-                osc_set_preference('keyword_placeholder', Params::getParam('keyword_placeholder'), 'modern_theme');
-                osc_set_preference('footer_link', ($footerLink ? '1' : '0'), 'modern_theme');
+                osc_set_preference('keyword_placeholder', Params::getParam('keyword_placeholder'), 'usa_theme');
+                osc_set_preference('footer_link', ($footerLink ? '1' : '0'), 'usa_theme');
 
-                osc_add_flash_ok_message(__('Theme settings updated correctly', 'modern'), 'admin');
-                header('Location: ' . osc_admin_render_theme_url('oc-content/themes/modern/admin/settings.php')); exit;
+                osc_add_flash_ok_message(__('Theme settings updated correctly', 'usa'), 'admin');
+                header('Location: ' . osc_admin_render_theme_url('oc-content/themes/usa/admin/settings.php')); exit;
             break;
             case('upload_logo'):
                 $package = Params::getFiles('logo');
                 if( $package['error'] == UPLOAD_ERR_OK ) {
                     if( move_uploaded_file($package['tmp_name'], WebThemes::newInstance()->getCurrentThemePath() . "images/logo.jpg" ) ) {
-                        osc_add_flash_ok_message(__('The logo image has been uploaded correctly', 'modern'), 'admin');
+                        osc_add_flash_ok_message(__('The logo image has been uploaded correctly', 'usa'), 'admin');
                     } else {
-                        osc_add_flash_error_message(__("An error has occurred, please try again", 'modern'), 'admin');
+                        osc_add_flash_error_message(__("An error has occurred, please try again", 'usa'), 'admin');
                     }
                 } else {
-                    osc_add_flash_error_message(__("An error has occurred, please try again", 'modern'), 'admin');
+                    osc_add_flash_error_message(__("An error has occurred, please try again", 'usa'), 'admin');
                 }
-                header('Location: ' . osc_admin_render_theme_url('oc-content/themes/modern/admin/header.php')); exit;
+                header('Location: ' . osc_admin_render_theme_url('oc-content/themes/usa/admin/header.php')); exit;
             break;
             case('remove'):
                 if(file_exists( WebThemes::newInstance()->getCurrentThemePath() . "images/logo.jpg" ) ) {
                     @unlink( WebThemes::newInstance()->getCurrentThemePath() . "images/logo.jpg" );
-                    osc_add_flash_ok_message(__('The logo image has been removed', 'modern'), 'admin');
+                    osc_add_flash_ok_message(__('The logo image has been removed', 'usa'), 'admin');
                 } else {
-                    osc_add_flash_error_message(__("Image not found", 'modern'), 'admin');
+                    osc_add_flash_error_message(__("Image not found", 'usa'), 'admin');
                 }
-                header('Location: ' . osc_admin_render_theme_url('oc-content/themes/modern/admin/header.php')); exit;
+                header('Location: ' . osc_admin_render_theme_url('oc-content/themes/usa/admin/header.php')); exit;
             break;
         }
     }
-    osc_add_hook('init_admin', 'theme_modern_actions_admin');
-    osc_admin_menu_appearance(__('Header logo', 'modern'), osc_admin_render_theme_url('oc-content/themes/modern/admin/header.php'), 'header_modern');
-    osc_admin_menu_appearance(__('Theme settings', 'modern'), osc_admin_render_theme_url('oc-content/themes/modern/admin/settings.php'), 'settings_modern');
+    osc_add_hook('init_admin', 'theme_usa_actions_admin');
+    osc_add_hook('init_admin', 'theme_usa_regions_map_admin');
+    osc_admin_menu_appearance(__('Header logo', 'usa'), osc_admin_render_theme_url('oc-content/themes/usa/admin/header.php'), 'header_usa');
+    osc_admin_menu_appearance(__('Theme settings', 'usa'), osc_admin_render_theme_url('oc-content/themes/usa/admin/settings.php'), 'settings_usa');
+    osc_admin_menu_appearance(__('Map settings', 'usa'), osc_admin_render_theme_url('oc-content/themes/usa/admin/map_settings.php'), 'map_settings_usa');
+
 
     if( !function_exists('logo_header') ) {
         function logo_header() {
@@ -84,23 +110,23 @@
     }
 
     // install update options
-    if( !function_exists('modern_theme_install') ) {
-        function modern_theme_install() {
-            osc_set_preference('keyword_placeholder', __('ie. PHP Programmer', 'modern'), 'modern_theme');
-            osc_set_preference('version', MODERN_THEME_VERSION, 'modern_theme');
-            osc_set_preference('footer_link', true, 'modern_theme');
+    if( !function_exists('usa_theme_install') ) {
+        function usa_theme_install() {
+            osc_set_preference('keyword_placeholder', __('ie. PHP Programmer', 'usa'), 'usa_theme');
+            osc_set_preference('version', usa_THEME_VERSION, 'usa_theme');
+            osc_set_preference('footer_link', true, 'usa_theme');
         }
     }
 
-    if(!function_exists('check_install_modern_theme')) {
-        function check_install_modern_theme() {
-            $current_version = osc_get_preference('version', 'modern_theme');
+    if(!function_exists('check_install_usa_theme')) {
+        function check_install_usa_theme() {
+            $current_version = osc_get_preference('version', 'usa_theme');
             //check if current version is installed or need an update<
             if( !$current_version ) {
-                modern_theme_install();
+                usa_theme_install();
             }
         }
     }
-    check_install_modern_theme();
+    check_install_usa_theme();
 
 ?>

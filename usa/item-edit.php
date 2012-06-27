@@ -92,7 +92,7 @@
     <body>
         <?php osc_current_web_theme_path('header.php') ; ?>
         <div class="content add_item">
-            <h1><strong><?php _e('Update your listing', 'modern'); ?></strong></h1>
+            <h1><strong><?php _e('Update your listing', 'usa'); ?></strong></h1>
             <ul id="error_list"></ul>
                 <form name="item" action="<?php echo osc_base_url(true)?>" method="post" enctype="multipart/form-data">
                 <fieldset>
@@ -101,17 +101,17 @@
                     <input type="hidden" name="id" value="<?php echo osc_item_id() ;?>" />
                     <input type="hidden" name="secret" value="<?php echo osc_item_secret() ;?>" />
                         <div class="box general_info">
-                            <h2><?php _e('General Information', 'modern'); ?></h2>
+                            <h2><?php _e('General Information', 'usa'); ?></h2>
                             <div class="row">
-                                <label><?php _e('Category', 'modern'); ?> *</label>
-                                <?php ItemForm::category_select(null, null, __('Select a category', 'modern')); ?>
+                                <label><?php _e('Category', 'usa'); ?> *</label>
+                                <?php ItemForm::category_select(null, null, __('Select a category', 'usa')); ?>
                             </div>
                             <div class="row">
                                 <?php ItemForm::multilanguage_title_description(osc_get_locales()); ?>
                             </div>
                             <?php if( osc_price_enabled_at_items() ) { ?>
                             <div class="row price">
-                                <label><?php _e('Price', 'modern'); ?></label>
+                                <label><?php _e('Price', 'usa'); ?></label>
                                 <?php ItemForm::price_input_text(); ?>
                                 <?php ItemForm::currency_select(); ?>
                             </div>
@@ -119,7 +119,7 @@
                         </div>
                         <?php if( osc_images_enabled_at_items() ) { ?>
                         <div class="box photos">
-                            <h2><?php _e('Photos', 'modern'); ?></h2>
+                            <h2><?php _e('Photos', 'usa'); ?></h2>
                             <?php ItemForm::photos(); ?>
                             <div id="photos">
                                 <?php if(osc_max_images_per_item()==0 || (osc_max_images_per_item()!=0 && osc_count_item_resources()<  osc_max_images_per_item())) { ?>
@@ -128,30 +128,30 @@
                                 </div>
                                 <?php }; ?>
                             </div>
-                            <a href="#" onclick="addNewPhoto(); uniform_input_file(); return false;"><?php _e('Add new photo', 'modern'); ?></a>
+                            <a href="#" onclick="addNewPhoto(); uniform_input_file(); return false;"><?php _e('Add new photo', 'usa'); ?></a>
                         </div>
                         <?php } ?>
 
                         <div class="box location">
-                            <h2><?php _e('Location', 'modern'); ?></h2>
+                            <h2><?php _e('Location', 'usa'); ?></h2>
                             <div class="row">
-                                <label><?php _e('Country', 'modern'); ?></label>
+                                <label><?php _e('Country', 'usa'); ?></label>
                                 <?php ItemForm::country_select() ; ?>
                             </div>
                             <div class="row">
-                                <label><?php _e('Region', 'modern'); ?></label>
+                                <label><?php _e('Region', 'usa'); ?></label>
                                 <?php ItemForm::region_text() ; ?>
                             </div>
                             <div class="row">
-                                <label><?php _e('City', 'modern'); ?></label>
+                                <label><?php _e('City', 'usa'); ?></label>
                                 <?php ItemForm::city_text() ; ?>
                             </div>
                             <div class="row">
-                                <label><?php _e('City area', 'modern'); ?></label>
+                                <label><?php _e('City area', 'usa'); ?></label>
                                 <?php ItemForm::city_area_text() ; ?>
                             </div>
                             <div class="row">
-                                <label><?php _e('Address', 'modern'); ?></label>
+                                <label><?php _e('Address', 'usa'); ?></label>
                                 <?php ItemForm::address_text() ; ?>
                             </div>
                         </div>
@@ -163,8 +163,8 @@
                             </div>
                         </div>
                         <?php }?>
-                    <button class="itemFormButton" type="submit"><?php _e('Update', 'modern'); ?></button>
-                    <a href="javascript:history.back(-1)" class="go_back"><?php _e('Cancel', 'modern'); ?></a>
+                    <button class="itemFormButton" type="submit"><?php _e('Update', 'usa'); ?></button>
+                    <a href="javascript:history.back(-1)" class="go_back"><?php _e('Cancel', 'usa'); ?></a>
                 </fieldset>
             </form>
         </div>

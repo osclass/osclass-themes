@@ -163,7 +163,7 @@ ul.breadcrumb li { float: left; padding: 0 2px; }
 .home .publish_box .button_link a { background:url(images/button_link_icon.gif) no-repeat 0 2px; color:#FFF; float:left; padding-left:15px; text-decoration:none; }
 .home .publish_box.candidates { background:#f8f8ea; border-color:#c7c13e; }
 .home .publish_box.candidates .button_link { background:#808b05 url(images/button_link_green_bg.gif) repeat-x top; border-color:#6f6e00; }
-.home .navigation { background:#e9f5f9; border: 1px solid #bed7df; border-top:none; clear:both; margin-bottom:15px; padding:15px 10px; width:218px; height:530px;-moz-border-radius-bottomright: 15px; border-bottom-right-radius: 15px; }
+.home .navigation { background:#e9f5f9; border: 1px solid #bed7df; border-top:none; clear:both; margin-bottom:15px; padding:15px 10px; width:218px; -moz-border-radius-bottomright: 15px; border-bottom-right-radius: 15px; }
 .home .navigation h3 { background:#94cee4; color:#FFF; margin-bottom:10px; padding:7px 10px; -moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px; }
 .home .navigation h3 strong { font-weight:normal; }
 .home .navigation ul { font-size:11px; margin-bottom:15px; }

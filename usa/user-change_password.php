@@ -30,31 +30,31 @@
         <?php osc_current_web_theme_path('header.php') ; ?>
         <div class="content user_account">
             <h1>
-                <strong><?php _e('User account manager', 'modern') ; ?></strong>
+                <strong><?php _e('User account manager', 'usa') ; ?></strong>
             </h1>
             <div id="sidebar">
                 <?php echo osc_private_user_menu() ; ?>
             </div>
             <div id="main" class="modify_profile">
-                <h2><?php _e('Change your password', 'modern') ; ?></h2>
+                <h2><?php _e('Change your password', 'usa') ; ?></h2>
                 <form action="<?php echo osc_base_url(true) ; ?>" method="post">
                     <input type="hidden" name="page" value="user" />
                     <input type="hidden" name="action" value="change_password_post" />
                     <fieldset>
                         <p>
-                            <label for="password"><?php _e('Current password', 'modern') ; ?> *</label>
+                            <label for="password"><?php _e('Current password', 'usa') ; ?> *</label>
                             <input type="password" name="password" id="password" value="" />
                         </p>
                         <p>
-                            <label for="new_password"><?php _e('New password', 'modern') ; ?> *</label>
+                            <label for="new_password"><?php _e('New password', 'usa') ; ?> *</label>
                             <input type="password" name="new_password" id="new_password" value="" />
                         </p>
                         <p>
-                            <label for="new_password2"><?php _e('Repeat new password', 'modern') ; ?> *</label>
+                            <label for="new_password2"><?php _e('Repeat new password', 'usa') ; ?> *</label>
                             <input type="password" name="new_password2" id="new_password2" value="" />
                         </p>
                         <div style="clear:both;"></div>
-                        <button type="submit"><?php _e('Update', 'modern') ; ?></button>
+                        <button type="submit"><?php _e('Update', 'usa') ; ?></button>
                     </fieldset>
                 </form>
             </div>

@@ -30,7 +30,7 @@
     <body>
         <?php osc_current_web_theme_path('header.php') ; ?>
         <div class="content error">
-            <h1><?php _e('Page not found', 'modern') ; ?></h1>
+            <h1><?php _e('Page not found', 'brasil') ; ?></h1>
         </div>
         <?php osc_current_web_theme_path('footer.php') ; ?>
     </body>

@@ -31,29 +31,29 @@
             <?php if(osc_users_enabled()) { ?>
                 <?php if( osc_is_web_user_logged_in() ) { ?>
                     <li class="first logged">
-                        <?php echo sprintf(__('Hi %s', 'modern'), osc_logged_user_name() . '!'); ?>  &middot;
-                        <strong><a href="<?php echo osc_user_dashboard_url() ; ?>"><?php _e('My account', 'modern') ; ?></a></strong> &middot;
-                        <a href="<?php echo osc_user_logout_url() ; ?>"><?php _e('Logout', 'modern') ; ?></a>
+                        <?php echo sprintf(__('Hi %s', 'usa'), osc_logged_user_name() . '!'); ?>  &middot;
+                        <strong><a href="<?php echo osc_user_dashboard_url() ; ?>"><?php _e('My account', 'usa') ; ?></a></strong> &middot;
+                        <a href="<?php echo osc_user_logout_url() ; ?>"><?php _e('Logout', 'usa') ; ?></a>
                     </li>
                 <?php } else { ?>
                     <li class="first">
-                        <a id="login_open" href="<?php echo osc_user_login_url(); ?>"><?php _e('Login', 'modern') ; ?></a>
+                        <a id="login_open" href="<?php echo osc_user_login_url(); ?>"><?php _e('Login', 'usa') ; ?></a>
                         <?php if(osc_user_registration_enabled()) { ?>
                             &middot;
-                            <a href="<?php echo osc_register_account_url() ; ?>"><?php _e('Register for a free account', 'modern'); ?></a>
+                            <a href="<?php echo osc_register_account_url() ; ?>"><?php _e('Register for a free account', 'usa'); ?></a>
                         <?php }; ?>
                         <form id="login" action="<?php echo osc_base_url(true) ; ?>" method="post">
                             <fieldset>
                                 <input type="hidden" name="page" value="login" />
                                 <input type="hidden" name="action" value="login_post" />
-                                <label for="email"><?php _e('E-mail', 'modern') ; ?></label><br/>
+                                <label for="email"><?php _e('E-mail', 'usa') ; ?></label><br/>
                                 <?php UserForm::email_login_text() ; ?><br/>
-                                <label for="password"><?php _e('Password', 'modern') ; ?></label><br/>
+                                <label for="password"><?php _e('Password', 'usa') ; ?></label><br/>
                                 <?php UserForm::password_login_text() ; ?>
-                                <p class="checkbox"><?php UserForm::rememberme_login_checkbox();?> <label for="rememberMe"><?php _e('Remember me', 'modern') ; ?></label></p>
-                                <button type="submit"><?php _e('Log in', 'modern') ; ?></button>
+                                <p class="checkbox"><?php UserForm::rememberme_login_checkbox();?> <label for="rememberMe"><?php _e('Remember me', 'usa') ; ?></label></p>
+                                <button type="submit"><?php _e('Log in', 'usa') ; ?></button>
                                 <div class="forgot">
-                                    <a href="<?php echo osc_recover_user_password_url() ; ?>"><?php _e("Forgot password?", 'modern');?></a>
+                                    <a href="<?php echo osc_recover_user_password_url() ; ?>"><?php _e("Forgot password?", 'usa');?></a>
                                 </div>
                             </fieldset>
                         </form>
@@ -63,7 +63,7 @@
             <?php if ( osc_count_web_enabled_locales() > 1) { ?>
                 <?php osc_goto_first_locale() ; ?>
                 <li class="last with_sub">
-                    <strong><?php _e("Language", 'modern') ; ?></strong>
+                    <strong><?php _e("Language", 'usa') ; ?></strong>
                     <ul>
                         <?php $i = 0 ;  ?>
                         <?php while ( osc_has_web_enabled_locales() ) { ?>
@@ -76,7 +76,7 @@
         </ul>
         <?php if( osc_users_enabled() || ( !osc_users_enabled() && !osc_reg_user_post() )) { ?>
             <div id="form_publish">
-                <strong class="publish_button"><a href="<?php echo osc_item_post_url_in_category() ; ?>"><?php _e("Publish your ad for free", 'modern');?></a></strong>
+                <strong class="publish_button"><a href="<?php echo osc_item_post_url_in_category() ; ?>"><?php _e("Publish your ad for free", 'usa');?></a></strong>
             </div>
         <?php } ?>
         <div class="empty"></div>

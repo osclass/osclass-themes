@@ -55,7 +55,7 @@
         <div class="content item user_public_profile">
             <div id="item_head">
                 <div class="inner">
-                    <h1><?php echo sprintf(__('%s\'s profile', 'modern'), osc_user_name()); ?></h1>
+                    <h1><?php echo sprintf(__('%s\'s profile', 'usa'), osc_user_name()); ?></h1>
                 </div>
             </div>
             <div id="main">
@@ -109,7 +109,7 @@
                 <?php if(osc_logged_user_id()!=  osc_user_id()) { ?>
                 <?php     if(osc_reg_user_can_contact() && osc_is_web_user_logged_in() || !osc_reg_user_can_contact() ) { ?>
                 <div id="contact">
-                    <h2><?php _e("Contact publisher", 'modern') ; ?></h2>
+                    <h2><?php _e("Contact publisher", 'usa') ; ?></h2>
                     <ul id="error_list"></ul>
                     <?php ContactForm::js_validation(); ?>
                     <form action="<?php echo osc_base_url(true) ; ?>" method="post" name="contact_form" id="contact_form">
@@ -118,10 +118,10 @@
                         <input type="hidden" name="id" value="<?php echo osc_user_id();?>" />
                         <?php osc_prepare_user_info() ; ?>
                         <fieldset>
-                            <label for="yourName"><?php _e('Your name', 'modern') ; ?>:</label> <?php ContactForm::your_name(); ?>
-                            <label for="yourEmail"><?php _e('Your e-mail address', 'modern') ; ?>:</label> <?php ContactForm::your_email(); ?>
-                            <label for="phoneNumber"><?php _e('Phone number', 'modern') ; ?> (<?php _e('optional', 'modern'); ?>):</label> <?php ContactForm::your_phone_number(); ?>
-                            <label for="message"><?php _e('Message', 'modern') ; ?>:</label> <?php ContactForm::your_message(); ?>
+                            <label for="yourName"><?php _e('Your name', 'usa') ; ?>:</label> <?php ContactForm::your_name(); ?>
+                            <label for="yourEmail"><?php _e('Your e-mail address', 'usa') ; ?>:</label> <?php ContactForm::your_email(); ?>
+                            <label for="phoneNumber"><?php _e('Phone number', 'usa') ; ?> (<?php _e('optional', 'usa'); ?>):</label> <?php ContactForm::your_phone_number(); ?>
+                            <label for="message"><?php _e('Message', 'usa') ; ?>:</label> <?php ContactForm::your_message(); ?>
                             <?php if( osc_recaptcha_public_key() ) { ?>
                             <script type="text/javascript">
                                 var RecaptchaOptions = {
@@ -132,13 +132,13 @@
                             <style type="text/css"> div#recaptcha_widget, div#recaptcha_image > img { width:280px; } </style>
                             <div id="recaptcha_widget">
                                 <div id="recaptcha_image"><img /></div>
-                                <span class="recaptcha_only_if_image"><?php _e('Enter the words above','modern'); ?>:</span>
+                                <span class="recaptcha_only_if_image"><?php _e('Enter the words above','usa'); ?>:</span>
                                 <input type="text" id="recaptcha_response_field" name="recaptcha_response_field" />
-                                <div><a href="javascript:Recaptcha.showhelp()"><?php _e('Help', 'modern'); ?></a></div>
+                                <div><a href="javascript:Recaptcha.showhelp()"><?php _e('Help', 'usa'); ?></a></div>
                             </div>
                             <?php } ?>
                             <?php osc_show_recaptcha(); ?>
-                            <button type="submit"><?php _e('Send', 'modern') ; ?></button>
+                            <button type="submit"><?php _e('Send', 'usa') ; ?></button>
                         </fieldset>
                     </form>
                 </div>

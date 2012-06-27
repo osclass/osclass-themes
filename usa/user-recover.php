@@ -30,14 +30,14 @@
         <?php osc_current_web_theme_path('header.php') ; ?>
         <div class="content user_forms">
             <div class="inner">
-                <h1><?php _e('Recover your password', 'modern') ; ?></h1>
+                <h1><?php _e('Recover your password', 'usa') ; ?></h1>
                 <form action="<?php echo osc_base_url(true) ; ?>" method="post" >
                     <input type="hidden" name="page" value="login" />
                     <input type="hidden" name="action" value="recover_post" />
                     <fieldset>
-                        <label for="email"><?php _e('E-mail', 'modern') ; ?></label> <?php UserForm::email_text() ; ?><br />
+                        <label for="email"><?php _e('E-mail', 'usa') ; ?></label> <?php UserForm::email_text() ; ?><br />
                         <?php osc_show_recaptcha('recover_password'); ?>
-                        <button type="submit"><?php _e('Send me a new password', 'modern') ; ?></button>
+                        <button type="submit"><?php _e('Send me a new password', 'usa') ; ?></button>
                     </fieldset>
                 </form>
             </div>
