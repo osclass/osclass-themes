@@ -1,10 +1,10 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: spain theme 2.4\n"
+"Project-Id-Version: spain theme 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-06-27 12:40+0100\n"
+"POT-Creation-Date: 2012-06-27 17:08+0100\n"
 "PO-Revision-Date: \n"
-"Last-Translator: OSClass <info@osclass.org>\n"
+"Last-Translator: Juan Ramón <juanramon@osclass.org>\n"
 "Language-Team: OSClass <info@osclass.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -15,805 +15,810 @@ msgstr ""
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=n !=1;\n"
 "X-Poedit-Country: UNITED STATES\n"
-"X-Poedit-SearchPath-0: /Users/feralou/git/public/osclass-themes/spain\n"
+"X-Poedit-SearchPath-0: /var/www/osclass-themes-git/spain\n"
 
-#: /Users/feralou/git/public/osclass-themes/spain/404.php:33
+#: /var/www/osclass-themes-git/spain/404.php:33
 msgid "Page not found"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/alert-form.php:6
+#: /var/www/osclass-themes-git/spain/alert-form.php:6
 msgid "You have sucessfully subscribed to the alert"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/alert-form.php:7
+#: /var/www/osclass-themes-git/spain/alert-form.php:7
 msgid "Invalid email address"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/alert-form.php:8
+#: /var/www/osclass-themes-git/spain/alert-form.php:8
 msgid "There was a problem with the alert"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/alert-form.php:39
+#: /var/www/osclass-themes-git/spain/alert-form.php:39
 msgid "Subscribe to this search"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/alert-form.php:55
+#: /var/www/osclass-themes-git/spain/alert-form.php:55
 msgid "Subscribe now"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/contact.php:34
+#: /var/www/osclass-themes-git/spain/contact.php:34
 msgid "Contact us"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/contact.php:40
+#: /var/www/osclass-themes-git/spain/contact.php:40
 msgid "Subject"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/contact.php:40
-#: /Users/feralou/git/public/osclass-themes/spain/contact.php:42
-#: /Users/feralou/git/public/osclass-themes/spain/item-contact.php:51
-#: /Users/feralou/git/public/osclass-themes/spain/item.php:218
+#: /var/www/osclass-themes-git/spain/contact.php:40
+#: /var/www/osclass-themes-git/spain/contact.php:42
+#: /var/www/osclass-themes-git/spain/item-contact.php:51
+#: /var/www/osclass-themes-git/spain/item.php:218
 msgid "optional"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/contact.php:41
-#: /Users/feralou/git/public/osclass-themes/spain/item-contact.php:52
-#: /Users/feralou/git/public/osclass-themes/spain/item-send-friend.php:51
-#: /Users/feralou/git/public/osclass-themes/spain/item.php:219
+#: /var/www/osclass-themes-git/spain/contact.php:41
+#: /var/www/osclass-themes-git/spain/item-contact.php:52
+#: /var/www/osclass-themes-git/spain/item-send-friend.php:51
+#: /var/www/osclass-themes-git/spain/item.php:219
 msgid "Message"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/contact.php:42
-#: /Users/feralou/git/public/osclass-themes/spain/item-contact.php:48
-#: /Users/feralou/git/public/osclass-themes/spain/item-send-friend.php:46
-#: /Users/feralou/git/public/osclass-themes/spain/item.php:153
-#: /Users/feralou/git/public/osclass-themes/spain/item.php:216
+#: /var/www/osclass-themes-git/spain/contact.php:42
+#: /var/www/osclass-themes-git/spain/item-contact.php:48
+#: /var/www/osclass-themes-git/spain/item-send-friend.php:46
+#: /var/www/osclass-themes-git/spain/item.php:153
+#: /var/www/osclass-themes-git/spain/item.php:216
 msgid "Your name"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/contact.php:43
-#: /Users/feralou/git/public/osclass-themes/spain/item-contact.php:49
-#: /Users/feralou/git/public/osclass-themes/spain/item-send-friend.php:47
-#: /Users/feralou/git/public/osclass-themes/spain/item.php:217
+#: /var/www/osclass-themes-git/spain/contact.php:43
+#: /var/www/osclass-themes-git/spain/item-contact.php:49
+#: /var/www/osclass-themes-git/spain/item-send-friend.php:47
+#: /var/www/osclass-themes-git/spain/item.php:217
 msgid "Your e-mail address"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/contact.php:45
-#: /Users/feralou/git/public/osclass-themes/spain/item-send-friend.php:54
-#: /Users/feralou/git/public/osclass-themes/spain/item.php:158
-#: /Users/feralou/git/public/osclass-themes/spain/item.php:239
+#: /var/www/osclass-themes-git/spain/contact.php:45
+#: /var/www/osclass-themes-git/spain/item-send-friend.php:54
+#: /var/www/osclass-themes-git/spain/item.php:158
+#: /var/www/osclass-themes-git/spain/item.php:239
 msgid "Send"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/footer.php:28
+#: /var/www/osclass-themes-git/spain/footer.php:28
 msgid "Contact"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/footer.php:35
+#: /var/www/osclass-themes-git/spain/footer.php:35
 msgid "This website is proudly using the <a title=\"OSClass web\" href=\"http://osclass.org/\">classifieds scripts</a> software <strong>OSClass</strong>"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/footer.php:48
+#: /var/www/osclass-themes-git/spain/footer.php:48
 msgid "Your search must be at least three characters long"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/functions.php:42
+#: /var/www/osclass-themes-git/spain/functions.php:43
 msgid "Region saved correctly"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/functions.php:67
+#: /var/www/osclass-themes-git/spain/functions.php:70
 msgid "Theme settings updated correctly"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/functions.php:74
+#: /var/www/osclass-themes-git/spain/functions.php:77
 msgid "The logo image has been uploaded correctly"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/functions.php:76
-#: /Users/feralou/git/public/osclass-themes/spain/functions.php:79
+#: /var/www/osclass-themes-git/spain/functions.php:79
+#: /var/www/osclass-themes-git/spain/functions.php:82
 msgid "An error has occurred, please try again"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/functions.php:86
+#: /var/www/osclass-themes-git/spain/functions.php:89
 msgid "The logo image has been removed"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/functions.php:88
+#: /var/www/osclass-themes-git/spain/functions.php:91
 msgid "Image not found"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/functions.php:96
+#: /var/www/osclass-themes-git/spain/functions.php:99
 msgid "Header logo"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/functions.php:97
+#: /var/www/osclass-themes-git/spain/functions.php:100
 msgid "Theme settings"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/functions.php:98
+#: /var/www/osclass-themes-git/spain/functions.php:101
 msgid "Map settings"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/functions.php:115
+#: /var/www/osclass-themes-git/spain/functions.php:117
 msgid "ie. PHP Programmer"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/head.php:39
+#: /var/www/osclass-themes-git/spain/head.php:39
 msgid "No file selected"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/head.php:40
+#: /var/www/osclass-themes-git/spain/head.php:40
 msgid "Choose File"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/header.php:34
+#: /var/www/osclass-themes-git/spain/header.php:34
 #, php-format
 msgid "Hi %s"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/header.php:35
+#: /var/www/osclass-themes-git/spain/header.php:35
 msgid "My account"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/header.php:36
+#: /var/www/osclass-themes-git/spain/header.php:36
 msgid "Logout"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/header.php:40
-#: /Users/feralou/git/public/osclass-themes/spain/item.php:196
+#: /var/www/osclass-themes-git/spain/header.php:40
+#: /var/www/osclass-themes-git/spain/item.php:196
 msgid "Login"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/header.php:43
-#: /Users/feralou/git/public/osclass-themes/spain/item.php:197
+#: /var/www/osclass-themes-git/spain/header.php:43
+#: /var/www/osclass-themes-git/spain/item.php:197
 msgid "Register for a free account"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/header.php:49
-#: /Users/feralou/git/public/osclass-themes/spain/item-post.php:162
-#: /Users/feralou/git/public/osclass-themes/spain/item.php:206
+#: /var/www/osclass-themes-git/spain/header.php:49
+#: /var/www/osclass-themes-git/spain/item-post.php:162
+#: /var/www/osclass-themes-git/spain/item.php:206
 msgid "E-mail"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/header.php:51
+#: /var/www/osclass-themes-git/spain/header.php:51
 msgid "Password"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/header.php:53
+#: /var/www/osclass-themes-git/spain/header.php:53
 msgid "Remember me"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/header.php:54
+#: /var/www/osclass-themes-git/spain/header.php:54
 msgid "Log in"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/header.php:56
+#: /var/www/osclass-themes-git/spain/header.php:56
 msgid "Forgot password?"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/header.php:66
+#: /var/www/osclass-themes-git/spain/header.php:66
 msgid "Language"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/header.php:79
+#: /var/www/osclass-themes-git/spain/header.php:79
 msgid "Publish your ad for free"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/inc.search.php:54
-#: /Users/feralou/git/public/osclass-themes/spain/item-edit.php:107
-#: /Users/feralou/git/public/osclass-themes/spain/item-post.php:105
+#: /var/www/osclass-themes-git/spain/inc.search.php:54
+#: /var/www/osclass-themes-git/spain/item-edit.php:107
+#: /var/www/osclass-themes-git/spain/item-post.php:105
 msgid "Select a category"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/inc.search.php:56
+#: /var/www/osclass-themes-git/spain/inc.search.php:56
 msgid "Search"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/item-contact.php:34
-#: /Users/feralou/git/public/osclass-themes/spain/item.php:101
+#: /var/www/osclass-themes-git/spain/item-contact.php:34
+#: /var/www/osclass-themes-git/spain/item.php:101
 msgid "Contact seller"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/item-contact.php:42
+#: /var/www/osclass-themes-git/spain/item-contact.php:42
 msgid "To (seller)"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/item-contact.php:43
-#: /Users/feralou/git/public/osclass-themes/spain/item-send-friend.php:41
+#: /var/www/osclass-themes-git/spain/item-contact.php:43
+#: /var/www/osclass-themes-git/spain/item-send-friend.php:41
 msgid "Listing"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/item-contact.php:51
-#: /Users/feralou/git/public/osclass-themes/spain/item.php:218
+#: /var/www/osclass-themes-git/spain/item-contact.php:51
+#: /var/www/osclass-themes-git/spain/item.php:218
 msgid "Phone number"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/item-contact.php:54
+#: /var/www/osclass-themes-git/spain/item-contact.php:54
 msgid "Send message"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/item-edit.php:95
+#: /var/www/osclass-themes-git/spain/item-edit.php:95
 msgid "Update your listing"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/item-edit.php:104
-#: /Users/feralou/git/public/osclass-themes/spain/item-post.php:102
+#: /var/www/osclass-themes-git/spain/item-edit.php:104
+#: /var/www/osclass-themes-git/spain/item-post.php:102
 msgid "General Information"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/item-edit.php:106
-#: /Users/feralou/git/public/osclass-themes/spain/item-post.php:104
+#: /var/www/osclass-themes-git/spain/item-edit.php:106
+#: /var/www/osclass-themes-git/spain/item-post.php:104
 msgid "Category"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/item-edit.php:114
-#: /Users/feralou/git/public/osclass-themes/spain/item-post.php:113
+#: /var/www/osclass-themes-git/spain/item-edit.php:114
+#: /var/www/osclass-themes-git/spain/item-post.php:113
 msgid "Price"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/item-edit.php:122
-#: /Users/feralou/git/public/osclass-themes/spain/item-post.php:120
+#: /var/www/osclass-themes-git/spain/item-edit.php:122
+#: /var/www/osclass-themes-git/spain/item-post.php:120
 msgid "Photos"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/item-edit.php:131
-#: /Users/feralou/git/public/osclass-themes/spain/item-post.php:126
+#: /var/www/osclass-themes-git/spain/item-edit.php:131
+#: /var/www/osclass-themes-git/spain/item-post.php:126
 msgid "Add new photo"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/item-edit.php:136
-#: /Users/feralou/git/public/osclass-themes/spain/main.php:102
+#: /var/www/osclass-themes-git/spain/item-edit.php:136
+#: /var/www/osclass-themes-git/spain/main.php:160
 msgid "Location"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/item-edit.php:138
-#: /Users/feralou/git/public/osclass-themes/spain/item-post.php:133
-#: /Users/feralou/git/public/osclass-themes/spain/item.php:74
+#: /var/www/osclass-themes-git/spain/item-edit.php:138
+#: /var/www/osclass-themes-git/spain/item-post.php:133
+#: /var/www/osclass-themes-git/spain/item.php:74
 msgid "Country"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/item-edit.php:142
-#: /Users/feralou/git/public/osclass-themes/spain/item-post.php:137
-#: /Users/feralou/git/public/osclass-themes/spain/item.php:75
+#: /var/www/osclass-themes-git/spain/item-edit.php:142
+#: /var/www/osclass-themes-git/spain/item-post.php:137
+#: /var/www/osclass-themes-git/spain/item.php:75
 msgid "Region"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/item-edit.php:146
-#: /Users/feralou/git/public/osclass-themes/spain/item-post.php:141
-#: /Users/feralou/git/public/osclass-themes/spain/item.php:76
+#: /var/www/osclass-themes-git/spain/item-edit.php:146
+#: /var/www/osclass-themes-git/spain/item-post.php:141
+#: /var/www/osclass-themes-git/spain/item.php:76
 msgid "City"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/item-edit.php:150
-#: /Users/feralou/git/public/osclass-themes/spain/item.php:77
+#: /var/www/osclass-themes-git/spain/item-edit.php:150
+#: /var/www/osclass-themes-git/spain/item.php:77
 msgid "City area"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/item-edit.php:154
-#: /Users/feralou/git/public/osclass-themes/spain/item-post.php:149
-#: /Users/feralou/git/public/osclass-themes/spain/item.php:78
+#: /var/www/osclass-themes-git/spain/item-edit.php:154
+#: /var/www/osclass-themes-git/spain/item-post.php:149
+#: /var/www/osclass-themes-git/spain/item.php:78
 msgid "Address"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/item-edit.php:166
+#: /var/www/osclass-themes-git/spain/item-edit.php:166
 msgid "Update"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/item-edit.php:167
+#: /var/www/osclass-themes-git/spain/item-edit.php:167
 msgid "Cancel"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/item-post.php:95
+#: /var/www/osclass-themes-git/spain/item-post.php:95
 msgid "Publish a listing"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/item-post.php:131
+#: /var/www/osclass-themes-git/spain/item-post.php:131
 msgid "Listing Location"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/item-post.php:145
+#: /var/www/osclass-themes-git/spain/item-post.php:145
 msgid "City Area"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/item-post.php:156
+#: /var/www/osclass-themes-git/spain/item-post.php:156
 msgid "Seller's information"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/item-post.php:158
-#: /Users/feralou/git/public/osclass-themes/spain/item.php:201
-#: /Users/feralou/git/public/osclass-themes/spain/item.php:203
+#: /var/www/osclass-themes-git/spain/item-post.php:158
+#: /var/www/osclass-themes-git/spain/item.php:201
+#: /var/www/osclass-themes-git/spain/item.php:203
 msgid "Name"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/item-post.php:169
+#: /var/www/osclass-themes-git/spain/item-post.php:169
 msgid "Show e-mail on the listing page"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/item-post.php:182
+#: /var/www/osclass-themes-git/spain/item-post.php:182
 msgid "Publish"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/item-send-friend.php:34
+#: /var/www/osclass-themes-git/spain/item-send-friend.php:34
 msgid "Send to a friend"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/item-send-friend.php:49
+#: /var/www/osclass-themes-git/spain/item-send-friend.php:49
 msgid "Your friend's name"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/item-send-friend.php:50
+#: /var/www/osclass-themes-git/spain/item-send-friend.php:50
 msgid "Your friend's e-mail address"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/item.php:56
+#: /var/www/osclass-themes-git/spain/item.php:56
 msgid "Mark as"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/item.php:58
+#: /var/www/osclass-themes-git/spain/item.php:58
 msgid "spam"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/item.php:59
+#: /var/www/osclass-themes-git/spain/item.php:59
 msgid "misclassified"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/item.php:60
+#: /var/www/osclass-themes-git/spain/item.php:60
 msgid "duplicated"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/item.php:61
+#: /var/www/osclass-themes-git/spain/item.php:61
 msgid "expired"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/item.php:62
+#: /var/www/osclass-themes-git/spain/item.php:62
 msgid "offensive"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/item.php:70
+#: /var/www/osclass-themes-git/spain/item.php:70
 msgid "Published date"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/item.php:71
+#: /var/www/osclass-themes-git/spain/item.php:71
 msgid "Modified date"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/item.php:105
+#: /var/www/osclass-themes-git/spain/item.php:105
 msgid "Share"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/item.php:111
+#: /var/www/osclass-themes-git/spain/item.php:111
 msgid "Useful information"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/item.php:113
+#: /var/www/osclass-themes-git/spain/item.php:113
 msgid "Avoid scams by acting locally or paying with PayPal"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/item.php:114
+#: /var/www/osclass-themes-git/spain/item.php:114
 msgid "Never pay with Western Union, Moneygram or other anonymous payment services"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/item.php:115
+#: /var/www/osclass-themes-git/spain/item.php:115
 msgid "Don't buy or sell outside of your country. Don't accept cashier cheques from outside your country"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/item.php:116
+#: /var/www/osclass-themes-git/spain/item.php:116
 msgid "This site is never involved in any transaction, and does not handle payments, shipping, guarantee transactions, provide escrow services, or offer \"buyer protection\" or \"seller certification\""
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/item.php:122
+#: /var/www/osclass-themes-git/spain/item.php:122
 msgid "Comments"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/item.php:129
+#: /var/www/osclass-themes-git/spain/item.php:129
 msgid "by"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/item.php:133
+#: /var/www/osclass-themes-git/spain/item.php:133
 msgid "Delete your comment"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/item.php:133
+#: /var/www/osclass-themes-git/spain/item.php:133
 msgid "Delete"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/item.php:145
+#: /var/www/osclass-themes-git/spain/item.php:145
 msgid "Leave your comment (spam and offensive messages will be removed)"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/item.php:154
+#: /var/www/osclass-themes-git/spain/item.php:154
 msgid "Your e-mail"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/item.php:156
+#: /var/www/osclass-themes-git/spain/item.php:156
 msgid "Title"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/item.php:157
+#: /var/www/osclass-themes-git/spain/item.php:157
 msgid "Comment"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/item.php:170
+#: /var/www/osclass-themes-git/spain/item.php:170
 msgid "Image"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/item.php:182
+#: /var/www/osclass-themes-git/spain/item.php:182
 msgid "Contact publisher"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/item.php:185
+#: /var/www/osclass-themes-git/spain/item.php:185
 msgid "The listing is expired. You cannot contact the publisher."
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/item.php:189
+#: /var/www/osclass-themes-git/spain/item.php:189
 msgid "It's your own listing, you cannot contact the publisher."
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/item.php:193
+#: /var/www/osclass-themes-git/spain/item.php:193
 msgid "You must login or register a new free account in order to contact the advertiser"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/item.php:209
+#: /var/www/osclass-themes-git/spain/item.php:209
 msgid "Tel"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/item.php:233
+#: /var/www/osclass-themes-git/spain/item.php:233
 msgid "Enter the words above"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/item.php:235
+#: /var/www/osclass-themes-git/spain/item.php:235
 msgid "Help"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/main.php:61
+#: /var/www/osclass-themes-git/spain/main.php:119
 msgid "Latest Listings"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/main.php:63
+#: /var/www/osclass-themes-git/spain/main.php:121
 msgid "No Latest Listings"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/main.php:93
+#: /var/www/osclass-themes-git/spain/main.php:151
 msgid "See all offers"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/search.php:195
+#: /var/www/osclass-themes-git/spain/search.php:195
 msgid "Search results"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/search.php:198
+#: /var/www/osclass-themes-git/spain/search.php:198
 msgid "Sort by"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/search.php:217
+#: /var/www/osclass-themes-git/spain/search.php:217
 #, php-format
 msgid "There are no results matching \"%s\""
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/search.php:236
+#: /var/www/osclass-themes-git/spain/search.php:236
 msgid "Your search"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/search.php:250
+#: /var/www/osclass-themes-git/spain/search.php:250
 msgid "Show only"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/search.php:255
+#: /var/www/osclass-themes-git/spain/search.php:255
 msgid "Show only listings with pictures"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/search.php:263
+#: /var/www/osclass-themes-git/spain/search.php:263
 msgid "Min"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/search.php:265
+#: /var/www/osclass-themes-git/spain/search.php:265
 msgid "Max"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/search.php:304
+#: /var/www/osclass-themes-git/spain/search.php:304
 msgid "Apply"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/search.php:321
+#: /var/www/osclass-themes-git/spain/search.php:321
 msgid "Selected"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/search.php:322
+#: /var/www/osclass-themes-git/spain/search.php:322
 msgid "Nothing selected, input was"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/search_gallery.php:41
-#: /Users/feralou/git/public/osclass-themes/spain/search_list.php:41
+#: /var/www/osclass-themes-git/spain/search_gallery.php:41
+#: /var/www/osclass-themes-git/spain/search_list.php:41
 msgid "Sponsored ad"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/user-alerts.php:32
-#: /Users/feralou/git/public/osclass-themes/spain/user-change_email.php:33
-#: /Users/feralou/git/public/osclass-themes/spain/user-change_password.php:33
-#: /Users/feralou/git/public/osclass-themes/spain/user-dashboard.php:33
-#: /Users/feralou/git/public/osclass-themes/spain/user-items.php:33
-#: /Users/feralou/git/public/osclass-themes/spain/user-profile.php:35
+#: /var/www/osclass-themes-git/spain/user-alerts.php:32
+#: /var/www/osclass-themes-git/spain/user-change_email.php:33
+#: /var/www/osclass-themes-git/spain/user-change_password.php:33
+#: /var/www/osclass-themes-git/spain/user-dashboard.php:33
+#: /var/www/osclass-themes-git/spain/user-items.php:33
+#: /var/www/osclass-themes-git/spain/user-profile.php:35
 msgid "User account manager"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/user-alerts.php:37
+#: /var/www/osclass-themes-git/spain/user-alerts.php:37
 msgid "Your alerts"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/user-alerts.php:39
+#: /var/www/osclass-themes-git/spain/user-alerts.php:39
 msgid "You do not have any alerts yet"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/user-alerts.php:43
+#: /var/www/osclass-themes-git/spain/user-alerts.php:43
 msgid "Alert"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/user-alerts.php:43
+#: /var/www/osclass-themes-git/spain/user-alerts.php:43
 msgid "This action can't be undone. Are you sure you want to continue?"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/user-alerts.php:43
+#: /var/www/osclass-themes-git/spain/user-alerts.php:43
 msgid "Delete this alert"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/user-alerts.php:49
-#: /Users/feralou/git/public/osclass-themes/spain/user-dashboard.php:49
-#: /Users/feralou/git/public/osclass-themes/spain/user-items.php:49
+#: /var/www/osclass-themes-git/spain/user-alerts.php:49
+#: /var/www/osclass-themes-git/spain/user-dashboard.php:49
+#: /var/www/osclass-themes-git/spain/user-items.php:49
 msgid "Publication date"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/user-alerts.php:57
+#: /var/www/osclass-themes-git/spain/user-alerts.php:57
 msgid "Listings"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/user-change_email.php:39
+#: /var/www/osclass-themes-git/spain/user-change_email.php:39
 msgid "Change your e-mail"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/user-change_email.php:45
+#: /var/www/osclass-themes-git/spain/user-change_email.php:45
 msgid "Current e-mail"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/user-change_email.php:49
+#: /var/www/osclass-themes-git/spain/user-change_email.php:49
 msgid "New e-mail"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/user-change_password.php:39
+#: /var/www/osclass-themes-git/spain/user-change_password.php:39
 msgid "Change your password"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/user-change_password.php:45
+#: /var/www/osclass-themes-git/spain/user-change_password.php:45
 msgid "Current password"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/user-change_password.php:49
+#: /var/www/osclass-themes-git/spain/user-change_password.php:49
 msgid "New password"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/user-change_password.php:53
+#: /var/www/osclass-themes-git/spain/user-change_password.php:53
 msgid "Repeat new password"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/user-dashboard.php:39
+#: /var/www/osclass-themes-git/spain/user-dashboard.php:39
 #, php-format
 msgid "Listings from %s"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/user-dashboard.php:41
+#: /var/www/osclass-themes-git/spain/user-dashboard.php:41
 msgid "No listings have been added yet"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/user-dashboard.php:52
+#: /var/www/osclass-themes-git/spain/user-dashboard.php:52
 msgid "View listing"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/user-dashboard.php:54
-#: /Users/feralou/git/public/osclass-themes/spain/user-items.php:53
+#: /var/www/osclass-themes-git/spain/user-dashboard.php:54
+#: /var/www/osclass-themes-git/spain/user-items.php:53
 msgid "Edit"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/user-dashboard.php:57
-#: /Users/feralou/git/public/osclass-themes/spain/user-items.php:58
+#: /var/www/osclass-themes-git/spain/user-dashboard.php:57
+#: /var/www/osclass-themes-git/spain/user-items.php:58
 msgid "Activate"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/user-forgot_password.php:33
-#: /Users/feralou/git/public/osclass-themes/spain/user-recover.php:33
+#: /var/www/osclass-themes-git/spain/user-forgot_password.php:33
+#: /var/www/osclass-themes-git/spain/user-recover.php:33
 msgid "Recover your password"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/user-forgot_password.php:41
+#: /var/www/osclass-themes-git/spain/user-forgot_password.php:41
 msgid "New pasword"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/user-forgot_password.php:45
+#: /var/www/osclass-themes-git/spain/user-forgot_password.php:45
 msgid "Repeat new pasword"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/user-forgot_password.php:48
+#: /var/www/osclass-themes-git/spain/user-forgot_password.php:48
 msgid "Change password"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/user-items.php:39
+#: /var/www/osclass-themes-git/spain/user-items.php:39
 msgid "Your listings"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/user-items.php:39
+#: /var/www/osclass-themes-git/spain/user-items.php:39
 msgid "Post a new listing"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/user-items.php:41
+#: /var/www/osclass-themes-git/spain/user-items.php:41
 msgid "You don't have any listings yet"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/user-items.php:55
+#: /var/www/osclass-themes-git/spain/user-items.php:55
 msgid "This action can not be undone. Are you sure you want to continue?"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/user-login.php:33
+#: /var/www/osclass-themes-git/spain/user-login.php:33
 msgid "Access to your account"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/user-profile.php:41
+#: /var/www/osclass-themes-git/spain/user-profile.php:41
 msgid "Update your profile"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/user-profile.php:55
+#: /var/www/osclass-themes-git/spain/user-profile.php:55
 msgid "Modify e-mail"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/user-profile.php:55
+#: /var/www/osclass-themes-git/spain/user-profile.php:55
 msgid "Modify password"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/user-profile.php:59
+#: /var/www/osclass-themes-git/spain/user-profile.php:59
 msgid "User type"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/user-profile.php:63
+#: /var/www/osclass-themes-git/spain/user-profile.php:63
 msgid "Cell phone"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/user-profile.php:67
+#: /var/www/osclass-themes-git/spain/user-profile.php:67
 msgid "Phone"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/user-profile.php:91
-#: /Users/feralou/git/public/osclass-themes/spain/user-public-profile.php:69
+#: /var/www/osclass-themes-git/spain/user-profile.php:91
+#: /var/www/osclass-themes-git/spain/user-public-profile.php:69
 msgid "Website"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/user-public-profile.php:58
+#: /var/www/osclass-themes-git/spain/user-public-profile.php:58
 #, php-format
 msgid "%s's profile"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/user-public-profile.php:64
+#: /var/www/osclass-themes-git/spain/user-public-profile.php:64
 msgid "Profile"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/user-public-profile.php:66
+#: /var/www/osclass-themes-git/spain/user-public-profile.php:66
 msgid "Full name"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/user-public-profile.php:70
+#: /var/www/osclass-themes-git/spain/user-public-profile.php:70
 msgid "User Description"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/user-public-profile.php:74
+#: /var/www/osclass-themes-git/spain/user-public-profile.php:74
 msgid "Latest listings"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/user-recover.php:40
+#: /var/www/osclass-themes-git/spain/user-recover.php:40
 msgid "Send me a new password"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/user-register.php:35
+#: /var/www/osclass-themes-git/spain/user-register.php:35
 msgid "Register an account for free"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/user-register.php:44
+#: /var/www/osclass-themes-git/spain/user-register.php:44
 msgid "Re-type password"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/user-register.php:46
+#: /var/www/osclass-themes-git/spain/user-register.php:46
 msgid "Passwords don't match"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/user-register.php:51
+#: /var/www/osclass-themes-git/spain/user-register.php:51
 msgid "Create"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/admin/header.php:8
+#: /var/www/osclass-themes-git/spain/admin/header.php:8
 msgid "Preview"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/admin/header.php:15
+#: /var/www/osclass-themes-git/spain/admin/header.php:15
 msgid "Remove logo"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/admin/header.php:23
+#: /var/www/osclass-themes-git/spain/admin/header.php:23
 msgid "There isn't any logo uploaded yet"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/admin/header.php:26
+#: /var/www/osclass-themes-git/spain/admin/header.php:26
 msgid "Upload logo"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/admin/header.php:28
+#: /var/www/osclass-themes-git/spain/admin/header.php:28
 msgid "The preferred size of the logo is 600x100."
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/admin/header.php:30
+#: /var/www/osclass-themes-git/spain/admin/header.php:30
 msgid "<strong>Note:</strong> Uploading another logo will overwrite the current logo."
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/admin/header.php:38
+#: /var/www/osclass-themes-git/spain/admin/header.php:38
 msgid "Logo image (png,gif,jpg)"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/admin/header.php:44
+#: /var/www/osclass-themes-git/spain/admin/header.php:44
 msgid "Upload"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/admin/header.php:53
+#: /var/www/osclass-themes-git/spain/admin/header.php:53
 #, php-format
 msgid "The images folder <strong>%s</strong> is not writable on your server"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/admin/header.php:54
+#: /var/www/osclass-themes-git/spain/admin/header.php:54
 msgid "OSClass can't upload logo image from the administration panel."
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/admin/header.php:55
+#: /var/www/osclass-themes-git/spain/admin/header.php:55
 msgid "Please make the mentioned image folder writable."
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/admin/header.php:60
+#: /var/www/osclass-themes-git/spain/admin/header.php:60
 msgid "To make a directory writable under UNIX execute this command from the shell:"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/admin/map_settings.php:2
+#: /var/www/osclass-themes-git/spain/admin/map_settings.php:2
 msgid "Map Options"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/admin/map_settings.php:3
+#: /var/www/osclass-themes-git/spain/admin/map_settings.php:3
 msgid "How to assign a region to your map?"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/admin/map_settings.php:3
+#: /var/www/osclass-themes-git/spain/admin/map_settings.php:3
 msgid "First, click in the map to select the area you want to set. Then, a dialog will be open in order to select the region you want to assign. Finally, once you selected the region, click save"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/admin/map_settings.php:34
-#: /Users/feralou/git/public/osclass-themes/spain/admin/map_settings.php:55
-#: /Users/feralou/git/public/osclass-themes/spain/admin/map_settings.php:78
+#: /var/www/osclass-themes-git/spain/admin/map_settings.php:79
+#: /var/www/osclass-themes-git/spain/admin/map_settings.php:96
+#: /var/www/osclass-themes-git/spain/admin/map_settings.php:117
+#: /var/www/osclass-themes-git/spain/admin/map_settings.php:140
 msgid "Select a region"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/admin/map_settings.php:39
-#: /Users/feralou/git/public/osclass-themes/spain/admin/map_settings.php:60
-#: /Users/feralou/git/public/osclass-themes/spain/admin/settings.php:37
+#: /var/www/osclass-themes-git/spain/admin/map_settings.php:101
+#: /var/www/osclass-themes-git/spain/admin/map_settings.php:122
+#: /var/www/osclass-themes-git/spain/admin/settings.php:37
 msgid "Save changes"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/admin/settings.php:10
+#: /var/www/osclass-themes-git/spain/admin/settings.php:10
 msgid "I would like to contribute to the development of OSClass with a donation of"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/admin/settings.php:16
+#: /var/www/osclass-themes-git/spain/admin/settings.php:15
+msgid "Custom"
+msgstr ""
+
+#: /var/www/osclass-themes-git/spain/admin/settings.php:16
 msgid "Donate"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/admin/settings.php:26
+#: /var/www/osclass-themes-git/spain/admin/settings.php:26
 msgid "Search placeholder"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/admin/settings.php:30
+#: /var/www/osclass-themes-git/spain/admin/settings.php:30
 msgid "Footer link"
 msgstr ""
 
-#: /Users/feralou/git/public/osclass-themes/spain/admin/settings.php:32
+#: /var/www/osclass-themes-git/spain/admin/settings.php:32
 msgid "I want to help OSClass linking to <a href=\"http://osclass.org/\" target=\"_blank\">osclass.org</a> from my site with the following text:"
 msgstr ""
 
