@@ -86,7 +86,7 @@ function countrySelect($id = null,$selected = null){
     $echo .= '</select><input type="hidden" name="target-id" value="'.$id.'"/>';
     return $echo;
 }
-$regions = unserialize(osc_get_preference('region_maps','spain_theme'));
+$regions = json_decode(osc_get_preference('region_maps','spain_theme'),true);
 for($i=0;$i<47;$i++){
     ?>
     <form id="region-<?php echo $i; ?>" class="region-dialog has-form-actions">
@@ -141,7 +141,6 @@ $('.region-dialog').dialog({
 $(function() {
     var linksRegions = new Array();
 <?php
-    $regions = unserialize(osc_get_preference('region_maps','spain_theme'));
     if($regions){
         foreach($regions as $key => $value){
             echo "    linksRegions['$key'] = '".osc_search_url( array( 'sRegion' => $value ) )."';\n";
