@@ -1,5 +1,5 @@
 <script type="text/javascript" src="<?php echo osc_current_web_theme_js_url('jquery.maphilight.min.js') ; ?>"></script>
-<h2 class="render-title <?php echo (osc_get_preference('footer_link', 'usa_theme') ? '' : 'separate-top'); ?>"><?php _e('Map Options'); ?></h2>
+<h2 class="render-title <?php echo (osc_get_preference('footer_link', 'usa_theme') ? '' : 'separate-top'); ?>"><?php _e('Map Options', 'usa'); ?></h2>
 <div class="flashmessage flashmessage-warning flashmessage-inline"><p><strong><?php _e('How to assign a region to your map?','usa'); ?></strong><br><?php _e('First, click in the map to select the area you want to set. Then, a dialog will be open in order to select the region you want to assign. Finally, once you selected the region, click save','usa'); ?></p></div>
 <div id="main-map" style="float:left; margin:15px 0;position:relative">
     <div style="position:relative; background-image:url(<?php echo osc_current_web_theme_url('images/map.png'); ?>); width:695px; height:445px;">
@@ -31,7 +31,7 @@ for($i=0;$i<47;$i++){
     <form id="region-<?php echo $i; ?>" class="region-dialog has-form-actions">
         <div class="form-horizontal">
             <div class="form-row">
-                <div class="form-label"><?php _e('Select a region'); ?></div>
+                <div class="form-label"><?php _e('Select a region', 'usa'); ?></div>
                 <div class="form-controls"><?php $selected = 'false'; if(isset($regions[$i])){ $selected = $regions[$i]; } echo countrySelect($i,$selected); ?></div>
             </div>
             <div class="form-actions">
@@ -52,7 +52,7 @@ for($i=1;$i<7;$i++){
     <form id="region-group-<?php echo $i; ?>" class="region-dialog has-form-actions">
         <div class="form-horizontal">
             <div class="form-row">
-                <div class="form-label"><?php _e('Select a region'); ?></div>
+                <div class="form-label"><?php _e('Select a region', 'usa'); ?></div>
                 <div class="form-controls"><?php $selected = 'false'; if(isset($regions['group-'.$i])){ $selected = $regions['group-'.$i]; } echo countrySelect('group-'.$i,$selected); ?></div>
             </div>
             <div class="form-actions">
@@ -75,7 +75,7 @@ $('.region-dialog').dialog({
     autoOpen: false,
     modal:true,
     width:500,
-    title: '<?php echo osc_esc_js(__('Select a region')); ?>'
+    title: '<?php echo osc_esc_js(__('Select a region', 'usa')); ?>'
 });
 $(function() {
     var linksRegions = new Array();
@@ -83,7 +83,7 @@ $(function() {
     $regions = unserialize(osc_get_preference('region_maps','usa_theme'));
     if($regions){
         foreach($regions as $key => $value){
-            echo "    linksRegions['$key'] = '".osc_search_url( array( 'sRegion' => $value ) )."';\n";
+            echo "    linksRegions['$key'] = '".osc_search_url( array( 'sRegion' => $value ) )."';".PHP_EOL;
         }
     }
 ?>

@@ -17,7 +17,7 @@
     </div>
 </form>
 <?php } ?>
-<h2 class="render-title <?php echo (osc_get_preference('footer_link', 'usa_theme') ? '' : 'separate-top'); ?>"><?php _e('Theme settings'); ?></h2>
+<h2 class="render-title <?php echo (osc_get_preference('footer_link', 'usa_theme') ? '' : 'separate-top'); ?>"><?php _e('Theme settings','usa'); ?></h2>
 <form action="<?php echo osc_admin_render_theme_url('oc-content/themes/usa/admin/settings.php'); ?>" method="post">
     <input type="hidden" name="action_specific" value="settings" />
     <fieldset>
