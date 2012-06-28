@@ -144,7 +144,7 @@ $(function() {
 <?php
     if($regions){
         foreach($regions as $key => $value){
-            echo "    linksRegions['$key'] = '".osc_search_url( array( 'sRegion' => $value ) )."';\n";
+            echo "    linksRegions['$key'] = '".osc_search_url( array( 'sRegion' => $value ) )."';".PHP_EOL;
         }
     }
 ?>

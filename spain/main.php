@@ -195,12 +195,6 @@
                     echo "    statsRegions['$key'] = {name:'".osc_esc_js($regionData['s_name'])."', count:'".$regionStats['i_num_items']."'};".PHP_EOL;
                 }
             }
-
-            /*if(osc_count_list_regions() > 0 ) {
-                while(osc_has_list_regions() ) {
-                    echo "    statsRegions['$key'] = {name:'".osc_esc_js(osc_list_region_name())."', count:'".osc_list_region_items()."'};\n";
-                }
-            }*/
         ?>
             //find all regions map has assigned a location
             $('area').each(function(){
