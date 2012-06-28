@@ -118,7 +118,7 @@
             $regions = unserialize(osc_get_preference('region_maps','brasil_theme'));
             if($regions){
                 foreach($regions as $key => $value){
-                    echo "    linksRegions['$key'] = '".map_region_url($value)."';\n";
+                    echo "    linksRegions['$key'] = '".map_region_url($value)."';".PHP_EOL;
                 }
             }
         ?>
