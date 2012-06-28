@@ -34,11 +34,11 @@
         }
     }
     function theme_brasil_regions_map_admin() {
-        $regions = unserialize(osc_get_preference('region_maps','brasil_theme'));
+        $regions = json_decode(osc_get_preference('region_maps','brasil_theme'),true);
         switch( Params::getParam('action_specific') ) {
             case('edit_region_map'):
                 $regions[Params::getParam('target-id')] = Params::getParam('region');
-                osc_set_preference('region_maps', serialize($regions), 'brasil_theme');
+                osc_set_preference('region_maps', json_encode($regions), 'brasil_theme');
                 osc_add_flash_ok_message(__('Region saved correctly', 'brasil'), 'admin');
                 header('Location: ' . osc_admin_render_theme_url('oc-content/themes/brasil/admin/map_settings.php')); exit;
             break;
