@@ -33,7 +33,13 @@
             osc_add_hook('footer', 'add_close_button_action') ;
         }
     }
-
+    function theme_spain_admin_regions_message(){
+        $regions = json_decode(osc_get_preference('region_maps','spain_theme'),true);
+        if(count($regions) < 52){
+            echo '</div><div class="flashmessage flashmessage-error" style="display:block">'.sprintf(__('Wait! There are unassigned map areas in the map. <a href="%s">Click here</a> to assign regions to the map.','spain'),osc_admin_render_theme_url('oc-content/themes/spain/admin/map_settings.php')).'<a class="btn ico btn-mini ico-close">x</a>';
+        }
+    }
+    osc_add_hook('admin_page_header', 'theme_spain_admin_regions_message',10) ;
     function theme_spain_regions_map_admin() {
         $regions = json_decode(osc_get_preference('region_maps','spain_theme'),true);
         switch( Params::getParam('action_specific') ) {

@@ -1,6 +1,6 @@
 <script type="text/javascript" src="<?php echo osc_current_web_theme_js_url('jquery.maphilight.min.js') ; ?>"></script>
 <h2 class="render-title <?php echo (osc_get_preference('footer_link', 'spain_theme') ? '' : 'separate-top'); ?>"><?php _e('Map Options', 'spain'); ?></h2>
-<div class="flashmessage flashmessage-warning flashmessage-inline"><p><strong><?php _e('How to assign a region to your map?','spain'); ?></strong><br><?php _e('First, click in the map to select the area you want to set. Then, a dialog will be open in order to select the region you want to assign. Finally, once you selected the region, click save','spain'); ?></p></div>
+<div class="flashmessage flashmessage-warning flashmessage-inline"><p><strong><?php _e('How to assign a region to your map?','spain'); ?></strong><br><?php _e('First, click in the map to select the area you want to set. Then, a dialog will appear and you only need to select the region you want to assign. Finally, once you have selected the region, click the save button.','spain'); ?></p></div>
 <div id="main-map" style="float:left; margin:15px 0;position:relative">
     <div style="position:relative; background-image:url(<?php echo osc_current_web_theme_url('images/map.png'); ?>); width:707px; height:562px;">
         <canvas id="map-status" style="position:absolute;left:0; top:2px; width:707px; height:562px;" width="707" height="562"></canvas>
@@ -109,7 +109,7 @@ for($i=0;$i<47;$i++){
     </form>
 <?php
 }
-for($i=1;$i<7;$i++){
+for($i=1;$i<6;$i++){
     ?>
     <form id="region-group-<?php echo $i; ?>" class="region-dialog has-form-actions">
         <div class="form-horizontal">
@@ -151,7 +151,7 @@ $(function() {
 	//find all regions map has assigned a location
 	$('area').each(function(){
 		var $_hasClass = $(this).attr('class'); //catching
-		var $_index = $('area').index($(this));   //catching
+		var $_index = $('area:not([class^="group"])').index($(this));   //catching
 		var colorStatus = true;
 		if($_hasClass != undefined){
 	        if(typeof linksRegions[$_hasClass] == 'undefined'){

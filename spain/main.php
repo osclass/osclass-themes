@@ -199,7 +199,7 @@
             //find all regions map has assigned a location
             $('area').each(function(){
                 var $_hasClass = $(this).attr('class'); //catching
-                var $_index = $('area').index($(this)); //catching
+                var $_index = $('area:not([class^="group"])').index($(this));
                 var colorStatus = true;
                 
                 $(this).click(function(){
