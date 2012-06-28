@@ -34,11 +34,11 @@
         }
     }
     function theme_usa_regions_map_admin() {
-        $regions = unserialize(osc_get_preference('region_maps','usa_theme'));
+        $regions = json_decode(osc_get_preference('region_maps','usa_theme'),true);
         switch( Params::getParam('action_specific') ) {
             case('edit_region_map'):
                 $regions[Params::getParam('target-id')] = Params::getParam('region');
-                osc_set_preference('region_maps', serialize($regions), 'usa_theme');
+                osc_set_preference('region_maps', json_encode($regions), 'usa_theme');
                 osc_add_flash_ok_message(__('Region saved correctly', 'usa'), 'admin');
                 header('Location: ' . osc_admin_render_theme_url('oc-content/themes/usa/admin/map_settings.php')); exit;
             break;

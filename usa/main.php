@@ -33,6 +33,17 @@
         #sidebar .navigation{
             height:455px;
         }
+        #map-tooltip{
+            position:absolute;
+            background:#f2f2f2;
+            border:solid 2px #bababa;
+            margin-left:5px;
+            margin-top:0px;
+            padding:7px;
+            border-radius:5px;
+            --moz-border-radius: 5px;
+            ---webkit-border-radius: 5px;
+        }
         </style>
     </head>
     <body>
@@ -114,18 +125,22 @@
         <script type="text/javascript">
         $(function() {
             var linksRegions = new Array();
+            var statsRegions = new Array();
         <?php
-            $regions = unserialize(osc_get_preference('region_maps','usa_theme'));
+            $regions = json_decode(osc_get_preference('region_maps','usa_theme'),true);
             if($regions){
                 foreach($regions as $key => $value){
+                    $regionData = Region::newInstance()->findByPrimaryKey($value);
+                    $regionStats = RegionStats::newInstance()->findByRegionId($value);
                     echo "    linksRegions['$key'] = '".map_region_url($value)."';".PHP_EOL;
+                    echo "    statsRegions['$key'] = {name:'".osc_esc_js($regionData['s_name'])."', count:'".$regionStats['i_num_items']."'};".PHP_EOL;
                 }
             }
         ?>
             //find all regions map has assigned a location
             $('area').each(function(){
                 var $_hasClass = $(this).attr('class'); //catching
-                var $_index = $('area').index($(this));   //catching
+                var $_index = $('area').index($(this)); //catching
                 var colorStatus = true;
                 
                 $(this).click(function(){
@@ -137,7 +152,15 @@
                         window.location.href = linksRegions[key];
                     }
                     return false;
-                }).hover(function(){
+                }).hover(function(e){
+                    var key = $_index;
+                    if($_hasClass != ''){
+                         key = $_hasClass;
+                    }
+                    $('#map-tooltip').html(statsRegions[key].name + ': '+statsRegions[key].count + ' ads').css({
+                        top: e.pageY,
+                        left: e.pageX
+                    }).show();
                     canvas = document.getElementById("map-hover");
                     canvas.width = canvas.width;
                     options = {
@@ -153,10 +176,12 @@
                     }
                 },function(){
                     canvas.width = canvas.width;
+                    $('#map-tooltip').hide();
                 });
             });
             //
         });
         </script>
+        <div id="map-tooltip"></div>
     </body>
 </html>
