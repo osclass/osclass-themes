@@ -1,9 +1,19 @@
 <?php
 
+/*
+Theme Name: Repurpose
+Theme URI: http://osclass.org
+Description: OSClass theme using twitter bootstrap 1.4
+Version: 1.1.1
+Author: OSClass team
+Author URI: http://osclass.org
+Widgets: header,footer
+Theme update URI: repurpose
+*/
     function repurpose_theme_info() {
         return array(
              'name'        => 'Repurpose'
-            ,'version'     => '1.0'
+            ,'version'     => '1.1.1'
             ,'description' => 'OSClass theme using twitter bootstrap 1.4'
             ,'author_name' => 'OSClass team'
             ,'author_url'  => 'http://osclass.org/'

@@ -1,29 +1,20 @@
 <?php
 
 /*
- *      OSCLass – software for creating and publishing online classified
- *                           advertising platforms
- *
- *                        Copyright (C) 2010 OSCLASS
- *
- *       This program is free software: you can redistribute it and/or
- *     modify it under the terms of the GNU Affero General Public License
- *     as published by the Free Software Foundation, either version 3 of
- *            the License, or (at your option) any later version.
- *
- *     This program is distributed in the hope that it will be useful, but
- *         WITHOUT ANY WARRANTY; without even the implied warranty of
- *        MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *             GNU Affero General Public License for more details.
- *
- *      You should have received a copy of the GNU Affero General Public
- * License along with this program.  If not, see <http://www.gnu.org/licenses/>.
- */
+Theme Name: MasJob
+Theme URI: http://osclass.org
+Description: This theme is for job boards.
+Version: 1.0.1
+Author: OSClass team
+Author URI: http://osclass.org
+Widgets: header,categories,footer
+Theme update URI: repurpose
+*/
 
 function masjob_theme_info() {
     $theme = array(
         'name'        => 'MasJob',
-        'version'     => '1.0',
+        'version'     => '1.0.1',
         'description' => 'This theme is for job boards.',
         'author_name' => 'OSClass team',
         'author_url'  => 'http://osclass.org',
