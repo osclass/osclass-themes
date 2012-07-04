@@ -19,7 +19,7 @@
      * License along with this program.  If not, see <http://www.gnu.org/licenses/>.
      */
 
-    define('brasil_THEME_VERSION', '3.0');
+    define('BRASIL_THEME_VERSION', '1.0.2');
 
     if( !OC_ADMIN ) {
         if( !function_exists('add_close_button_action') ) {
@@ -33,6 +33,13 @@
             osc_add_hook('footer', 'add_close_button_action') ;
         }
     }
+    function theme_brasil_admin_regions_message(){
+        $regions = json_decode(osc_get_preference('region_maps','brasil_theme'),true);
+        if(count($regions) < 27){
+            echo '</div><div class="flashmessage flashmessage-error" style="display:block">'.sprintf(__('Wait! There are unassigned map areas in the map. <a href="%s">Click here</a> to assign regions to the map.','brasil'),osc_admin_render_theme_url('oc-content/themes/brasil/admin/map_settings.php')).'<a class="btn ico btn-mini ico-close">x</a>';
+        }
+    }
+    osc_add_hook('admin_page_header', 'theme_brasil_admin_regions_message',10) ;
     function theme_brasil_regions_map_admin() {
         $regions = json_decode(osc_get_preference('region_maps','brasil_theme'),true);
         switch( Params::getParam('action_specific') ) {
@@ -44,6 +51,7 @@
             break;
         }
     }
+
     function map_region_url($region_id) {
         $regionData = Region::newInstance()->findByPrimaryKey($region_id);
         if ( osc_rewrite_enabled() ) {
@@ -57,6 +65,7 @@
             return osc_search_url( array( 'sRegion' => $regionData['s_name']) );
         }
     }
+
     function theme_brasil_actions_admin() {
         switch( Params::getParam('action_specific') ) {
             case('settings'):
@@ -96,7 +105,6 @@
     osc_admin_menu_appearance(__('Header logo', 'brasil'), osc_admin_render_theme_url('oc-content/themes/brasil/admin/header.php'), 'header_brasil');
     osc_admin_menu_appearance(__('Theme settings', 'brasil'), osc_admin_render_theme_url('oc-content/themes/brasil/admin/settings.php'), 'settings_brasil');
     osc_admin_menu_appearance(__('Map settings', 'brasil'), osc_admin_render_theme_url('oc-content/themes/brasil/admin/map_settings.php'), 'map_settings_brasil');
-
 
     if( !function_exists('logo_header') ) {
         function logo_header() {
