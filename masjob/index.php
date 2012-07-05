@@ -8,7 +8,7 @@ Version: 1.0.1
 Author: OSClass team
 Author URI: http://osclass.org
 Widgets: header,categories,footer
-Theme update URI: repurpose
+Theme update URI: masjob 
 */
 
 function masjob_theme_info() {
