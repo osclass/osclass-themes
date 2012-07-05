@@ -67,13 +67,13 @@
                     }
                 }
             }
-            <?php if(osc_locale_thobrasilnds_sep()!='' || osc_locale_dec_point() != '') { ?>
+            <?php if(osc_locale_thousands_sep()!='' || osc_locale_dec_point() != '') { ?>
             $().ready(function(){
                 $("#price").blur(function(event) {
                     var price = $("#price").attr("value");
-                    <?php if(osc_locale_thobrasilnds_sep()!='') { ?>
-                    while(price.indexOf('<?php echo osc_esc_js(osc_locale_thobrasilnds_sep());  ?>')!=-1) {
-                        price = price.replace('<?php echo osc_esc_js(osc_locale_thobrasilnds_sep());  ?>', '');
+                    <?php if(osc_locale_thousands_sep()!='') { ?>
+                    while(price.indexOf('<?php echo osc_esc_js(osc_locale_thousands_sep());  ?>')!=-1) {
+                        price = price.replace('<?php echo osc_esc_js(osc_locale_thousands_sep());  ?>', '');
                     }
                     <?php }; ?>
                     <?php if(osc_locale_dec_point!='') { ?>

@@ -3,7 +3,7 @@
  * version: 1.0.2
  * @requires fancyBox v2.0 or later
  *
- * brasilge: 
+ * Usage: 
  *     $(".fancybox").fancybox({
  *         buttons: {
  *             position : 'top'
