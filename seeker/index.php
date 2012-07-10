@@ -1,7 +1,7 @@
 <?php
 
 /*
-Theme Name: Seeket
+Theme Name: Seeker
 Theme URI: http://osclass.org
 Description: This is the OSClass seeker theme
 Version: 1.0.2
