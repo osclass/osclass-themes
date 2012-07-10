@@ -102,9 +102,22 @@
     }
     osc_add_hook('init_admin', 'theme_spain_actions_admin');
     osc_add_hook('init_admin', 'theme_spain_regions_map_admin');
-    osc_admin_menu_appearance(__('Header logo', 'spain'), osc_admin_render_theme_url('oc-content/themes/spain/admin/header.php'), 'header_spain');
-    osc_admin_menu_appearance(__('Theme settings', 'spain'), osc_admin_render_theme_url('oc-content/themes/spain/admin/settings.php'), 'settings_spain');
-    osc_admin_menu_appearance(__('Map settings', 'spain'), osc_admin_render_theme_url('oc-content/themes/spain/admin/map_settings.php'), 'map_settings_spain');
+    if(function_exists('osc_admin_menu_appearance')){
+        osc_admin_menu_appearance(__('Header logo', 'spain'), osc_admin_render_theme_url('oc-content/themes/spain/admin/header.php'), 'header_spain');
+        osc_admin_menu_appearance(__('Theme settings', 'spain'), osc_admin_render_theme_url('oc-content/themes/spain/admin/settings.php'), 'settings_spain');
+        osc_admin_menu_appearance(__('Map settings', 'spain'), osc_admin_render_theme_url('oc-content/themes/spain/admin/map_settings.php'), 'map_settings_spain');
+    } else {
+        function seeker_admin_menu() {
+            echo '<h3><a href="#">'. __('Spain theme','spain') .'</a></h3>
+            <ul>
+                <li><a href="' . osc_admin_render_theme_url('oc-content/themes/spain/admin/header.php') . '">&raquo; '.__('Header logo', 'spain').'</a></li>
+                <li><a href="' . osc_admin_render_theme_url('oc-content/themes/spain/admin/settings.php') . '">&raquo; '.__('Theme settings', 'spain').'</a></li>
+                <li><a href="' . osc_admin_render_theme_url('oc-content/themes/spain/admin/map_settings.php') . '">&raquo; '.__('Map settings', 'spain').'</a></li>
+
+            </ul>';
+        }
+        osc_add_hook('admin_menu', 'seeker_admin_menu');
+    }
 
     if( !function_exists('logo_header') ) {
         function logo_header() {
