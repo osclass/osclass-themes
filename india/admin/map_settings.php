@@ -2,10 +2,10 @@
 <h2 class="render-title <?php echo (osc_get_preference('footer_link', 'india_theme') ? '' : 'separate-top'); ?>"><?php _e('Map Options', 'india'); ?></h2>
 <div class="flashmessage flashmessage-warning flashmessage-inline"><p><strong><?php _e('How to assign a region to your map?','india'); ?></strong><br><?php _e('First, click in the map to select the area you want to set. Then, a dialog will appear and you only need to select the region you want to assign. Finally, once you have selected the region, click the save button.','india'); ?></p></div>
 <div id="main-map" style="float:left; margin:15px 0;position:relative">
-    <div style="position:relative; background-image:url(<?php echo osc_current_web_theme_url('images/map.png'); ?>); width:707px; height:562px;">
-        <canvas id="map-status" style="position:absolute;left:0; top:2px; width:707px; height:562px;" width="707" height="562"></canvas>
-        <canvas id="map-hover"  style="position:absolute;left:0; top:2px; width:707px; height:562px;" width="707" height="562"></canvas>
-        <img src="<?php echo osc_current_web_theme_url('images/map.png'); ?>" alt="usa" usemap="#Map" border="0" style="position:absolute;left:0; top:2px; width:707px; height:562px; opacity:0" width="707" height="562"/>
+    <div style="position:relative; background-image:url(<?php echo osc_current_web_theme_url('images/map.png'); ?>); width:750px; height:879px;">
+        <canvas id="map-status" style="position:absolute;left:0; top:2px; width:750px; height:879px;" width="750" height="879"></canvas>
+        <canvas id="map-hover"  style="position:absolute;left:0; top:2px; width:750px; height:879px;" width="750" height="879"></canvas>
+        <img src="<?php echo osc_current_web_theme_url('images/map.png'); ?>" alt="usa" usemap="#Map" border="0" style="position:absolute;left:0; top:2px; width:750px; height:879px; opacity:0" width="707" height="562"/>
     </div>
 <map name="Map" id="Map">
 <area class="group-5" shape="poly" coords="302,765,302,765,303,765,303,766,304,767,304,764,304,761,304,761,302,761,300,763,302,765" href="#" />
