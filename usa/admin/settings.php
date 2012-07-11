@@ -1,4 +1,4 @@
-<?php if( !osc_get_preference('footer_link', 'spain_theme') ) { ?>
+<?php if( !osc_get_preference('footer_link', 'usa_theme') ) { ?>
 <form name="_xclick" action="https://www.paypal.com/in/cgi-bin/webscr" method="post">
     <input type="hidden" name="cmd" value="_donations">
     <input type="hidden" name="rm" value="2">
