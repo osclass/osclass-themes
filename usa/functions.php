@@ -102,10 +102,22 @@
     }
     osc_add_hook('init_admin', 'theme_usa_actions_admin');
     osc_add_hook('init_admin', 'theme_usa_regions_map_admin');
-    osc_admin_menu_appearance(__('Header logo', 'usa'), osc_admin_render_theme_url('oc-content/themes/usa/admin/header.php'), 'header_usa');
-    osc_admin_menu_appearance(__('Theme settings', 'usa'), osc_admin_render_theme_url('oc-content/themes/usa/admin/settings.php'), 'settings_usa');
-    osc_admin_menu_appearance(__('Map settings', 'usa'), osc_admin_render_theme_url('oc-content/themes/usa/admin/map_settings.php'), 'map_settings_usa');
+    if(function_exists('osc_admin_menu_appearance')){
+        osc_admin_menu_appearance(__('Header logo', 'usa'), osc_admin_render_theme_url('oc-content/themes/usa/admin/header.php'), 'header_usa');
+        osc_admin_menu_appearance(__('Theme settings', 'usa'), osc_admin_render_theme_url('oc-content/themes/usa/admin/settings.php'), 'settings_usa');
+        osc_admin_menu_appearance(__('Map settings', 'usa'), osc_admin_render_theme_url('oc-content/themes/usa/admin/map_settings.php'), 'map_settings_usa');
+    } else {
+        function usa_admin_menu() {
+            echo '<h3><a href="#">'. __('USA theme','usa') .'</a></h3>
+            <ul>
+                <li><a href="' . osc_admin_render_theme_url('oc-content/themes/usa/admin/header.php') . '">&raquo; '.__('Header logo', 'usa').'</a></li>
+                <li><a href="' . osc_admin_render_theme_url('oc-content/themes/usa/admin/settings.php') . '">&raquo; '.__('Theme settings', 'usa').'</a></li>
+                <li><a href="' . osc_admin_render_theme_url('oc-content/themes/usa/admin/map_settings.php') . '">&raquo; '.__('Map settings', 'usa').'</a></li>
 
+            </ul>';
+        }
+        osc_add_hook('admin_menu', 'usa_admin_menu');
+    }
     if( !function_exists('logo_header') ) {
         function logo_header() {
             $html = '<img border="0" alt="' . osc_page_title() . '" src="' . osc_current_web_theme_url('images/logo.jpg') . '" />';
