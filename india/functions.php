@@ -102,10 +102,22 @@
     }
     osc_add_hook('init_admin', 'theme_india_actions_admin');
     osc_add_hook('init_admin', 'theme_india_regions_map_admin');
-    osc_admin_menu_appearance(__('Header logo', 'india'), osc_admin_render_theme_url('oc-content/themes/india/admin/header.php'), 'header_india');
-    osc_admin_menu_appearance(__('Theme settings', 'india'), osc_admin_render_theme_url('oc-content/themes/india/admin/settings.php'), 'settings_india');
-    osc_admin_menu_appearance(__('Map settings', 'india'), osc_admin_render_theme_url('oc-content/themes/india/admin/map_settings.php'), 'map_settings_india');
+    if(function_exists('osc_admin_menu_appearance')){
+        osc_admin_menu_appearance(__('Header logo', 'india'), osc_admin_render_theme_url('oc-content/themes/india/admin/header.php'), 'header_india');
+        osc_admin_menu_appearance(__('Theme settings', 'india'), osc_admin_render_theme_url('oc-content/themes/india/admin/settings.php'), 'settings_india');
+        osc_admin_menu_appearance(__('Map settings', 'india'), osc_admin_render_theme_url('oc-content/themes/india/admin/map_settings.php'), 'map_settings_india');
+    } else {
+        function india_admin_menu() {
+            echo '<h3><a href="#">'. __('India theme','india') .'</a></h3>
+            <ul>
+                <li><a href="' . osc_admin_render_theme_url('oc-content/themes/india/admin/header.php') . '">&raquo; '.__('Header logo', 'india').'</a></li>
+                <li><a href="' . osc_admin_render_theme_url('oc-content/themes/india/admin/settings.php') . '">&raquo; '.__('Theme settings', 'india').'</a></li>
+                <li><a href="' . osc_admin_render_theme_url('oc-content/themes/india/admin/map_settings.php') . '">&raquo; '.__('Map settings', 'india').'</a></li>
 
+            </ul>';
+        }
+        osc_add_hook('admin_menu', 'india_admin_menu');
+    }
     if( !function_exists('logo_header') ) {
         function logo_header() {
             $html = '<img border="0" alt="' . osc_page_title() . '" src="' . osc_current_web_theme_url('images/logo.jpg') . '" />';
