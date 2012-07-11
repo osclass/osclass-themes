@@ -107,7 +107,7 @@
         osc_admin_menu_appearance(__('Theme settings', 'spain'), osc_admin_render_theme_url('oc-content/themes/spain/admin/settings.php'), 'settings_spain');
         osc_admin_menu_appearance(__('Map settings', 'spain'), osc_admin_render_theme_url('oc-content/themes/spain/admin/map_settings.php'), 'map_settings_spain');
     } else {
-        function seeker_admin_menu() {
+        function spain_admin_menu() {
             echo '<h3><a href="#">'. __('Spain theme','spain') .'</a></h3>
             <ul>
                 <li><a href="' . osc_admin_render_theme_url('oc-content/themes/spain/admin/header.php') . '">&raquo; '.__('Header logo', 'spain').'</a></li>
@@ -116,7 +116,7 @@
 
             </ul>';
         }
-        osc_add_hook('admin_menu', 'seeker_admin_menu');
+        osc_add_hook('admin_menu', 'spain_admin_menu');
     }
 
     if( !function_exists('logo_header') ) {
