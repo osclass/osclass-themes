@@ -30,27 +30,27 @@
         <?php osc_current_web_theme_path('header.php') ; ?>
         <div class="content user_account">
             <h1>
-                <strong><?php _e('User account manager', 'spain') ; ?></strong>
+                <strong><?php _e('User account manager', 'india') ; ?></strong>
             </h1>
             <div id="sidebar">
                 <?php echo osc_private_user_menu() ; ?>
             </div>
             <div id="main" class="modify_profile">
-                <h2><?php _e('Change your e-mail', 'spain') ; ?></h2>
+                <h2><?php _e('Change your e-mail', 'india') ; ?></h2>
                 <form action="<?php echo osc_base_url(true) ; ?>" method="post">
                     <input type="hidden" name="page" value="user" />
                     <input type="hidden" name="action" value="change_email_post" />
                     <fieldset>
                         <p>
-                            <label for="email"><?php _e('Current e-mail', 'spain') ; ?></label>
+                            <label for="email"><?php _e('Current e-mail', 'india') ; ?></label>
                             <span><?php echo osc_logged_user_email(); ?></span>
                         </p>
                         <p>
-                            <label for="new_email"><?php _e('New e-mail', 'spain') ; ?> *</label>
+                            <label for="new_email"><?php _e('New e-mail', 'india') ; ?> *</label>
                             <input type="text" name="new_email" id="new_email" value="" />
                         </p>
                         <div style="clear:both;"></div>
-                        <button type="submit"><?php _e('Update', 'spain') ; ?></button>
+                        <button type="submit"><?php _e('Update', 'india') ; ?></button>
                     </fieldset>
                 </form>
             </div>

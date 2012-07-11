@@ -92,7 +92,7 @@
     <body>
         <?php osc_current_web_theme_path('header.php') ; ?>
         <div class="content add_item">
-            <h1><strong><?php _e('Update your listing', 'spain'); ?></strong></h1>
+            <h1><strong><?php _e('Update your listing', 'india'); ?></strong></h1>
             <ul id="error_list"></ul>
                 <form name="item" action="<?php echo osc_base_url(true)?>" method="post" enctype="multipart/form-data">
                 <fieldset>
@@ -101,17 +101,17 @@
                     <input type="hidden" name="id" value="<?php echo osc_item_id() ;?>" />
                     <input type="hidden" name="secret" value="<?php echo osc_item_secret() ;?>" />
                         <div class="box general_info">
-                            <h2><?php _e('General Information', 'spain'); ?></h2>
+                            <h2><?php _e('General Information', 'india'); ?></h2>
                             <div class="row">
-                                <label><?php _e('Category', 'spain'); ?> *</label>
-                                <?php ItemForm::category_select(null, null, __('Select a category', 'spain')); ?>
+                                <label><?php _e('Category', 'india'); ?> *</label>
+                                <?php ItemForm::category_select(null, null, __('Select a category', 'india')); ?>
                             </div>
                             <div class="row">
                                 <?php ItemForm::multilanguage_title_description(osc_get_locales()); ?>
                             </div>
                             <?php if( osc_price_enabled_at_items() ) { ?>
                             <div class="row price">
-                                <label><?php _e('Price', 'spain'); ?></label>
+                                <label><?php _e('Price', 'india'); ?></label>
                                 <?php ItemForm::price_input_text(); ?>
                                 <?php ItemForm::currency_select(); ?>
                             </div>
@@ -119,7 +119,7 @@
                         </div>
                         <?php if( osc_images_enabled_at_items() ) { ?>
                         <div class="box photos">
-                            <h2><?php _e('Photos', 'spain'); ?></h2>
+                            <h2><?php _e('Photos', 'india'); ?></h2>
                             <?php ItemForm::photos(); ?>
                             <div id="photos">
                                 <?php if(osc_max_images_per_item()==0 || (osc_max_images_per_item()!=0 && osc_count_item_resources()<  osc_max_images_per_item())) { ?>
@@ -128,30 +128,30 @@
                                 </div>
                                 <?php }; ?>
                             </div>
-                            <a href="#" onclick="addNewPhoto(); uniform_input_file(); return false;"><?php _e('Add new photo', 'spain'); ?></a>
+                            <a href="#" onclick="addNewPhoto(); uniform_input_file(); return false;"><?php _e('Add new photo', 'india'); ?></a>
                         </div>
                         <?php } ?>
 
                         <div class="box location">
-                            <h2><?php _e('Location', 'spain'); ?></h2>
+                            <h2><?php _e('Location', 'india'); ?></h2>
                             <div class="row">
-                                <label><?php _e('Country', 'spain'); ?></label>
+                                <label><?php _e('Country', 'india'); ?></label>
                                 <?php ItemForm::country_select() ; ?>
                             </div>
                             <div class="row">
-                                <label><?php _e('Region', 'spain'); ?></label>
+                                <label><?php _e('Region', 'india'); ?></label>
                                 <?php ItemForm::region_text() ; ?>
                             </div>
                             <div class="row">
-                                <label><?php _e('City', 'spain'); ?></label>
+                                <label><?php _e('City', 'india'); ?></label>
                                 <?php ItemForm::city_text() ; ?>
                             </div>
                             <div class="row">
-                                <label><?php _e('City area', 'spain'); ?></label>
+                                <label><?php _e('City area', 'india'); ?></label>
                                 <?php ItemForm::city_area_text() ; ?>
                             </div>
                             <div class="row">
-                                <label><?php _e('Address', 'spain'); ?></label>
+                                <label><?php _e('Address', 'india'); ?></label>
                                 <?php ItemForm::address_text() ; ?>
                             </div>
                         </div>
@@ -163,8 +163,8 @@
                             </div>
                         </div>
                         <?php }?>
-                    <button class="itemFormButton" type="submit"><?php _e('Update', 'spain'); ?></button>
-                    <a href="javascript:history.back(-1)" class="go_back"><?php _e('Cancel', 'spain'); ?></a>
+                    <button class="itemFormButton" type="submit"><?php _e('Update', 'india'); ?></button>
+                    <a href="javascript:history.back(-1)" class="go_back"><?php _e('Cancel', 'india'); ?></a>
                 </fieldset>
             </form>
         </div>

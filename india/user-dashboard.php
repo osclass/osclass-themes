@@ -30,15 +30,15 @@
         <?php osc_current_web_theme_path('header.php') ; ?>
         <div class="content user_account">
             <h1>
-                <strong><?php _e('User account manager', 'spain') ; ?></strong>
+                <strong><?php _e('User account manager', 'india') ; ?></strong>
             </h1>
             <div id="sidebar">
                 <?php echo osc_private_user_menu() ; ?>
             </div>
             <div id="main">
-                <h2><?php echo sprintf(__('Listings from %s', 'spain') ,osc_logged_user_name()); ?></h2>
+                <h2><?php echo sprintf(__('Listings from %s', 'india') ,osc_logged_user_name()); ?></h2>
                 <?php if(osc_count_items() == 0) { ?>
-                    <h3><?php _e('No listings have been added yet', 'spain'); ?></h3>
+                    <h3><?php _e('No listings have been added yet', 'india'); ?></h3>
                 <?php } else { ?>
                     <?php while(osc_has_items()) { ?>
                         <div class="userItem" >
@@ -46,15 +46,15 @@
                                 <a href="<?php echo osc_item_url() ; ?>"><?php echo osc_item_title() ; ?></a>
                             </div>
                             <div class="userItemData" >
-                            <?php _e('Publication date', 'spain') ; ?>: <?php echo osc_format_date(osc_item_pub_date()) ; ?><br />
-                                    <?php if( osc_price_enabled_at_items() ) { _e('Price', 'spain') ; ?>: <?php echo osc_format_price(osc_item_price()); } ?>
+                            <?php _e('Publication date', 'india') ; ?>: <?php echo osc_format_date(osc_item_pub_date()) ; ?><br />
+                                    <?php if( osc_price_enabled_at_items() ) { _e('Price', 'india') ; ?>: <?php echo osc_format_price(osc_item_price()); } ?>
                                     <p class="options">
-                                        <strong><a href="<?php echo osc_item_url(); ?>"><?php _e('View listing', 'spain'); ?></a></strong>
+                                        <strong><a href="<?php echo osc_item_url(); ?>"><?php _e('View listing', 'india'); ?></a></strong>
                                         <span>|</span>
-                                        <a href="<?php echo osc_item_edit_url(); ?>"><?php _e('Edit', 'spain'); ?></a>
+                                        <a href="<?php echo osc_item_edit_url(); ?>"><?php _e('Edit', 'india'); ?></a>
                                         <?php if(osc_item_is_inactive()) {?>
                                         <span>|</span>
-                                        <a href="<?php echo osc_item_activate_url();?>" ><?php _e('Activate', 'spain'); ?></a>
+                                        <a href="<?php echo osc_item_activate_url();?>" ><?php _e('Activate', 'india'); ?></a>
                                         <?php } ?>
                                     </p>
                                     <br />

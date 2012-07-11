@@ -30,17 +30,17 @@
         <?php osc_current_web_theme_path('header.php') ; ?>
         <div class="content user_forms">
             <div class="inner">
-                <h1><?php _e('Access to your account', 'spain'); ?></h1>
+                <h1><?php _e('Access to your account', 'india'); ?></h1>
                 <form action="<?php echo osc_base_url(true); ?>" method="post" >
                     <input type="hidden" name="page" value="login" />
                     <input type="hidden" name="action" value="login_post" />
                     <fieldset>
-                        <label for="email"><?php _e('E-mail', 'spain'); ?></label> <?php UserForm::email_login_text() ; ?><br />
-                        <label for="password"><?php _e('Password', 'spain'); ?></label> <?php UserForm::password_login_text() ; ?><br />
-                        <p class="checkbox"><?php UserForm::rememberme_login_checkbox();?> <label for="rememberMe"><?php _e('Remember me', 'spain') ; ?></label></p>
-                        <button type="submit"><?php _e("Log in", 'spain');?></button>
+                        <label for="email"><?php _e('E-mail', 'india'); ?></label> <?php UserForm::email_login_text() ; ?><br />
+                        <label for="password"><?php _e('Password', 'india'); ?></label> <?php UserForm::password_login_text() ; ?><br />
+                        <p class="checkbox"><?php UserForm::rememberme_login_checkbox();?> <label for="rememberMe"><?php _e('Remember me', 'india') ; ?></label></p>
+                        <button type="submit"><?php _e("Log in", 'india');?></button>
                         <div class="more-login">
-                            <a href="<?php echo osc_register_account_url() ; ?>"><?php _e("Register for a free account", 'spain') ; ?></a> · <a href="<?php echo osc_recover_user_password_url() ; ?>"><?php _e("Forgot password?", 'spain') ; ?></a>
+                            <a href="<?php echo osc_register_account_url() ; ?>"><?php _e("Register for a free account", 'india') ; ?></a> · <a href="<?php echo osc_recover_user_password_url() ; ?>"><?php _e("Forgot password?", 'india') ; ?></a>
                         </div>
                     </fieldset>
                 </form>

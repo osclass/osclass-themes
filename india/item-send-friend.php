@@ -31,27 +31,27 @@
         <?php osc_current_web_theme_path('header.php') ; ?>
         <div class="content user_forms">
             <div id="contact" class="inner">
-                <h1><?php _e('Send to a friend', 'spain'); ?></h1>
+                <h1><?php _e('Send to a friend', 'india'); ?></h1>
                 <ul id="error_list"></ul>
                 <form id="sendfriend" name="sendfriend" action="<?php echo osc_base_url(true); ?>" method="post">
                     <fieldset>
                         <input type="hidden" name="action" value="send_friend_post" />
                         <input type="hidden" name="page" value="item" />
                         <input type="hidden" name="id" value="<?php echo osc_item_id(); ?>" />
-                        <label><?php _e('Listing', 'spain'); ?>: <a href="<?php echo osc_item_url( ); ?>"><?php echo osc_item_title(); ?></a></label><br />
+                        <label><?php _e('Listing', 'india'); ?>: <a href="<?php echo osc_item_url( ); ?>"><?php echo osc_item_title(); ?></a></label><br />
                         <?php if(osc_is_web_user_logged_in()) { ?>
                             <input type="hidden" name="yourName" value="<?php echo osc_esc_html( osc_logged_user_name() ); ?>" />
                             <input type="hidden" name="yourEmail" value="<?php echo osc_logged_user_email();?>" />
                         <?php } else { ?>
-                            <label for="yourName"><?php _e('Your name', 'spain'); ?></label> <?php SendFriendForm::your_name(); ?> <br />
-                            <label for="yourEmail"><?php _e('Your e-mail address', 'spain'); ?></label> <?php SendFriendForm::your_email(); ?> <br />
+                            <label for="yourName"><?php _e('Your name', 'india'); ?></label> <?php SendFriendForm::your_name(); ?> <br />
+                            <label for="yourEmail"><?php _e('Your e-mail address', 'india'); ?></label> <?php SendFriendForm::your_email(); ?> <br />
                         <?php }; ?>
-                        <label for="friendName"><?php _e("Your friend's name", 'spain'); ?></label> <?php SendFriendForm::friend_name(); ?> <br />
-                        <label for="friendEmail"><?php _e("Your friend's e-mail address", 'spain'); ?></label> <?php SendFriendForm::friend_email(); ?> <br />
-                        <label for="message"><?php _e('Message', 'spain'); ?></label> <?php SendFriendForm::your_message(); ?> <br />
+                        <label for="friendName"><?php _e("Your friend's name", 'india'); ?></label> <?php SendFriendForm::friend_name(); ?> <br />
+                        <label for="friendEmail"><?php _e("Your friend's e-mail address", 'india'); ?></label> <?php SendFriendForm::friend_email(); ?> <br />
+                        <label for="message"><?php _e('Message', 'india'); ?></label> <?php SendFriendForm::your_message(); ?> <br />
                         <?php osc_show_recaptcha(); ?>
                         <br />
-                        <button type="submit"><?php _e('Send', 'spain'); ?></button>
+                        <button type="submit"><?php _e('Send', 'india'); ?></button>
                     </fieldset>
                 </form>
             </div>

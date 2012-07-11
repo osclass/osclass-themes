@@ -92,17 +92,17 @@
     <body>
         <?php osc_current_web_theme_path('header.php') ; ?>
         <div class="content add_item">
-            <h1><strong><?php _e('Publish a listing', 'spain'); ?></strong></h1>
+            <h1><strong><?php _e('Publish a listing', 'india'); ?></strong></h1>
             <ul id="error_list"></ul>
             <form name="item" action="<?php echo osc_base_url(true);?>" method="post" enctype="multipart/form-data">
                 <fieldset>
                 <input type="hidden" name="action" value="item_add_post" />
                 <input type="hidden" name="page" value="item" />
                     <div class="box general_info">
-                        <h2><?php _e('General Information', 'spain'); ?></h2>
+                        <h2><?php _e('General Information', 'india'); ?></h2>
                         <div class="row">
-                            <label for="catId"><?php _e('Category', 'spain'); ?> *</label>
-                            <?php ItemForm::category_select(null, null, __('Select a category', 'spain')); ?>
+                            <label for="catId"><?php _e('Category', 'india'); ?> *</label>
+                            <?php ItemForm::category_select(null, null, __('Select a category', 'india')); ?>
                         </div>
                         <div class="row">
                             <?php ItemForm::multilanguage_title_description(); ?>
@@ -110,63 +110,63 @@
                     </div>
                     <?php if( osc_price_enabled_at_items() ) { ?>
                     <div class="box price">
-                        <label for="price"><?php _e('Price', 'spain'); ?></label>
+                        <label for="price"><?php _e('Price', 'india'); ?></label>
                         <?php ItemForm::price_input_text(); ?>
                         <?php ItemForm::currency_select(); ?>
                     </div>
                     <?php } ?>
                     <?php if( osc_images_enabled_at_items() ) { ?>
                     <div class="box photos">
-                        <h2><?php _e('Photos', 'spain'); ?></h2>
+                        <h2><?php _e('Photos', 'india'); ?></h2>
                         <div id="photos">
                             <div class="row">
                                 <input type="file" name="photos[]" />
                             </div>
                         </div>
-                        <a href="#" onclick="addNewPhoto(); uniform_input_file(); return false;"><?php _e('Add new photo', 'spain'); ?></a>
+                        <a href="#" onclick="addNewPhoto(); uniform_input_file(); return false;"><?php _e('Add new photo', 'india'); ?></a>
                     </div>
                     <?php } ?>
                 
                     <div class="box location">
-                        <h2><?php _e('Listing Location', 'spain'); ?></h2>
+                        <h2><?php _e('Listing Location', 'india'); ?></h2>
                         <div class="row">
-                            <label for="countryId"><?php _e('Country', 'spain'); ?></label>
+                            <label for="countryId"><?php _e('Country', 'india'); ?></label>
                             <?php ItemForm::country_select(osc_get_countries(), osc_user()) ; ?>
                         </div>
                         <div class="row">
-                            <label for="regionId"><?php _e('Region', 'spain'); ?></label>
+                            <label for="regionId"><?php _e('Region', 'india'); ?></label>
                             <?php ItemForm::region_text(osc_user()) ; ?>
                         </div>
                         <div class="row">
-                            <label for="city"><?php _e('City', 'spain'); ?></label>
+                            <label for="city"><?php _e('City', 'india'); ?></label>
                             <?php ItemForm::city_text(osc_user()) ; ?>
                         </div>
                         <div class="row">
-                            <label for="city"><?php _e('City Area', 'spain'); ?></label>
+                            <label for="city"><?php _e('City Area', 'india'); ?></label>
                             <?php ItemForm::city_area_text(osc_user()) ; ?>
                         </div>
                         <div class="row">
-                            <label for="address"><?php _e('Address', 'spain'); ?></label>
+                            <label for="address"><?php _e('Address', 'india'); ?></label>
                             <?php ItemForm::address_text(osc_user()) ; ?>
                         </div>
                     </div>
                     <!-- seller info -->
                     <?php if(!osc_is_web_user_logged_in() ) { ?>
                     <div class="box seller_info">
-                        <h2><?php _e("Seller's information", 'spain'); ?></h2>
+                        <h2><?php _e("Seller's information", 'india'); ?></h2>
                         <div class="row">
-                            <label for="contactName"><?php _e('Name', 'spain'); ?></label>
+                            <label for="contactName"><?php _e('Name', 'india'); ?></label>
                             <?php ItemForm::contact_name_text() ; ?>
                         </div>
                         <div class="row">
-                            <label for="contactEmail"><?php _e('E-mail', 'spain'); ?> *</label>
+                            <label for="contactEmail"><?php _e('E-mail', 'india'); ?> *</label>
                             <?php ItemForm::contact_email_text() ; ?>
                         </div>
                         <div class="row">
                             <div style="width: 120px;text-align: right;float:left;">
                                 <?php ItemForm::show_email_checkbox() ; ?>
                             </div>
-                            <label for="showEmail" style="width: 250px;"><?php _e('Show e-mail on the listing page', 'spain'); ?></label>
+                            <label for="showEmail" style="width: 250px;"><?php _e('Show e-mail on the listing page', 'india'); ?></label>
                         </div>
                     </div>
                     <?php }; ?>
@@ -179,7 +179,7 @@
                     </div>
                     <?php }?>  
                 <div class="clear"></div>
-                <button  type="submit"><?php _e('Publish', 'spain'); ?></button>
+                <button  type="submit"><?php _e('Publish', 'india'); ?></button>
                 </fieldset>
             </form>
         </div>

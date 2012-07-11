@@ -19,7 +19,7 @@
      * License along with this program.  If not, see <http://www.gnu.org/licenses/>.
      */
 
-     $sQuery = osc_get_preference('keyword_placeholder', 'spain_theme');
+     $sQuery = osc_get_preference('keyword_placeholder', 'india_theme');
 ?>
 <script type="text/javascript">
     var sQuery = '<?php echo osc_esc_js( $sQuery ); ?>' ;
@@ -51,9 +51,9 @@
     <fieldset class="main">
         <input type="text" name="sPattern"  id="query" value="<?php echo osc_esc_html( ( osc_search_pattern() != '' ) ? osc_search_pattern() : $sQuery ); ?>" />
         <?php  if ( osc_count_categories() ) { ?>
-            <?php osc_categories_select('sCategory', null, __('Select a category', 'spain')) ; ?>
+            <?php osc_categories_select('sCategory', null, __('Select a category', 'india')) ; ?>
         <?php  } ?>
-    	<button type="submit"><?php _e('Search', 'spain') ; ?></button>
+    	<button type="submit"><?php _e('Search', 'india') ; ?></button>
     </fieldset>
     <div id="search-example"></div>
 </form>

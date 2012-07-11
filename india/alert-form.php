@@ -3,9 +3,9 @@ $(document).ready(function(){
     $(".sub_button").click(function(){
         $.post('<?php echo osc_base_url(true); ?>', {email:$("#alert_email").val(), userid:$("#alert_userId").val(), alert:$("#alert").val(), page:"ajax", action:"alerts"}, 
             function(data){
-                if(data==1) { alert('<?php _e('You have sucessfully subscribed to the alert', 'spain'); ?>'); }
-                else if(data==-1) { alert('<?php _e('Invalid email address', 'spain'); ?>'); }
-                else { alert('<?php _e('There was a problem with the alert', 'spain');?>');
+                if(data==1) { alert('<?php _e('You have sucessfully subscribed to the alert', 'india'); ?>'); }
+                else if(data==-1) { alert('<?php _e('Invalid email address', 'india'); ?>'); }
+                else { alert('<?php _e('There was a problem with the alert', 'india');?>');
                 };
         });
         return false;
@@ -36,7 +36,7 @@ $(document).ready(function(){
 
 <div class="alert_form">
     <h3>
-        <strong><?php _e('Subscribe to this search', 'spain'); ?></strong>
+        <strong><?php _e('Subscribe to this search', 'india'); ?></strong>
     </h3>
     <form action="<?php echo osc_base_url(true); ?>" method="post" name="sub_alert" id="sub_alert">
         <fieldset>
@@ -52,7 +52,7 @@ $(document).ready(function(){
                 <?php AlertForm::email_text(); ?>
 
             <?php }; ?>
-            <button type="submit" class="sub_button" ><?php _e('Subscribe now', 'spain'); ?>!</button>
+            <button type="submit" class="sub_button" ><?php _e('Subscribe now', 'india'); ?>!</button>
         </fieldset>
     </form>
 </div>

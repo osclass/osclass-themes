@@ -32,23 +32,23 @@
         <?php osc_current_web_theme_path('header.php') ; ?>
         <div class="content user_forms">
             <div class="inner">
-                <h1><?php _e('Register an account for free', 'spain') ; ?></h1>
+                <h1><?php _e('Register an account for free', 'india') ; ?></h1>
                 <ul id="error_list"></ul>
                 <form name="register" id="register" action="<?php echo osc_base_url(true) ; ?>" method="post" >
                     <input type="hidden" name="page" value="register" />
                     <input type="hidden" name="action" value="register_post" />
                     
                     <fieldset>
-                        <label for="name"><?php _e('Name', 'spain') ; ?></label> <?php UserForm::name_text(); ?><br />
-                        <label for="password"><?php _e('Password', 'spain') ; ?></label> <?php UserForm::password_text(); ?><br />
-                        <label for="password"><?php _e('Re-type password', 'spain') ; ?></label> <?php UserForm::check_password_text(); ?><br />
+                        <label for="name"><?php _e('Name', 'india') ; ?></label> <?php UserForm::name_text(); ?><br />
+                        <label for="password"><?php _e('Password', 'india') ; ?></label> <?php UserForm::password_text(); ?><br />
+                        <label for="password"><?php _e('Re-type password', 'india') ; ?></label> <?php UserForm::check_password_text(); ?><br />
                         <p id="password-error" style="display:none;">
-                            <?php _e('Passwords don\'t match', 'spain') ; ?>.
+                            <?php _e('Passwords don\'t match', 'india') ; ?>.
                         </p>
-                        <label for="email"><?php _e('E-mail', 'spain') ; ?></label> <?php UserForm::email_text() ; ?><br />
+                        <label for="email"><?php _e('E-mail', 'india') ; ?></label> <?php UserForm::email_text() ; ?><br />
                         <?php osc_run_hook('user_register_form') ; ?>
                         <?php osc_show_recaptcha('register'); ?>
-                        <button type="submit"><?php _e('Create', 'spain') ; ?></button>
+                        <button type="submit"><?php _e('Create', 'india') ; ?></button>
                     </fieldset>
                 </form>
             </div>

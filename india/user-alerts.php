@@ -29,32 +29,32 @@
     <body>
         <?php osc_current_web_theme_path('header.php') ; ?>
         <div class="content user_account">
-            <h1><strong><?php _e('User account manager', 'spain') ; ?></strong></h1>
+            <h1><strong><?php _e('User account manager', 'india') ; ?></strong></h1>
             <div id="sidebar">
                 <?php echo osc_private_user_menu() ; ?>
             </div>
             <div id="main">
-                <h2><?php _e('Your alerts', 'spain') ; ?></h2>
+                <h2><?php _e('Your alerts', 'india') ; ?></h2>
                 <?php if(osc_count_alerts() == 0) { ?>
-                    <h3><?php _e('You do not have any alerts yet', 'spain'); ?>.</h3>
+                    <h3><?php _e('You do not have any alerts yet', 'india'); ?>.</h3>
                 <?php } else { ?>
                     <?php while(osc_has_alerts()) { ?>
                         <div class="userItem" >
-                            <div><?php _e('Alert', 'spain'); ?> | <a onclick="javascript:return confirm('<?php echo osc_esc_js(__('This action can\'t be undone. Are you sure you want to continue?', 'spain')); ?>');" href="<?php echo osc_user_unsubscribe_alert_url() ; ?>"><?php _e('Delete this alert', 'spain') ; ?></a></div>
+                            <div><?php _e('Alert', 'india'); ?> | <a onclick="javascript:return confirm('<?php echo osc_esc_js(__('This action can\'t be undone. Are you sure you want to continue?', 'india')); ?>');" href="<?php echo osc_user_unsubscribe_alert_url() ; ?>"><?php _e('Delete this alert', 'india') ; ?></a></div>
                             <div style="width: 75%; padding-left: 100px;" >
                             <?php while(osc_has_items()) { ?>
                                 <div class="userItem" >
                                     <div><a href="<?php echo osc_item_url(); ?>"><?php echo osc_item_title() ; ?></a></div>
                                     <div class="userItemData" >
-                                    <?php _e('Publication date', 'spain') ; ?>: <?php echo osc_format_date(osc_item_pub_date()) ; ?><br />
-                                    <?php if( osc_price_enabled_at_items() ) { _e('Price', 'spain') ; ?>: <?php echo osc_format_price(osc_item_price()) ; } ?>
+                                    <?php _e('Publication date', 'india') ; ?>: <?php echo osc_format_date(osc_item_pub_date()) ; ?><br />
+                                    <?php if( osc_price_enabled_at_items() ) { _e('Price', 'india') ; ?>: <?php echo osc_format_price(osc_item_price()) ; } ?>
                                     </div>
                                 </div>
                                 <br />
                             <?php } ?>
                             <?php if(osc_count_items() == 0) { ?>
                                     <br />
-                                    0 <?php _e('Listings', 'spain'); ?>
+                                    0 <?php _e('Listings', 'india'); ?>
                             <?php } ?>
                             </div>
                         </div>

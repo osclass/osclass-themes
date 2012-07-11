@@ -55,23 +55,23 @@
         <div class="content item user_public_profile">
             <div id="item_head">
                 <div class="inner">
-                    <h1><?php echo sprintf(__('%s\'s profile', 'spain'), osc_user_name()); ?></h1>
+                    <h1><?php echo sprintf(__('%s\'s profile', 'india'), osc_user_name()); ?></h1>
                 </div>
             </div>
             <div id="main">
                 <br />
                 <div id="description">
-                <h2><?php _e('Profile', 'spain'); ?></h2>
+                <h2><?php _e('Profile', 'india'); ?></h2>
                     <ul id="user_data">
-                        <li><?php _e('Full name', 'spain'); ?>: <?php echo osc_user_name(); ?></li>
-                        <li><?php _e('Address', 'spain'); ?>: <?php echo $address; ?></li>
-                        <li><?php _e('Location', 'spain'); ?>: <?php echo $location; ?></li>
-                        <li><?php _e('Website', 'spain'); ?>: <?php echo osc_user_website(); ?></li>
-                        <li><?php _e('User Description', 'spain'); ?>: <?php echo osc_user_info(); ?></li>
+                        <li><?php _e('Full name', 'india'); ?>: <?php echo osc_user_name(); ?></li>
+                        <li><?php _e('Address', 'india'); ?>: <?php echo $address; ?></li>
+                        <li><?php _e('Location', 'india'); ?>: <?php echo $location; ?></li>
+                        <li><?php _e('Website', 'india'); ?>: <?php echo osc_user_website(); ?></li>
+                        <li><?php _e('User Description', 'india'); ?>: <?php echo osc_user_info(); ?></li>
                     </ul>
                 </div>
                 <div id="description" class="latest_ads">
-                    <h2><?php _e('Latest listings', 'spain'); ?></h2>
+                    <h2><?php _e('Latest listings', 'india'); ?></h2>
                     <table border="0" cellspacing="0">
                         <tbody>
                             <?php $class = "even" ; ?>
@@ -109,7 +109,7 @@
                 <?php if(osc_logged_user_id()!=  osc_user_id()) { ?>
                 <?php     if(osc_reg_user_can_contact() && osc_is_web_user_logged_in() || !osc_reg_user_can_contact() ) { ?>
                 <div id="contact">
-                    <h2><?php _e("Contact publisher", 'spain') ; ?></h2>
+                    <h2><?php _e("Contact publisher", 'india') ; ?></h2>
                     <ul id="error_list"></ul>
                     <?php ContactForm::js_validation(); ?>
                     <form action="<?php echo osc_base_url(true) ; ?>" method="post" name="contact_form" id="contact_form">
@@ -118,10 +118,10 @@
                         <input type="hidden" name="id" value="<?php echo osc_user_id();?>" />
                         <?php osc_prepare_user_info() ; ?>
                         <fieldset>
-                            <label for="yourName"><?php _e('Your name', 'spain') ; ?>:</label> <?php ContactForm::your_name(); ?>
-                            <label for="yourEmail"><?php _e('Your e-mail address', 'spain') ; ?>:</label> <?php ContactForm::your_email(); ?>
-                            <label for="phoneNumber"><?php _e('Phone number', 'spain') ; ?> (<?php _e('optional', 'spain'); ?>):</label> <?php ContactForm::your_phone_number(); ?>
-                            <label for="message"><?php _e('Message', 'spain') ; ?>:</label> <?php ContactForm::your_message(); ?>
+                            <label for="yourName"><?php _e('Your name', 'india') ; ?>:</label> <?php ContactForm::your_name(); ?>
+                            <label for="yourEmail"><?php _e('Your e-mail address', 'india') ; ?>:</label> <?php ContactForm::your_email(); ?>
+                            <label for="phoneNumber"><?php _e('Phone number', 'india') ; ?> (<?php _e('optional', 'india'); ?>):</label> <?php ContactForm::your_phone_number(); ?>
+                            <label for="message"><?php _e('Message', 'india') ; ?>:</label> <?php ContactForm::your_message(); ?>
                             <?php if( osc_recaptcha_public_key() ) { ?>
                             <script type="text/javascript">
                                 var RecaptchaOptions = {
@@ -132,13 +132,13 @@
                             <style type="text/css"> div#recaptcha_widget, div#recaptcha_image > img { width:280px; } </style>
                             <div id="recaptcha_widget">
                                 <div id="recaptcha_image"><img /></div>
-                                <span class="recaptcha_only_if_image"><?php _e('Enter the words above','spain'); ?>:</span>
+                                <span class="recaptcha_only_if_image"><?php _e('Enter the words above','india'); ?>:</span>
                                 <input type="text" id="recaptcha_response_field" name="recaptcha_response_field" />
-                                <div><a href="javascript:Recaptcha.showhelp()"><?php _e('Help', 'spain'); ?></a></div>
+                                <div><a href="javascript:Recaptcha.showhelp()"><?php _e('Help', 'india'); ?></a></div>
                             </div>
                             <?php } ?>
                             <?php osc_show_recaptcha(); ?>
-                            <button type="submit"><?php _e('Send', 'spain') ; ?></button>
+                            <button type="submit"><?php _e('Send', 'india') ; ?></button>
                         </fieldset>
                     </form>
                 </div>

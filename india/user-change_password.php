@@ -30,31 +30,31 @@
         <?php osc_current_web_theme_path('header.php') ; ?>
         <div class="content user_account">
             <h1>
-                <strong><?php _e('User account manager', 'spain') ; ?></strong>
+                <strong><?php _e('User account manager', 'india') ; ?></strong>
             </h1>
             <div id="sidebar">
                 <?php echo osc_private_user_menu() ; ?>
             </div>
             <div id="main" class="modify_profile">
-                <h2><?php _e('Change your password', 'spain') ; ?></h2>
+                <h2><?php _e('Change your password', 'india') ; ?></h2>
                 <form action="<?php echo osc_base_url(true) ; ?>" method="post">
                     <input type="hidden" name="page" value="user" />
                     <input type="hidden" name="action" value="change_password_post" />
                     <fieldset>
                         <p>
-                            <label for="password"><?php _e('Current password', 'spain') ; ?> *</label>
+                            <label for="password"><?php _e('Current password', 'india') ; ?> *</label>
                             <input type="password" name="password" id="password" value="" />
                         </p>
                         <p>
-                            <label for="new_password"><?php _e('New password', 'spain') ; ?> *</label>
+                            <label for="new_password"><?php _e('New password', 'india') ; ?> *</label>
                             <input type="password" name="new_password" id="new_password" value="" />
                         </p>
                         <p>
-                            <label for="new_password2"><?php _e('Repeat new password', 'spain') ; ?> *</label>
+                            <label for="new_password2"><?php _e('Repeat new password', 'india') ; ?> *</label>
                             <input type="password" name="new_password2" id="new_password2" value="" />
                         </p>
                         <div style="clear:both;"></div>
-                        <button type="submit"><?php _e('Update', 'spain') ; ?></button>
+                        <button type="submit"><?php _e('Update', 'india') ; ?></button>
                     </fieldset>
                 </form>
             </div>
