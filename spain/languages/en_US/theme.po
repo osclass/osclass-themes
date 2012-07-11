@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: spain theme 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-06-27 17:08+0100\n"
+"POT-Creation-Date: 2012-07-10 18:38+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Juan Ramón <juanramon@osclass.org>\n"
 "Language-Team: OSClass <info@osclass.org>\n"
@@ -97,44 +97,56 @@ msgstr ""
 msgid "Your search must be at least three characters long"
 msgstr ""
 
-#: /var/www/osclass-themes-git/spain/functions.php:43
+#: /var/www/osclass-themes-git/spain/functions.php:39
+#, php-format
+msgid "Wait! There are unassigned map areas in the map. <a href=\"%s\">Click here</a> to assign regions to the map."
+msgstr ""
+
+#: /var/www/osclass-themes-git/spain/functions.php:49
 msgid "Region saved correctly"
 msgstr ""
 
-#: /var/www/osclass-themes-git/spain/functions.php:70
+#: /var/www/osclass-themes-git/spain/functions.php:83
 msgid "Theme settings updated correctly"
 msgstr ""
 
-#: /var/www/osclass-themes-git/spain/functions.php:77
+#: /var/www/osclass-themes-git/spain/functions.php:90
 msgid "The logo image has been uploaded correctly"
 msgstr ""
 
-#: /var/www/osclass-themes-git/spain/functions.php:79
-#: /var/www/osclass-themes-git/spain/functions.php:82
+#: /var/www/osclass-themes-git/spain/functions.php:92
+#: /var/www/osclass-themes-git/spain/functions.php:95
 msgid "An error has occurred, please try again"
 msgstr ""
 
-#: /var/www/osclass-themes-git/spain/functions.php:89
+#: /var/www/osclass-themes-git/spain/functions.php:102
 msgid "The logo image has been removed"
 msgstr ""
 
-#: /var/www/osclass-themes-git/spain/functions.php:91
+#: /var/www/osclass-themes-git/spain/functions.php:104
 msgid "Image not found"
 msgstr ""
 
-#: /var/www/osclass-themes-git/spain/functions.php:99
+#: /var/www/osclass-themes-git/spain/functions.php:113
+#: /var/www/osclass-themes-git/spain/functions.php:120
 msgid "Header logo"
 msgstr ""
 
-#: /var/www/osclass-themes-git/spain/functions.php:100
+#: /var/www/osclass-themes-git/spain/functions.php:114
+#: /var/www/osclass-themes-git/spain/functions.php:121
 msgid "Theme settings"
 msgstr ""
 
-#: /var/www/osclass-themes-git/spain/functions.php:101
+#: /var/www/osclass-themes-git/spain/functions.php:115
+#: /var/www/osclass-themes-git/spain/functions.php:122
 msgid "Map settings"
 msgstr ""
 
-#: /var/www/osclass-themes-git/spain/functions.php:117
+#: /var/www/osclass-themes-git/spain/functions.php:118
+msgid "Spain theme"
+msgstr ""
+
+#: /var/www/osclass-themes-git/spain/functions.php:143
 msgid "ie. PHP Programmer"
 msgstr ""
 
@@ -262,7 +274,7 @@ msgid "Add new photo"
 msgstr ""
 
 #: /var/www/osclass-themes-git/spain/item-edit.php:136
-#: /var/www/osclass-themes-git/spain/main.php:160
+#: /var/www/osclass-themes-git/spain/main.php:171
 msgid "Location"
 msgstr ""
 
@@ -465,15 +477,15 @@ msgstr ""
 msgid "Help"
 msgstr ""
 
-#: /var/www/osclass-themes-git/spain/main.php:119
+#: /var/www/osclass-themes-git/spain/main.php:130
 msgid "Latest Listings"
 msgstr ""
 
-#: /var/www/osclass-themes-git/spain/main.php:121
+#: /var/www/osclass-themes-git/spain/main.php:132
 msgid "No Latest Listings"
 msgstr ""
 
-#: /var/www/osclass-themes-git/spain/main.php:151
+#: /var/www/osclass-themes-git/spain/main.php:162
 msgid "See all offers"
 msgstr ""
 
@@ -782,7 +794,7 @@ msgid "How to assign a region to your map?"
 msgstr ""
 
 #: /var/www/osclass-themes-git/spain/admin/map_settings.php:3
-msgid "First, click in the map to select the area you want to set. Then, a dialog will be open in order to select the region you want to assign. Finally, once you selected the region, click save"
+msgid "First, click in the map to select the area you want to set. Then, a dialog will appear and you only need to select the region you want to assign. Finally, once you have selected the region, click the save button."
 msgstr ""
 
 #: /var/www/osclass-themes-git/spain/admin/map_settings.php:79
@@ -794,31 +806,31 @@ msgstr ""
 
 #: /var/www/osclass-themes-git/spain/admin/map_settings.php:101
 #: /var/www/osclass-themes-git/spain/admin/map_settings.php:122
-#: /var/www/osclass-themes-git/spain/admin/settings.php:37
+#: /var/www/osclass-themes-git/spain/admin/settings.php:39
 msgid "Save changes"
 msgstr ""
 
-#: /var/www/osclass-themes-git/spain/admin/settings.php:10
+#: /var/www/osclass-themes-git/spain/admin/settings.php:12
 msgid "I would like to contribute to the development of OSClass with a donation of"
 msgstr ""
 
-#: /var/www/osclass-themes-git/spain/admin/settings.php:15
+#: /var/www/osclass-themes-git/spain/admin/settings.php:17
 msgid "Custom"
 msgstr ""
 
-#: /var/www/osclass-themes-git/spain/admin/settings.php:16
+#: /var/www/osclass-themes-git/spain/admin/settings.php:18
 msgid "Donate"
 msgstr ""
 
-#: /var/www/osclass-themes-git/spain/admin/settings.php:26
+#: /var/www/osclass-themes-git/spain/admin/settings.php:28
 msgid "Search placeholder"
 msgstr ""
 
-#: /var/www/osclass-themes-git/spain/admin/settings.php:30
+#: /var/www/osclass-themes-git/spain/admin/settings.php:32
 msgid "Footer link"
 msgstr ""
 
-#: /var/www/osclass-themes-git/spain/admin/settings.php:32
+#: /var/www/osclass-themes-git/spain/admin/settings.php:34
 msgid "I want to help OSClass linking to <a href=\"http://osclass.org/\" target=\"_blank\">osclass.org</a> from my site with the following text:"
 msgstr ""
 
