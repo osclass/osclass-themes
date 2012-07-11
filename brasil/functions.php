@@ -102,10 +102,22 @@
     }
     osc_add_hook('init_admin', 'theme_brasil_actions_admin');
     osc_add_hook('init_admin', 'theme_brasil_regions_map_admin');
-    osc_admin_menu_appearance(__('Header logo', 'brasil'), osc_admin_render_theme_url('oc-content/themes/brasil/admin/header.php'), 'header_brasil');
-    osc_admin_menu_appearance(__('Theme settings', 'brasil'), osc_admin_render_theme_url('oc-content/themes/brasil/admin/settings.php'), 'settings_brasil');
-    osc_admin_menu_appearance(__('Map settings', 'brasil'), osc_admin_render_theme_url('oc-content/themes/brasil/admin/map_settings.php'), 'map_settings_brasil');
+    if(function_exists('osc_admin_menu_appearance')){
+        osc_admin_menu_appearance(__('Header logo', 'brasil'), osc_admin_render_theme_url('oc-content/themes/brasil/admin/header.php'), 'header_brasil');
+        osc_admin_menu_appearance(__('Theme settings', 'brasil'), osc_admin_render_theme_url('oc-content/themes/brasil/admin/settings.php'), 'settings_brasil');
+        osc_admin_menu_appearance(__('Map settings', 'brasil'), osc_admin_render_theme_url('oc-content/themes/brasil/admin/map_settings.php'), 'map_settings_brasil');
+    } else {
+        function brasil_admin_menu() {
+            echo '<h3><a href="#">'. __('Brasil theme','brasil') .'</a></h3>
+            <ul>
+                <li><a href="' . osc_admin_render_theme_url('oc-content/themes/brasil/admin/header.php') . '">&raquo; '.__('Header logo', 'brasil').'</a></li>
+                <li><a href="' . osc_admin_render_theme_url('oc-content/themes/brasil/admin/settings.php') . '">&raquo; '.__('Theme settings', 'brasil').'</a></li>
+                <li><a href="' . osc_admin_render_theme_url('oc-content/themes/brasil/admin/map_settings.php') . '">&raquo; '.__('Map settings', 'brasil').'</a></li>
 
+            </ul>';
+        }
+        osc_add_hook('admin_menu', 'brasil_admin_menu');
+    }
     if( !function_exists('logo_header') ) {
         function logo_header() {
             $html = '<img border="0" alt="' . osc_page_title() . '" src="' . osc_current_web_theme_url('images/logo.jpg') . '" />';
