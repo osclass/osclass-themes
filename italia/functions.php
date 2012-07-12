@@ -141,7 +141,7 @@
     if( !function_exists('italia_theme_install') ) {
         function italia_theme_install() {
             osc_set_preference('keyword_placeholder', __('ie. PHP Programmer', 'italia'), 'italia_theme');
-            osc_set_preference('version', italia_THEME_VERSION, 'italia_theme');
+            osc_set_preference('version', ITALIA_THEME_VERSION, 'italia_theme');
             osc_set_preference('footer_link', true, 'italia_theme');
             osc_set_preference('donation', '0', 'italia_theme');
         }

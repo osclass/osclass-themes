@@ -67,6 +67,13 @@
     }
 
     function theme_usa_actions_admin() {
+        if( Params::getParam('file') == 'oc-content/themes/usa/admin/settings.php' ) {
+            if( Params::getParam('donation') == 'successful' ) {
+                osc_set_preference('donation', '1', 'usa_theme');
+                osc_reset_preferences();
+            }
+        }
+
         switch( Params::getParam('action_specific') ) {
             case('settings'):
                 $footerLink = Params::getParam('footer_link');
@@ -133,8 +140,9 @@
     if( !function_exists('usa_theme_install') ) {
         function usa_theme_install() {
             osc_set_preference('keyword_placeholder', __('ie. PHP Programmer', 'usa'), 'usa_theme');
-            osc_set_preference('version', usa_THEME_VERSION, 'usa_theme');
+            osc_set_preference('version', USA_THEME_VERSION, 'usa_theme');
             osc_set_preference('footer_link', true, 'usa_theme');
+            osc_set_preference('donation', '0', 'usa_theme');
         }
     }
 

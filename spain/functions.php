@@ -141,7 +141,7 @@
     if( !function_exists('spain_theme_install') ) {
         function spain_theme_install() {
             osc_set_preference('keyword_placeholder', __('ie. PHP Programmer', 'spain'), 'spain_theme');
-            osc_set_preference('version', spain_THEME_VERSION, 'spain_theme');
+            osc_set_preference('version', SPAIN_THEME_VERSION, 'spain_theme');
             osc_set_preference('footer_link', true, 'spain_theme');
             osc_set_preference('donation', '0', 'spain_theme');
         }

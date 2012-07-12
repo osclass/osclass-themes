@@ -67,6 +67,13 @@
     }
 
     function theme_brasil_actions_admin() {
+        if( Params::getParam('file') == 'oc-content/themes/brasil/admin/settings.php' ) {
+            if( Params::getParam('donation') == 'successful' ) {
+                osc_set_preference('donation', '1', 'brasil_theme');
+                osc_reset_preferences();
+            }
+        }
+
         switch( Params::getParam('action_specific') ) {
             case('settings'):
                 $footerLink = Params::getParam('footer_link');
@@ -133,8 +140,9 @@
     if( !function_exists('brasil_theme_install') ) {
         function brasil_theme_install() {
             osc_set_preference('keyword_placeholder', __('ie. PHP Programmer', 'brasil'), 'brasil_theme');
-            osc_set_preference('version', brasil_THEME_VERSION, 'brasil_theme');
+            osc_set_preference('version', BRASIL_THEME_VERSION, 'brasil_theme');
             osc_set_preference('footer_link', true, 'brasil_theme');
+            osc_set_preference('donation', '0', 'brasil_theme');
         }
     }
 

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: usa theme 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-06-27 17:08+0100\n"
+"POT-Creation-Date: 2012-07-11 22:01+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Juan Ramón <juanramon@osclass.org>\n"
 "Language-Team: OSClass <info@osclass.org>\n"
@@ -97,44 +97,56 @@ msgstr ""
 msgid "Your search must be at least three characters long"
 msgstr ""
 
-#: /var/www/osclass-themes-git/usa/functions.php:43
+#: /var/www/osclass-themes-git/usa/functions.php:39
+#, php-format
+msgid "Wait! There are unassigned map areas in the map. <a href=\"%s\">Click here</a> to assign regions to the map."
+msgstr ""
+
+#: /var/www/osclass-themes-git/usa/functions.php:49
 msgid "Region saved correctly"
 msgstr ""
 
-#: /var/www/osclass-themes-git/usa/functions.php:70
+#: /var/www/osclass-themes-git/usa/functions.php:83
 msgid "Theme settings updated correctly"
 msgstr ""
 
-#: /var/www/osclass-themes-git/usa/functions.php:77
+#: /var/www/osclass-themes-git/usa/functions.php:90
 msgid "The logo image has been uploaded correctly"
 msgstr ""
 
-#: /var/www/osclass-themes-git/usa/functions.php:79
-#: /var/www/osclass-themes-git/usa/functions.php:82
+#: /var/www/osclass-themes-git/usa/functions.php:92
+#: /var/www/osclass-themes-git/usa/functions.php:95
 msgid "An error has occurred, please try again"
 msgstr ""
 
-#: /var/www/osclass-themes-git/usa/functions.php:89
+#: /var/www/osclass-themes-git/usa/functions.php:102
 msgid "The logo image has been removed"
 msgstr ""
 
-#: /var/www/osclass-themes-git/usa/functions.php:91
+#: /var/www/osclass-themes-git/usa/functions.php:104
 msgid "Image not found"
 msgstr ""
 
-#: /var/www/osclass-themes-git/usa/functions.php:99
+#: /var/www/osclass-themes-git/usa/functions.php:113
+#: /var/www/osclass-themes-git/usa/functions.php:120
 msgid "Header logo"
 msgstr ""
 
-#: /var/www/osclass-themes-git/usa/functions.php:100
+#: /var/www/osclass-themes-git/usa/functions.php:114
+#: /var/www/osclass-themes-git/usa/functions.php:121
 msgid "Theme settings"
 msgstr ""
 
-#: /var/www/osclass-themes-git/usa/functions.php:101
+#: /var/www/osclass-themes-git/usa/functions.php:115
+#: /var/www/osclass-themes-git/usa/functions.php:122
 msgid "Map settings"
 msgstr ""
 
-#: /var/www/osclass-themes-git/usa/functions.php:117
+#: /var/www/osclass-themes-git/usa/functions.php:118
+msgid "USA theme"
+msgstr ""
+
+#: /var/www/osclass-themes-git/usa/functions.php:142
 msgid "ie. PHP Programmer"
 msgstr ""
 
@@ -262,7 +274,7 @@ msgid "Add new photo"
 msgstr ""
 
 #: /var/www/osclass-themes-git/usa/item-edit.php:136
-#: /var/www/osclass-themes-git/usa/main.php:160
+#: /var/www/osclass-themes-git/usa/main.php:110
 msgid "Location"
 msgstr ""
 
@@ -442,15 +454,15 @@ msgid "Contact publisher"
 msgstr ""
 
 #: /var/www/osclass-themes-git/usa/item.php:185
-msgid "The listing is expired. You cannot contact the publisher."
+msgid "The listing is expired. You can't contact the publisher."
 msgstr ""
 
 #: /var/www/osclass-themes-git/usa/item.php:189
-msgid "It's your own listing, you cannot contact the publisher."
+msgid "It's your own listing, you can't contact the publisher."
 msgstr ""
 
 #: /var/www/osclass-themes-git/usa/item.php:193
-msgid "You must login or register a new free account in order to contact the advertiser"
+msgid "You must log in or register a new account in order to contact the advertiser"
 msgstr ""
 
 #: /var/www/osclass-themes-git/usa/item.php:209
@@ -465,15 +477,15 @@ msgstr ""
 msgid "Help"
 msgstr ""
 
-#: /var/www/osclass-themes-git/usa/main.php:119
+#: /var/www/osclass-themes-git/usa/main.php:69
 msgid "Latest Listings"
 msgstr ""
 
-#: /var/www/osclass-themes-git/usa/main.php:121
+#: /var/www/osclass-themes-git/usa/main.php:71
 msgid "No Latest Listings"
 msgstr ""
 
-#: /var/www/osclass-themes-git/usa/main.php:151
+#: /var/www/osclass-themes-git/usa/main.php:101
 msgid "See all offers"
 msgstr ""
 
@@ -733,7 +745,7 @@ msgid "Remove logo"
 msgstr ""
 
 #: /var/www/osclass-themes-git/usa/admin/header.php:23
-msgid "There isn't any logo uploaded yet"
+msgid "No logo has been uploaded yet"
 msgstr ""
 
 #: /var/www/osclass-themes-git/usa/admin/header.php:26
@@ -762,11 +774,11 @@ msgid "The images folder <strong>%s</strong> is not writable on your server"
 msgstr ""
 
 #: /var/www/osclass-themes-git/usa/admin/header.php:54
-msgid "OSClass can't upload logo image from the administration panel."
+msgid "OSClass can't upload the logo image from the administration panel."
 msgstr ""
 
 #: /var/www/osclass-themes-git/usa/admin/header.php:55
-msgid "Please make the mentioned image folder writable."
+msgid "Please make the aforementioned image folder writable."
 msgstr ""
 
 #: /var/www/osclass-themes-git/usa/admin/header.php:60
@@ -782,43 +794,43 @@ msgid "How to assign a region to your map?"
 msgstr ""
 
 #: /var/www/osclass-themes-git/usa/admin/map_settings.php:3
-msgid "First, click in the map to select the area you want to set. Then, a dialog will be open in order to select the region you want to assign. Finally, once you selected the region, click save"
+msgid "First, click in the map to select the area you want to set. Then, a dialog will appear and you only need to select the region you want to assign. Finally, once you have selected the region, click the save button."
 msgstr ""
 
-#: /var/www/osclass-themes-git/usa/admin/map_settings.php:79
-#: /var/www/osclass-themes-git/usa/admin/map_settings.php:96
-#: /var/www/osclass-themes-git/usa/admin/map_settings.php:117
-#: /var/www/osclass-themes-git/usa/admin/map_settings.php:140
+#: /var/www/osclass-themes-git/usa/admin/map_settings.php:80
+#: /var/www/osclass-themes-git/usa/admin/map_settings.php:97
+#: /var/www/osclass-themes-git/usa/admin/map_settings.php:118
+#: /var/www/osclass-themes-git/usa/admin/map_settings.php:141
 msgid "Select a region"
 msgstr ""
 
-#: /var/www/osclass-themes-git/usa/admin/map_settings.php:101
-#: /var/www/osclass-themes-git/usa/admin/map_settings.php:122
-#: /var/www/osclass-themes-git/usa/admin/settings.php:37
+#: /var/www/osclass-themes-git/usa/admin/map_settings.php:102
+#: /var/www/osclass-themes-git/usa/admin/map_settings.php:123
+#: /var/www/osclass-themes-git/usa/admin/settings.php:39
 msgid "Save changes"
 msgstr ""
 
-#: /var/www/osclass-themes-git/usa/admin/settings.php:10
+#: /var/www/osclass-themes-git/usa/admin/settings.php:12
 msgid "I would like to contribute to the development of OSClass with a donation of"
 msgstr ""
 
-#: /var/www/osclass-themes-git/usa/admin/settings.php:15
+#: /var/www/osclass-themes-git/usa/admin/settings.php:17
 msgid "Custom"
 msgstr ""
 
-#: /var/www/osclass-themes-git/usa/admin/settings.php:16
+#: /var/www/osclass-themes-git/usa/admin/settings.php:18
 msgid "Donate"
 msgstr ""
 
-#: /var/www/osclass-themes-git/usa/admin/settings.php:26
+#: /var/www/osclass-themes-git/usa/admin/settings.php:28
 msgid "Search placeholder"
 msgstr ""
 
-#: /var/www/osclass-themes-git/usa/admin/settings.php:30
+#: /var/www/osclass-themes-git/usa/admin/settings.php:32
 msgid "Footer link"
 msgstr ""
 
-#: /var/www/osclass-themes-git/usa/admin/settings.php:32
-msgid "I want to help OSClass linking to <a href=\"http://osclass.org/\" target=\"_blank\">osclass.org</a> from my site with the following text:"
+#: /var/www/osclass-themes-git/usa/admin/settings.php:34
+msgid "I want to help OSClass by linking to <a href=\"http://osclass.org/\" target=\"_blank\">osclass.org</a> from my site with the following text:"
 msgstr ""
 

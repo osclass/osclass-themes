@@ -67,6 +67,13 @@
     }
 
     function theme_india_actions_admin() {
+        if( Params::getParam('file') == 'oc-content/themes/india/admin/settings.php' ) {
+            if( Params::getParam('donation') == 'successful' ) {
+                osc_set_preference('donation', '1', 'india_theme');
+                osc_reset_preferences();
+            }
+        }
+
         switch( Params::getParam('action_specific') ) {
             case('settings'):
                 $footerLink = Params::getParam('footer_link');
@@ -133,8 +140,9 @@
     if( !function_exists('india_theme_install') ) {
         function india_theme_install() {
             osc_set_preference('keyword_placeholder', __('ie. PHP Programmer', 'india'), 'india_theme');
-            osc_set_preference('version', india_THEME_VERSION, 'india_theme');
+            osc_set_preference('version', INDIA_THEME_VERSION, 'india_theme');
             osc_set_preference('footer_link', true, 'india_theme');
+            osc_set_preference('donation', '0', 'india_theme');
         }
     }
 

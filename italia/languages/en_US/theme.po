@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: italia theme 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-07-10 18:38+0100\n"
+"POT-Creation-Date: 2012-07-12 00:50+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Juan Ramón <juanramon@osclass.org>\n"
 "Language-Team: OSClass <info@osclass.org>\n"
@@ -274,7 +274,7 @@ msgid "Add new photo"
 msgstr ""
 
 #: /var/www/osclass-themes-git/italia/item-edit.php:136
-#: /var/www/osclass-themes-git/italia/main.php:171
+#: /var/www/osclass-themes-git/italia/main.php:130
 msgid "Location"
 msgstr ""
 
@@ -454,15 +454,15 @@ msgid "Contact publisher"
 msgstr ""
 
 #: /var/www/osclass-themes-git/italia/item.php:185
-msgid "The listing is expired. You cannot contact the publisher."
+msgid "The listing is expired. You can't contact the publisher."
 msgstr ""
 
 #: /var/www/osclass-themes-git/italia/item.php:189
-msgid "It's your own listing, you cannot contact the publisher."
+msgid "It's your own listing, you can't contact the publisher."
 msgstr ""
 
 #: /var/www/osclass-themes-git/italia/item.php:193
-msgid "You must login or register a new free account in order to contact the advertiser"
+msgid "You must log in or register a new account in order to contact the advertiser"
 msgstr ""
 
 #: /var/www/osclass-themes-git/italia/item.php:209
@@ -477,15 +477,15 @@ msgstr ""
 msgid "Help"
 msgstr ""
 
-#: /var/www/osclass-themes-git/italia/main.php:130
+#: /var/www/osclass-themes-git/italia/main.php:89
 msgid "Latest Listings"
 msgstr ""
 
-#: /var/www/osclass-themes-git/italia/main.php:132
+#: /var/www/osclass-themes-git/italia/main.php:91
 msgid "No Latest Listings"
 msgstr ""
 
-#: /var/www/osclass-themes-git/italia/main.php:162
+#: /var/www/osclass-themes-git/italia/main.php:121
 msgid "See all offers"
 msgstr ""
 
@@ -745,7 +745,7 @@ msgid "Remove logo"
 msgstr ""
 
 #: /var/www/osclass-themes-git/italia/admin/header.php:23
-msgid "There isn't any logo uploaded yet"
+msgid "No logo has been uploaded yet"
 msgstr ""
 
 #: /var/www/osclass-themes-git/italia/admin/header.php:26
@@ -774,11 +774,11 @@ msgid "The images folder <strong>%s</strong> is not writable on your server"
 msgstr ""
 
 #: /var/www/osclass-themes-git/italia/admin/header.php:54
-msgid "OSClass can't upload logo image from the administration panel."
+msgid "OSClass can't upload the logo image from the administration panel."
 msgstr ""
 
 #: /var/www/osclass-themes-git/italia/admin/header.php:55
-msgid "Please make the mentioned image folder writable."
+msgid "Please make the aforementioned image folder writable."
 msgstr ""
 
 #: /var/www/osclass-themes-git/italia/admin/header.php:60
@@ -797,15 +797,15 @@ msgstr ""
 msgid "First, click in the map to select the area you want to set. Then, a dialog will appear and you only need to select the region you want to assign. Finally, once you have selected the region, click the save button."
 msgstr ""
 
-#: /var/www/osclass-themes-git/italia/admin/map_settings.php:79
-#: /var/www/osclass-themes-git/italia/admin/map_settings.php:96
-#: /var/www/osclass-themes-git/italia/admin/map_settings.php:117
-#: /var/www/osclass-themes-git/italia/admin/map_settings.php:140
+#: /var/www/osclass-themes-git/italia/admin/map_settings.php:37
+#: /var/www/osclass-themes-git/italia/admin/map_settings.php:54
+#: /var/www/osclass-themes-git/italia/admin/map_settings.php:75
+#: /var/www/osclass-themes-git/italia/admin/map_settings.php:95
 msgid "Select a region"
 msgstr ""
 
-#: /var/www/osclass-themes-git/italia/admin/map_settings.php:101
-#: /var/www/osclass-themes-git/italia/admin/map_settings.php:122
+#: /var/www/osclass-themes-git/italia/admin/map_settings.php:59
+#: /var/www/osclass-themes-git/italia/admin/map_settings.php:80
 #: /var/www/osclass-themes-git/italia/admin/settings.php:39
 msgid "Save changes"
 msgstr ""
@@ -831,6 +831,6 @@ msgid "Footer link"
 msgstr ""
 
 #: /var/www/osclass-themes-git/italia/admin/settings.php:34
-msgid "I want to help OSClass linking to <a href=\"http://osclass.org/\" target=\"_blank\">osclass.org</a> from my site with the following text:"
+msgid "I want to help OSClass by linking to <a href=\"http://osclass.org/\" target=\"_blank\">osclass.org</a> from my site with the following text:"
 msgstr ""
 

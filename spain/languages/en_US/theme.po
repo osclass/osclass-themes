@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: spain theme 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-07-10 18:38+0100\n"
+"POT-Creation-Date: 2012-07-11 21:40+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Juan Ramón <juanramon@osclass.org>\n"
 "Language-Team: OSClass <info@osclass.org>\n"
@@ -454,15 +454,15 @@ msgid "Contact publisher"
 msgstr ""
 
 #: /var/www/osclass-themes-git/spain/item.php:185
-msgid "The listing is expired. You cannot contact the publisher."
+msgid "The listing is expired. You can't contact the publisher."
 msgstr ""
 
 #: /var/www/osclass-themes-git/spain/item.php:189
-msgid "It's your own listing, you cannot contact the publisher."
+msgid "It's your own listing, you can't contact the publisher."
 msgstr ""
 
 #: /var/www/osclass-themes-git/spain/item.php:193
-msgid "You must login or register a new free account in order to contact the advertiser"
+msgid "You must log in or register a new account in order to contact the advertiser"
 msgstr ""
 
 #: /var/www/osclass-themes-git/spain/item.php:209
@@ -745,7 +745,7 @@ msgid "Remove logo"
 msgstr ""
 
 #: /var/www/osclass-themes-git/spain/admin/header.php:23
-msgid "There isn't any logo uploaded yet"
+msgid "No logo has been uploaded yet"
 msgstr ""
 
 #: /var/www/osclass-themes-git/spain/admin/header.php:26
@@ -774,11 +774,11 @@ msgid "The images folder <strong>%s</strong> is not writable on your server"
 msgstr ""
 
 #: /var/www/osclass-themes-git/spain/admin/header.php:54
-msgid "OSClass can't upload logo image from the administration panel."
+msgid "OSClass can't upload the logo image from the administration panel."
 msgstr ""
 
 #: /var/www/osclass-themes-git/spain/admin/header.php:55
-msgid "Please make the mentioned image folder writable."
+msgid "Please make the aforementioned image folder writable."
 msgstr ""
 
 #: /var/www/osclass-themes-git/spain/admin/header.php:60
@@ -831,6 +831,6 @@ msgid "Footer link"
 msgstr ""
 
 #: /var/www/osclass-themes-git/spain/admin/settings.php:34
-msgid "I want to help OSClass linking to <a href=\"http://osclass.org/\" target=\"_blank\">osclass.org</a> from my site with the following text:"
+msgid "I want to help OSClass by linking to <a href=\"http://osclass.org/\" target=\"_blank\">osclass.org</a> from my site with the following text:"
 msgstr ""
 
