@@ -1,5 +1,9 @@
 #CHANGELOG
 
+### v1.2.4 - 19/07/2012
+
+* Added footer hook
+
 ### v1.2.2 - 20/02/2012
 
 * Removed usage of console.log function in js

@@ -10,3 +10,4 @@
     </div>
 </div>
 <!-- footer end -->
+<?php osc_run_hook('footer') ; ?>

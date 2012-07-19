@@ -1,9 +1,8 @@
 #CHANGELOG
 
-### v1.2.2 - 20/02/2012
+### v1.1.2 - 19/07/2012
 
-* Removed usage of console.log function in js
-* Fixed domain of a i18n string
+* Added footer hook
 
 ### v1.1.1 - 19/10/2011
 
