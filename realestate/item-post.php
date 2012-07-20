@@ -21,8 +21,8 @@
     function itemCustomHead(){
         echo '<meta name="robots" content="noindex, nofollow" />';
         echo '<meta name="googlebot" content="noindex, nofollow" />';
-        echo $echo.'<script type="text/javascript" src="'.osc_current_web_theme_js_url('jquery.validate.min.js').'"></script>'; 
-        echo $echo.'<script type="text/javascript" src="'.osc_current_web_theme_js_url('tabber-minimized.js').'"></script>'; ?>
+        echo '<script type="text/javascript" src="'.osc_current_web_theme_js_url('jquery.validate.min.js').'"></script>'; 
+        echo '<script type="text/javascript" src="'.osc_current_web_theme_js_url('tabber-minimized.js').'"></script>'; ?>
         <?php ItemForm::location_javascript_new(); ?>
         <?php if(osc_images_enabled_at_items()) ItemForm::photos_javascript(); ?>
         <!-- end only item-post.php -->
