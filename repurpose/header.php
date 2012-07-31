@@ -33,9 +33,9 @@
                         <?php $i++ ; } ?>
                         </ul>
                     </li>
+                <?php } ?>
                     <a class="publish-btn" href="<?php echo osc_item_post_url_in_category() ; ?>"><?php _e("Publish your ad for free", 'twitter'); ?></a>
                 </ul>
-                <?php } ?>
             </div>
         </div>
         <div class="topbar">
