@@ -65,7 +65,7 @@
                         }
                     }
                 ?>
-                <script type="text/javascript">var galleries = $('.ad-gallery').adGallery({effect:'fade',display_back_and_forward:false});</script>
+                <script type="text/javascript">var galleries = $('.ad-gallery').adGallery({effect:'fade',display_back_and_forward:false, loader_image: '<?php echo osc_current_web_theme_url("images/gallery/loader.gif"); ?>'});</script>
                 <div class="ui-content-box main-content">
                 <table>
                     <tr>

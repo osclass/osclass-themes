@@ -107,12 +107,14 @@
             function add_close_button_fm($message){
                 return $message.'<a class="close">×</a>' ;
             }
-            osc_add_filter('flash_message_text', 'add_close_button_fm') ;
+            if(osc_version() < 300){
+                osc_add_filter('flash_message_text', 'add_close_button_fm') ;
+            }
         }
         if( !function_exists('add_close_button_action') ) {
             function add_close_button_action(){
                 echo '<script type="text/javascript">';
-                    echo '$(".FlashMessage .close").click(function(){';
+                    echo '$(".FlashMessage .close, .flashmessage .ico-close").click(function(){';
                         echo '$(this).parent().hide();';
                     echo '});';
                 echo '</script>';
@@ -126,7 +128,6 @@
             $email = md5( strtolower( trim( $email ) ) );
             $default = urlencode( osc_current_web_theme_url('images/avatar.png') );
             return "http://www.gravatar.com/avatar/$email?s=$size&d=$default";
-            // "0bc83cb571cd1c50ba6f3e8a78ef1346"
         }
     }
     if( !function_exists('logo_header') ) {
