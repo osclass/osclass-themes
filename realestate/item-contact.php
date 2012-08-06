@@ -18,10 +18,12 @@
      *      You should have received a copy of the GNU Affero General Public
      * License along with this program.  If not, see <http://www.gnu.org/licenses/>.
      */
-    function itemCustomHead(){
-        echo $echo.'<script type="text/javascript" src="'.osc_current_web_theme_js_url('jquery.validate.min.js').'"></script>'; ?>
-        <meta name="robots" content="noindex, nofollow" />
-        <meta name="googlebot" content="noindex, nofollow" />
+    osc_add_filter('meta_robots','meta_robots_custom');
+    function meta_robots_custom(){
+        return 'noindex, nofollow';
+    }
+    function itemCustomHead(){ ?>
+        <script type="text/javascript" src="<?php echo osc_current_web_theme_js_url('jquery.validate.min.js'); ?>"></script>'
 <?php 
     }
     osc_add_hook('header','itemCustomHead');

@@ -19,8 +19,7 @@
      * License along with this program.  If not, see <http://www.gnu.org/licenses/>.
      */
     function itemCustomHead(){
-        echo $echo.'<script type="text/javascript" src="'.osc_current_web_theme_js_url('jquery.validate.min.js').'"></script>';
-
+        '<script type="text/javascript" src="'.osc_current_web_theme_js_url('jquery.validate.min.js').'"></script>';
     }
     osc_add_hook('header','itemCustomHead');
 ?>

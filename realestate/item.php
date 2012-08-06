@@ -159,7 +159,7 @@
                                         <div class="ui-actionbox">
                                             <?php echo osc_comments_pagination(); ?>
                                         </div>
-                                        <?php } ?>
+                                        <?php } ?>
                                     </div>
 
                                 </div>

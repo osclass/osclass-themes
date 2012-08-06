@@ -25,17 +25,17 @@
 <html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="<?php echo str_replace('_', '-', osc_current_user_locale()); ?>">
     <head>
         <?php osc_current_web_theme_path('head.php') ; ?>
-        <meta name="robots" content="index, follow" />
-        <meta name="googlebot" content="index, follow" />
         <?php
-        $robots = 'index, follow';
         if(osc_is_search_page()){
             if(osc_count_items() == 0) {
-                $robots = 'noindex, nofollow';
+                osc_add_filter('meta_robots','meta_robots_custom');
+                function meta_robots_custom(){
+                    return 'noindex, nofollow';
+                }
             }
         };?>
-        <meta name="robots" content="<?php echo $robots; ?>" />
-        <meta name="googlebot" content="<?php echo $robots; ?>" />
+        <meta name="robots" content="<?php echo osc_apply_filter('meta_robots','index, follow'); ?>" />
+        <meta name="googlebot" content="<?php echo osc_apply_filter('meta_robots','index, follow'); ?>" />
     </head>
 <body>
 <?php osc_show_flash_message() ; ?>    

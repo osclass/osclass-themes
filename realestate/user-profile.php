@@ -81,7 +81,7 @@
                             <?php UserForm::website_text(osc_user()) ; ?>
                         </div>
                         <div class="row ui-row-text">
-                            <?php UserForm::multilanguage_info($locales, osc_user()); ?>
+                            <?phpUserForm::multilanguage_info(osc_get_locales(), osc_user()); ?>
                         </div>
                         <div class="actions">
                             <a href="#" class="ui-button ui-button-gray js-submit"><?php _e("Update", 'realestate');?></a>

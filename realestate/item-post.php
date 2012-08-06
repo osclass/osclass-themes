@@ -18,9 +18,11 @@
      *      You should have received a copy of the GNU Affero General Public
      * License along with this program.  If not, see <http://www.gnu.org/licenses/>.
      */
+    osc_add_filter('meta_robots','meta_robots_custom');
+    function meta_robots_custom(){
+        return 'noindex, nofollow';
+    }
     function itemCustomHead(){
-        echo '<meta name="robots" content="noindex, nofollow" />';
-        echo '<meta name="googlebot" content="noindex, nofollow" />';
         echo '<script type="text/javascript" src="'.osc_current_web_theme_js_url('jquery.validate.min.js').'"></script>'; 
         echo '<script type="text/javascript" src="'.osc_current_web_theme_js_url('tabber-minimized.js').'"></script>'; ?>
         <?php ItemForm::location_javascript_new(); ?>
