@@ -25,7 +25,7 @@
                 <form action="<?php echo osc_base_url(true) ; ?>" method="get" class="search" onsubmit="javascript:return doSearch();">
                     <input type="hidden" name="page" value="search" />
                     <h2><?php _e("Find a place, <span>find a home</span>", 'realestate');?></h2>
-                    <div class="has-placeholder"><span id="search-placeholder"><?php echo osc_get_preference('keyword_placeholder','realestate') ; ?></span><input type="text" name="sPattern" id="query" class="input-text js-input-home" value="<?php echo $sQuery; ?>" /><a href="#" class="ui-button ui-button-big js-submit"><?php _e("Search", 'realestate');?></a><div id="message-seach"></div></div>
+                    <div class="has-placeholder"><span id="search-placeholder"><?php echo osc_get_preference('keyword_placeholder','realestate') ; ?></span><input type="text" name="sPattern" id="query" class="input-text js-input-home" value="" /><a href="#" class="ui-button ui-button-big js-submit"><?php _e("Search", 'realestate');?></a><div id="message-seach"></div></div>
                 </form>
                 <div class="categories">
                     <?php osc_goto_first_category() ; ?>

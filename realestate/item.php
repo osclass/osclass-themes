@@ -102,9 +102,9 @@
                                 <strong class="share"><a href="<?php echo osc_item_send_friend_url() ; ?>" rel="nofollow" class="ui-button"><?php _e('Share', 'realestate') ; ?></a></strong>
                             </p>
                         </td>
-                        <?php if(osc_get_preference('insertion','realestate_attributes') == 'manual' && function_exists('table_realestate_attributes')){ ?>
+                        <?php if(osc_get_preference('insertion','realestate_attributes') == 'manual' && function_exists('table_realestate_attributes')){?>
                         <td class="right-side"><?php table_realestate_attributes(); table_realestate_other_attributes(); ?></td>
-                        <?php } ?>
+                        <?php } ?>
                     </tr>
                 </table>
                     <div class="item-next-to-content">

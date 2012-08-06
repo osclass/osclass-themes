@@ -27,13 +27,15 @@
         <?php osc_current_web_theme_path('head.php') ; ?>
         <meta name="robots" content="index, follow" />
         <meta name="googlebot" content="index, follow" />
-        <?php if((osc_count_items() == 0) && osc_is_search_page()) { ?>
-            <meta name="robots" content="noindex, nofollow" />
-            <meta name="googlebot" content="noindex, nofollow" />
-        <?php } else { ?>
-            <meta name="robots" content="index, follow" />
-            <meta name="googlebot" content="index, follow" />
-        <?php } ?>
+        <?php
+        $robots = 'index, follow';
+        if(osc_is_search_page()){
+            if(osc_count_items() == 0) {
+                $robots = 'noindex, nofollow';
+            }
+        };?>
+        <meta name="robots" content="<?php echo $robots; ?>" />
+        <meta name="googlebot" content="<?php echo $robots; ?>" />
     </head>
 <body>
 <?php osc_show_flash_message() ; ?>    
