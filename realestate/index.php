@@ -4,7 +4,7 @@
 Theme Name: OSClass realestate Theme
 Theme URI: http://osclass.org
 Description: This is the OSClass realestate theme
-Version: 1.0.4
+Version: 1.0.5
 Author:OSClass team
 Author URI: http://osclass.org
 Widgets: header,footer
@@ -14,7 +14,7 @@ Theme update URI: realestate
     function realestate_theme_info() {
         return array(
              'name'        => 'OSClass realestate Theme'
-            ,'version'     => '1.0.4'
+            ,'version'     => '1.0.5'
             ,'description' => 'This is the OSClass realestate theme'
             ,'author_name' => 'OSClass Team'
             ,'author_url'  => 'http://osclass.org'
