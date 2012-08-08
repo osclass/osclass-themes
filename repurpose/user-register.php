@@ -61,8 +61,8 @@
             </div>
         </div>
         <script type="text/javascript">
-    		var text_error_required = '<?php echo osc_esc_js( __('This field is required', 'twitter') ); ?>' ;
-			var text_valid_email    = '<?php echo osc_esc_js( __('Enter a valid e-mail address', 'twitter') ); ?>' ;
+            var text_error_required = '<?php echo osc_esc_js( __('This field is required', 'twitter') ); ?>' ;
+            var text_valid_email    = '<?php echo osc_esc_js( __('Enter a valid e-mail address', 'twitter') ); ?>' ;
         </script>
         <script type="text/javascript" src="<?php echo osc_current_web_theme_js_url('register.js') ; ?>"></script>
         <?php osc_current_web_theme_path('footer.php') ; ?>
