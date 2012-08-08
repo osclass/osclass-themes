@@ -20,13 +20,13 @@
                             <div class="clearfix">
                                 <label for="s_name"><?php _e('Name', 'twitter') ; ?></label>
                                 <div class="input">
-                                    <input class="xlarge" type="text" value="<?php echo osc_user_name() ; ?>" name="s_name" id="s_name">
+                                    <input class="xlarge" type="text" value="<?php echo osc_user_name() ; ?>" name="s_name" id="s_name" />
                                 </div>
                             </div>
                             <div class="clearfix">
                                 <label for="email"><?php _e('E-mail', 'twitter') ; ?></label>
                                 <div class="input">
-                                    <input class="xlarge uneditable-input" type="text" value="<?php echo osc_user_email() ; ?>" id="email">
+                                    <input class="xlarge uneditable-input" type="text" value="<?php echo osc_user_email() ; ?>" id="email" />
                                     <span class="help-block">
                                         <a href="<?php echo osc_change_user_email_url() ; ?>"><?php _e('Modify e-mail', 'twitter') ; ?></a> &middot; <a href="<?php echo osc_change_user_password_url() ; ?>" ><?php _e('Modify password', 'twitter') ; ?></a>
                                     </span>
@@ -44,13 +44,13 @@
                             <div class="clearfix">
                                 <label for="s_phone_mobile"><?php _e('Mobile phone', 'twitter') ; ?></label>
                                 <div class="input">
-                                    <input class="xlarge" type="text" value="<?php echo osc_user_phone_mobile() ; ?>" name="s_phone_mobile" id="s_phone_mobile">
+                                    <input class="xlarge" type="text" value="<?php echo osc_user_phone_mobile() ; ?>" name="s_phone_mobile" id="s_phone_mobile" />
                                 </div>
                             </div>
                             <div class="clearfix">
                                 <label for="s_phone_land"><?php _e('Phone', 'twitter') ; ?></label>
                                 <div class="input">
-                                    <input class="xlarge" type="text" value="<?php echo osc_user_phone_land() ; ?>" name="s_phone_land" id="s_phone_land">
+                                    <input class="xlarge" type="text" value="<?php echo osc_user_phone_land() ; ?>" name="s_phone_land" id="s_phone_land" />
                                 </div>
                             </div>
                             <div class="clearfix">
@@ -74,19 +74,19 @@
                             <div class="clearfix">
                                 <label for="cityArea"><?php _e('City area', 'twitter') ; ?></label>
                                 <div class="input">
-                                    <input class="xlarge" type="text" value="<?php echo osc_user_city_area() ; ?>" name="cityArea" id="cityArea">
+                                    <input class="xlarge" type="text" value="<?php echo osc_user_city_area() ; ?>" name="cityArea" id="cityArea" />
                                 </div>
                             </div>
                             <div class="clearfix">
                                 <label for="address"><?php _e('Address', 'twitter') ; ?></label>
                                 <div class="input">
-                                    <input class="xlarge" type="text" value="<?php echo osc_user_address() ; ?>" name="address" id="address">
+                                    <input class="xlarge" type="text" value="<?php echo osc_user_address() ; ?>" name="address" id="address" />
                                 </div>
                             </div>
                             <div class="clearfix">
                                 <label for="s_website"><?php _e('Website', 'twitter') ; ?></label>
                                 <div class="input">
-                                    <input class="xlarge" type="text" value="<?php echo osc_user_website() ; ?>" name="s_website" id="s_website">
+                                    <input class="xlarge" type="text" value="<?php echo osc_user_website() ; ?>" name="s_website" id="s_website" />
                                 </div>
                             </div>
                             <div class="clearfix">
@@ -103,8 +103,8 @@
         <script type="text/javascript">
             var ajax_region_url    = '<?php echo osc_base_url(true) . "?page=ajax&action=regions&countryId=" ; ?>' ;
             var ajax_city_url      = '<?php echo osc_base_url(true) . "?page=ajax&action=cities&regionId=" ; ?>' ;
-            var text_select_region = '<?php _e("Select a region...", 'twitter') ; ?>' ;
-            var text_select_city   = '<?php _e("Select a city...", 'twitter') ; ?>' ;
+            var text_select_region = '<?php echo osc_esc_js( __("Select a region...", 'twitter') ) ; ?>' ;
+            var text_select_city   = '<?php echo osc_esc_js( __("Select a city...", 'twitter') ) ; ?>' ;
         </script>
         <script type="text/javascript" src="<?php echo osc_current_web_theme_js_url('profile.js') ; ?>"></script>
         <?php osc_current_web_theme_path('footer.php') ; ?>

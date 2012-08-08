@@ -23,13 +23,13 @@
                         <div class="clearfix">
                             <label for="email"><?php _e('E-mail', 'twitter') ; ?> *</label>
                             <div class="input">
-                                <input class="xlarge" type="text" value="" name="email" id="email">
+                                <input class="xlarge" type="text" value="" name="email" id="email" />
                             </div>
                         </div>
                         <div class="clearfix">
                             <label for="password"><?php _e('Password', 'twitter') ; ?> *</label>
                             <div class="input">
-                                <input class="xlarge" type="password" value="" name="password" id="password">
+                                <input class="xlarge" type="password" value="" name="password" id="password" />
                             </div>
                         </div>
                         <div class="clearfix">
@@ -37,7 +37,7 @@
                                 <ul class="inputs-list">
                                     <li>
                                       <label>
-                                        <input type="checkbox" name="remember" value="remember">
+                                        <input type="checkbox" name="remember" value="remember" />
                                         <span><?php _e('Remember me', 'twitter') ; ?></span>
                                       </label>
                                     </li>
