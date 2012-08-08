@@ -132,19 +132,19 @@
                             <div class="clearfix">
                                 <label for="comment-authorName"><?php _e('Your name', 'twitter') ; ?></label>
                                 <div class="input">
-                                    <input class="xlarge comment-authorName" type="text" value="<?php echo osc_logged_user_name() ; ?>" name="authorName" id="comment-authorName">
+                                    <input class="xlarge comment-authorName" type="text" value="<?php echo osc_logged_user_name() ; ?>" name="authorName" id="comment-authorName" />
                                 </div>
                             </div>
                             <div class="clearfix">
                                 <label for="comment-authorEmail"><?php _e('Your e-mail', 'twitter') ; ?></label>
                                 <div class="input">
-                                    <input class="xlarge comment-authorEmail" type="text" value="<?php echo osc_logged_user_email() ; ?>" name="authorEmail" id="comment-authorEmail">
+                                    <input class="xlarge comment-authorEmail" type="text" value="<?php echo osc_logged_user_email() ; ?>" name="authorEmail" id="comment-authorEmail" />
                                 </div>
                             </div>
                             <div class="clearfix">
                                 <label for="comment-title"><?php _e('Title', 'twitter') ; ?></label>
                                 <div class="input">
-                                    <input class="xlarge comment-title" type="text" value="" name="title" id="comment-title">
+                                    <input class="xlarge comment-title" type="text" value="" name="title" id="comment-title" />
                                 </div>
                             </div>
                             <div class="clearfix">
@@ -185,19 +185,19 @@
                     <div class="clearfix">
                         <label for="contact-yourName"><?php _e('Your name', 'twitter') ; ?></label>
                         <div class="input">
-                            <input class="xlarge contact-yourName" id="contact-yourName" name="yourName" type="text" value="<?php echo osc_logged_user_name(); ?>">
+                            <input class="xlarge contact-yourName" id="contact-yourName" name="yourName" type="text" value="<?php echo osc_logged_user_name(); ?>" />
                         </div>
                     </div>
                     <div class="clearfix">
                         <label for="contact-yourEmail"><?php _e('Your e-mail', 'twitter') ; ?></label>
                         <div class="input">
-                            <input class="xlarge contact-yourEmail" id="contact-yourEmail" name="yourEmail" type="text" value="<?php echo osc_logged_user_email();?>">
+                            <input class="xlarge contact-yourEmail" id="contact-yourEmail" name="yourEmail" type="text" value="<?php echo osc_logged_user_email();?>" />
                         </div>
                     </div>
                     <div class="clearfix">
                         <label for="contact-phoneNumber"><?php _e('Phone number', 'twitter') ; ?></label>
                         <div class="input">
-                            <input class="xlarge contact-phoneNumber" id="contact-phoneNumber" name="phoneNumber" type="text" value="">
+                            <input class="xlarge contact-phoneNumber" id="contact-phoneNumber" name="phoneNumber" type="text" value="" />
                         </div>
                     </div>
                     <div class="clearfix">
@@ -234,25 +234,25 @@
                     <div class="clearfix">
                         <label for="sendfriend-yourName"><?php _e('Your name', 'twitter') ; ?></label>
                         <div class="input">
-                            <input class="xlarge sendfriend-yourName" id="sendfriend-yourName" name="yourName" type="text" value="">
+                            <input class="xlarge sendfriend-yourName" id="sendfriend-yourName" name="yourName" type="text" value="" />
                         </div>
                     </div>
                     <div class="clearfix">
                         <label for="sendfriend-friendName"><?php _e('Your e-mail', 'twitter') ; ?></label>
                         <div class="input">
-                            <input class="xlarge sendfriend-yourEmail" id="sendfriend-yourEmail" name="yourEmail" type="text" value="">
+                            <input class="xlarge sendfriend-yourEmail" id="sendfriend-yourEmail" name="yourEmail" type="text" value="" />
                         </div>
                     </div>
                     <div class="clearfix">
                         <label for="sendfriend-friendName"><?php _e("Your friend's name", 'twitter') ; ?></label>
                         <div class="input">
-                            <input class="xlarge sendfriend-friendName" id="sendfriend-friendName" name="friendName" type="text" value="">
+                            <input class="xlarge sendfriend-friendName" id="sendfriend-friendName" name="friendName" type="text" value="" />
                         </div>
                     </div>
                     <div class="clearfix">
                         <label for="sendfriend-friendEmail"><?php _e("Your friend's e-mail", 'twitter') ; ?></label>
                         <div class="input">
-                            <input class="xlarge sendfriend-friendEmail" id="sendfriend-friendEmail" name="friendEmail" type="text" value="">
+                            <input class="xlarge sendfriend-friendEmail" id="sendfriend-friendEmail" name="friendEmail" type="text" value="" />
                         </div>
                     </div>
                     <div class="clearfix">
