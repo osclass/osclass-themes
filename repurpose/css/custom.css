@@ -140,7 +140,7 @@ div.topbar { position: static; background:#C00058; height:auto !important;}
 div.topbar .nav{ float:none !important; font-size:12px;}
 div.topbar .nav a:hover,
 div.topbar .open a,
-div.topbar .open ul,{
+div.topbar .open ul {
     background:#8B0040 !important;
 }
 a{
