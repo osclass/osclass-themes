@@ -44,7 +44,7 @@
             </div>
         </div>
         <script type="text/javascript">
-            var text_error_required = '<?php osc_esc_js( _e('This field is required', 'twitter') ); ?>' ;
+            var text_error_required = '<?php echo osc_esc_js( __('This field is required', 'twitter') ); ?>' ;
         </script>
         <!--<script type="text/javascript" src="<?php echo osc_current_web_theme_js_url('change_password.js') ; ?>"></script>-->
         <?php osc_current_web_theme_path('footer.php') ; ?>
