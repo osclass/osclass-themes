@@ -68,8 +68,8 @@
             </div>
         </div>
         <script type="text/javascript">
-            var text_error_required = '<?php _e('This field is required', 'twitter') ; ?>' ;
-            var text_valid_email    = '<?php _e('Enter a valid e-mail address', 'twitter') ; ?>' ;
+    		var text_error_required = '<?php osc_esc_js( _e('This field is required', 'twitter') ) ; ?>' ;
+			var text_valid_email    = '<?php osc_esc_js( _e('Enter a valid e-mail address', 'twitter') ) ; ?>' ;
         </script>
         <script type="text/javascript" src="<?php echo osc_current_web_theme_js_url('item_sendfriend.js') ; ?>"></script>
         <?php osc_current_web_theme_path('footer.php') ; ?>
