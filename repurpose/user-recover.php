@@ -23,7 +23,7 @@
                         <div class="clearfix">
                             <label for="s_email"><?php _e('E-mail', 'twitter') ; ?> *</label>
                             <div class="input">
-                                <input class="xlarge" type="text" value="" name="s_email" id="s_email">
+                                <input class="xlarge" type="text" value="" name="s_email" id="s_email" />
                             </div>
                         </div>
                         <div class="clearfix">
