@@ -103,7 +103,7 @@
                     <div class="list-comments">
                         <?php while ( osc_has_item_comments() ) { ?>
                             <div class="comment">
-                                <h3><?php echo osc_comment_title() ; ?> <small><em><?php _e("by", 'twitter') ; ?> <?php echo osc_comment_author_name() ; ?></small></em></h3>
+                                <h3><?php echo osc_comment_title() ; ?> <small><em><?php _e("by", 'twitter') ; ?> <?php echo osc_comment_author_name() ; ?></em></small></h3>
                                 <p><?php echo osc_comment_body() ; ?> </p>
                                 <?php if ( osc_comment_user_id() && (osc_comment_user_id() == osc_logged_user_id()) ) { ?>
                                 <p>
