@@ -6,24 +6,24 @@
         <meta name="robots" content="noindex, nofollow" />
         <meta name="googlebot" content="noindex, nofollow" />
         <script type="text/javascript">
-            twitter_theme.text_select_subcategory = "<?php _e('Select a subcategory...', 'twitter') ; ?>" ;
+            twitter_theme.text_select_subcategory = "<?php osc_esc_js( _e('Select a subcategory...', 'twitter') ); ?>" ;
             twitter_theme.category_selected_id    = "<?php echo item_selected_category_id() ; ?>" ;
             twitter_theme.subcategory_selected_id = "<?php echo item_selected_subcategory_id() ; ?>" ;
             twitter_theme.max_number_photos       = <?php echo osc_max_images_per_item() ; ?> ;
-            twitter_theme.photo_remove_text       = "<?php _e('Remove', 'twitter') ; ?>" ;
-            twitter_theme.max_images_fields_txt   = "<?php _e('Sorry, you have reached the maximum number of images per ad',  'twitter') ; ?>" ;
+            twitter_theme.photo_remove_text       = "<?php osc_esc_js( _e('Remove', 'twitter') ) ; ?>" ;
+            twitter_theme.max_images_fields_txt   = "<?php osc_esc_js( _e('Sorry, you have reached the maximum number of images per ad',  'twitter') ) ; ?>" ;
             twitter_theme.country_select_id       = "<?php echo get_country_id((osc_item() != null) ? osc_item() : array()) ; ?>" ;
             twitter_theme.region_select_id        = "<?php echo get_region_id((osc_item() != null) ? osc_item() : array()) ; ?>" ;
             twitter_theme.city_select_id          = "<?php echo get_city_id((osc_item() != null) ? osc_item() : array()) ; ?>" ;
             twitter_theme.ajax_url                = "<?php echo osc_base_url(true) . '?page=ajax' ; ?>" ;
-            twitter_theme.text_select_country     = "<?php _e('Select a country...', 'twitter') ; ?>" ;
-            twitter_theme.text_select_region      = "<?php _e('Select a region...', 'twitter') ; ?>" ;
-            twitter_theme.text_select_city        = "<?php _e('Select a city...', 'twitter') ; ?>" ;
-            twitter_theme.text_no_regions         = "<?php _e('No regions available', 'twitter') ; ?>" ;
-            twitter_theme.text_no_cities          = "<?php _e('No cities available', 'twitter') ; ?>" ;
+            twitter_theme.text_select_country     = "<?php osc_esc_js( _e('Select a country...', 'twitter') ) ; ?>" ;
+            twitter_theme.text_select_region      = "<?php osc_esc_js( _e('Select a region...', 'twitter') ) ; ?>" ;
+            twitter_theme.text_select_city        = "<?php osc_esc_js( _e('Select a city...', 'twitter') ) ; ?>" ;
+            twitter_theme.text_no_regions         = "<?php osc_esc_js( _e('No regions available', 'twitter') ) ; ?>" ;
+            twitter_theme.text_no_cities          = "<?php osc_esc_js( _e('No cities available', 'twitter') ) ; ?>" ;
             twitter_theme.page                    = "edit" ;
             twitter_theme.item_id                 = "<?php echo osc_item_id() ; ?>" ;
-            twitter_theme.delete_photo_txt        = "<?php _e('This action cannot be undone. Are you sure you want to continue?', 'twitter') ; ?>";
+            twitter_theme.delete_photo_txt        = "<?php osc_esc_js( _e('This action cannot be undone. Are you sure you want to continue?', 'twitter') ); ?>";
         </script>
         <script type="text/javascript" src="<?php echo osc_current_web_theme_js_url('bootstrap-tabs.js') ; ?>"></script>
         <script type="text/javascript" src="<?php echo osc_current_web_theme_js_url('item_form.js') ; ?>"></script>
