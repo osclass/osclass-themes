@@ -46,7 +46,7 @@
                         <p>
                             <strong><a href="<?php echo osc_item_edit_url(); ?>"><?php _e('Edit', 'twitter') ; ?></a></strong>
                             &middot;
-                            <a class="delete" onclick="javascript:return confirm('<?php _e('This action can not be undone. Are you sure you want to continue?', 'twitter') ; ?>')" href="<?php echo osc_item_delete_url() ; ?>" ><?php _e('Delete', 'twitter') ; ?></a>
+    						<a class="delete" onclick="javascript:return confirm('<?php echo osc_esc_js( __('This action can not be undone. Are you sure you want to continue?', 'twitter') ); ?>')" href="<?php echo osc_item_delete_url() ; ?>" ><?php _e('Delete', 'twitter') ; ?></a>
                             <?php if( osc_item_is_inactive() ) { ?>
                             &middot;
                             <a href="<?php echo osc_item_activate_url() ; ?>" ><?php _e('Activate', 'twitter') ; ?></a>
