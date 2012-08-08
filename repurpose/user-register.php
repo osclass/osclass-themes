@@ -23,25 +23,25 @@
                         <div class="clearfix">
                             <label for="s_name"><?php _e('Name', 'twitter') ; ?> *</label>
                             <div class="input">
-                                <input class="xlarge" type="text" value="" name="s_name" id="s_name">
+                                <input class="xlarge" type="text" value="" name="s_name" id="s_name" />
                             </div>
                         </div>
                         <div class="clearfix">
                             <label for="s_password"><?php _e('Password', 'twitter') ; ?> *</label>
                             <div class="input">
-                                <input class="xlarge" type="password" value="" name="s_password" id="s_password">
+                                <input class="xlarge" type="password" value="" name="s_password" id="s_password" />
                             </div>
                         </div>
                         <div class="clearfix">
                             <label for="s_password2"><?php _e('Re-type password', 'twitter') ; ?> *</label>
                             <div class="input">
-                                <input class="xlarge" type="password" value="" name="s_password2" id="s_password2">
+                                <input class="xlarge" type="password" value="" name="s_password2" id="s_password2" />
                             </div>
                         </div>
                         <div class="clearfix">
                             <label for="s_email"><?php _e('E-mail', 'twitter') ; ?> *</label>
                             <div class="input">
-                                <input class="xlarge" type="text" value="" name="s_email" id="s_email">
+                                <input class="xlarge" type="text" value="" name="s_email" id="s_email" />
                             </div>
                         </div>
                         <div class="clearfix">
@@ -61,8 +61,8 @@
             </div>
         </div>
         <script type="text/javascript">
-            var text_error_required = '<?php _e('This field is required', 'twitter') ; ?>' ;
-            var text_valid_email    = '<?php _e('Enter a valid e-mail address', 'twitter') ; ?>' ;
+    		var text_error_required = '<?php echo osc_esc_js( __('This field is required', 'twitter') ); ?>' ;
+			var text_valid_email    = '<?php echo osc_esc_js( __('Enter a valid e-mail address', 'twitter') ); ?>' ;
         </script>
         <script type="text/javascript" src="<?php echo osc_current_web_theme_js_url('register.js') ; ?>"></script>
         <?php osc_current_web_theme_path('footer.php') ; ?>
