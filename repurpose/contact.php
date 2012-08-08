@@ -21,7 +21,7 @@
                         <div class="clearfix">
                             <label for="subject"><?php _e('Subject', 'twitter') ; ?> *</label>
                             <div class="input">
-                                <input class="xlarge" type="text" value="" name="subject" id="subject">
+                                <input class="xlarge" type="text" value="" name="subject" id="subject" />
                             </div>
                         </div>
                         <div class="clearfix">
@@ -33,13 +33,13 @@
                         <div class="clearfix">
                             <label for="yourName"><?php _e('Your name', 'twitter') ; ?> *</label>
                             <div class="input">
-                                <input class="xlarge" type="text" value="" name="yourName" id="yourName">
+                                <input class="xlarge" type="text" value="" name="yourName" id="yourName" />
                             </div>
                         </div>
                         <div class="clearfix">
                             <label for="yourEmail"><?php _e('Your e-mail address', 'twitter') ; ?> *</label>
                             <div class="input">
-                                <input class="xlarge" type="text" value="" name="yourEmail" id="yourEmail">
+                                <input class="xlarge" type="text" value="" name="yourEmail" id="yourEmail" />
                             </div>
                         </div>
                         <div class="clearfix">
@@ -58,8 +58,8 @@
             </div>
         </div>
         <script type="text/javascript">
-            var text_error_required = '<?php _e('This field is required', 'twitter') ; ?>' ;
-            var text_valid_email    = '<?php _e('Enter a valid e-mail address', 'twitter') ; ?>' ;
+            var text_error_required = '<?php osc_esc_js(_e('This field is required', 'twitter') ); ?>' ;
+            var text_valid_email    = '<?php osc_esc_js(_e('Enter a valid e-mail address', 'twitter') ) ; ?>' ;
         </script>
         <script type="text/javascript" src="<?php echo osc_current_web_theme_js_url('contact.js') ; ?>"></script>
         <?php osc_current_web_theme_path('footer.php') ; ?>
