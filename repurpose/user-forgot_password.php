@@ -25,13 +25,13 @@
                         <div class="clearfix">
                             <label for="new_password"><?php _e('New pasword', 'twitter') ; ?></label>
                             <div class="input">
-                                <input class="large" type="password" value="" name="new_password" id="new_password">
+                                <input class="large" type="password" value="" name="new_password" id="new_password" />
                             </div>
                         </div>
                         <div class="clearfix">
                             <label for="new_password2"><?php _e('Repeat new pasword', 'twitter') ; ?></label>
                             <div class="input">
-                                <input class="large" type="password" value="" name="new_password2" id="new_password2">
+                                <input class="large" type="password" value="" name="new_password2" id="new_password2" />
                             </div>
                         </div>
                         <div class="actions">
@@ -42,7 +42,7 @@
             </div>
         </div>
         <script type="text/javascript">
-            var text_error_required = '<?php _e('This field is required', 'twitter') ; ?>' ;
+            var text_error_required = '<?php echo osc_esc_js(__('This field is required', 'twitter')) ; ?>' ;
         </script>
         <script type="text/javascript" src="<?php echo osc_current_web_theme_js_url('forgot_password.js') ; ?>"></script>
         <?php osc_current_web_theme_path('footer.php') ; ?>

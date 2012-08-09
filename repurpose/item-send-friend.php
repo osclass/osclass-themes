@@ -30,25 +30,25 @@
                         <div class="clearfix">
                             <label for="sendfriend-yourName"><?php _e('Your name', 'twitter') ; ?></label>
                             <div class="input">
-                                <input class="xlarge sendfriend-yourName" id="sendfriend-yourName" name="yourName" type="text" value="">
+                                <input class="xlarge sendfriend-yourName" id="sendfriend-yourName" name="yourName" type="text" value="" />
                             </div>
                         </div>
                         <div class="clearfix">
                             <label for="sendfriend-friendName"><?php _e('Your e-mail', 'twitter') ; ?></label>
                             <div class="input">
-                                <input class="xlarge sendfriend-yourEmail" id="sendfriend-yourEmail" name="yourEmail" type="text" value="">
+                                <input class="xlarge sendfriend-yourEmail" id="sendfriend-yourEmail" name="yourEmail" type="text" value="" />
                             </div>
                         </div>
                         <div class="clearfix">
                             <label for="sendfriend-friendName"><?php _e("Your friend's name", 'twitter') ; ?></label>
                             <div class="input">
-                                <input class="xlarge sendfriend-friendName" id="sendfriend-friendName" name="friendName" type="text" value="">
+                                <input class="xlarge sendfriend-friendName" id="sendfriend-friendName" name="friendName" type="text" value="" />
                             </div>
                         </div>
                         <div class="clearfix">
                             <label for="sendfriend-friendEmail"><?php _e("Your friend's e-mail", 'twitter') ; ?></label>
                             <div class="input">
-                                <input class="xlarge sendfriend-friendEmail" id="sendfriend-friendEmail" name="friendEmail" type="text" value="">
+                                <input class="xlarge sendfriend-friendEmail" id="sendfriend-friendEmail" name="friendEmail" type="text" value="" />
                             </div>
                         </div>
                         <div class="clearfix">
@@ -68,8 +68,8 @@
             </div>
         </div>
         <script type="text/javascript">
-            var text_error_required = '<?php _e('This field is required', 'twitter') ; ?>' ;
-            var text_valid_email    = '<?php _e('Enter a valid e-mail address', 'twitter') ; ?>' ;
+            var text_error_required = '<?php echo osc_esc_js(__('This field is required', 'twitter')) ; ?>' ;
+            var text_valid_email    = '<?php echo osc_esc_js(__('Enter a valid e-mail address', 'twitter')) ; ?>' ;
         </script>
         <script type="text/javascript" src="<?php echo osc_current_web_theme_js_url('item_sendfriend.js') ; ?>"></script>
         <?php osc_current_web_theme_path('footer.php') ; ?>

@@ -5,7 +5,7 @@
                     <form action="<?php echo osc_base_url(true) ; ?>" method="get" >
                         <input type="hidden" name="page" value="search" />
                         <fieldset>
-                            <input class="xlarge" type="text" name="sPattern" value="">
+                            <input class="xlarge" type="text" name="sPattern" value="" />
                             <?php chosen_select_standard() ; ?>
                             <?php chosen_region_select() ; ?>
                             <button type="submit" class="btn"><?php _e('Search', 'twitter') ; ?></button>

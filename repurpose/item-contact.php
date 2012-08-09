@@ -38,19 +38,19 @@
                         <div class="clearfix">
                             <label for="contact-yourName"><?php _e('Your name', 'twitter') ; ?> *</label>
                             <div class="input">
-                                <input class="xlarge contact-yourName" type="text" value="<?php echo osc_logged_user_name() ; ?>" name="yourName" id="contact-yourName">
+                                <input class="xlarge contact-yourName" type="text" value="<?php echo osc_logged_user_name() ; ?>" name="yourName" id="contact-yourName" />
                             </div>
                         </div>
                         <div class="clearfix">
                             <label for="contact-yourEmail"><?php _e('Your e-mail', 'twitter') ; ?> *</label>
                             <div class="input">
-                                <input class="xlarge contact-yourEmail" type="text" value="<?php echo osc_logged_user_email() ; ?>" name="yourEmail" id="contact-yourEmail">
+                                <input class="xlarge contact-yourEmail" type="text" value="<?php echo osc_logged_user_email() ; ?>" name="yourEmail" id="contact-yourEmail" />
                             </div>
                         </div>
                         <div class="clearfix">
                             <label for="contact-phoneNumber"><?php _e('Phone number', 'twitter') ; ?> *</label>
                             <div class="input">
-                                <input class="xlarge contact-phoneNumber" type="text" value="" name="phoneNumber" id="contact-phoneNumber">
+                                <input class="xlarge contact-phoneNumber" type="text" value="" name="phoneNumber" id="contact-phoneNumber" />
                             </div>
                         </div>
                         <div class="clearfix">
@@ -70,8 +70,8 @@
             </div>
         </div>
         <script type="text/javascript">
-            var text_error_required = '<?php _e('This field is required', 'twitter') ; ?>' ;
-            var text_valid_email    = '<?php _e('Enter a valid e-mail address', 'twitter') ; ?>' ;
+            var text_error_required = '<?php echo osc_esc_js(__('This field is required', 'twitter')) ; ?>' ;
+            var text_valid_email    = '<?php echo osc_esc_js(__('Enter a valid e-mail address', 'twitter')) ; ?>' ;
         </script>
         <script type="text/javascript" src="<?php echo osc_current_web_theme_js_url('item_contact.js') ; ?>"></script>
         <?php osc_current_web_theme_path('footer.php') ; ?>

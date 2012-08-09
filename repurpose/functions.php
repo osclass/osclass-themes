@@ -679,7 +679,7 @@
     
     function item_price_input() { ?>
         <?php $item = (osc_item() != null) ? osc_item() : array() ; ?>
-        <input type="text" id="price" class="medium" name="price" value="<?php echo get_item_price($item) ; ?>">
+        <input type="text" id="price" class="medium" name="price" value="<?php echo get_item_price($item) ; ?>" />
         <?php
     }
     
@@ -735,7 +735,7 @@
 
     function item_contact_name_input() { ?>
         <?php $item = (osc_item() != null) ? osc_item() : array() ; ?>
-        <input type="text" id="contactName" class="large" name="contactName" value="<?php echo get_item_contact_name($item) ; ?>">
+        <input type="text" id="contactName" class="large" name="contactName" value="<?php echo get_item_contact_name($item) ; ?>" />
         <?php
     }
     
@@ -755,7 +755,7 @@
     
     function item_contact_mail_input() { ?>
         <?php $item = (osc_item() != null) ? osc_item() : array() ; ?>
-        <input type="text" id="contactEmail" class="large" name="contactEmail" value="<?php echo get_item_contact_mail($item) ; ?>">
+        <input type="text" id="contactEmail" class="large" name="contactEmail" value="<?php echo get_item_contact_mail($item) ; ?>" />
         <?php
     }
     
@@ -775,7 +775,7 @@
     
     function item_contact_show_email_checkbox() { ?>
         <?php $item = (osc_item() != null) ? osc_item() : array() ; ?>
-        <input type="checkbox" id="showEmail" name="showEmail" value="1" <?php echo get_item_contact_show_email($item) ; ?>>
+        <input type="checkbox" id="showEmail" name="showEmail" value="1" <?php echo get_item_contact_show_email($item) ; ?> />
         <?php
     }
     
