@@ -41,7 +41,7 @@
                     <?php ContactForm::page_hidden() ; ?>
                     <fieldset>
                         <div class="row ui-row-text"><label><?php _e('Item', 'realestate'); ?>:</label><a href="<?php echo osc_item_url(); ?>"><?php echo osc_item_title() ; ?></a></div>
-                        <div class="row ui-row-text"><label><?php _e('To (seller)', 'realestate'); ?>:</label> <input type="text" value="<?php echo osc_item_contact_name() ;?>" disabled="disabled"></div>
+                        <div class="row ui-row-text"><label><?php _e('To (seller)', 'realestate'); ?>:</label> <input type="text" value="<?php echo osc_item_contact_name() ;?>" disabled="disabled" /></div>
                         <?php if(osc_is_web_user_logged_in()) { ?>
                             <input type="hidden" name="yourName" value="<?php echo osc_logged_user_name(); ?>" />
                             <input type="hidden" name="yourEmail" value="<?php echo osc_logged_user_email();?>" />
