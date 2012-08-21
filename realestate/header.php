@@ -47,15 +47,15 @@
             <?php if(osc_users_enabled()) { ?>
                 <?php if( osc_is_web_user_logged_in() ) { ?>
                     <li class="first logged">
-                        <?php echo sprintf(__('Hi %s', 'realestate'), osc_logged_user_name() . '!'); ?> &bull;
-                        <strong><a href="<?php echo osc_user_dashboard_url() ; ?>"><?php _e('My account', 'realestate') ; ?></a></strong> &middot;
+                        <?php echo sprintf(__('Hi %s', 'realestate'), osc_logged_user_name() . '!'); ?> &nbsp; &bull;
+                        <strong><a href="<?php echo osc_user_dashboard_url() ; ?>"><?php _e('My account', 'realestate') ; ?></a></strong> &bull;
                         <a href="<?php echo osc_user_logout_url() ; ?>"><?php _e('Logout', 'realestate') ; ?></a>
                     </li>
                 <?php } else { ?>
                     <li class="first">
                         <a id="login_open" href="<?php echo osc_user_login_url(); ?>"><?php _e('Login', 'realestate') ; ?></a>
                         <?php if(osc_user_registration_enabled()) { ?>
-                            &bull; <a href="<?php echo osc_register_account_url() ; ?>"><?php _e('Register for a free account', 'realestate'); ?></a>
+                         &nbsp; &bull; <a href="<?php echo osc_register_account_url() ; ?>"><?php _e('Register for a free account', 'realestate'); ?></a>
                         <?php }; ?>
                         <form id="login" action="<?php echo osc_base_url(true) ; ?>" method="post">
                             <fieldset>
