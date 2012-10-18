@@ -29,13 +29,7 @@
                             <?php osc_current_web_theme_path('search_list.php') ; ?>
                         <?php } ?>
                         <div class="paginate" >
-                            <?php for($i = 0 ; $i < osc_search_total_pages() ; $i++) {
-                                if($i == osc_search_page()) {
-                                    printf('<a class="searchPaginationSelected" href="%s">%d</a>', osc_update_search_url(array('iPage' => $i)), ($i + 1)) ;
-                                } else {
-                                    printf('<a class="searchPaginationNonSelected" href="%s">%d</a>', osc_update_search_url(array('iPage' => $i)), ($i + 1)) ;
-                                }
-                            } ?>
+                            <?php echo osc_search_pagination(); ?>
                         </div>
                     </div>
                 </div>
@@ -54,10 +48,8 @@
                                     <input type="text" id="sCity" name="sCity" value="<?php echo osc_search_city() ; ?>" />
                                 </div>
                             </fieldset>
-
                             <fieldset class="box show_only">
                                 <h3><strong><?php _e('Show only', 'newcorp') ; ?></strong></h3>
-                                
                                 <?php  if ( osc_count_categories() > 0 ) { ?>
                                     <div class="row checkboxes">
                                         <h6><?php _e('Category', 'newcorp') ; ?></h6>
