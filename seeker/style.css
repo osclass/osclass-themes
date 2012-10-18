@@ -116,8 +116,8 @@ option.pad{
     padding:0 20px;
     background-color:#fff;
     margin:0 auto;
-    -webkit-box-shadow: 0px 0px 20px 0px #cccccc; 
-       -moz-box-shadow: 0px 0px 20px 0px #cccccc; 
+    -webkit-box-shadow: 0px 0px 20px 0px #cccccc;
+       -moz-box-shadow: 0px 0px 20px 0px #cccccc;
             box-shadow: 0px 0px 20px 0px #cccccc;
 }
 .wrapper{
@@ -340,7 +340,10 @@ body.search-page h1 strong{
     text-align:center;
     padding-top:20px;
 }
-.paginate a{
+.paginate li {
+    display: inline;
+}
+.paginate a, .paginate span{
     text-align:center;
     padding:5px 10px;
     background-color:#f2f2f2;
@@ -1026,7 +1029,7 @@ div.uploader input{
     position: absolute;
     right:7px; top:3px; color: #999;
 }
-/* ICONS 
+/* ICONS
  ************/
 .icon-envelope{
     display: inline-block;
