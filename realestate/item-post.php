@@ -35,9 +35,9 @@
 ?>
 <?php osc_current_web_theme_path('header.php') ; ?>
 <h1><strong><?php _e('Publish an item', 'realestate'); ?></strong></h1>
+<form name="item" action="<?php echo osc_base_url(true);?>" method="post" enctype="multipart/form-data">
 <div class="publish-left">
 <h2><?php _e('General Information', 'realestate'); ?></h2>
-<form name="item" action="<?php echo osc_base_url(true);?>" method="post" enctype="multipart/form-data">
     <input type="hidden" name="action" value="item_add_post" />
     <input type="hidden" name="page" value="item" />
 <ul id="error_list"></ul>
@@ -183,6 +183,7 @@
     </div>
 </div>
 </div>
+</form>
 <div class="clear"></div>
 <script>
 function themeUiHook(){
