@@ -519,7 +519,7 @@
             if( is_array($category['categories']) && (count($category['categories']) > 0) ) {
                 echo 'twitter_theme.categories.id_' . $category['pk_i_id'] . ' = {' . PHP_EOL ;
                 for($i = 0; $i < count($category['categories']); $i++) {
-                    echo $category['categories'][$i]['pk_i_id'] . ': { id: ' . $category['categories'][$i]['pk_i_id'] . ', slug: "' . addslashes($category['categories'][$i]['s_slug']) . '", name: "' . addslashes($category['categories'][$i]['s_name']) . '"' ;
+                    echo $category['categories'][$i]['i_position'] . ': { id: ' . $category['categories'][$i]['pk_i_id'] . ', slug: "' . addslashes($category['categories'][$i]['s_slug']) . '", name: "' . addslashes($category['categories'][$i]['s_name']) . '"' ;
                     if( $i == (count($category['categories']) - 1) ) {
                         echo '}' . PHP_EOL ;
                     } else {
@@ -537,7 +537,7 @@
     }
 
     function item_category_select($default_option) {
-        $categories = Category::newInstance()->findRootCategories() ; ?>
+        $categories = Category::newInstance()->findRootCategoriesEnabled() ; ?>
         <?php if( count($categories) > 0 ) { ?>
         <select class="category">
             <option><?php echo $default_option ; ?></option>
