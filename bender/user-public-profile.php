@@ -53,7 +53,7 @@
 ?>
 <div id="item-content">
         <div class="user-card">
-            <img src="http://www.gravatar.com/avatar/<?php echo md5( strtolower( trim( osc_user_email() ) ) ); ?>?s=120&d=<?php echo osc_current_web_theme_url('img/user_default.gif') ; ?>" />
+            <img src="http://www.gravatar.com/avatar/<?php echo md5( strtolower( trim( osc_user_email() ) ) ); ?>?s=120&d=<?php echo osc_current_web_theme_url('images/user_default.gif') ; ?>" />
             <ul id="user_data">
                 <li class="name"><?php echo osc_user_name(); ?></li>
                 <li class="website"><a href="<?php echo osc_user_website(); ?>" rel="noindex,nofollow"><?php echo osc_user_website(); ?></a></li>

@@ -113,8 +113,8 @@ FUNCTIONS
     /* logo */
     if( !function_exists('logo_header') ) {
         function logo_header() {
-             $html = '<a href="'.osc_base_url().'"><img border="0" alt="' . osc_page_title() . '" src="' . osc_current_web_theme_url('img/logo.jpg') . '"></a>';
-             if( file_exists( WebThemes::newInstance()->getCurrentThemePath() . 'img/logo.jpg' ) ) {
+             $html = '<a href="'.osc_base_url().'"><img border="0" alt="' . osc_page_title() . '" src="' . osc_current_web_theme_url('images/logo.jpg') . '"></a>';
+             if( file_exists( WebThemes::newInstance()->getCurrentThemePath() . 'images/logo.jpg' ) ) {
                 return $html;
              } else {
                 return '<a href="'.osc_base_url().'">'.osc_page_title().'</a>';
@@ -130,7 +130,7 @@ FUNCTIONS
                     <?php if(osc_count_item_resources()) { ?>
                         <a class="listing-thumb" href="<?php echo osc_item_url() ; ?>" title="<?php echo osc_item_title() ; ?>"><img src="<?php echo osc_resource_thumbnail_url(); ?>" title="" alt="<?php echo osc_item_title() ; ?>" width="<?php echo $size[0]; ?>" height="<?php echo $size[1]; ?>"></a>
                     <?php } else { ?>
-                        <a class="listing-thumb" href="<?php echo osc_item_url() ; ?>" title="<?php echo osc_item_title() ; ?>"><img src="<?php echo osc_current_web_theme_url('img/no_photo.gif'); ?>" title="" alt="<?php echo osc_item_title() ; ?>" width="<?php echo $size[0]; ?>" height="<?php echo $size[1]; ?>"></a>
+                        <a class="listing-thumb" href="<?php echo osc_item_url() ; ?>" title="<?php echo osc_item_title() ; ?>"><img src="<?php echo osc_current_web_theme_url('images/no_photo.gif'); ?>" title="" alt="<?php echo osc_item_title() ; ?>" width="<?php echo $size[0]; ?>" height="<?php echo $size[1]; ?>"></a>
                     <?php } ?>
                 <?php } ?>
                 <div class="listing-detail">
@@ -277,6 +277,52 @@ FUNCTIONS
             return 0;
         }
     }
+    function theme_bender_actions_admin() {
+        if( Params::getParam('file') == 'oc-content/themes/bender/admin/settings.php' ) {
+            if( Params::getParam('donation') == 'successful' ) {
+                osc_set_preference('donation', '1', 'bender_theme');
+                osc_reset_preferences();
+            }
+        }
+
+        switch( Params::getParam('action_specific') ) {
+            case('settings'):
+                $footerLink  = Params::getParam('footer_link');
+                $defaultLogo = Params::getParam('default_logo');
+                osc_set_preference('keyword_placeholder', Params::getParam('keyword_placeholder'), 'bender_theme');
+                osc_set_preference('footer_link', ($footerLink ? '1' : '0'), 'bender_theme');
+                osc_set_preference('default_logo', ($defaultLogo ? '1' : '0'), 'bender_theme');
+
+                osc_add_flash_ok_message(__('Theme settings updated correctly', 'bender'), 'admin');
+                osc_redirect_to(osc_admin_render_theme_url('oc-content/themes/bender/admin/settings.php'));
+            break;
+            case('upload_logo'):
+                $package = Params::getFiles('logo');
+                if( $package['error'] == UPLOAD_ERR_OK ) {
+                    if( move_uploaded_file($package['tmp_name'], WebThemes::newInstance()->getCurrentThemePath() . "images/logo.jpg" ) ) {
+                        osc_add_flash_ok_message(__('The logo image has been uploaded correctly', 'bender'), 'admin');
+                    } else {
+                        osc_add_flash_error_message(__("An error has occurred, please try again", 'bender'), 'admin');
+                    }
+                } else {
+                    osc_add_flash_error_message(__("An error has occurred, please try again", 'bender'), 'admin');
+                }
+                osc_redirect_to(osc_admin_render_theme_url('oc-content/themes/bender/admin/header.php'));
+            break;
+            case('remove'):
+                if(file_exists( WebThemes::newInstance()->getCurrentThemePath() . "images/logo.jpg" ) ) {
+                    @unlink( WebThemes::newInstance()->getCurrentThemePath() . "images/logo.jpg" );
+                    osc_add_flash_ok_message(__('The logo image has been removed', 'bender'), 'admin');
+                } else {
+                    osc_add_flash_error_message(__("Image not found", 'bender'), 'admin');
+                }
+                osc_redirect_to(osc_admin_render_theme_url('oc-content/themes/bender/admin/header.php'));
+            break;
+        }
+    }
+    osc_add_hook('init_admin', 'theme_bender_actions_admin');
+    osc_admin_menu_appearance(__('Header logo', 'bender'), osc_admin_render_theme_url('oc-content/themes/bender/admin/header.php'), 'header_bender');
+    osc_admin_menu_appearance(__('Theme settings', 'bender'), osc_admin_render_theme_url('oc-content/themes/bender/admin/settings.php'), 'settings_bender');
 /**
 
 TRIGGER FUNCTIONS

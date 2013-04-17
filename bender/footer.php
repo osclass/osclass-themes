@@ -61,6 +61,10 @@
     }
     ?>
     </ul>
-    <?php _e('This website is proudly using the <a title="OSClass web" href="http://osclass.org/">classifieds scripts</a> software <strong>OSClass</strong>', 'bender'); ?>
+    <?php
+    if( osc_get_preference('footer_link', 'modern_theme') ) {
+        _e('This website is proudly using the <a title="OSClass web" href="http://osclass.org/">classifieds scripts</a> software <strong>OSClass</strong>', 'bender');
+    }
+    ?>
 </div>
 <?php osc_run_hook('footer') ; ?>

@@ -1,10 +1,10 @@
-/* line 2, ../../sass/responsive/item.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/item\.scss}line{font-family:\000032}}
 body.item #sidebar,
 body.user-public-profile #sidebar {
   margin-top: 20px;
 }
 
-/* line 5, ../../sass/responsive/item.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/item\.scss}line{font-family:\000035}}
 .item-photos .thumbs {
   float: none;
   margin-top: 10px;
@@ -12,18 +12,18 @@ body.user-public-profile #sidebar {
   clear: both;
 }
 
-/* line 11, ../../sass/responsive/item.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/item\.scss}line{font-family:\0000311}}
 .item-photos a {
   text-decoration: none;
 }
 
-/* line 14, ../../sass/responsive/item.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/item\.scss}line{font-family:\0000314}}
 .item-photos .main-photo {
   width: 100%;
   float: none;
 }
 
-/* line 18, ../../sass/responsive/item.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/item\.scss}line{font-family:\0000318}}
 .item-photos .main-photo img {
   width: 100%;
 }
