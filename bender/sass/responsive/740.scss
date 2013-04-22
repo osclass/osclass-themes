@@ -34,6 +34,10 @@ body.user-public-profile #main{
     font-size:1.15em;
     margin-bottom:15px;
 }
+.flashmessage{
+    padding:15px 40px 15px 15px;
+    width:auto;
+}
 @import "responsive/header.scss";
 @import "responsive/ui.scss";
 @import "responsive/show-hide.scss";

@@ -40,6 +40,7 @@ textarea{
 
     @include button-style(#f9f9f9);
     padding:0px;
+    overflow: hidden;
     //padding-right:15px;
 }
     .select-box .select-box-label{
@@ -181,6 +182,9 @@ button{
     margin-top:0;
     font-family:$helvetica;
     font-weight: bold;
+}
+.form-container .photos input{
+    width:100%;
 }
 @import "pagination.scss";
 @import "flashmessage-error.scss";

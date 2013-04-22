@@ -1,52 +1,72 @@
-function isResponsive(){
-     if($('#responsive-trigger').is(':visible')){
-          return true;
-     }
-     return false;
-}
-$('.r-list h1 a').click(function(){
-     if(isResponsive()){
-          var $parent = $(this).parent().parent();
-          if($parent.hasClass('active')){
-            $parent.removeClass('active');
-          } else {
-            $parent.addClass('active');
-          }
-          return false;
-     }
-});
-//helper
-/*$("[data-bclass-toggle]").click(function () {
-  console.log($(this));
-  var thatData = $(this).attr('data-bclass-toggle');
-  $('body').toggleClass(thatData);
-  return false;
+var bender = {
+    extend: function(el, opt){
+        for (var name in opt) el[name] = opt[name];
+        return el;
+    },
+    responsive: function(options){
+        defaults = {'selector':'#responsive-trigger'};
+        options = $.extend(defaults, options);
+        if($(options.selector).is(':visible')){
+            return true;
+        }
+            return false;
+    },
+    toggleClass: function(element,destination,isObject){
+        var $selector = $('['+element+']');
+        $selector.click(function (event) {
+            var thatClass  = $(this).attr(element);
+            var thatDestination;
+            if (typeof(isObject) != "undefined"){
+                var thatDestination  = $(destination);
+            } else {
+                var thatDestination  = $($(this).attr(destination));
+            }
+            thatDestination.toggleClass(thatClass);
+            event.preventDefault();
+            return;
+        });
+    },
+    photoUploader: function(selector,options){
+        defaults = {'max':4};
+        options = $.extend(defaults, options);
+        bender.photoUploaderActions($(selector),options);
+    },
+    addPhotoUploader: function(){
+
+    },
+    photoUploaderActions: function($element,options){
+        $element.on('change',function(){
+            ///
+            var input  = $(this)[0];
+
+            $(this).next('img').remove();
+            $image = $('<img />');
+            $image.insertAfter($element);
+
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    $image.attr('src', e.target.result);
+                };
+                reader.readAsDataURL(input.files[0]);
+                console.log('input[name="'+$(this).attr('name')+'"]');
+                if(options.max < $('input[name="'+$(this).attr('name')+'"]').length){
+                    //bender.addPhotoUploader();
+                    console.log('add');
+                }
+            } else {
+                console.log('borrado');
+              /*var img = input.value;
+                $('#img_prev').attr('src',img).height(200);*/
+            }
 
 
-});*/
+
+        });
+    }
+};
 
 function createPlaceHolder($element){
-
-
-    /*$('body').on('change','.has-placeholder input, .has-placeholder textarea',function(){
-        var placeholder = $(this).next();
-        var thatInput  = $(this);
-
-        if(thatInput.parents('.has-placeholder').hasClass('input-file')){
-            placeholder = $(this).prev();
-            var defaultText = placeholder.text();
-
-                filename = $(this).val()
-                if (filename === "") {
-                    filename = defaultText;
-                } else {
-                    filename = filename.split(/[\/\\]+/);
-                    filename = filename[(filename.length - 1)];
-                }
-
-                placeholder.text(filename);
-        }
-    });*/
   var $wrapper = $('<div class="has-placeholder '+$element.attr('class')+'" />');
   $element.wrap($wrapper);
   var $label = $('<label/>');
@@ -57,38 +77,7 @@ function createPlaceHolder($element){
   $element.bind('remove', function() {
         $wrapper.remove();
     });
-
-
 }
-//Function
-function toggleClass(element,destination,isObject){
-    var $selector = $('['+element+']');
-    $selector.click(function (event) {
-
-
-      var thatClass  = $(this).attr(element);
-      var thatDestination;
-      if (typeof(isObject) != "undefined"){
-        var thatDestination  = $(destination);
-      } else {
-        var thatDestination  = $($(this).attr(destination));
-      }
-      thatDestination.toggleClass(thatClass);
-
-      event.preventDefault();
-      return;
-    });
-
-/*
-    var $selector = $('['+element+']');
-    $selector.click(function () {
-      var thatClass  = $(this).attr(element);
-      $('body').toggleClass(thatClass);
-      return false;
-    });*/
-}
-
-//<a href="#" data-class-toggle="grid" data-destination="#listing-card-list">grid</a>
 
 function selectUi(thatSelect){
     var uiSelect = $('<a href="#" class="select-box-trigger"></a>');
@@ -113,25 +102,32 @@ function selectUi(thatSelect){
     });
 }
 $(document).ready(function(event){
-
-  toggleClass('data-bclass-toggle','body',true);
-  /*toggleClass('data-class-toggle','data-destination');
-  <a href="<?php echo osc_update_search_url(array('sShowAs'=> 'list')); ?>" class="list-button" data-class-toggle="listing-grid" data-destination="#listing-card-list"><span>Lista</span></a>
-  <a href="<?php echo osc_update_search_url(array('sShowAs'=> 'gallery')); ?>" class="grid-button" data-class-toggle="listing-grid" data-destination="#listing-card-list"><span>Grid</span></a>
-  */
-  $('.doublebutton a').click(function (event) {
-
-      var thisParent = $(this).parent();
-      if($(this).hasClass('grid-button')){
-        thisParent.addClass('active');
-        $('#listing-card-list').addClass('listing-grid');
-      } else {
+    //OK
+    $('.r-list h1 a').click(function(){
+        if(bender.responsive()){
+            var $parent = $(this).parent().parent();
+            if($parent.hasClass('active')){
+                $parent.removeClass('active');
+            } else {
+                $parent.addClass('active');
+            }
+            return false;
+        }
+    });
+    //OK
+    bender.toggleClass('data-bclass-toggle','body',true);
+    //OK
+    $('.doublebutton a').click(function (event) {
+        var thisParent = $(this).parent();
+        if($(this).hasClass('grid-button')){
+            thisParent.addClass('active');
+            $('#listing-card-list').addClass('listing-grid');
+        } else {
         thisParent.removeClass('active');
-        $('#listing-card-list').removeClass('listing-grid');
-      }
-
-      event.preventDefault();
-      return;
+            $('#listing-card-list').removeClass('listing-grid');
+        }
+        event.preventDefault();
+        return;
     });
 
 
@@ -185,16 +181,18 @@ $(document).ready(function(event){
         $('#mask_as_form').submit();
     });
 
-    $("a[rel=image_group]").fancybox({
-        openEffect : 'none',
-        closeEffect : 'none',
-        nextEffect : 'fade',
-        prevEffect : 'fade',
-        loop : false,
-        helpers : {
-                title : {
-                        type : 'inside'
-                }
-        }
-    });
+    if(typeof $.fancybox == 'function') {
+      $("a[rel=image_group]").fancybox({
+          openEffect : 'none',
+          closeEffect : 'none',
+          nextEffect : 'fade',
+          prevEffect : 'fade',
+          loop : false,
+          helpers : {
+                  title : {
+                          type : 'inside'
+                  }
+          }
+      });
+    }
 });

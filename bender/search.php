@@ -50,8 +50,10 @@
                    <a href="<?php echo osc_update_search_url(array('sShowAs'=> 'gallery')); ?>" class="grid-button" data-class-toggle="listing-grid" data-destination="#listing-card-list"><span><?php _e('Grid','bender'); ?></span></a>
               </span>
             </div>
+            <?php } ?>
           </div>
      </div>
+     <?php if(osc_count_items() > 0) { ?>
      <ul class="listing-card-list <?php echo $listClass; ?>" id="listing-card-list">
           <?php
           $i = 0;

@@ -1,4 +1,4 @@
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/reset\.scss}line{font-family:\0000319}}
+/* line 19, ../sass/reset.scss */
 article,
 aside,
 details,
@@ -12,7 +12,7 @@ section {
   display: block;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/reset\.scss}line{font-family:\0000328}}
+/* line 28, ../sass/reset.scss */
 audio,
 canvas,
 video {
@@ -21,35 +21,35 @@ video {
   *zoom: 1;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/reset\.scss}line{font-family:\0000337}}
+/* line 37, ../sass/reset.scss */
 audio:not([controls]) {
   display: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/reset\.scss}line{font-family:\0000344}}
+/* line 44, ../sass/reset.scss */
 html {
   font-size: 100%;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/reset\.scss}line{font-family:\0000350}}
+/* line 50, ../sass/reset.scss */
 a {
   color: #006699;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/reset\.scss}line{font-family:\0000353}}
+/* line 53, ../sass/reset.scss */
 a:focus {
   @inlcude tab-focus;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/reset\.scss}line{font-family:\0000358}}
+/* line 58, ../sass/reset.scss */
 a:hover,
 a:active {
   outline: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/reset\.scss}line{font-family:\0000366}}
+/* line 66, ../sass/reset.scss */
 sub,
 sup {
   position: relative;
@@ -58,17 +58,17 @@ sup {
   vertical-align: baseline;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/reset\.scss}line{font-family:\0000372}}
+/* line 72, ../sass/reset.scss */
 sup {
   top: -0.5em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/reset\.scss}line{font-family:\0000375}}
+/* line 75, ../sass/reset.scss */
 sub {
   bottom: -0.25em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/reset\.scss}line{font-family:\0000382}}
+/* line 82, ../sass/reset.scss */
 img {
   /* Responsive images (ensure images don't scale beyond their parents) */
   max-width: 100%;
@@ -82,12 +82,12 @@ img {
   -ms-interpolation-mode: bicubic;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/reset\.scss}line{font-family:\0000394}}
+/* line 94, ../sass/reset.scss */
 #map_canvas img {
   max-width: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/reset\.scss}line{font-family:\00003105}}
+/* line 105, ../sass/reset.scss */
 button,
 input,
 select,
@@ -97,21 +97,21 @@ textarea {
   vertical-align: middle;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/reset\.scss}line{font-family:\00003111}}
+/* line 111, ../sass/reset.scss */
 button,
 input {
   *overflow: visible;
   line-height: normal;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/reset\.scss}line{font-family:\00003116}}
+/* line 116, ../sass/reset.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   padding: 0;
   border: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/reset\.scss}line{font-family:\00003123}}
+/* line 123, ../sass/reset.scss */
 button,
 input[type="button"],
 input[type="reset"],
@@ -120,7 +120,7 @@ input[type="submit"] {
   -webkit-appearance: button;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/reset\.scss}line{font-family:\00003127}}
+/* line 127, ../sass/reset.scss */
 input[type="search"] {
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
@@ -128,27 +128,27 @@ input[type="search"] {
   -webkit-appearance: textfield;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/reset\.scss}line{font-family:\00003134}}
+/* line 134, ../sass/reset.scss */
 input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button {
   -webkit-appearance: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/reset\.scss}line{font-family:\00003137}}
+/* line 137, ../sass/reset.scss */
 textarea {
   overflow: auto;
   vertical-align: top;
 }
 
 /*fertest(prefijo, sufijo, --a--, --b--, --cc--)*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/ui\.scss}line{font-family:\000032}}
+/* line 2, ../sass/ui.scss */
 .has-placeholder {
   position: relative;
   display: block;
   float: left;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/ui\.scss}line{font-family:\000038}}
+/* line 8, ../sass/ui.scss */
 .has-placeholder label {
   position: absolute;
   top: 0;
@@ -164,7 +164,7 @@ textarea {
   overflow: hidden;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/ui\.scss}line{font-family:\0000325}}
+/* line 25, ../sass/ui.scss */
 textarea {
   background-color: white;
   border: solid 1px #bfbfbf;
@@ -189,7 +189,7 @@ textarea {
 
 /* Selectmenu
 ----------------------------------*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/ui\.scss}line{font-family:\0000333}}
+/* line 33, ../sass/ui.scss */
 .select-box {
   z-index: 0;
   position: relative;
@@ -229,9 +229,10 @@ textarea {
   box-shadow: inset 0 1px 0 0 white;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
   padding: 0px;
+  overflow: hidden;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/ui\.scss}line{font-family:\0000345}}
+/* line 46, ../sass/ui.scss */
 .select-box .select-box-label {
   height: 16px;
   overflow: hidden;
@@ -248,12 +249,12 @@ textarea {
   text-shadow: 0 1px 0 #ffffff;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/ui\.scss}line{font-family:\0000363}}
+/* line 64, ../sass/ui.scss */
 .select-box a:hover {
   text-decoration: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/ui\.scss}line{font-family:\0000366}}
+/* line 67, ../sass/ui.scss */
 .select-box select {
   position: relative;
   left: 0px;
@@ -265,7 +266,7 @@ textarea {
   padding-right: 45px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/ui\.scss}line{font-family:\0000376}}
+/* line 77, ../sass/ui.scss */
 .select-box-icon {
   z-index: 0;
   position: absolute;
@@ -282,7 +283,7 @@ textarea {
   text-align: left;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/ui\.scss}line{font-family:\0000392}}
+/* line 93, ../sass/ui.scss */
 .ui-button {
   background-color: false;
   background-color: #f0f0f0;
@@ -311,7 +312,7 @@ textarea {
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/ui\.scss}line{font-family:\0000395}}
+/* line 96, ../sass/ui.scss */
 .ui-button-main {
   background-color: #35c3d9;
   background-color: #35c3d9;
@@ -340,24 +341,24 @@ textarea {
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/ui\.scss}line{font-family:\0000398}}
+/* line 99, ../sass/ui.scss */
 a.ui-button {
   line-height: 34px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/ui\.scss}line{font-family:\00003101}}
+/* line 102, ../sass/ui.scss */
 .ui-button-middle {
   height: 36px;
   font-size: 1em;
   line-height: 1em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/ui\.scss}line{font-family:\00003106}}
+/* line 107, ../sass/ui.scss */
 .doublebutton {
   float: right;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/ui\.scss}line{font-family:\00003109}}
+/* line 110, ../sass/ui.scss */
 .doublebutton a {
   border: solid 1px #d1d1d1;
   background-color: #f7f7f7;
@@ -375,7 +376,7 @@ a.ui-button {
   float: left;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/ui\.scss}line{font-family:\00003125}}
+/* line 126, ../sass/ui.scss */
 .doublebutton a span {
   text-indent: -9999px;
   float: left;
@@ -385,12 +386,12 @@ a.ui-button {
   cursor: pointer;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/ui\.scss}line{font-family:\00003133}}
+/* line 134, ../sass/ui.scss */
 .doublebutton .list-button span {
   background-position: 0px -16px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/ui\.scss}line{font-family:\00003136}}
+/* line 137, ../sass/ui.scss */
 .doublebutton .list-button {
   margin-right: -1px;
   border-top-right-radius: 0px;
@@ -398,65 +399,65 @@ a.ui-button {
   border-right: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/ui\.scss}line{font-family:\00003141}}
+/* line 142, ../sass/ui.scss */
 .doublebutton .grid-button {
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
   border-left: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/ui\.scss}line{font-family:\00003146}}
+/* line 147, ../sass/ui.scss */
 .active a.grid-button,
 .doublebutton a.list-button {
   background-color: #35c3d9;
   border-color: #23a4b8;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/ui\.scss}line{font-family:\00003150}}
+/* line 151, ../sass/ui.scss */
 .active a.grid-button span {
   background-position: -16px 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/ui\.scss}line{font-family:\00003153}}
+/* line 154, ../sass/ui.scss */
 .active a.list-button {
   background-color: #f7f7f7;
   border: solid 1px #d1d1d1;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/ui\.scss}line{font-family:\00003157}}
+/* line 158, ../sass/ui.scss */
 .doublebutton a.list-button span {
   background-position: -16px -16px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/ui\.scss}line{font-family:\00003160}}
+/* line 161, ../sass/ui.scss */
 .active a.list-button span {
   background-position: 0 -16px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/form\.scss}line{font-family:\000031}}
+/* line 1, ../sass/form.scss */
 .alert_form {
   background-color: #f2f2f2;
   padding: 15px 10px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/form\.scss}line{font-family:\000035}}
+/* line 5, ../sass/form.scss */
 .alert_form button {
   width: 100%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/form\.scss}line{font-family:\000038}}
+/* line 8, ../sass/form.scss */
 .alert_form input {
   width: 184px;
   margin-bottom: 12px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/form\.scss}line{font-family:\0000312}}
+/* line 12, ../sass/form.scss */
 .form-vertical .control-group {
   clear: both;
   margin-bottom: 10px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/form\.scss}line{font-family:\0000319}}
+/* line 19, ../sass/form.scss */
 .form-container .controls input {
   background-color: white;
   border: solid 1px #bfbfbf;
@@ -483,7 +484,7 @@ a.ui-button {
   font-size: 1em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/form\.scss}line{font-family:\0000327}}
+/* line 27, ../sass/form.scss */
 .form-container .ui-drop-files {
   width: 280px;
   padding: 0 10px;
@@ -502,12 +503,12 @@ a.ui-button {
   border-bottom-right-radius: 8px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/form\.scss}line{font-family:\0000337}}
+/* line 37, ../sass/form.scss */
 .form-container .controls {
   font-size: 1em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/form\.scss}line{font-family:\0000340}}
+/* line 40, ../sass/form.scss */
 .form-container .main-button {
   background-color: #35c3d9;
   background-color: #35c3d9;
@@ -536,7 +537,7 @@ a.ui-button {
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/form\.scss}line{font-family:\0000343}}
+/* line 43, ../sass/form.scss */
 .form-container .checkbox input {
   width: auto;
   height: auto;
@@ -544,29 +545,29 @@ a.ui-button {
   margin-top: -2px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/form\.scss}line{font-family:\0000350}}
+/* line 50, ../sass/form.scss */
 .form-container .checkbox {
   margin-bottom: 5px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/form\.scss}line{font-family:\0000353}}
+/* line 53, ../sass/form.scss */
 .form-container .checkbox label {
   font-size: 0.85em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/form\.scss}line{font-family:\0000356}}
+/* line 56, ../sass/form.scss */
 .form-horizontal .actions {
   border-top: solid 1px #eaeaea;
   padding: 10px 10px 15px 155px;
   margin: 0 25px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/form\.scss}line{font-family:\0000361}}
+/* line 61, ../sass/form.scss */
 .form-horizontal .actions a {
   font-size: 0.725em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/form\.scss}line{font-family:\0000364}}
+/* line 64, ../sass/form.scss */
 .form-horizontal label {
   float: left;
   width: 160px;
@@ -575,18 +576,18 @@ a.ui-button {
   font-size: 0.85em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/form\.scss}line{font-family:\0000371}}
+/* line 71, ../sass/form.scss */
 .form-horizontal .controls {
   margin-left: 180px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/form\.scss}line{font-family:\0000374}}
+/* line 74, ../sass/form.scss */
 .form-horizontal .control-group {
   clear: both;
   margin-bottom: 20px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/form\.scss}line{font-family:\0000378}}
+/* line 78, ../sass/form.scss */
 .form-horizontal .controls label {
   float: none;
   width: auto;
@@ -594,7 +595,7 @@ a.ui-button {
   text-align: left;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/form\.scss}line{font-family:\0000384}}
+/* line 84, ../sass/form.scss */
 .form-container-box {
   border: solid 1px #eaeaea;
   margin: 0 auto;
@@ -609,30 +610,30 @@ a.ui-button {
   border-bottom-right-radius: 4px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/form\.scss}line{font-family:\0000390}}
+/* line 90, ../sass/form.scss */
 .form-container-box .header {
   background-color: #f7f7f7;
   padding: 10px 15px;
   margin-bottom: 30px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/form\.scss}line{font-family:\0000395}}
+/* line 95, ../sass/form.scss */
 .form-container-box .header h1 {
   margin: 0;
   line-height: 1.2em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/form\.scss}line{font-family:\00003102}}
+/* line 102, ../sass/form.scss */
 body.item-post .select-box {
   margin-bottom: 10px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/form\.scss}line{font-family:\00003105}}
+/* line 105, ../sass/form.scss */
 #item-post select {
   width: 300px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/ui\.scss}line{font-family:\00003164}}
+/* line 165, ../sass/ui.scss */
 button {
   background-color: false;
   background-color: #f0f0f0;
@@ -661,7 +662,7 @@ button {
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/ui\.scss}line{font-family:\00003167}}
+/* line 168, ../sass/ui.scss */
 .ui-drop-files {
   box-shadow: none;
   border: 4px dashed rgba(0, 0, 0, 0.2);
@@ -669,7 +670,7 @@ button {
   background: rgba(0, 0, 0, 0.1);
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/ui\.scss}line{font-family:\00003173}}
+/* line 174, ../sass/ui.scss */
 .bordered-box {
   border: solid 1px #eaeaea;
   border-top-left-radius: 4px;
@@ -684,7 +685,7 @@ button {
   font-size: 0.75em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/ui\.scss}line{font-family:\00003179}}
+/* line 180, ../sass/ui.scss */
 .bordered-box h2 {
   font-size: 1.2em;
   margin-top: 0;
@@ -692,20 +693,25 @@ button {
   font-weight: bold;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/pagination\.scss}line{font-family:\000031}}
+/* line 186, ../sass/ui.scss */
+.form-container .photos input {
+  width: 100%;
+}
+
+/* line 1, ../sass/pagination.scss */
 .paginate {
   padding: 25px;
   text-align: center;
   clear: both;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/pagination\.scss}line{font-family:\000032}}
+/* line 2, ../sass/pagination.scss */
 .paginate li {
   display: inline;
   list-style-type: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/pagination\.scss}line{font-family:\000033}}
+/* line 3, ../sass/pagination.scss */
 .paginate a, .paginate span {
   text-decoration: none;
   margin: 0 1px;
@@ -721,17 +727,17 @@ button {
   border-bottom-right-radius: 3px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/pagination\.scss}line{font-family:\000034}}
+/* line 4, ../sass/pagination.scss */
 .paginate a.previous {
   margin-right: 15px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/pagination\.scss}line{font-family:\000035}}
+/* line 5, ../sass/pagination.scss */
 .paginate a.next {
   margin-left: 15px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/pagination\.scss}line{font-family:\000036}}
+/* line 6, ../sass/pagination.scss */
 .paginate strong {
   border: 1px solid #EEE;
   color: #F30;
@@ -739,7 +745,7 @@ button {
   padding: 5px 10px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/pagination\.scss}line{font-family:\000037}}
+/* line 7, ../sass/pagination.scss */
 .paginate em {
   border: 1px solid #EEE;
   color: #AAA;
@@ -749,35 +755,35 @@ button {
   text-decoration: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/pagination\.scss}line{font-family:\000038}}
+/* line 8, ../sass/pagination.scss */
 .paginate em.previous {
   margin-right: 15px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/pagination\.scss}line{font-family:\000039}}
+/* line 9, ../sass/pagination.scss */
 .paginate em.next {
   margin-left: 15px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/pagination\.scss}line{font-family:\0000311}}
+/* line 11, ../sass/pagination.scss */
 .paginate .searchPaginationSelected,
 .paginate a:hover {
   background-color: #35c3d9;
   color: white;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/pagination\.scss}line{font-family:\0000313}}
+/* line 13, ../sass/pagination.scss */
 .paginate .searchPaginationSelected,
 .paginate a:hover {
   font-weight: bold;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/flashmessage-error\.scss}line{font-family:\000031}}
+/* line 1, ../sass/flashmessage-error.scss */
 .wrapper-flash {
   font-weight: bold;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/flashmessage-error\.scss}line{font-family:\000035}}
+/* line 5, ../sass/flashmessage-error.scss */
 .flashmessage {
   font-size: 14px;
   padding: 15px 0;
@@ -789,31 +795,31 @@ button {
   position: relative;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/flashmessage-error\.scss}line{font-family:\0000315}}
+/* line 15, ../sass/flashmessage-error.scss */
 .flashmessage-warning {
   background-color: #d0a52a;
   border: solid 1px #93741e;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/flashmessage-error\.scss}line{font-family:\0000319}}
+/* line 19, ../sass/flashmessage-error.scss */
 .flashmessage-error {
   background-color: #c44e20;
   border: solid 1px #873616;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/flashmessage-error\.scss}line{font-family:\0000323}}
+/* line 23, ../sass/flashmessage-error.scss */
 .flashmessage-ok {
   background-color: #839b44;
   border: solid 1px #4f5e29;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/flashmessage-error\.scss}line{font-family:\0000327}}
+/* line 27, ../sass/flashmessage-error.scss */
 .flashmessage-info {
   background-color: #30a0ef;
   border: solid 1px #2477b2;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/flashmessage-error\.scss}line{font-family:\0000331}}
+/* line 31, ../sass/flashmessage-error.scss */
 .flashmessage .ico-close {
   position: absolute;
   top: 14px;
@@ -828,23 +834,23 @@ button {
   cursor: pointer;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/flashmessage-error\.scss}line{font-family:\0000344}}
+/* line 44, ../sass/flashmessage-error.scss */
 .flashmessage-error .close {
   color: #B94A48;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/flashmessage-error\.scss}line{font-family:\0000347}}
+/* line 47, ../sass/flashmessage-error.scss */
 .flashmessage-warning .close {
   color: #C09853;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/flashmessage-error\.scss}line{font-family:\0000351}}
+/* line 51, ../sass/flashmessage-error.scss */
 .flashmessage-success .close,
 .flashmessage-information .close {
   color: #3A87AD;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/flashmessage-error\.scss}line{font-family:\0000355}}
+/* line 55, ../sass/flashmessage-error.scss */
 #error_list,
 .error_list {
   background-color: #F2DEDE;
@@ -863,14 +869,14 @@ button {
   display: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/flashmessage-error\.scss}line{font-family:\0000366}}
+/* line 66, ../sass/flashmessage-error.scss */
 #error_list li,
 .error_list li {
   list-style: none;
   padding: 2px 0 2px 18px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/flashmessage-error\.scss}line{font-family:\0000371}}
+/* line 71, ../sass/flashmessage-error.scss */
 #error_list li label,
 .error_list li label {
   margin-top: 0;
@@ -878,7 +884,7 @@ button {
   width: auto;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/user\.scss}line{font-family:\000031}}
+/* line 1, ../sass/user.scss */
 .user-card {
   background-color: #f7f7f7;
   position: relative;
@@ -895,30 +901,30 @@ button {
   margin-bottom: 25px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/user\.scss}line{font-family:\000039}}
+/* line 9, ../sass/user.scss */
 .user-card ul {
   padding: 15px;
   margin: 0;
   list-style: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/user\.scss}line{font-family:\0000314}}
+/* line 14, ../sass/user.scss */
 .user-card .name {
   font-size: 1.5em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/user\.scss}line{font-family:\0000317}}
+/* line 17, ../sass/user.scss */
 .user-card .website {
   font-size: 0.725em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/user\.scss}line{font-family:\0000321}}
+/* line 21, ../sass/user.scss */
 .user-card .location,
 .user-card .adress {
   font-size: 0.725em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/user\.scss}line{font-family:\0000326}}
+/* line 26, ../sass/user.scss */
 .user-card img {
   position: absolute;
   left: 0;
@@ -948,7 +954,7 @@ button {
   font-style: normal;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/typo\.scss}line{font-family:\0000321}}
+/* line 21, ../sass/typo.scss */
 html {
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
@@ -961,7 +967,7 @@ html {
   color: #404040;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/typo\.scss}line{font-family:\0000332}}
+/* line 32, ../sass/typo.scss */
 .icons {
   /*position: absolute;
   right: 0;
@@ -975,28 +981,28 @@ html {
   background: white;*/
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/typo\.scss}line{font-family:\0000344}}
+/* line 44, ../sass/typo.scss */
 .icons:after {
   display: inline-block;
   font-family: "icons";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/typo\.scss}line{font-family:\0000348}}
+/* line 48, ../sass/typo.scss */
 .ico-search:after {
   content: "s";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/typo\.scss}line{font-family:\0000351}}
+/* line 51, ../sass/typo.scss */
 .ico-menu:after {
   content: "m";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/typo\.scss}line{font-family:\0000354}}
+/* line 54, ../sass/typo.scss */
 .ico-grid:after {
   content: "g";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/global\.scss}line{font-family:\000031}}
+/* line 1, ../sass/global.scss */
 body {
   margin: 0;
   padding: 0;
@@ -1004,7 +1010,7 @@ body {
   color: #333333;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/global\.scss}line{font-family:\000038}}
+/* line 8, ../sass/global.scss */
 .wrapper,
 #footer {
   width: 980px;
@@ -1012,19 +1018,19 @@ body {
   margin-right: auto;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/global\.scss}line{font-family:\0000313}}
+/* line 13, ../sass/global.scss */
 #responsive-trigger {
   display: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/global\.scss}line{font-family:\0000316}}
+/* line 16, ../sass/global.scss */
 fieldset {
   border: 0;
   margin: 0;
   padding: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/global\.scss}line{font-family:\0000321}}
+/* line 21, ../sass/global.scss */
 h1, h2, h3, h4, h5 {
   font-weight: bold;
   font-family: "Osclass";
@@ -1034,56 +1040,56 @@ h1, h2, h3, h4, h5 {
   margin-top: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/global\.scss}line{font-family:\0000329}}
+/* line 29, ../sass/global.scss */
 h1 {
   font-size: 2.2em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/global\.scss}line{font-family:\0000332}}
+/* line 32, ../sass/global.scss */
 h2 {
   font-size: 1.8em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/global\.scss}line{font-family:\0000335}}
+/* line 35, ../sass/global.scss */
 h3 {
   font-size: 1.5em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/global\.scss}line{font-family:\0000338}}
+/* line 38, ../sass/global.scss */
 h4 {
   font-size: 1.3em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/global\.scss}line{font-family:\0000341}}
+/* line 41, ../sass/global.scss */
 h5 {
   font-size: 1.15em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/global\.scss}line{font-family:\0000345}}
+/* line 45, ../sass/global.scss */
 body.search #sidebar,
 body.user #sidebar {
   float: left;
   width: 210px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/global\.scss}line{font-family:\0000350}}
+/* line 50, ../sass/global.scss */
 body.search #main,
 body.user #main {
   float: right;
   width: 728px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/global\.scss}line{font-family:\0000354}}
+/* line 54, ../sass/global.scss */
 body.search .list-header .actions {
   height: 35px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/global\.scss}line{font-family:\0000357}}
+/* line 57, ../sass/global.scss */
 .resp-toogle {
   display: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/footer\.scss}line{font-family:\000031}}
+/* line 1, ../sass/footer.scss */
 #footer {
   clear: both;
   margin-top: 50px;
@@ -1093,28 +1099,28 @@ body.search .list-header .actions {
   font-size: 0.725em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/footer\.scss}line{font-family:\000039}}
+/* line 9, ../sass/footer.scss */
 #footer ul {
   float: right;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/mixins\.scss}line{font-family:\0000313}}
+/* line 13, ../sass/mixins.scss */
 #footer a {
   text-decoration: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/mixins\.scss}line{font-family:\0000316}}
+/* line 16, ../sass/mixins.scss */
 #footer a:hover {
   text-decoration: underline;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/footer\.scss}line{font-family:\0000313}}
+/* line 13, ../sass/footer.scss */
 #footer li {
   display: inline;
   margin-left: 10px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/footer\.scss}line{font-family:\0000318}}
+/* line 18, ../sass/footer.scss */
 .footer-links,
 #footer ul {
   list-style: none;
@@ -1122,7 +1128,7 @@ body.search .list-header .actions {
   margin: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/footer\.scss}line{font-family:\0000323}}
+/* line 23, ../sass/footer.scss */
 .footer-links li {
   float: left;
   width: 31%;
@@ -1131,14 +1137,14 @@ body.search .list-header .actions {
   font-size: 0.725em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/footer\.scss}line{font-family:\0000330}}
+/* line 30, ../sass/footer.scss */
 #footer .resp-toogle .publish {
   padding: 0;
   margin: 15px 0;
   display: block;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/footer\.scss}line{font-family:\0000335}}
+/* line 35, ../sass/footer.scss */
 #footer .resp-toogle .publish a {
   background-color: #d94b35;
   background-color: #d94b35;
@@ -1176,7 +1182,7 @@ body.search .list-header .actions {
   padding: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/header\.scss}line{font-family:\000031}}
+/* line 1, ../sass/header.scss */
 #header {
   background-color: #35c3d9;
   width: 100%;
@@ -1187,12 +1193,12 @@ body.search .list-header .actions {
   padding-bottom: 25px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/header\.scss}line{font-family:\0000315}}
+/* line 15, ../sass/header.scss */
 #header .wrapper {
   position: relative;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/header\.scss}line{font-family:\0000318}}
+/* line 18, ../sass/header.scss */
 #header #logo {
   color: white;
   font-family: "Osclass";
@@ -1202,7 +1208,7 @@ body.search .list-header .actions {
   padding-top: 20px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/header\.scss}line{font-family:\0000328}}
+/* line 28, ../sass/header.scss */
 #header #logo a {
   font-size: 1.5em;
   line-height: 0.8em;
@@ -1211,7 +1217,7 @@ body.search .list-header .actions {
   color: white;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/header\.scss}line{font-family:\0000336}}
+/* line 36, ../sass/header.scss */
 #header .publish a {
   background-color: #d94b35;
   background-color: #d94b35;
@@ -1240,7 +1246,7 @@ body.search .list-header .actions {
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/header\.scss}line{font-family:\0000339}}
+/* line 39, ../sass/header.scss */
 #header #logo span {
   color: white;
   font-family: "Osclass";
@@ -1252,7 +1258,7 @@ body.search .list-header .actions {
   display: block;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/header\.scss}line{font-family:\0000351}}
+/* line 51, ../sass/header.scss */
 .main-search {
   background-color: #f0f0f0;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f0f0f0), color-stop(100%, #c9c9c9));
@@ -1275,12 +1281,12 @@ body.search .list-header .actions {
   border-bottom-right-radius: 4px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/header\.scss}line{font-family:\0000367}}
+/* line 67, ../sass/header.scss */
 .main-search .has-placeholder {
   float: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/header\.scss}line{font-family:\0000370}}
+/* line 70, ../sass/header.scss */
 .main-search input {
   background-color: #f6f6f6;
   border: solid 1px #bfbfbf;
@@ -1304,18 +1310,18 @@ body.search .list-header .actions {
   width: 100%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/header\.scss}line{font-family:\0000375}}
+/* line 75, ../sass/header.scss */
 .main-search .selector {
   padding-left: 42px;
   padding-right: 12px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/header\.scss}line{font-family:\0000379}}
+/* line 79, ../sass/header.scss */
 .main-search .reset-padding {
   padding-left: 0px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/header\.scss}line{font-family:\0000382}}
+/* line 82, ../sass/header.scss */
 .main-search .ui-button {
   background-color: #35c3d9;
   background-color: #35c3d9;
@@ -1345,14 +1351,14 @@ body.search .list-header .actions {
   height: 43px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/header\.scss}line{font-family:\0000387}}
+/* line 87, ../sass/header.scss */
 .main-search .cell {
   display: table-cell;
   width: 100%;
   vertical-align: top;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/header\.scss}line{font-family:\0000392}}
+/* line 92, ../sass/header.scss */
 #header .nav {
   position: absolute;
   right: 0;
@@ -1362,55 +1368,55 @@ body.search .list-header .actions {
   list-style: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/header\.scss}line{font-family:\00003100}}
+/* line 100, ../sass/header.scss */
 #header .nav li {
   float: left;
   position: relative;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/header\.scss}line{font-family:\00003105}}
+/* line 105, ../sass/header.scss */
 #header .nav li.search,
 #header .nav li.cat {
   display: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/header\.scss}line{font-family:\00003108}}
+/* line 108, ../sass/header.scss */
 #header .nav li a {
   color: white;
   font-size: 0.875em;
   margin-left: 10px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/header\.scss}line{font-family:\00003113}}
+/* line 113, ../sass/header.scss */
 #header .nav li.publish {
   clear: both;
   float: right;
   margin-top: 15px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/header\.scss}line{font-family:\00003118}}
+/* line 118, ../sass/header.scss */
 .main-search .select-box .select-box-label {
   line-height: 43px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/header\.scss}line{font-family:\00003121}}
+/* line 121, ../sass/header.scss */
 .main-search .select-box select {
   width: auto;
   height: 42px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/header\.scss}line{font-family:\00003125}}
+/* line 125, ../sass/header.scss */
 .main-search .select-box-icon {
   top: 0px;
 }
 
 /* Breadcrumb */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/header\.scss}line{font-family:\00003131}}
+/* line 131, ../sass/header.scss */
 .wrapper-flash {
   margin-bottom: 35px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/header\.scss}line{font-family:\00003134}}
+/* line 134, ../sass/header.scss */
 div.breadcrumb {
   line-height: 1.05em;
   font-size: 0.75em;
@@ -1421,21 +1427,21 @@ div.breadcrumb {
   border-bottom: 1px solid #eaeaea;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/header\.scss}line{font-family:\00003143}}
+/* line 143, ../sass/header.scss */
 ul.breadcrumb {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/header\.scss}line{font-family:\00003148}}
+/* line 148, ../sass/header.scss */
 ul.breadcrumb li {
   float: left;
   padding: 0 2px;
   font-weight: normal;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/list\.scss}line{font-family:\000031}}
+/* line 1, ../sass/list.scss */
 .r-list {
   display: none;
   margin: 0px 40px 0 0;
@@ -1443,35 +1449,35 @@ ul.breadcrumb li {
   list-style: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/list\.scss}line{font-family:\000038}}
+/* line 8, ../sass/list.scss */
 .latest_ads {
   padding-top: 25px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/list\.scss}line{font-family:\0000311}}
+/* line 11, ../sass/list.scss */
 .latest_ads h1 {
   float: left;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/list\.scss}line{font-family:\0000314}}
+/* line 14, ../sass/list.scss */
 .latest_ads .actions {
   float: right;
   margin-top: 5px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/list\.scss}line{font-family:\0000318}}
+/* line 18, ../sass/list.scss */
 body.home .r-list {
   display: block;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/list\.scss}line{font-family:\0000321}}
+/* line 21, ../sass/list.scss */
 body.home #main {
   width: 640px;
   float: left;
   margin-top: -20px 40px 0 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/list\.scss}line{font-family:\0000326}}
+/* line 26, ../sass/list.scss */
 .r-list li {
   float: left;
   width: 30%;
@@ -1481,55 +1487,55 @@ body.home #main {
   text-overflow: ellipsis;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/list\.scss}line{font-family:\0000335}}
+/* line 35, ../sass/list.scss */
 .r-list li li {
   float: none;
   width: 100%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/list\.scss}line{font-family:\0000340}}
+/* line 40, ../sass/list.scss */
 .r-list > li:nth-child(4n),
 .clear {
   clear: both;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/list\.scss}line{font-family:\0000343}}
+/* line 43, ../sass/list.scss */
 ul.r-list li h1 {
   margin: 25px 0 10px 0;
   padding: 0;
   font-size: 1em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/list\.scss}line{font-family:\0000349}}
+/* line 49, ../sass/list.scss */
 ul.r-list li a,
 ul.r-list li span {
   text-decoration: none;
   font-size: 0.8125em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/list\.scss}line{font-family:\0000353}}
+/* line 53, ../sass/list.scss */
 ul.r-list li h1 a {
   font-size: 1em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/list\.scss}line{font-family:\0000356}}
+/* line 56, ../sass/list.scss */
 ul.r-list li h1 span {
   font-weight: normal;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/list\.scss}line{font-family:\0000359}}
+/* line 59, ../sass/list.scss */
 ul.r-list li ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/list\.scss}line{font-family:\0000364}}
+/* line 64, ../sass/list.scss */
 .list-header {
   margin-bottom: 15px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/list\.scss}line{font-family:\0000369}}
+/* line 69, ../sass/list.scss */
 .listing-card-list {
   margin: 0;
   padding: 0;
@@ -1537,12 +1543,12 @@ ul.r-list li ul {
   clear: both;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/list\.scss}line{font-family:\0000375}}
+/* line 75, ../sass/list.scss */
 .listing-grid .last {
   margin-right: 0px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/list\.scss}line{font-family:\0000378}}
+/* line 78, ../sass/list.scss */
 .listing-card {
   clear: both;
   padding: 10px 0;
@@ -1554,7 +1560,7 @@ ul.r-list li ul {
   display: table;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/list\.scss}line{font-family:\0000389}}
+/* line 89, ../sass/list.scss */
 .listing-card .listing-basicinfo,
 .listing-card .listing-attributes {
   display: block;
@@ -1562,48 +1568,48 @@ ul.r-list li ul {
   width: auto;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/list\.scss}line{font-family:\0000394}}
+/* line 94, ../sass/list.scss */
 .listing-card .listing-attributes {
   width: auto;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/list\.scss}line{font-family:\0000397}}
+/* line 97, ../sass/list.scss */
 .listing-card .currency-value {
   white-space: nowrap;
   font-weight: bold;
   color: #78c042;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/list\.scss}line{font-family:\00003102}}
+/* line 102, ../sass/list.scss */
 .listing-card .listing-data {
   display: table-row;
   width: 100%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/list\.scss}line{font-family:\00003106}}
+/* line 106, ../sass/list.scss */
 .listing-card .listing-detail {
   width: auto;
   margin-left: 105px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/list\.scss}line{font-family:\00003110}}
+/* line 110, ../sass/list.scss */
 .listing-card .listing-cell {
   display: table;
   width: 100%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/list\.scss}line{font-family:\00003114}}
+/* line 114, ../sass/list.scss */
 .listing-card .listing-thumb {
   float: left;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/list\.scss}line{font-family:\00003117}}
+/* line 117, ../sass/list.scss */
 .listing-card .listing-thumb img {
   height: 85px;
   width: 95px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/list\.scss}line{font-family:\00003121}}
+/* line 121, ../sass/list.scss */
 .listing-card .listing-attributes {
   font-size: 0.78em;
   color: #777;
@@ -1611,23 +1617,23 @@ ul.r-list li ul {
   line-height: 1em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/list\.scss}line{font-family:\00003127}}
+/* line 127, ../sass/list.scss */
 .listing-card .listing-attributes a {
   color: #777;
   font-weight: bold;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/mixins\.scss}line{font-family:\0000313}}
+/* line 13, ../sass/mixins.scss */
 .listing-card .listing-attributes a {
   text-decoration: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/mixins\.scss}line{font-family:\0000316}}
+/* line 16, ../sass/mixins.scss */
 .listing-card .listing-attributes a:hover {
   text-decoration: underline;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/list\.scss}line{font-family:\00003132}}
+/* line 132, ../sass/list.scss */
 .listing-grid .listing-card {
   float: left;
   width: 190px;
@@ -1640,7 +1646,7 @@ ul.r-list li ul {
   clear: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/list\.scss}line{font-family:\00003143}}
+/* line 143, ../sass/list.scss */
 .listing-grid .listing-card .listing-attributes .location {
   display: block;
   white-space: nowrap;
@@ -1648,58 +1654,58 @@ ul.r-list li ul {
   text-overflow: ellipsis;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/list\.scss}line{font-family:\00003149}}
+/* line 149, ../sass/list.scss */
 .listing-grid .listing-card .listing-attributes .location a {
   display: inline;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/list\.scss}line{font-family:\00003152}}
+/* line 152, ../sass/list.scss */
 .listing-grid .currency-value {
   display: block;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/list\.scss}line{font-family:\00003155}}
+/* line 155, ../sass/list.scss */
 .listing-grid .listing-detail {
   margin-left: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/list\.scss}line{font-family:\00003159}}
+/* line 159, ../sass/list.scss */
 .listing-grid .listing-basicinfo,
 .listing-grid .listing-data {
   width: 100%;
   display: block;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/list\.scss}line{font-family:\00003163}}
+/* line 163, ../sass/list.scss */
 .listing-grid .listing-thumb {
   width: 100%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/list\.scss}line{font-family:\00003168}}
+/* line 168, ../sass/list.scss */
 .listing-grid .listing-card img {
   width: 100%;
   height: auto;
   float: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/list\.scss}line{font-family:\00003173}}
+/* line 173, ../sass/list.scss */
 .listing-card .listing-data p {
   font-size: .8125em;
   line-height: 1em;
   margin-top: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/list\.scss}line{font-family:\00003179}}
+/* line 179, ../sass/list.scss */
 .listing-grid .listing-cell {
   display: block;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/list\.scss}line{font-family:\00003182}}
+/* line 182, ../sass/list.scss */
 .listing-grid .listing-basicinfo p {
   display: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/list\.scss}line{font-family:\00003185}}
+/* line 185, ../sass/list.scss */
 .listing-grid .listing-basicinfo a {
   white-space: nowrap;
   overflow: hidden;
@@ -1708,28 +1714,28 @@ ul.r-list li ul {
   display: block;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/list\.scss}line{font-family:\00003192}}
+/* line 192, ../sass/list.scss */
 .listing-grid .g-hide {
   display: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/list\.scss}line{font-family:\00003195}}
+/* line 195, ../sass/list.scss */
 body.search .listing-grid .last {
   margin-right: 0px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/list\.scss}line{font-family:\00003198}}
+/* line 198, ../sass/list.scss */
 body.search .listing-grid .listing-card {
   width: 161px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/sidebar\.scss}line{font-family:\000031}}
+/* line 1, ../sass/sidebar.scss */
 #sidebar {
   width: 300px;
   float: right;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/sidebar\.scss}line{font-family:\000035}}
+/* line 5, ../sass/sidebar.scss */
 .widget-box {
   background-color: #f7f7f7;
   padding: 10px;
@@ -1739,19 +1745,19 @@ body.search .listing-grid .listing-card {
   -moz-border-radius: 4px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/sidebar\.scss}line{font-family:\0000314}}
+/* line 14, ../sass/sidebar.scss */
 .widget-box h3 {
   margin: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/sidebar\.scss}line{font-family:\0000317}}
+/* line 17, ../sass/sidebar.scss */
 .widget-box ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/sidebar\.scss}line{font-family:\0000326}}
+/* line 26, ../sass/sidebar.scss */
 .widget-box li a {
   text-decoration: none;
   white-space: nowrap;
@@ -1771,7 +1777,7 @@ body.search .listing-grid .listing-card {
   border-top: solid 1px #eaeaea;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/sidebar\.scss}line{font-family:\0000349}}
+/* line 49, ../sass/sidebar.scss */
 .widget-box li a:hover {
   background-color: #8bdce9;
   border-color: #f7f7f7;
@@ -1780,14 +1786,14 @@ body.search .listing-grid .listing-card {
   border-radius: 3px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/sidebar\.scss}line{font-family:\0000359}}
+/* line 59, ../sass/sidebar.scss */
 #sidebar fieldset {
   margin: 0;
   padding: 0;
   border: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/sidebar\.scss}line{font-family:\0000364}}
+/* line 64, ../sass/sidebar.scss */
 #sidebar h3 {
   margin: 0;
   margin-bottom: 10px;
@@ -1795,7 +1801,7 @@ body.search .listing-grid .listing-card {
   font-size: 1em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/sidebar\.scss}line{font-family:\0000371}}
+/* line 71, ../sass/sidebar.scss */
 #sidebar fieldset {
   padding: 14px 0 16px;
   border-bottom: solid 1px #eaeaea;
@@ -1803,12 +1809,12 @@ body.search .listing-grid .listing-card {
   line-height: 0.8125em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/sidebar\.scss}line{font-family:\0000378}}
+/* line 78, ../sass/sidebar.scss */
 #sidebar input {
   vertical-align: bottom;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/sidebar\.scss}line{font-family:\0000381}}
+/* line 81, ../sass/sidebar.scss */
 #sidebar .input-text {
   background-color: white;
   border: solid 1px #bfbfbf;
@@ -1834,7 +1840,7 @@ body.search .listing-grid .listing-card {
   line-height: 24px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/sidebar\.scss}line{font-family:\0000392}}
+/* line 92, ../sass/sidebar.scss */
 #sidebar ul.category,
 #sidebar ul.category ul,
 ul.sidebar-list,
@@ -1844,12 +1850,12 @@ ul.user_menu {
   list-style: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/sidebar\.scss}line{font-family:\0000397}}
+/* line 97, ../sass/sidebar.scss */
 body.user #sidebar {
   border-right: solid 1px #eaeaea;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/sidebar\.scss}line{font-family:\00003102}}
+/* line 102, ../sass/sidebar.scss */
 #sidebar ul.category li,
 ul.sidebar-list li,
 ul.user_menu li {
@@ -1857,47 +1863,47 @@ ul.user_menu li {
   line-height: 1.15em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/sidebar\.scss}line{font-family:\00003106}}
+/* line 106, ../sass/sidebar.scss */
 ul.user_menu li {
   padding: 0 0 12px;
   font-size: 0.8125em;
   line-height: 0.8125em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/sidebar\.scss}line{font-family:\00003111}}
+/* line 111, ../sass/sidebar.scss */
 #sidebar .category ul {
   display: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/sidebar\.scss}line{font-family:\00003114}}
+/* line 114, ../sass/sidebar.scss */
 #sidebar ul.category .show-sub ul.sub {
   display: block;
   padding-left: 15px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/sidebar\.scss}line{font-family:\00003118}}
+/* line 118, ../sass/sidebar.scss */
 #sidebar .show-sub a {
   font-weight: bold;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/sidebar\.scss}line{font-family:\00003121}}
+/* line 121, ../sass/sidebar.scss */
 #sidebar .show-sub li a {
   font-weight: normal;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/sidebar\.scss}line{font-family:\00003124}}
+/* line 124, ../sass/sidebar.scss */
 #sidebar .price-slice input {
   width: 50px;
   padding: 0 5px;
   margin-right: 5px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/sidebar\.scss}line{font-family:\00003129}}
+/* line 129, ../sass/sidebar.scss */
 #sidebar .price-slice span {
   margin-right: 0px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/sidebar\.scss}line{font-family:\00003132}}
+/* line 132, ../sass/sidebar.scss */
 #sidebar button {
   background-color: #35c3d9;
   background-color: #35c3d9;
@@ -1928,28 +1934,28 @@ ul.user_menu li {
   font-size: 0.85em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/sidebar\.scss}line{font-family:\00003137}}
+/* line 137, ../sass/sidebar.scss */
 #sidebar .actions {
   padding: 20px 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/mixins\.scss}line{font-family:\0000313}}
+/* line 13, ../sass/mixins.scss */
 #sidebar a {
   text-decoration: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/mixins\.scss}line{font-family:\0000316}}
+/* line 16, ../sass/mixins.scss */
 #sidebar a:hover {
   text-decoration: underline;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/item\.scss}line{font-family:\000032}}
+/* line 2, ../sass/item.scss */
 body.item #sidebar .widget-box,
 body.user-public-profile #sidebar .widget-box {
   padding: 20px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/item\.scss}line{font-family:\000038}}
+/* line 8, ../sass/item.scss */
 body.item #sidebar .form-container .controls input,
 body.item #sidebar .form-container .controls textarea,
 body.user-public-profile #sidebar .form-container .controls input,
@@ -1957,44 +1963,44 @@ body.user-public-profile #sidebar .form-container .controls textarea {
   width: 238px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/item\.scss}line{font-family:\0000312}}
+/* line 12, ../sass/item.scss */
 body.item #sidebar .form-container label,
 body.user-public-profile #sidebar .form-container label {
   font-size: 0.75em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/item\.scss}line{font-family:\0000316}}
+/* line 16, ../sass/item.scss */
 body.item #contact h2,
 body.user-public-profile #contact h2 {
   margin-top: 0px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/item\.scss}line{font-family:\0000320}}
+/* line 20, ../sass/item.scss */
 body.item #main,
 body.user-public-profile #main {
   width: 640px;
   float: left;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/item\.scss}line{font-family:\0000324}}
+/* line 24, ../sass/item.scss */
 .item-photos .main-photo {
   width: 550px;
   float: left;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/item\.scss}line{font-family:\0000328}}
+/* line 28, ../sass/item.scss */
 .item-photos .thumbs {
   float: right;
   width: 79px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/item\.scss}line{font-family:\0000332}}
+/* line 32, ../sass/item.scss */
 .item-photos .thumbs img {
   margin-bottom: 12px;
   border: solid 2px #eaeaea;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/item\.scss}line{font-family:\0000336}}
+/* line 36, ../sass/item.scss */
 .item-header {
   margin-top: -10px;
   background: #f7f7f7;
@@ -2012,35 +2018,35 @@ body.user-public-profile #main {
   font-size: 0.75em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/item\.scss}line{font-family:\0000346}}
+/* line 46, ../sass/item.scss */
 .item-header #type_dates {
   float: right;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/item\.scss}line{font-family:\0000349}}
+/* line 49, ../sass/item.scss */
 .item-header #type_dates em {
   font-style: normal;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/item\.scss}line{font-family:\0000352}}
+/* line 52, ../sass/item.scss */
 #item_location {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/item\.scss}line{font-family:\0000357}}
+/* line 57, ../sass/item.scss */
 #item_location li {
   display: inline;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/item\.scss}line{font-family:\0000360}}
+/* line 60, ../sass/item.scss */
 #description {
   clear: both;
   padding-top: 5px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/item\.scss}line{font-family:\0000364}}
+/* line 64, ../sass/item.scss */
 div.mark_as {
   height: 32px;
   width: 100%;
@@ -2049,7 +2055,7 @@ div.mark_as {
   margin-bottom: 15px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/item\.scss}line{font-family:\0000371}}
+/* line 71, ../sass/item.scss */
 .mark_as a {
   width: 100%;
   height: auto;
@@ -2059,7 +2065,7 @@ div.mark_as {
   position: absolute;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/item\.scss}line{font-family:\0000379}}
+/* line 79, ../sass/item.scss */
 .mark_as .select-box-label {
   border: solid 1px #f2f2f2;
   position: relative;
@@ -2075,13 +2081,13 @@ div.mark_as {
   background: #f7f7f7;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/item\.scss}line{font-family:\0000386}}
+/* line 86, ../sass/item.scss */
 .similar_ads h2 {
   margin-top: 35px;
 }
 
 @media only screen and (max-width: 740px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/740\.scss}line{font-family:\000032}}
+  /* line 2, ../sass/responsive/740.scss */
   .wrapper,
   #footer {
     padding-left: 10px;
@@ -2089,12 +2095,12 @@ div.mark_as {
     width: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/740\.scss}line{font-family:\000037}}
+  /* line 7, ../sass/responsive/740.scss */
   .has-placeholder {
     float: none;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/740\.scss}line{font-family:\0000315}}
+  /* line 15, ../sass/responsive/740.scss */
   div#main,
   body.home #main,
   body.search #main,
@@ -2106,40 +2112,46 @@ div.mark_as {
     clear: both;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/740\.scss}line{font-family:\0000320}}
+  /* line 20, ../sass/responsive/740.scss */
   #responsive-trigger {
     display: block;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/740\.scss}line{font-family:\0000323}}
+  /* line 23, ../sass/responsive/740.scss */
   #sidebar {
     width: 100%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/740\.scss}line{font-family:\0000326}}
+  /* line 26, ../sass/responsive/740.scss */
   #header {
     padding-bottom: 0px;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/740\.scss}line{font-family:\0000329}}
+  /* line 29, ../sass/responsive/740.scss */
   #footer {
     text-align: center;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/740\.scss}line{font-family:\0000332}}
+  /* line 32, ../sass/responsive/740.scss */
   #footer ul {
     float: none;
     font-size: 1.15em;
     margin-bottom: 15px;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/header\.scss}line{font-family:\000031}}
+  /* line 37, ../sass/responsive/740.scss */
+  .flashmessage {
+    padding: 15px 40px 15px 15px;
+    width: auto;
+  }
+
+  /* line 1, ../sass/responsive/header.scss */
   #header {
     height: auto;
     margin-bottom: 20px;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/header\.scss}line{font-family:\000035}}
+  /* line 5, ../sass/responsive/header.scss */
   #header #logo {
     font-size: 1.7em;
     letter-spacing: -0.07em;
@@ -2148,12 +2160,12 @@ div.mark_as {
     margin-left: 10px;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/header\.scss}line{font-family:\0000312}}
+  /* line 12, ../sass/responsive/header.scss */
   #header #logo span {
     display: none;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/header\.scss}line{font-family:\0000315}}
+  /* line 15, ../sass/responsive/header.scss */
   #header .wrapper {
     padding-left: 0;
     padding-right: 0;
@@ -2161,7 +2173,7 @@ div.mark_as {
     position: relative;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/header\.scss}line{font-family:\0000321}}
+  /* line 21, ../sass/responsive/header.scss */
   .main-search {
     top: 100%;
     margin-left: 0;
@@ -2180,7 +2192,7 @@ div.mark_as {
     margin-top: 0;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/header\.scss}line{font-family:\0000336}}
+  /* line 36, ../sass/responsive/header.scss */
   .main-search .cell {
     display: table-cell;
     width: 100%;
@@ -2188,40 +2200,40 @@ div.mark_as {
     vertical-align: top;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/header\.scss}line{font-family:\0000343}}
+  /* line 43, ../sass/responsive/header.scss */
   .main-search .cell:last-child {
     padding-left: 42px;
     padding-right: 11px;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/header\.scss}line{font-family:\0000347}}
+  /* line 47, ../sass/responsive/header.scss */
   .main-search input {
     width: 100%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/header\.scss}line{font-family:\0000350}}
+  /* line 50, ../sass/responsive/header.scss */
   .main-search .selector {
     display: none;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/header\.scss}line{font-family:\0000353}}
+  /* line 53, ../sass/responsive/header.scss */
   .main-search .reset-padding {
     padding-left: 0px;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/header\.scss}line{font-family:\0000356}}
+  /* line 56, ../sass/responsive/header.scss */
   #header .nav {
     top: 0;
     height: 100%;
     vertical-align: middle;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/header\.scss}line{font-family:\0000361}}
+  /* line 61, ../sass/responsive/header.scss */
   #header .nav li {
     height: 100%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/header\.scss}line{font-family:\0000364}}
+  /* line 64, ../sass/responsive/header.scss */
   #header .nav li a {
     height: 100%;
     padding: 0 15px;
@@ -2233,64 +2245,64 @@ div.mark_as {
     margin-left: 0;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/header\.scss}line{font-family:\0000375}}
+  /* line 75, ../sass/responsive/header.scss */
   #header .nav li.active a,
   #header .nav li a:hover {
     background-color: #1b7e8d;
     color: white;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/header\.scss}line{font-family:\0000379}}
+  /* line 79, ../sass/responsive/header.scss */
   #header .nav li .icons:after {
     display: table-cell;
     vertical-align: middle;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/header\.scss}line{font-family:\0000383}}
+  /* line 83, ../sass/responsive/header.scss */
   #header .nav li {
     display: none;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/header\.scss}line{font-family:\0000387}}
+  /* line 87, ../sass/responsive/header.scss */
   #header .nav li.search,
   #header .nav li.cat {
     display: block;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/ui\.scss}line{font-family:\000031}}
+  /* line 1, ../sass/responsive/ui.scss */
   body.item #sidebar .widget-box {
     padding: 20px;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/ui\.scss}line{font-family:\000035}}
+  /* line 5, ../sass/responsive/ui.scss */
   body.item #sidebar .form-container .controls input,
   body.item #sidebar .form-container .controls textarea {
     width: 238px;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/ui\.scss}line{font-family:\000038}}
+  /* line 8, ../sass/responsive/ui.scss */
   body.item #sidebar .form-container label {
     font-size: 0.75em;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/ui\.scss}line{font-family:\0000311}}
+  /* line 11, ../sass/responsive/ui.scss */
   body.item #contact h2 {
     margin-top: 0px;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/ui\.scss}line{font-family:\0000319}}
+  /* line 19, ../sass/responsive/ui.scss */
   .form-container .controls input,
   #sidebar .input-text {
     height: 32px;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/ui\.scss}line{font-family:\0000322}}
+  /* line 22, ../sass/responsive/ui.scss */
   input[type="checkbox"] {
     width: auto;
     height: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/ui\.scss}line{font-family:\0000331}}
+  /* line 31, ../sass/responsive/ui.scss */
   textarea,
   body.item #sidebar .form-container .controls input,
   body.item #sidebar .form-container .controls textarea,
@@ -2305,7 +2317,7 @@ div.mark_as {
     box-sizing: border-box;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/ui\.scss}line{font-family:\0000339}}
+  /* line 39, ../sass/responsive/ui.scss */
   ul.r-list {
     width: 100%;
     float: none;
@@ -2318,7 +2330,7 @@ div.mark_as {
     text-shadow: none;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/ui\.scss}line{font-family:\0000348}}
+  /* line 48, ../sass/responsive/ui.scss */
   ul.r-list:after {
     content: ".";
     display: block;
@@ -2328,7 +2340,7 @@ div.mark_as {
     height: 0;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/ui\.scss}line{font-family:\0000356}}
+  /* line 56, ../sass/responsive/ui.scss */
   ul.r-list li {
     float: left;
     width: 50%;
@@ -2340,23 +2352,23 @@ div.mark_as {
     box-sizing: border-box;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/ui\.scss}line{font-family:\0000366}}
+  /* line 66, ../sass/responsive/ui.scss */
   ul.r-list > li:nth-child(2n) {
     padding-left: 5px;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/ui\.scss}line{font-family:\0000369}}
+  /* line 69, ../sass/responsive/ui.scss */
   ul.r-list > li:nth-child(odd) {
     clear: both;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/ui\.scss}line{font-family:\0000373}}
+  /* line 73, ../sass/responsive/ui.scss */
   .r-list > li.clear,
   .r-list > li:nth-child(4n) {
     clear: none;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/ui\.scss}line{font-family:\0000376}}
+  /* line 76, ../sass/responsive/ui.scss */
   ul.r-list li a {
     text-decoration: none;
     white-space: nowrap;
@@ -2379,17 +2391,17 @@ div.mark_as {
     text-shadow: 0 1px 1px white;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/ui\.scss}line{font-family:\0000394}}
+  /* line 94, ../sass/responsive/ui.scss */
   ul.r-list li h1 {
     margin: 0;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/ui\.scss}line{font-family:\0000397}}
+  /* line 97, ../sass/responsive/ui.scss */
   ul.r-list li span {
     display: none;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/ui\.scss}line{font-family:\00003100}}
+  /* line 100, ../sass/responsive/ui.scss */
   ul.r-list li ul {
     -webkit-transition: opacity 1s ease-out;
     opacity: 0;
@@ -2397,7 +2409,7 @@ div.mark_as {
     overflow: hidden;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/ui\.scss}line{font-family:\00003106}}
+  /* line 106, ../sass/responsive/ui.scss */
   ul.r-list li.active a {
     background-color: #35c3d9;
     color: white;
@@ -2405,7 +2417,7 @@ div.mark_as {
     text-shadow: 0 1px 1px #23a4b8;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/ui\.scss}line{font-family:\00003112}}
+  /* line 112, ../sass/responsive/ui.scss */
   ul.r-list li.active ul {
     opacity: 1;
     height: auto;
@@ -2414,12 +2426,12 @@ div.mark_as {
     margin-bottom: 5px;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/ui\.scss}line{font-family:\00003119}}
+  /* line 119, ../sass/responsive/ui.scss */
   ul.r-list li.active ul li {
     padding: 0;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/ui\.scss}line{font-family:\00003122}}
+  /* line 122, ../sass/responsive/ui.scss */
   ul.r-list li.active ul li a {
     border-color: #eaeaea;
     color: #006699;
@@ -2428,13 +2440,13 @@ div.mark_as {
     font-size: 0.82em;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/ui\.scss}line{font-family:\00003126}}
+  /* line 126, ../sass/responsive/ui.scss */
   ul.r-list li ul li {
     float: none;
     width: 100%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/ui\.scss}line{font-family:\00003132}}
+  /* line 132, ../sass/responsive/ui.scss */
   .select-box {
     width: 100%;
     -webkit-box-sizing: border-box;
@@ -2444,39 +2456,44 @@ div.mark_as {
     box-sizing: border-box;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/ui\.scss}line{font-family:\00003140}}
+  /* line 140, ../sass/responsive/ui.scss */
   .select-box select {
     width: 100%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/show-hide\.scss}line{font-family:\000031}}
+  /* line 1, ../sass/responsive/show-hide.scss */
+  body.item-post #footer .resp-toogle {
+    display: none;
+  }
+
+  /* line 4, ../sass/responsive/show-hide.scss */
   body.display-cat .r-list {
     display: block;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/show-hide\.scss}line{font-family:\000035}}
+  /* line 8, ../sass/responsive/show-hide.scss */
   body.display-search .main-search,
   body.home .main-search {
     display: table;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/show-hide\.scss}line{font-family:\000039}}
+  /* line 12, ../sass/responsive/show-hide.scss */
   body.display-search #header,
   body.home #header {
     margin-bottom: 80px;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/show-hide\.scss}line{font-family:\0000312}}
+  /* line 15, ../sass/responsive/show-hide.scss */
   .resp-toogle {
     display: block;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/show-hide\.scss}line{font-family:\0000315}}
+  /* line 18, ../sass/responsive/show-hide.scss */
   body.display-filters div#sidebar {
     display: block;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/show-hide\.scss}line{font-family:\0000318}}
+  /* line 21, ../sass/responsive/show-hide.scss */
   .show-filters-btn {
     display: inline-block;
     border: solid 1px #d1d1d1;
@@ -2496,52 +2513,52 @@ div.mark_as {
     color: #9e9e9e;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/form\.scss}line{font-family:\000031}}
+  /* line 1, ../sass/responsive/form.scss */
   .form-container-box {
     width: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/form\.scss}line{font-family:\000034}}
+  /* line 4, ../sass/responsive/form.scss */
   .form-container .checkbox {
     margin-bottom: 15px;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/form\.scss}line{font-family:\000037}}
+  /* line 7, ../sass/responsive/form.scss */
   .form-container .checkbox input {
     width: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/form\.scss}line{font-family:\0000311}}
+  /* line 11, ../sass/responsive/form.scss */
   .form-horizontal .actions {
     margin: 0;
     padding-left: 0px;
     padding-right: 0px;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/form\.scss}line{font-family:\0000316}}
+  /* line 16, ../sass/responsive/form.scss */
   .form-horizontal label {
     float: none;
     width: 100%;
     font-size: 0.85em;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/form\.scss}line{font-family:\0000321}}
+  /* line 21, ../sass/responsive/form.scss */
   .form-horizontal .controls {
     width: auto;
     margin-left: 0;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/form\.scss}line{font-family:\0000326}}
+  /* line 26, ../sass/responsive/form.scss */
   body.item-post .select-box {
     margin-bottom: 10px;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/form\.scss}line{font-family:\0000329}}
+  /* line 29, ../sass/responsive/form.scss */
   #item-post select {
     width: 100%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/list\.scss}line{font-family:\000032}}
+  /* line 2, ../sass/responsive/list.scss */
   .listing-grid .listing-card,
   body.search .listing-grid .listing-card {
     width: 32%;
@@ -2550,17 +2567,17 @@ div.mark_as {
     margin: 1%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/list\.scss}line{font-family:\000038}}
+  /* line 8, ../sass/responsive/list.scss */
   .listing-grid .listing-detail {
     border: solid 1px #ECECEC;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/list\.scss}line{font-family:\0000311}}
+  /* line 11, ../sass/responsive/list.scss */
   .listing-grid .listing-thumb {
     float: none;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/list\.scss}line{font-family:\0000314}}
+  /* line 14, ../sass/responsive/list.scss */
   .listing-grid .listing-thumb img {
     height: auto;
     width: 92%;
@@ -2568,19 +2585,19 @@ div.mark_as {
     float: left;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/list\.scss}line{font-family:\0000320}}
+  /* line 20, ../sass/responsive/list.scss */
   .listing-grid .listing-cell {
     display: block;
     width: 92%;
     padding: 4%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/list\.scss}line{font-family:\0000325}}
+  /* line 25, ../sass/responsive/list.scss */
   .listing-grid .listing-basicinfo p {
     display: none;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/list\.scss}line{font-family:\0000328}}
+  /* line 28, ../sass/responsive/list.scss */
   .listing-grid .listing-basicinfo a {
     white-space: nowrap;
     overflow: hidden;
@@ -2589,26 +2606,26 @@ div.mark_as {
     display: block;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/list\.scss}line{font-family:\0000336}}
+  /* line 36, ../sass/responsive/list.scss */
   .listing-grid .listing-card:nth-child(3n),
   body.search .listing-card:nth-child(3n) {
     margin-right: 0%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/list\.scss}line{font-family:\0000340}}
+  /* line 40, ../sass/responsive/list.scss */
   .listing-grid .listing-card:nth-child(3n+1),
   body.search .listing-grid .listing-card:nth-child(3n+1) {
     margin-left: 0%;
     clear: both;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/item\.scss}line{font-family:\000032}}
+  /* line 2, ../sass/responsive/item.scss */
   body.item #sidebar,
   body.user-public-profile #sidebar {
     margin-top: 20px;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/item\.scss}line{font-family:\000035}}
+  /* line 5, ../sass/responsive/item.scss */
   .item-photos .thumbs {
     float: none;
     margin-top: 10px;
@@ -2616,23 +2633,23 @@ div.mark_as {
     clear: both;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/item\.scss}line{font-family:\0000311}}
+  /* line 11, ../sass/responsive/item.scss */
   .item-photos a {
     text-decoration: none;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/item\.scss}line{font-family:\0000314}}
+  /* line 14, ../sass/responsive/item.scss */
   .item-photos .main-photo {
     width: 100%;
     float: none;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/item\.scss}line{font-family:\0000318}}
+  /* line 18, ../sass/responsive/item.scss */
   .item-photos .main-photo img {
     width: 100%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/structure\.scss}line{font-family:\000032}}
+  /* line 2, ../sass/responsive/structure.scss */
   body.search #sidebar,
   body.user #sidebar {
     width: auto;
@@ -2640,18 +2657,18 @@ div.mark_as {
     margin-bottom: 40px;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/structure\.scss}line{font-family:\000037}}
+  /* line 7, ../sass/responsive/structure.scss */
   body.search #content {
     position: relative;
     padding-top: 80px;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/structure\.scss}line{font-family:\0000311}}
+  /* line 11, ../sass/responsive/structure.scss */
   body.user #sidebar {
     margin-top: 15px;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/structure\.scss}line{font-family:\0000314}}
+  /* line 14, ../sass/responsive/structure.scss */
   body.search .list-header {
     position: absolute;
     top: 0;
@@ -2660,7 +2677,7 @@ div.mark_as {
     height: 80px;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/structure\.scss}line{font-family:\0000322}}
+  /* line 22, ../sass/responsive/structure.scss */
   body.search #sidebar,
   body.user #sidebar {
     display: none;
@@ -2679,24 +2696,24 @@ div.mark_as {
     border-bottom-right-radius: 4px;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/structure\.scss}line{font-family:\0000331}}
+  /* line 31, ../sass/responsive/structure.scss */
   body.search #content h1 {
     display: inline-block;
     margin: 0;
     font-size: 1.5em;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/structure\.scss}line{font-family:\0000336}}
+  /* line 36, ../sass/responsive/structure.scss */
   .resp-wrapper {
     padding: 0 10px;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/structure\.scss}line{font-family:\0000339}}
+  /* line 39, ../sass/responsive/structure.scss */
   body.search .list-header .actions {
     padding: 10px 0;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/structure\.scss}line{font-family:\0000342}}
+  /* line 42, ../sass/responsive/structure.scss */
   body.display-filters .show-filters-btn {
     background-color: #35c3d9;
     border-color: #23a4b8;
@@ -2704,37 +2721,37 @@ div.mark_as {
   }
 }
 @media only screen and (max-width: 640px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/640\.scss}line{font-family:\000032}}
+  /* line 2, ../sass/responsive/640.scss */
   body .item-header #type_dates {
     float: none;
   }
 }
 @media only screen and (max-width: 480px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/480\.scss}line{font-family:\000031}}
+  /* line 1, ../sass/responsive/480.scss */
   ul.r-list li {
     float: none;
     width: 100%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/480\.scss}line{font-family:\000037}}
+  /* line 7, ../sass/responsive/480.scss */
   ul.r-list > li:nth-child(2n), body.search ul.r-list > li:nth-child(2n) {
     padding-left: 0px;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/480\.scss}line{font-family:\0000311}}
+  /* line 11, ../sass/responsive/480.scss */
   .listing-grid .listing-card, body.search .listing-grid .listing-card {
     width: 49%;
     clear: none;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/480\.scss}line{font-family:\0000316}}
+  /* line 16, ../sass/responsive/480.scss */
   .listing-grid .listing-card:nth-child(2n), body.search .listing-grid .listing-card:nth-child(2n) {
     margin-right: 0%;
     margin-left: 1%;
     clear: none;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/480\.scss}line{font-family:\0000322}}
+  /* line 22, ../sass/responsive/480.scss */
   .listing-grid .listing-card:nth-child(2n+1), body.search .listing-grid .listing-card:nth-child(2n+1) {
     margin-left: 0%;
     margin-right: 1%;

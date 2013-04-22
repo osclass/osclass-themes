@@ -26,10 +26,10 @@
 <?php ItemForm::location_javascript_new(); ?>
 <?php if(osc_images_enabled_at_items()) ItemForm::photos_javascript(); ?>
     <div class="form-container form-horizontal">
-        <div class="header">
-            <h1><?php _e('Publish a listing', 'bender'); ?></h1>
-        </div>
         <div class="resp-wrapper">
+            <div class="header">
+                <h1><?php _e('Publish a listing', 'bender'); ?></h1>
+            </div>
             <ul id="error_list"></ul>
                 <form name="item" action="<?php echo osc_base_url(true);?>" method="post" enctype="multipart/form-data" id="item-post">
                     <fieldset>
@@ -71,9 +71,9 @@
                             <h2><?php _e('Photos', 'bender'); ?></h2>
 
                             <div class="control-group">
-                              <label class="control-label" for="price"><?php _e('Photos', 'bender'); ?></label>
+                              <label class="control-label" for="photos[]"><?php _e('Photos', 'bender'); ?></label>
                               <div class="controls">
-                                  <div class="ui-drop-files" id="drop-files"><?php _e('Drop photos here','bender'); ?></div>
+                                <input type="file" name="photos[]" />
                               </div>
                             </div>
 
@@ -86,12 +86,14 @@
 
                         </div>
                         <?php } ?>
+                        <?php /*
                         <div class="generic-input input-big has-placeholder input-file">
                         <div class="bg"></div>
                         <div class="label">Attach</div>
                         <span class="placeholder">CV</span>
                         <input type="file" name="attachment">
-                    </div>
+                        </div>
+                        */ ?>
                         <div class="box location">
                             <h2><?php _e('Listing Location', 'bender'); ?></h2>
 
@@ -357,10 +359,23 @@ if (typeof(FileReader) === 'function') {
     $(this).css({'box-shadow' : 'inset 0px 0px 20px rgba(0, 0, 0, 0.1)', 'border' : '4px dashed #bb2b2b'});
     return false;
   });
+  $('#drop-files').bind('dragleave', function() {
+    $(this).css({'box-shadow' : 'inset 0px 0px 20px rgba(0, 0, 0, 0.1)', 'border' : '4px dashed #bababa'});
+    return false;
+  });
 
   $('#drop-files').bind('drop', function() {
     $(this).css({'box-shadow' : 'none', 'border' : '4px dashed rgba(0,0,0,0.2)'});
     return false;
   });
+
+
+
+
+  if (typeof(FileReader) === 'function'){
+    console.log('soportado');
+  } else {
+    console.log('NO soportado');
+  }
 </script>
 <?php osc_current_web_theme_path('footer.php'); ?>
