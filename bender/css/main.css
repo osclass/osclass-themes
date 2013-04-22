@@ -971,20 +971,21 @@ button {
 /* line 14, ../sass/user.scss */
 .user-card .name {
   font-size: 1.5em;
+  margin-bottom: 15px;
 }
 
-/* line 17, ../sass/user.scss */
+/* line 18, ../sass/user.scss */
 .user-card .website {
   font-size: 0.725em;
 }
 
-/* line 21, ../sass/user.scss */
+/* line 22, ../sass/user.scss */
 .user-card .location,
 .user-card .adress {
   font-size: 0.725em;
 }
 
-/* line 26, ../sass/user.scss */
+/* line 27, ../sass/user.scss */
 .user-card img {
   position: absolute;
   left: 0;
