@@ -23,7 +23,7 @@
     $action = 'item_add_post';
     $edit = false;
     if(Params::getParam('action') == 'item_edit'){
-        $action = 'item_edit';
+        $action = 'item_edit_post';
         $edit = true;
     }
     ?>
@@ -153,11 +153,11 @@
                             <div class="control-group">
                             <?php if( osc_recaptcha_items_enabled() ) {?>
                                 <div class="controls">
-                                        <?php osc_show_recaptcha(); ?>
+                                    <?php osc_show_recaptcha(); ?>
                                 </div>
                                 <?php }?>
                                 <div class="controls">
-                                    <button type="submit" class="ui-button ui-button-middle ui-button-main"><?php _e("Publish", 'bender');?></button>
+                                    <button type="submit" class="ui-button ui-button-middle ui-button-main"><?php if($edit) { _e("Update", 'bender'); } else { _e("Publish", 'bender'); } ?></button>
                                 </div>
                             </div>
                     </fieldset>
