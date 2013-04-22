@@ -344,13 +344,41 @@ FUNCTIONS
                 'class' => 'opt_account'
             );
             $options[] = array(
-                'name'  => __('Logout', 'bender'),
-                'url'   => osc_user_logout_url(),
-                'class' => 'opt_logout'
+                'name'  => __('Delete account', 'bender'),
+                'url'   => '#',
+                'class' => 'opt_delete_account'
             );
 
             return $options;
         }
+    }
+
+    if( !function_exists('delete_user_js') ) {
+        function delete_user_js() {
+            $location = Rewrite::newInstance()->get_location();
+            $section  = Rewrite::newInstance()->get_section();
+
+            if( $location === 'user' && in_array($section, array('dashboard', 'profile', 'alerts', 'change_email', 'change_username',  'change_password', 'items')) ) {
+                osc_enqueue_script('delete-user-js');
+            }
+        }
+        osc_add_hook('header', 'delete_user_js', 1);
+    }
+
+    if( !function_exists('user_info_js') ) {
+        function user_info_js() {
+            $location = Rewrite::newInstance()->get_location();
+            $section  = Rewrite::newInstance()->get_section();
+
+            if( $location === 'user' && in_array($section, array('dashboard', 'profile', 'alerts', 'change_email', 'change_username',  'change_password', 'items')) ) { ?>
+<script type="text/javascript">
+    bender.user = {};
+    bender.user.id = '<?php echo osc_user_id(); ?>';
+    bender.user.secret = '<?php echo osc_user_field("s_secret"); ?>';
+</script>
+            <?php }
+        }
+        osc_add_hook('header', 'user_info_js');
     }
 
     function theme_bender_actions_admin() {

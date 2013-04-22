@@ -1,64 +1,62 @@
-var bender = {
-    extend: function(el, opt){
+bender.extend = function(el, opt) {
         for (var name in opt) el[name] = opt[name];
         return el;
-    },
-    responsive: function(options){
-        defaults = {'selector':'#responsive-trigger'};
-        options = $.extend(defaults, options);
-        if($(options.selector).is(':visible')){
-            return true;
-        }
-            return false;
-    },
-    toggleClass: function(element,destination,isObject){
-        var $selector = $('['+element+']');
-        $selector.click(function (event) {
-            var thatClass  = $(this).attr(element);
-            var thatDestination;
-            if (typeof(isObject) != "undefined"){
-                var thatDestination  = $(destination);
-            } else {
-                var thatDestination  = $($(this).attr(destination));
-            }
-            thatDestination.toggleClass(thatClass);
-            event.preventDefault();
-            return;
-        });
-    },
-    photoUploader: function(selector,options){
-        defaults = {'max':4};
-        options = $.extend(defaults, options);
-        bender.photoUploaderActions($(selector),options);
-    },
-    addPhotoUploader: function(max){
-        if(max < $('input[name="'+$(this).attr('name')+'"]').length+$('.photos_div').length){
-            var $image = $('<input type="file" name="photos[]">');
-                bender.photoUploaderActions(image);
-            $('#post-photos').append($image);
-        }
-    },
-    removePhotoUploader: function(){
-        //removeAndAdd
-    },
-    photoUploaderActions: function($element,options){
-        $element.on('change',function(){
-            var input  = $(this)[0];
-            $(this).next('img').remove();
-            $image = $('<img />');
-            $image.insertAfter($element);
-            if (input.files && input.files[0]) {
-                var reader = new FileReader();
-                reader.onload = function (e) {
-                    $image.attr('src', e.target.result);
-                };
-                reader.readAsDataURL(input.files[0]);
-            } else {
-                $image.remove();
-            }
-        });
+}
+bender.responsive = function(options) {
+    defaults = {'selector':'#responsive-trigger'};
+    options = $.extend(defaults, options);
+    if($(options.selector).is(':visible')){
+        return true;
     }
-};
+    return false;
+}
+bender.toggleClass = function(element,destination,isObject) {
+    var $selector = $('['+element+']');
+    $selector.click(function (event) {
+        var thatClass  = $(this).attr(element);
+        var thatDestination;
+        if (typeof(isObject) != "undefined"){
+            var thatDestination  = $(destination);
+        } else {
+            var thatDestination  = $($(this).attr(destination));
+        }
+        thatDestination.toggleClass(thatClass);
+        event.preventDefault();
+        return;
+    });
+}
+bender.photoUploader = function(selector,options) {
+    defaults = {'max':4};
+    options = $.extend(defaults, options);
+    bender.photoUploaderActions($(selector),options);
+}
+bender.addPhotoUploader = function(max) {
+    if(max < $('input[name="'+$(this).attr('name')+'"]').length+$('.photos_div').length){
+        var $image = $('<input type="file" name="photos[]">');
+            bender.photoUploaderActions(image);
+        $('#post-photos').append($image);
+    }
+}
+bender.removePhotoUploader = function() {
+    //removeAndAdd
+},
+bender.photoUploaderActions = function($element,options) {
+    $element.on('change',function(){
+        var input  = $(this)[0];
+        $(this).next('img').remove();
+        $image = $('<img />');
+        $image.insertAfter($element);
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                $image.attr('src', e.target.result);
+            };
+            reader.readAsDataURL(input.files[0]);
+        } else {
+            $image.remove();
+        }
+    });
+}
 
 function createPlaceHolder($element){
   var $wrapper = $('<div class="has-placeholder '+$element.attr('class')+'" />');

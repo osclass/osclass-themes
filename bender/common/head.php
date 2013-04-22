@@ -1,8 +1,13 @@
 <?php
-osc_enqueue_script('jquery');
-osc_enqueue_script('jquery-ui');
-osc_register_script('global-theme-js', osc_current_web_theme_js_url('global.js'));
-osc_enqueue_script('global-theme-js');
+    $js_lang = array(
+        'delete' => __('Delete', 'bender'),
+        'cancel' => __('Cancel', 'bender')
+    );
+
+    osc_enqueue_script('jquery');
+    osc_register_script('global-theme-js', osc_current_web_theme_js_url('global.js'), 'jquery');
+    osc_register_script('delete-user-js', osc_current_web_theme_js_url('delete_user.js'), 'jquery-ui');
+    osc_enqueue_script('global-theme-js');
 ?>
 <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 
@@ -30,5 +35,9 @@ osc_enqueue_script('global-theme-js');
 <link href="<?php echo osc_current_web_theme_url('css/main.css') ; ?>?<?php echo rand(0, pow(10, 5)); ?>" rel="stylesheet" type="text/css" />
 <link href="<?php echo osc_current_web_theme_url('js/jquery-ui/jquery-ui-1.10.2.custom.min.css') ; ?>?<?php echo rand(0, pow(10, 5)); ?>" rel="stylesheet" type="text/css" />
 
-
+<script type="text/javascript">
+    var bender = window.bender || {};
+    bender.base_url = '<?php echo osc_base_url(true); ?>';
+    bender.langs = <?php echo json_encode($js_lang); ?>
+</script>
 <?php osc_run_hook('header') ; ?>
