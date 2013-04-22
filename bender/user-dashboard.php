@@ -35,7 +35,7 @@
 ?>
 <div class="list-header">
     <?php osc_run_hook('search_ads_listing_top'); ?>
-    <h1><?php echo sprintf(__('Listings from %s', 'bender') ,osc_logged_user_name()); ?></h1>
+    <h1><?php _e('My listings', 'bender'); ?></h1>
     <?php if(osc_count_items() == 0) { ?>
         <p class="empty" ><?php _e('No listings have been added yet', 'bender'); ?></p>
     <?php } else { ?>

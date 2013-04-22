@@ -28,8 +28,7 @@
     osc_current_web_theme_path('header.php') ;
     $osc_user = osc_user();
 ?>
-<h1><?php _e('User account manager', 'bender'); ?></h1>
-<h2><?php _e('Change your e-mail', 'bender'); ?></h2>
+<h1><?php _e('Change your e-mail', 'bender'); ?></h1>
 <div class="form-container form-horizontal">
     <div class="resp-wrapper">
         <ul id="error_list"></ul>

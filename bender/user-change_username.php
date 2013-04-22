@@ -29,8 +29,7 @@
     osc_current_web_theme_path('header.php') ;
     $osc_user = osc_user();
 ?>
-<h1><?php _e('User account manager', 'bender'); ?></h1>
-<h2><?php _e('Change your username', 'bender'); ?></h2>
+<h1><?php _e('Change your username', 'bender'); ?></h1>
 <script type="text/javascript">
 $(document).ready(function() {
     $('form#change-username').validate({
