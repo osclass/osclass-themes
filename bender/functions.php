@@ -312,6 +312,39 @@ FUNCTIONS
         }
     }
 
+    if( !function_exists('get_user_menu') ) {
+        function get_user_menu() {
+            $options   = array();
+            $options[] = array(
+                'name'  => __('Dashboard', 'bender'),
+                'url'   => osc_user_dashboard_url(),
+                'class' => 'opt_dashboard'
+            );
+            $options[] = array(
+                'name'  => __('Manage your listings', 'bender'),
+                'url'   => osc_user_list_items_url(),
+                'class' => 'opt_items'
+            );
+            $options[] = array(
+                'name' => __('Manage your alerts', 'bender'),
+                'url' => osc_user_alerts_url(),
+                'class' => 'opt_alerts'
+            );
+            $options[] = array(
+                'name'  => __('My account', 'bender'),
+                'url'   => osc_user_profile_url(),
+                'class' => 'opt_account'
+            );
+            $options[] = array(
+                'name'  => __('Logout', 'bender'),
+                'url'   => osc_user_logout_url(),
+                'class' => 'opt_logout'
+            );
+
+            return $options;
+        }
+    }
+
     function theme_bender_actions_admin() {
         if( Params::getParam('file') == 'oc-content/themes/bender/admin/settings.php' ) {
             if( Params::getParam('donation') == 'successful' ) {
