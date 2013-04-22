@@ -27,8 +27,7 @@
     osc_current_web_theme_path('header.php') ;
     $osc_user = osc_user();
 ?>
-<h1><?php _e('User account manager', 'bender'); ?></h1>
-<h2><?php _e('Update your profile', 'bender'); ?></h2>
+<h1><?php _e('Update your profile', 'bender'); ?></h1>
 <?php UserForm::location_javascript(); ?>
 <script type="text/javascript">
     $(document).ready(function(){

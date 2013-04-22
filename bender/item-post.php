@@ -20,7 +20,13 @@
      */
     osc_enqueue_script('jquery-validate');
     moder2_add_boddy_class('item item-post');
-?>
+    $action = 'item_add_post';
+    $edit = false;
+    if(Params::getParam('action') == 'item_edit'){
+        $action = 'item_edit';
+        $edit = true;
+    }
+    ?>
 <?php osc_current_web_theme_path('header.php') ; ?>
 <!-- only item-post.php -->
 <?php ItemForm::location_javascript_new(); ?>
@@ -33,8 +39,12 @@
             <ul id="error_list"></ul>
                 <form name="item" action="<?php echo osc_base_url(true);?>" method="post" enctype="multipart/form-data" id="item-post">
                     <fieldset>
-                    <input type="hidden" name="action" value="item_add_post" />
+                    <input type="hidden" name="action" value="<?php echo $action; ?>" />
                     <input type="hidden" name="page" value="item" />
+                    <?php if($edit){ ?>
+                        <input type="hidden" name="id" value="<?php echo osc_item_id();?>" />
+                        <input type="hidden" name="secret" value="<?php echo osc_item_secret();?>" />
+                    <?php } ?>
                         <h2><?php _e('General Information', 'bender'); ?></h2>
                         <div class="control-group">
                           <label class="control-label" for="select_1"><?php _e('Category', 'bender'); ?></label>
@@ -73,16 +83,13 @@
                             <div class="control-group">
                               <label class="control-label" for="photos[]"><?php _e('Photos', 'bender'); ?></label>
                               <div class="controls">
+                                <?php ItemForm::photos(); ?>
                                 <input type="file" name="photos[]" />
                               </div>
+                              <div class="controls">
+                                <a href="#" onclick="addNewPhoto(); uniform_input_file(); return false;"><?php _e('Add new photo', 'bender'); ?></a>
+                              </div>
                             </div>
-
-                            <div id="photos">
-                                <div class="row">
-                                    <input type="file" name="photos[]" />
-                                </div>
-                            </div>
-                            <a href="#" onclick="addNewPhoto(); uniform_input_file(); return false;"><?php _e('Add new photo', 'bender'); ?></a>
 
                         </div>
                         <?php } ?>
@@ -167,42 +174,6 @@
             </div>
         </div>
         <script type="text/javascript">
-   /*function uniform_input_file(){
-        photos_div = $('div.photos');
-        $('div',photos_div).each(
-            function(){
-                if( $(this).find('div.uploader').length == 0  ){
-                    divid = $(this).attr('id');
-                    if(divid != 'photos'){
-                        divclass = $(this).hasClass('box');
-                        if( !$(this).hasClass('box') & !$(this).hasClass('uploader') & !$(this).hasClass('row')){
-                            $("div#"+$(this).attr('id')+" input:file").uniform({fileDefaultText: fileDefaultText,fileBtnText: fileBtnText});
-                        }
-                    }
-                }
-            }
-        );
-    }*/
-
-    /*setInterval("uniform_plugins()", 250);
-    function uniform_plugins() {
-
-        var content_plugin_hook = $('#plugin-hook').text();
-        content_plugin_hook = content_plugin_hook.replace(/(\r\n|\n|\r)/gm,"");
-        if( content_plugin_hook != '' ){
-
-            var div_plugin_hook = $('#plugin-hook');
-            var num_uniform = $("div[id*='uniform-']", div_plugin_hook ).size();
-            if( num_uniform == 0 ){
-                if( $('#plugin-hook input:text').size() > 0 ){
-                    $('#plugin-hook input:text').uniform();
-                }
-                if( $('#plugin-hook select').size() > 0 ){
-                    $('#plugin-hook select').uniform();
-                }
-            }
-        }
-    }*/
     <?php if(osc_locale_thousands_sep()!='' || osc_locale_dec_point() != '') { ?>
     $().ready(function(){
         $("#price").blur(function(event) {
@@ -222,160 +193,5 @@
         });
     });
     <?php }; ?>
-</script>
-<script type="text/javascript">
-if (typeof(FileReader) === 'function') {
-  //sexy drag and drop action
-  console.log('supports');
-} else {
-   //no drag and drop support available :(
-    console.log('DO NOT!');
-};
-
-// Makes sure the dataTransfer information is sent when we
-  // Drop the item in the drop box.
-  jQuery.event.props.push('dataTransfer');
-
-  var z = -40;
-  // The number of images to display
-  var maxFiles = 5;
-  var errMessage = 0;
-
-  // Get all of the data URIs and put them in an array
-  var dataArray = [];
-
-  // Bind the drop event to the dropzone.
-  $('#drop-files').bind('drop', function(e) {
-    var files = e.dataTransfer.files;
-    console.log(files);
-  });
-
-/*
-  // Makes sure the dataTransfer information is sent when we
-  // Drop the item in the drop box.
-  jQuery.event.props.push('dataTransfer');
-
-  var z = -40;
-  // The number of images to display
-  var maxFiles = 5;
-  var errMessage = 0;
-
-  // Get all of the data URIs and put them in an array
-  var dataArray = [];
-
-  // Bind the drop event to the dropzone.
-  $('#drop-files').bind('drop', function(e) {
-
-    // This variable represents the files that have been dragged
-    // into the drop area
-    var files = e.dataTransfer.files;
-
-    // Show the upload holder
-    //$('#uploaded-holder').show();
-
-    // For each file
-    $.each(files, function(index, file) {
-
-      // Some error messaging
-      if (!files[index].type.match('image.*')) {
-
-        if(errMessage == 0) {
-          $('#drop-files').html('Hey! Images only');
-          ++errMessage
-        }
-        else if(errMessage == 1) {
-          $('#drop-files').html('Stop it! Images only!');
-          ++errMessage
-        }
-        else if(errMessage == 2) {
-          $('#drop-files').html("Can't you read?! Images only!");
-          ++errMessage
-        }
-        else if(errMessage == 3) {
-          $('#drop-files').html("Fine! Keep dropping non-images.");
-          errMessage = 0;
-        }
-        return false;
-      }
-
-      // Check length of the total image elements
-
-      if($('#dropped-files > .image').length < maxFiles) {
-        // Change position of the upload button so it is centered
-        var imageWidths = ((220 + (40 * $('#dropped-files > .image').length)) / 2) - 20;
-        $('#upload-button').css({'left' : imageWidths+'px', 'display' : 'block'});
-      }
-
-      // Start a new instance of FileReader
-      var fileReader = new FileReader();
-
-        // When the filereader loads initiate a function
-        fileReader.onload = (function(file) {
-
-          return function(e) {
-
-            // Push the data URI into an array
-            dataArray.push({name : file.name, value : this.result});
-
-            // Move each image 40 more pixels across
-            z = z+40;
-            // This is the image
-            var image = this.result;
-
-
-            // Just some grammatical adjustments
-            if(dataArray.length == 1) {
-              $('#upload-button span').html("1 file to be uploaded");
-            } else {
-              $('#upload-button span').html(dataArray.length+" files to be uploaded");
-            }
-            // Place extra files in a list
-            if($('#dropped-files > .image').length < maxFiles) {
-              // Place the image inside the dropzone
-              $('#dropped-files').append('<div class="image" style="left: '+z+'px; background: url('+image+'); background-size: cover;"> </div>');
-            }
-            else {
-
-              $('#extra-files .number').html('+'+($('#file-list li').length + 1));
-              // Show the extra files dialogue
-              $('#extra-files').show();
-
-              // Start adding the file name to the file list
-              $('#extra-files #file-list ul').append('<li>'+file.name+'</li>');
-
-            }
-          };
-
-        })(files[index]);
-
-      // For data URI purposes
-      fileReader.readAsDataURL(file);
-
-    });
-*/
-
-
-  $('#drop-files').bind('dragenter', function() {
-    $(this).css({'box-shadow' : 'inset 0px 0px 20px rgba(0, 0, 0, 0.1)', 'border' : '4px dashed #bb2b2b'});
-    return false;
-  });
-  $('#drop-files').bind('dragleave', function() {
-    $(this).css({'box-shadow' : 'inset 0px 0px 20px rgba(0, 0, 0, 0.1)', 'border' : '4px dashed #bababa'});
-    return false;
-  });
-
-  $('#drop-files').bind('drop', function() {
-    $(this).css({'box-shadow' : 'none', 'border' : '4px dashed rgba(0,0,0,0.2)'});
-    return false;
-  });
-
-
-
-
-  if (typeof(FileReader) === 'function'){
-    console.log('soportado');
-  } else {
-    console.log('NO soportado');
-  }
 </script>
 <?php osc_current_web_theme_path('footer.php'); ?>

@@ -577,17 +577,22 @@ a.ui-button {
 }
 
 /* line 71, ../sass/form.scss */
+.form-horizontal .select-box {
+  width: 300px;
+}
+
+/* line 74, ../sass/form.scss */
 .form-horizontal .controls {
   margin-left: 180px;
 }
 
-/* line 74, ../sass/form.scss */
+/* line 77, ../sass/form.scss */
 .form-horizontal .control-group {
   clear: both;
   margin-bottom: 20px;
 }
 
-/* line 78, ../sass/form.scss */
+/* line 81, ../sass/form.scss */
 .form-horizontal .controls label {
   float: none;
   width: auto;
@@ -595,7 +600,7 @@ a.ui-button {
   text-align: left;
 }
 
-/* line 84, ../sass/form.scss */
+/* line 87, ../sass/form.scss */
 .form-container-box {
   border: solid 1px #eaeaea;
   margin: 0 auto;
@@ -610,25 +615,25 @@ a.ui-button {
   border-bottom-right-radius: 4px;
 }
 
-/* line 90, ../sass/form.scss */
+/* line 93, ../sass/form.scss */
 .form-container-box .header {
   background-color: #f7f7f7;
   padding: 10px 15px;
   margin-bottom: 30px;
 }
 
-/* line 95, ../sass/form.scss */
+/* line 98, ../sass/form.scss */
 .form-container-box .header h1 {
   margin: 0;
   line-height: 1.2em;
 }
 
-/* line 102, ../sass/form.scss */
+/* line 105, ../sass/form.scss */
 body.item-post .select-box {
   margin-bottom: 10px;
 }
 
-/* line 105, ../sass/form.scss */
+/* line 108, ../sass/form.scss */
 #item-post select {
   width: 300px;
 }
@@ -2555,6 +2560,11 @@ div.mark_as {
 
   /* line 29, ../sass/responsive/form.scss */
   #item-post select {
+    width: 100%;
+  }
+
+  /* line 32, ../sass/responsive/form.scss */
+  .form-horizontal .select-box {
     width: 100%;
   }
 

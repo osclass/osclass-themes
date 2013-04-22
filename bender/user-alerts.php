@@ -27,25 +27,19 @@
     osc_current_web_theme_path('header.php') ;
     $osc_user = osc_user();
 ?>
-<h1><?php _e('User account manager', 'bender'); ?></h1>
-<h2><?php _e('User alerts', 'bender'); ?></h2>
+<h1><?php _e('User alerts', 'bender'); ?></h1>
 <?php if(osc_count_alerts() == 0) { ?>
     <h3><?php _e('You do not have any alerts yet', 'bender'); ?>.</h3>
 <?php } else { ?>
-    <?php while(osc_has_alerts()) { ?>
+    <?php
+    $i = 1;
+    while(osc_has_alerts()) { ?>
         <div class="userItem" >
-            <div><?php _e('Alert', 'bender'); ?> | <a onclick="javascript:return confirm('<?php echo osc_esc_js(__('This action can\'t be undone. Are you sure you want to continue?', 'benderw')); ?>');" href="<?php echo osc_user_unsubscribe_alert_url(); ?>"><?php _e('Delete this alert', 'bender'); ?></a></div>
-            <div style="width: 75%; padding-left: 100px;" >
-            <?php while(osc_has_items()) { ?>
-                <div class="userItem" >
-                    <div><a href="<?php echo osc_item_url(); ?>"><?php echo osc_item_title(); ?></a></div>
-                    <div class="userItemData" >
-                    <?php _e('Publication date', 'bender'); ?>: <?php echo osc_format_date(osc_item_pub_date()); ?><br />
-                    <?php if( osc_price_enabled_at_items() ) { _e('Price', 'bender'); ?>: <?php echo osc_format_price(osc_item_price()); } ?>
-                    </div>
-                </div>
-                <br />
-            <?php } ?>
+            <div><?php _e('Alert', 'bender'); ?> <?php echo $i; ?> | <a onclick="javascript:return confirm('<?php echo osc_esc_js(__('This action can\'t be undone. Are you sure you want to continue?', 'benderw')); ?>');" href="<?php echo osc_user_unsubscribe_alert_url(); ?>"><?php _e('Delete this alert', 'bender'); ?></a></div>
+            <div>
+            <?php while(osc_has_items()) {
+                bender_draw_item();
+            } ?>
             <?php if(osc_count_items() == 0) { ?>
                     <br />
                     0 <?php _e('Listings', 'bender'); ?>
@@ -53,6 +47,9 @@
             </div>
         </div>
         <br />
-    <?php } ?>
+    <?php
+    $i++;
+    }
+    ?>
 <?php  } ?>
 <?php osc_current_web_theme_path('footer.php') ; ?>

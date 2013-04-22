@@ -1,44 +1,49 @@
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/form\.scss}line{font-family:\000031}}
+/* line 1, ../../sass/responsive/form.scss */
 .form-container-box {
   width: auto;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/form\.scss}line{font-family:\000034}}
+/* line 4, ../../sass/responsive/form.scss */
 .form-container .checkbox {
   margin-bottom: 15px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/form\.scss}line{font-family:\000037}}
+/* line 7, ../../sass/responsive/form.scss */
 .form-container .checkbox input {
   width: auto;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/form\.scss}line{font-family:\0000311}}
+/* line 11, ../../sass/responsive/form.scss */
 .form-horizontal .actions {
   margin: 0;
   padding-left: 0px;
   padding-right: 0px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/form\.scss}line{font-family:\0000316}}
+/* line 16, ../../sass/responsive/form.scss */
 .form-horizontal label {
   float: none;
   width: 100%;
   font-size: 0.85em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/form\.scss}line{font-family:\0000321}}
+/* line 21, ../../sass/responsive/form.scss */
 .form-horizontal .controls {
   width: auto;
   margin-left: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/form\.scss}line{font-family:\0000326}}
+/* line 26, ../../sass/responsive/form.scss */
 body.item-post .select-box {
   margin-bottom: 10px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/feralou\/git\/public\/osclass-themes\/bender\/sass\/responsive\/form\.scss}line{font-family:\0000329}}
+/* line 29, ../../sass/responsive/form.scss */
 #item-post select {
+  width: 100%;
+}
+
+/* line 32, ../../sass/responsive/form.scss */
+.form-horizontal .select-box {
   width: 100%;
 }

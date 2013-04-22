@@ -49,15 +49,11 @@ var bender = {
                     $image.attr('src', e.target.result);
                 };
                 reader.readAsDataURL(input.files[0]);
-                console.log('input[name="'+$(this).attr('name')+'"]');
                 if(options.max < $('input[name="'+$(this).attr('name')+'"]').length){
-                    //bender.addPhotoUploader();
-                    console.log('add');
+                    //console.log('add');
                 }
             } else {
-                console.log('borrado');
-              /*var img = input.value;
-                $('#img_prev').attr('src',img).height(200);*/
+                //console.log('borrado');
             }
 
 
@@ -70,7 +66,7 @@ function createPlaceHolder($element){
   var $wrapper = $('<div class="has-placeholder '+$element.attr('class')+'" />');
   $element.wrap($wrapper);
   var $label = $('<label/>');
-      $label.append($element.attr('placeholder'));
+      $label.append($element.attr('placeholder').replace(/^\s*/gm, ''));
       $element.removeAttr('placeholder');
 
   $element.before($label);
@@ -82,7 +78,7 @@ function createPlaceHolder($element){
 function selectUi(thatSelect){
     var uiSelect = $('<a href="#" class="select-box-trigger"></a>');
     var uiSelectIcon = $('<span class="select-box-icon">0</span>');
-    var uiSelected = $('<span class="select-box-label">'+thatSelect.find("option:selected").text()+'</span>');
+    var uiSelected = $('<span class="select-box-label">'+thatSelect.find("option:selected").text().replace(/^\s*/gm, '')+'</span>');
     var uiWrap = $('<div class="select-box '+thatSelect.attr('class')+'" />');
 
     thatSelect.css('filter', 'alpha(opacity=40)').css('opacity', '0');
@@ -95,7 +91,8 @@ function selectUi(thatSelect){
         return false;
     });
     thatSelect.change(function(){
-        uiSelected.text(thatSelect.find('option:selected').text());
+        str = thatSelect.find('option:selected').text().replace(/^\s*/gm, '');
+        uiSelected.text(str);
     });
     thatSelect.bind('removed', function() {
         thatSelect.parent().remove();
@@ -165,8 +162,7 @@ $(document).ready(function(event){
     });
 
     $('body').on("created", '[name^="select_"]',function(evt) {
-      console.log('fuuuu');
-      selectUi($(this));
+        selectUi($(this));
     });
 
     $('select').each(function(){
