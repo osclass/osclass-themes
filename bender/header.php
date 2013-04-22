@@ -24,7 +24,7 @@
     <head>
         <?php osc_current_web_theme_path('common/head.php') ; ?>
     </head>
-<body <?php moder2_boddy_class(); ?>>
+<body <?php bender_boddy_class(); ?>>
 <div id="header">
     <div class="wrapper">
         <div id="logo">

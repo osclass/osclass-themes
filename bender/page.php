@@ -19,7 +19,7 @@
      * License along with this program.  If not, see <http://www.gnu.org/licenses/>.
      */
 
-    moder2_add_boddy_class('page');
+    bender_add_boddy_class('page');
     osc_current_web_theme_path('header.php') ;
 ?>
 <h1><?php echo osc_static_page_title(); ?></h1>

@@ -1,5 +1,5 @@
 <?php
-    moder2_add_boddy_class('error');
+    bender_add_boddy_class('error');
     osc_current_web_theme_path('header.php') ;
 ?>
 <div class="content error">

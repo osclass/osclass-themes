@@ -19,7 +19,7 @@
      * License along with this program.  If not, see <http://www.gnu.org/licenses/>.
      */
 
-    moder2_add_boddy_class('register');
+    bender_add_boddy_class('register');
     osc_enqueue_script('jquery-validate');
     osc_current_web_theme_path('header.php') ;
 ?>

@@ -19,7 +19,7 @@
      * License along with this program.  If not, see <http://www.gnu.org/licenses/>.
      */
 
-    moder2_add_boddy_class('login');
+    bender_add_boddy_class('login');
     osc_current_web_theme_path('header.php');
 ?>
 <div class="form-container form-horizontal form-container-box">

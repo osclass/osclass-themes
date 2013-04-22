@@ -24,7 +24,7 @@
     osc_enqueue_script('jquery-validate');
 
 
-    moder2_add_boddy_class('item');
+    bender_add_boddy_class('item');
     osc_add_hook('after-main','sidebar');
     function sidebar(){
         osc_current_web_theme_path('item-sidebar.php');

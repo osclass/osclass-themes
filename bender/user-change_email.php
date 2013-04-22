@@ -20,7 +20,7 @@
      */
 
     osc_enqueue_script('jquery-validate');
-    moder2_add_boddy_class('user user-profile');
+    bender_add_boddy_class('user user-profile');
     osc_add_hook('before-main','sidebar');
     function sidebar(){
         osc_current_web_theme_path('user-sidebar.php');

@@ -63,22 +63,22 @@ FUNCTIONS
         }
     }
 
-    if(!function_exists('moder2_add_body_class_construct')) {
-        function moder2_add_body_class_construct($classes){
+    if(!function_exists('bender_add_body_class_construct')) {
+        function bender_add_body_class_construct($classes){
             $benderBodyClass = benderBodyClass::newInstance();
             $classes = array_merge($classes, $benderBodyClass->get());
             return $classes;
         }
     }
-    if(!function_exists('moder2_boddy_class')) {
-        function moder2_boddy_class($echo = true){
+    if(!function_exists('bender_boddy_class')) {
+        function bender_boddy_class($echo = true){
             /**
             * Print body classes.
             *
             * @param string $echo Optional parameter.
             * @return print string with all body classes concatenated
             */
-            osc_add_filter('bender_bodyClass','moder2_add_body_class_construct');
+            osc_add_filter('bender_bodyClass','bender_add_body_class_construct');
             $classes = osc_apply_filter('bender_bodyClass', array());
             if($echo && count($classes)){
                 echo 'class="'.implode(' ',$classes).'"';
@@ -87,8 +87,8 @@ FUNCTIONS
             }
         }
     }
-    if(!function_exists('moder2_add_boddy_class')) {
-        function moder2_add_boddy_class($class){
+    if(!function_exists('bender_add_boddy_class')) {
+        function bender_add_boddy_class($class){
             /**
             * Add new body class to body class array.
             *
@@ -412,7 +412,7 @@ if(osc_is_home_page()){
 }
 
 if(osc_is_home_page() || osc_is_search_page()){
-    moder2_add_boddy_class('has-searchbox');
+    bender_add_boddy_class('has-searchbox');
 }
 
 

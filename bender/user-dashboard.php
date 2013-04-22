@@ -19,7 +19,7 @@
      * License along with this program.  If not, see <http://www.gnu.org/licenses/>.
      */
 
-    moder2_add_boddy_class('user user-dashboard');
+    bender_add_boddy_class('user user-dashboard');
     osc_add_hook('before-main','sidebar');
     function sidebar(){
         osc_current_web_theme_path('user-sidebar.php');
