@@ -23,30 +23,37 @@
     osc_enqueue_style('fancybox', osc_current_web_theme_url('js/fancybox/jquery.fancybox.css'));
     osc_enqueue_script('jquery-validate');
 
-
     bender_add_boddy_class('item');
     osc_add_hook('after-main','sidebar');
     function sidebar(){
         osc_current_web_theme_path('item-sidebar.php');
     }
 
+    $location = array();
+    if( osc_item_city_area() !== '' ) {
+        $location[] = osc_item_city_area();
+    }
+    if( osc_item_city() !== '' ) {
+        $location[] = osc_item_city();
+    }
+    if( osc_item_region() !== '' ) {
+        $location[] = osc_item_region();
+    }
+    if( osc_item_country() !== '' ) {
+        $location[] = osc_item_country();
+    }
+
     osc_current_web_theme_path('header.php');
 ?>
 <div id="item-content">
         <h1><?php if( osc_price_enabled_at_items() ) { ?><span class="price"><?php echo osc_item_formated_price(); ?></span> <?php } ?><strong><?php echo osc_item_title() . ' ' . osc_item_city(); ?></strong></h1>
-
         <div class="item-header">
-            <strong><?php echo osc_item_category(); ?></strong>
-            <div id="type_dates">
-                <em class="publish"><?php if ( osc_item_pub_date() != '' ) echo __('Published date', 'bender') . ': ' . osc_format_date( osc_item_pub_date() ); ?></em>
-                <em class="update"><?php if ( osc_item_mod_date() != '' ) echo __('Modified date', 'bender') . ': ' . osc_format_date( osc_item_mod_date() ); ?></em>
+            <div>
+                <?php if ( osc_item_pub_date() !== '' ) { printf( __('<strong class="publish">Published date</strong>: %1$s', 'bender'), osc_format_date( osc_item_pub_date() ) ); } ?>
+                <?php if ( osc_item_mod_date() !== '' ) { printf( __('<strong class="update">Modified date:</strong> %1$s', 'bender'), osc_format_date( osc_item_mod_date() ) ); } ?>
             </div>
             <ul id="item_location">
-                <?php if ( osc_item_country() != "" ) { ?><li><?php _e("Country", 'bender'); ?>: <strong><?php echo osc_item_country(); ?></strong></li><?php } ?>
-                <?php if ( osc_item_region() != "" ) { ?><li><?php _e("Region", 'bender'); ?>: <strong><?php echo osc_item_region(); ?></strong></li><?php } ?>
-                <?php if ( osc_item_city() != "" ) { ?><li><?php _e("City", 'bender'); ?>: <strong><?php echo osc_item_city(); ?></strong></li><?php } ?>
-                <?php if ( osc_item_city_area() != "" ) { ?><li><?php _e("City area", 'bender'); ?>: <strong><?php echo osc_item_city_area(); ?></strong></li><?php } ?>
-                <?php if ( osc_item_address() != "" ) { ?><li><?php _e("Address", 'bender'); ?>: <strong><?php echo osc_item_address(); ?></strong></li><?php } ?>
+                <li><strong><?php _e("Location", 'bender'); ?></strong>: <?php echo implode(', ', $location); ?></li>
             </ul>
         </div>
         <?php if(osc_is_web_user_logged_in() && osc_logged_user_id()==osc_item_user_id()) { ?>
