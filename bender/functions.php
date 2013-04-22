@@ -152,7 +152,7 @@ FUNCTIONS
                                 <p><?php echo osc_highlight( strip_tags( osc_item_description()) ,250) ; ?></p>
                             </div>
                             <?php if($admin){ ?>
-                                <a href="<?php echo osc_item_edit_url(); ?>" rel="nofollow"><?php _e('Edit item', 'bender'); ?></a>
+                                EDITTT
                             <?php } ?>
                         </div>
                     </div>
