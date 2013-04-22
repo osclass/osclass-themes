@@ -35,7 +35,7 @@ body.has-searchbox #header{
     @include constrasted-text($maincolor);
 }
 #header .publish a{
-    @include button-style(complement($maincolor));
+    @include button-style(complement(darken($maincolor,20%)));
 }
 #header #logo span{
     $contrasted-lightness-threshold:65%;

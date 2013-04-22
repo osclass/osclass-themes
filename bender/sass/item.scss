@@ -96,7 +96,13 @@ div.mark_as{
 #comments{
     margin-top:25px;
 }
-
+body.item h1 .price {
+    font-weight: normal;
+    font-size: 24px;
+    float: right;
+    background-color: #FCF8E3;
+    padding: 5px 10px;
+}
 
 /* Comments */
 .item #comments { clear:both; float:left; margin-bottom:35px; width:100%; }
