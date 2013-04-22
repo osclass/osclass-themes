@@ -34,36 +34,35 @@
                 <a href="<?php echo osc_user_logout_url(); ?>"><?php _e('Logout', 'bender'); ?></a>
             </li>
         <?php } else { ?>
-            <li><a href="<?php echo osc_user_login_url(); ?>"><?php _e('Login', 'bender') ; ?></a></li>
+            <li><a href="<?php echo osc_user_login_url(); ?>"><?php _e('Login', 'bender'); ?></a></li>
             <?php if(osc_user_registration_enabled()) { ?>
                 <li>
-                    <a href="<?php echo osc_register_account_url() ; ?>"><?php _e('Register for a free account', 'bender'); ?></a>
+                    <a href="<?php echo osc_register_account_url(); ?>"><?php _e('Register for a free account', 'bender'); ?></a>
                 </li>
             <?php } ?>
         <?php }; ?>
         <li class="publish">
-            <a href="<?php echo osc_item_post_url_in_category() ; ?>"><?php _e("Publish your ad for free", 'bender');?></a>
+            <a href="<?php echo osc_item_post_url_in_category(); ?>"><?php _e("Publish your ad for free", 'bender');?></a>
         </li>
     </ul>
     <ul>
     <li>
-        <a href="<?php echo osc_contact_url(); ?>"><?php _e('Contact', 'bender') ; ?></a>
+        <a href="<?php echo osc_contact_url(); ?>"><?php _e('Contact', 'bender'); ?></a>
     </li>
     <?php
-    osc_reset_static_pages() ;
-    while( osc_has_static_pages() ) {
-    ?>
-            <li>
-                <a href="<?php echo osc_static_page_url() ; ?>"><?php echo osc_static_page_title() ; ?></a>
-            </li>
+    osc_reset_static_pages();
+    while( osc_has_static_pages() ) { ?>
+        <li>
+            <a href="<?php echo osc_static_page_url(); ?>"><?php echo osc_static_page_title(); ?></a>
+        </li>
     <?php
     }
     ?>
     </ul>
     <?php
-    if( osc_get_preference('footer_link', 'bender_theme') ) {
+    if( osc_get_preference('footer_link', 'bender_theme') !== '0') {
         echo 'This website is proudly using the <a title="Osclass web" href="http://osclass.org/">classifieds scripts</a> software <strong>Osclass</strong>';
     }
     ?>
 </div>
-<?php osc_run_hook('footer') ; ?>
+<?php osc_run_hook('footer'); ?>
