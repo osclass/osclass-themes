@@ -591,15 +591,16 @@ a.ui-button {
 /* line 74, ../sass/form.scss */
 .form-horizontal .controls {
   margin-left: 180px;
+  line-height: 32px;
 }
 
-/* line 77, ../sass/form.scss */
+/* line 78, ../sass/form.scss */
 .form-horizontal .control-group {
   clear: both;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
-/* line 81, ../sass/form.scss */
+/* line 82, ../sass/form.scss */
 .form-horizontal .controls label {
   float: none;
   width: auto;
@@ -607,7 +608,7 @@ a.ui-button {
   text-align: left;
 }
 
-/* line 87, ../sass/form.scss */
+/* line 88, ../sass/form.scss */
 .form-container-box {
   border: solid 1px #eaeaea;
   margin: 0 auto;
@@ -622,30 +623,30 @@ a.ui-button {
   border-bottom-right-radius: 4px;
 }
 
-/* line 93, ../sass/form.scss */
+/* line 94, ../sass/form.scss */
 .form-container-box .header {
   background-color: #f7f7f7;
   padding: 10px 15px;
   margin-bottom: 30px;
 }
 
-/* line 98, ../sass/form.scss */
+/* line 99, ../sass/form.scss */
 .form-container-box .header h1 {
   margin: 0;
   line-height: 1.2em;
 }
 
-/* line 105, ../sass/form.scss */
+/* line 106, ../sass/form.scss */
 body.item-post .select-box {
   margin-bottom: 10px;
 }
 
-/* line 108, ../sass/form.scss */
+/* line 109, ../sass/form.scss */
 #item-post select {
   width: 300px;
 }
 
-/* line 111, ../sass/form.scss */
+/* line 112, ../sass/form.scss */
 .form-container .photos input {
   width: 100%;
   border: 0;
@@ -654,12 +655,12 @@ body.item-post .select-box {
   box-shadow: none;
 }
 
-/* line 118, ../sass/form.scss */
+/* line 119, ../sass/form.scss */
 .photos_div {
   margin-bottom: 20px;
 }
 
-/* line 121, ../sass/form.scss */
+/* line 122, ../sass/form.scss */
 .form-container .controls #photos a {
   font-size: 12px !important;
 }
