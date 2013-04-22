@@ -908,16 +908,17 @@ button {
   padding: 10px;
   list-style: none;
   display: none;
+  margin: 0 10px 20px;
 }
 
-/* line 66, ../sass/flashmessage-error.scss */
+/* line 68, ../sass/flashmessage-error.scss */
 #error_list li,
 .error_list li {
   list-style: none;
   padding: 2px 0 2px 18px;
 }
 
-/* line 71, ../sass/flashmessage-error.scss */
+/* line 73, ../sass/flashmessage-error.scss */
 #error_list li label,
 .error_list li label {
   margin-top: 0;
@@ -2158,6 +2159,138 @@ div.mark_as {
 /* line 92, ../sass/item.scss */
 .admin-options a {
   margin: 0 5px;
+}
+
+/* line 96, ../sass/item.scss */
+#comments {
+  margin-top: 25px;
+}
+
+/* Comments */
+/* line 102, ../sass/item.scss */
+.item #comments {
+  clear: both;
+  float: left;
+  margin-bottom: 35px;
+  width: 100%;
+}
+
+/* line 103, ../sass/item.scss */
+.item #comments .comments_list {
+  border-bottom: 1px dotted #DDD;
+  margin-bottom: 20px;
+}
+
+/* line 104, ../sass/item.scss */
+.item #comments .comment {
+  background: url(../images/comments_quotes.gif) no-repeat 10px 0;
+  margin-bottom: 15px;
+  padding: 7px 0 0 60px;
+}
+
+/* line 105, ../sass/item.scss */
+.item #comments .comment h3 {
+  color: #666;
+  margin-bottom: 5px;
+}
+
+/* line 106, ../sass/item.scss */
+.item #comments .comment h3 em {
+  color: #888;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+/* line 107, ../sass/item.scss */
+.item #comments .comment p {
+  color: #878787;
+  font-style: italic;
+  line-height: 18px;
+}
+
+/* line 108, ../sass/item.scss */
+.item #comments .pagination {
+  text-align: right;
+  margin-right: 10px;
+  margin-bottom: 15px;
+}
+
+/* line 109, ../sass/item.scss */
+.item #comments .pagination a {
+  border: 1px dotted #AAA;
+  padding: 5px 8px;
+}
+
+/* line 110, ../sass/item.scss */
+.item #comments .pagination a.searchPaginationSelected {
+  background-color: #f7f7f7;
+}
+
+/* line 112, ../sass/item.scss */
+.item #comments .pagination a.searchPaginationNext, .item #comments a.searchPaginationPrev,
+.item #comments .pagination a.searchPaginationFirst, .item #comments a.searchPaginationLast {
+  border: 0px;
+  text-decoration: none;
+}
+
+/* line 114, ../sass/item.scss */
+.item #comments .pagination a.searchPaginationNext:hover, .item #comments a.searchPaginationPrev:hover,
+.item #comments .pagination a.searchPaginationFirst:hover, .item #comments a.searchPaginationLast:hover {
+  background-color: #ffffff;
+}
+
+/* line 115, ../sass/item.scss */
+.item #comments a:hover {
+  background-color: #f7f7f7;
+}
+
+/* line 116, ../sass/item.scss */
+.item #comments form {
+  clear: both;
+  display: inline;
+  float: left;
+  margin-left: 60px;
+  width: 540px;
+}
+
+/* line 117, ../sass/item.scss */
+.item #comments form h3 {
+  color: #000;
+  margin-bottom: 10px;
+}
+
+/* line 118, ../sass/item.scss */
+.item #comments form label {
+  clear: left;
+  float: left;
+  margin-right: 10px;
+  padding-top: 4px;
+  width: 140px;
+}
+
+/* line 119, ../sass/item.scss */
+.item #comments form input {
+  border: 1px solid #BBB;
+  float: left;
+  margin-bottom: 5px;
+  padding: 5px;
+  width: 250px;
+}
+
+/* line 120, ../sass/item.scss */
+.item #comments form textarea {
+  border: 1px solid #BBB;
+  float: left;
+  padding: 5px;
+  width: 375px;
+  height: 150px;
+}
+
+/* line 121, ../sass/item.scss */
+.item #comments form .button {
+  clear: both;
+  float: left;
+  margin: 10px 0 0 150px;
 }
 
 @media only screen and (max-width: 740px) {
