@@ -50,6 +50,8 @@
         <div class="item-header">
             <div>
                 <?php if ( osc_item_pub_date() !== '' ) { printf( __('<strong class="publish">Published date</strong>: %1$s', 'bender'), osc_format_date( osc_item_pub_date() ) ); } ?>
+            </div>
+            <div>
                 <?php if ( osc_item_mod_date() !== '' ) { printf( __('<strong class="update">Modified date:</strong> %1$s', 'bender'), osc_format_date( osc_item_mod_date() ) ); } ?>
             </div>
             <ul id="item_location">
@@ -81,8 +83,6 @@
         </div>
         <?php } ?>
     <?php } ?>
-
-
     <div id="description">
         <p><?php echo osc_item_description(); ?></p>
         <div id="custom_fields">
