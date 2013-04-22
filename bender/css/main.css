@@ -1269,9 +1269,10 @@ body.search .list-header .actions {
   font-size: 2.7em;
   line-height: 1.5em;
   padding-top: 20px;
+  padding-bottom: 10px;
 }
 
-/* line 28, ../sass/header.scss */
+/* line 29, ../sass/header.scss */
 #header #logo a {
   font-size: 1.5em;
   line-height: 0.8em;
@@ -1280,7 +1281,7 @@ body.search .list-header .actions {
   color: white;
 }
 
-/* line 36, ../sass/header.scss */
+/* line 37, ../sass/header.scss */
 #header .publish a {
   background-color: #d94b35;
   background-color: #d94b35;
@@ -1309,7 +1310,7 @@ body.search .list-header .actions {
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
 }
 
-/* line 39, ../sass/header.scss */
+/* line 40, ../sass/header.scss */
 #header #logo span {
   color: white;
   font-family: "Osclass";
@@ -1321,7 +1322,7 @@ body.search .list-header .actions {
   display: block;
 }
 
-/* line 51, ../sass/header.scss */
+/* line 52, ../sass/header.scss */
 .main-search {
   background-color: #f0f0f0;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f0f0f0), color-stop(100%, #c9c9c9));
@@ -1344,12 +1345,12 @@ body.search .list-header .actions {
   border-bottom-right-radius: 4px;
 }
 
-/* line 67, ../sass/header.scss */
+/* line 68, ../sass/header.scss */
 .main-search .has-placeholder {
   float: none;
 }
 
-/* line 70, ../sass/header.scss */
+/* line 71, ../sass/header.scss */
 .main-search input {
   background-color: #f6f6f6;
   border: solid 1px #bfbfbf;
@@ -1373,18 +1374,18 @@ body.search .list-header .actions {
   width: 100%;
 }
 
-/* line 75, ../sass/header.scss */
+/* line 76, ../sass/header.scss */
 .main-search .selector {
   padding-left: 42px;
   padding-right: 12px;
 }
 
-/* line 79, ../sass/header.scss */
+/* line 80, ../sass/header.scss */
 .main-search .reset-padding {
   padding-left: 0px;
 }
 
-/* line 82, ../sass/header.scss */
+/* line 83, ../sass/header.scss */
 .main-search .ui-button {
   background-color: #35c3d9;
   background-color: #35c3d9;
@@ -1414,14 +1415,14 @@ body.search .list-header .actions {
   height: 43px;
 }
 
-/* line 87, ../sass/header.scss */
+/* line 88, ../sass/header.scss */
 .main-search .cell {
   display: table-cell;
   width: 100%;
   vertical-align: top;
 }
 
-/* line 92, ../sass/header.scss */
+/* line 93, ../sass/header.scss */
 #header .nav {
   position: absolute;
   right: 0;
@@ -1431,55 +1432,55 @@ body.search .list-header .actions {
   list-style: none;
 }
 
-/* line 100, ../sass/header.scss */
+/* line 101, ../sass/header.scss */
 #header .nav li {
   float: left;
   position: relative;
 }
 
-/* line 105, ../sass/header.scss */
+/* line 106, ../sass/header.scss */
 #header .nav li.search,
 #header .nav li.cat {
   display: none;
 }
 
-/* line 108, ../sass/header.scss */
+/* line 109, ../sass/header.scss */
 #header .nav li a {
   color: white;
   font-size: 0.875em;
   margin-left: 10px;
 }
 
-/* line 113, ../sass/header.scss */
+/* line 114, ../sass/header.scss */
 #header .nav li.publish {
   clear: both;
   float: right;
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
-/* line 118, ../sass/header.scss */
+/* line 119, ../sass/header.scss */
 .main-search .select-box .select-box-label {
   line-height: 43px;
 }
 
-/* line 121, ../sass/header.scss */
+/* line 122, ../sass/header.scss */
 .main-search .select-box select {
   width: auto;
   height: 42px;
 }
 
-/* line 125, ../sass/header.scss */
+/* line 126, ../sass/header.scss */
 .main-search .select-box-icon {
   top: 0px;
 }
 
 /* Breadcrumb */
-/* line 131, ../sass/header.scss */
+/* line 132, ../sass/header.scss */
 .wrapper-flash {
   margin-bottom: 35px;
 }
 
-/* line 134, ../sass/header.scss */
+/* line 135, ../sass/header.scss */
 div.breadcrumb {
   line-height: 1.05em;
   font-size: 0.75em;
@@ -1490,14 +1491,14 @@ div.breadcrumb {
   border-bottom: 1px solid #eaeaea;
 }
 
-/* line 143, ../sass/header.scss */
+/* line 144, ../sass/header.scss */
 ul.breadcrumb {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-/* line 148, ../sass/header.scss */
+/* line 149, ../sass/header.scss */
 ul.breadcrumb li {
   float: left;
   padding: 0 2px;

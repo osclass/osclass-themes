@@ -23,6 +23,7 @@ body.has-searchbox #header{
     font-size:2.7em;
     line-height:1.5em;
     padding-top:20px;
+    padding-bottom:10px;
     //@debug "Main color is:" #{$main-color};
 }
 #header #logo a{
@@ -113,7 +114,7 @@ body.has-searchbox #header{
 #header .nav li.publish{
     clear: both;
     float: right;
-    margin-top:15px;
+    margin-top:10px;
 }
 .main-search .select-box .select-box-label{
     line-height: 43px;
