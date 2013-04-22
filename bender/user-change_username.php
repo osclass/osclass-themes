@@ -29,7 +29,6 @@
 ?>
 <h1><?php _e('User account manager', 'bender'); ?></h1>
 <h2><?php _e('Change your username', 'bender'); ?></h2>
-<?php UserForm::location_javascript(); ?>
 <script type="text/javascript">
 $(document).ready(function() {
     $('form#change-username').validate({
