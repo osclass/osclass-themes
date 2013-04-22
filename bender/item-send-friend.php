@@ -19,6 +19,7 @@
      * License along with this program.  If not, see <http://www.gnu.org/licenses/>.
      */
 
+    osc_enqueue_script('jquery-validate');
     bender_add_boddy_class('contact');
     osc_current_web_theme_path('header.php');
 ?>
@@ -28,18 +29,10 @@
     </div>
     <div class="resp-wrapper">
         <ul id="error_list"></ul>
-        <form action="<?php echo osc_base_url(true); ?>" method="post" >
+        <form name="sendfriend" action="<?php echo osc_base_url(true); ?>" method="post" >
             <input type="hidden" name="action" value="send_friend_post" />
             <input type="hidden" name="page" value="item" />
             <input type="hidden" name="id" value="<?php echo osc_item_id(); ?>" />
-
-            <div class="control-group">
-                <label class="control-label" for="subject">
-                    <?php _e('Subject', 'bender'); ?>
-                    (<?php _e('optional', 'bender'); ?>)</label>
-                <div class="controls">
-                    <?php ContactForm::the_subject(); ?></div>
-            </div>
             <?php if(osc_is_web_user_logged_in()) { ?>
                             <input type="hidden" name="yourName" value="<?php echo osc_esc_html( osc_logged_user_name() ); ?>" />
                             <input type="hidden" name="yourEmail" value="<?php echo osc_logged_user_email();?>" />
@@ -56,7 +49,7 @@
                     <?php SendFriendForm::your_email(); ?>
                 </div>
             </div>
-            <?php }; ?>
+            <?php } ?>
             <div class="control-group">
                 <label class="control-label" for="friendName"><?php _e("Your friend's name",'bender'); ?></label>
                 <div class="controls">
@@ -67,6 +60,14 @@
                 <label for="friendEmail"><?php _e("Your friend's e-mail address", 'bender'); ?></label> </label>
                 <div class="controls">
                     <?php SendFriendForm::friend_email(); ?>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label" for="subject">
+                    <?php _e('Subject (optional)', 'bender'); ?>
+                </label>
+                <div class="controls">
+                    <?php ContactForm::the_subject(); ?>
                 </div>
             </div>
             <div class="control-group">
@@ -88,10 +89,4 @@
         <?php SendFriendForm::js_validation(); ?>
     </div>
 </div>
-<?php osc_current_web_theme_path('footer.php') ; ?>
-
-
-<label><?php _e('Listing', 'bender'); ?>: <a href="<?php echo osc_item_url( ); ?>"><?php echo osc_item_title(); ?></a></label><br />
-
-
-
+<?php osc_current_web_theme_path('footer.php'); ?>
