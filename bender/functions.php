@@ -283,6 +283,35 @@ FUNCTIONS
             return 0;
         }
     }
+
+    if( !function_exists('get_breadcrumb_lang') ) {
+        function get_breadcrumb_lang() {
+            $lang = array();
+            $lang['item_add']               = __('Publish a listing', 'bender');
+            $lang['item_edit']              = __('Edit your listing', 'bender');
+            $lang['item_send_friend']       = __('Send to a friend', 'bender');
+            $lang['item_contact']           = __('Contact publisher', 'bender');
+            $lang['search']                 = __('Search results', 'bender');
+            $lang['search_pattern']         = __('Search results: %s', 'bender');
+            $lang['user_dashboard']         = __('Dashboard', 'bender');
+            $lang['user_dashboard_profile'] = __("%s's profile", 'bender');
+            $lang['user_account']           = __('Account', 'bender');
+            $lang['user_items']             = __('My listings', 'bender');
+            $lang['user_alerts']            = __('My alerts', 'bender');
+            $lang['user_profile']           = __('Update my profile', 'bender');
+            $lang['user_change_email']      = __('Change my email', 'bender');
+            $lang['user_change_username']   = __('Change my username', 'bender');
+            $lang['user_change_password']   = __('Change my password', 'bender');
+            $lang['login']                  = __('Login', 'bender');
+            $lang['login_recover']          = __('Recover your password', 'bender');
+            $lang['login_forgot']           = __('Change your password', 'bender');
+            $lang['register']               = __('Create a new account', 'bender');
+            $lang['contact']                = __('Contact', 'bender');
+
+            return $lang;
+        }
+    }
+
     function theme_bender_actions_admin() {
         if( Params::getParam('file') == 'oc-content/themes/bender/admin/settings.php' ) {
             if( Params::getParam('donation') == 'successful' ) {

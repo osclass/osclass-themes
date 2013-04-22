@@ -77,8 +77,8 @@
     <?php
         osc_show_widgets('header');
 
-        $breadcrumb = osc_breadcrumb('&raquo;', false);
-        if( $breadcrumb != '') { ?>
+        $breadcrumb = osc_breadcrumb('&raquo;', false, get_breadcrumb_lang());
+        if( $breadcrumb !== '') { ?>
         <div class="breadcrumb">
             <?php echo $breadcrumb; ?>
             <div class="clear"></div>
