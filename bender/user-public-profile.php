@@ -56,9 +56,9 @@
             <img src="http://www.gravatar.com/avatar/<?php echo md5( strtolower( trim( osc_user_email() ) ) ); ?>?s=120&d=<?php echo osc_current_web_theme_url('images/user_default.gif') ; ?>" />
             <ul id="user_data">
                 <li class="name"><?php echo osc_user_name(); ?></li>
-                <li class="website"><a href="<?php echo osc_user_website(); ?>" rel="noindex,nofollow"><?php echo osc_user_website(); ?></a></li>
-                <li class="adress"><?php echo $address; ?></li>
-                <li class="location"><?php echo $location; ?></li>
+                <li class="website"><a href="<?php echo osc_user_website(); ?>"><?php echo osc_user_website(); ?></a></li>
+                <li class="adress"><?php printf(__('<strong>Address:</strong> %1$s'), $address); ?></li>
+                <li class="location"><?php printf(__('<strong>Location:</strong> %1$s'), $location); ?></li>
             </ul>
         </div>
 
