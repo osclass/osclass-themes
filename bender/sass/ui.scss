@@ -93,6 +93,11 @@ textarea{
 .ui-button{
     @include button-style();
 }
+input.ui-button,
+button.ui-button{
+    padding-left:10px;
+    padding-right:10px;
+}
 .ui-button-main{
     @include button-style($maincolor);
 }

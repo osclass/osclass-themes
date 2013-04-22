@@ -312,7 +312,14 @@ textarea {
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
 }
 
-/* line 96, ../sass/ui.scss */
+/* line 97, ../sass/ui.scss */
+input.ui-button,
+button.ui-button {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* line 101, ../sass/ui.scss */
 .ui-button-main {
   background-color: #35c3d9;
   background-color: #35c3d9;
@@ -341,24 +348,24 @@ textarea {
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
 }
 
-/* line 99, ../sass/ui.scss */
+/* line 104, ../sass/ui.scss */
 a.ui-button {
   line-height: 34px;
 }
 
-/* line 102, ../sass/ui.scss */
+/* line 107, ../sass/ui.scss */
 .ui-button-middle {
   height: 36px;
   font-size: 1em;
   line-height: 1em;
 }
 
-/* line 107, ../sass/ui.scss */
+/* line 112, ../sass/ui.scss */
 .doublebutton {
   float: right;
 }
 
-/* line 110, ../sass/ui.scss */
+/* line 115, ../sass/ui.scss */
 .doublebutton a {
   border: solid 1px #d1d1d1;
   background-color: #f7f7f7;
@@ -376,7 +383,7 @@ a.ui-button {
   float: left;
 }
 
-/* line 126, ../sass/ui.scss */
+/* line 131, ../sass/ui.scss */
 .doublebutton a span {
   text-indent: -9999px;
   float: left;
@@ -386,12 +393,12 @@ a.ui-button {
   cursor: pointer;
 }
 
-/* line 134, ../sass/ui.scss */
+/* line 139, ../sass/ui.scss */
 .doublebutton .list-button span {
   background-position: 0px -16px;
 }
 
-/* line 137, ../sass/ui.scss */
+/* line 142, ../sass/ui.scss */
 .doublebutton .list-button {
   margin-right: -1px;
   border-top-right-radius: 0px;
@@ -399,37 +406,37 @@ a.ui-button {
   border-right: none;
 }
 
-/* line 142, ../sass/ui.scss */
+/* line 147, ../sass/ui.scss */
 .doublebutton .grid-button {
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
   border-left: none;
 }
 
-/* line 147, ../sass/ui.scss */
+/* line 152, ../sass/ui.scss */
 .active a.grid-button,
 .doublebutton a.list-button {
   background-color: #35c3d9;
   border-color: #23a4b8;
 }
 
-/* line 151, ../sass/ui.scss */
+/* line 156, ../sass/ui.scss */
 .active a.grid-button span {
   background-position: -16px 0;
 }
 
-/* line 154, ../sass/ui.scss */
+/* line 159, ../sass/ui.scss */
 .active a.list-button {
   background-color: #f7f7f7;
   border: solid 1px #d1d1d1;
 }
 
-/* line 158, ../sass/ui.scss */
+/* line 163, ../sass/ui.scss */
 .doublebutton a.list-button span {
   background-position: -16px -16px;
 }
 
-/* line 161, ../sass/ui.scss */
+/* line 166, ../sass/ui.scss */
 .active a.list-button span {
   background-position: 0 -16px;
 }
@@ -652,7 +659,7 @@ body.item-post .select-box {
   margin-bottom: 20px;
 }
 
-/* line 165, ../sass/ui.scss */
+/* line 170, ../sass/ui.scss */
 button {
   background-color: false;
   background-color: #f0f0f0;
@@ -681,7 +688,7 @@ button {
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
 }
 
-/* line 168, ../sass/ui.scss */
+/* line 173, ../sass/ui.scss */
 .ui-drop-files {
   box-shadow: none;
   border: 4px dashed rgba(0, 0, 0, 0.2);
@@ -689,7 +696,7 @@ button {
   background: rgba(0, 0, 0, 0.1);
 }
 
-/* line 174, ../sass/ui.scss */
+/* line 179, ../sass/ui.scss */
 .bordered-box {
   border: solid 1px #eaeaea;
   border-top-left-radius: 4px;
@@ -704,7 +711,7 @@ button {
   font-size: 0.75em;
 }
 
-/* line 180, ../sass/ui.scss */
+/* line 185, ../sass/ui.scss */
 .bordered-box h2 {
   font-size: 1.2em;
   margin-top: 0;
@@ -712,17 +719,17 @@ button {
   font-weight: bold;
 }
 
-/* line 186, ../sass/ui.scss */
+/* line 191, ../sass/ui.scss */
 .form-container .photos input {
   width: 100%;
 }
 
-/* line 189, ../sass/ui.scss */
+/* line 194, ../sass/ui.scss */
 .form-container .photos img {
   width: 120px;
 }
 
-/* line 192, ../sass/ui.scss */
+/* line 197, ../sass/ui.scss */
 .photos_div a {
   display: block;
 }
