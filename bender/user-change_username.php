@@ -88,7 +88,6 @@ $(document).ready(function() {
                 <label class="control-label" for="s_username"><?php _e('Username', 'bender'); ?></label>
                 <div class="controls">
                     <input type="text" name="s_username" id="s_username" value="" />
-                    <span class="help-box" ><?php _e('WARNING: Once set, you will not be able to change your username again. Choose wisely.', 'bender'); ?></span>
                     <div id="available"></div>
                 </div>
             </div>
