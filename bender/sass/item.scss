@@ -105,6 +105,7 @@ body.item h1 .price {
 }
 
 /* Comments */
+.item #comments h3{ font-size:1em; }
 .item #comments { clear:both; float:left; margin-bottom:35px; width:100%; }
 .item #comments .comments_list { border-bottom: 1px dotted #DDD; margin-bottom:20px;  }
 .item #comments .comment { background:url(../images/comments_quotes.gif) no-repeat 10px 0; margin-bottom:15px; padding:7px 0 0 60px; }

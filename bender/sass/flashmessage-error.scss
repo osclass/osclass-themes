@@ -12,7 +12,8 @@
     color: #ffffff;
     position:relative;
 }
-.flashmessage-warning {
+.flashmessage-warning,
+.help-box{
     background-color: #d0a52a;
     border: solid 1px #93741e;
 }
@@ -27,6 +28,14 @@
 .flashmessage-info{
     background-color: #30a0ef;
     border: solid 1px #2477b2;
+}
+.help-box{
+    padding:5px 10px;
+    display:inline-block;
+    color:#fff;
+    font-size:14px;
+    margin:10px 0;
+    @include border-radius(4px);
 }
 .flashmessage .ico-close {
     position: absolute;

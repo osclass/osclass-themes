@@ -836,31 +836,49 @@ button {
   position: relative;
 }
 
-/* line 15, ../sass/flashmessage-error.scss */
-.flashmessage-warning {
+/* line 16, ../sass/flashmessage-error.scss */
+.flashmessage-warning,
+.help-box {
   background-color: #d0a52a;
   border: solid 1px #93741e;
 }
 
-/* line 19, ../sass/flashmessage-error.scss */
+/* line 20, ../sass/flashmessage-error.scss */
 .flashmessage-error {
   background-color: #c44e20;
   border: solid 1px #873616;
 }
 
-/* line 23, ../sass/flashmessage-error.scss */
+/* line 24, ../sass/flashmessage-error.scss */
 .flashmessage-ok {
   background-color: #839b44;
   border: solid 1px #4f5e29;
 }
 
-/* line 27, ../sass/flashmessage-error.scss */
+/* line 28, ../sass/flashmessage-error.scss */
 .flashmessage-info {
   background-color: #30a0ef;
   border: solid 1px #2477b2;
 }
 
-/* line 31, ../sass/flashmessage-error.scss */
+/* line 32, ../sass/flashmessage-error.scss */
+.help-box {
+  padding: 5px 10px;
+  display: inline-block;
+  color: #fff;
+  font-size: 14px;
+  margin: 10px 0;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+/* line 40, ../sass/flashmessage-error.scss */
 .flashmessage .ico-close {
   position: absolute;
   top: 14px;
@@ -875,23 +893,23 @@ button {
   cursor: pointer;
 }
 
-/* line 44, ../sass/flashmessage-error.scss */
+/* line 53, ../sass/flashmessage-error.scss */
 .flashmessage-error .close {
   color: #B94A48;
 }
 
-/* line 47, ../sass/flashmessage-error.scss */
+/* line 56, ../sass/flashmessage-error.scss */
 .flashmessage-warning .close {
   color: #C09853;
 }
 
-/* line 51, ../sass/flashmessage-error.scss */
+/* line 60, ../sass/flashmessage-error.scss */
 .flashmessage-success .close,
 .flashmessage-information .close {
   color: #3A87AD;
 }
 
-/* line 55, ../sass/flashmessage-error.scss */
+/* line 64, ../sass/flashmessage-error.scss */
 #error_list,
 .error_list {
   background-color: #F2DEDE;
@@ -911,14 +929,14 @@ button {
   margin: 0 10px 20px;
 }
 
-/* line 68, ../sass/flashmessage-error.scss */
+/* line 77, ../sass/flashmessage-error.scss */
 #error_list li,
 .error_list li {
   list-style: none;
   padding: 2px 0 2px 18px;
 }
 
-/* line 73, ../sass/flashmessage-error.scss */
+/* line 82, ../sass/flashmessage-error.scss */
 #error_list li label,
 .error_list li label {
   margin-top: 0;
@@ -2177,6 +2195,11 @@ body.item h1 .price {
 
 /* Comments */
 /* line 108, ../sass/item.scss */
+.item #comments h3 {
+  font-size: 1em;
+}
+
+/* line 109, ../sass/item.scss */
 .item #comments {
   clear: both;
   float: left;
@@ -2184,71 +2207,71 @@ body.item h1 .price {
   width: 100%;
 }
 
-/* line 109, ../sass/item.scss */
+/* line 110, ../sass/item.scss */
 .item #comments .comments_list {
   border-bottom: 1px dotted #DDD;
   margin-bottom: 20px;
 }
 
-/* line 110, ../sass/item.scss */
+/* line 111, ../sass/item.scss */
 .item #comments .comment {
   background: url(../images/comments_quotes.gif) no-repeat 10px 0;
   margin-bottom: 15px;
   padding: 7px 0 0 60px;
 }
 
-/* line 111, ../sass/item.scss */
+/* line 112, ../sass/item.scss */
 .item #comments .comment h3 {
   color: #666;
   margin-bottom: 5px;
 }
 
-/* line 112, ../sass/item.scss */
+/* line 113, ../sass/item.scss */
 .item #comments .comment h3 em {
   color: #888;
   font-size: 12px;
   font-weight: normal;
 }
 
-/* line 113, ../sass/item.scss */
+/* line 114, ../sass/item.scss */
 .item #comments .comment p {
   color: #878787;
   font-style: italic;
   line-height: 18px;
 }
 
-/* line 114, ../sass/item.scss */
+/* line 115, ../sass/item.scss */
 .item #comments .pagination {
   text-align: right;
   margin-right: 10px;
   margin-bottom: 15px;
 }
 
-/* line 115, ../sass/item.scss */
+/* line 116, ../sass/item.scss */
 .item #comments .pagination a {
   border: 1px dotted #AAA;
   padding: 5px 8px;
 }
 
-/* line 116, ../sass/item.scss */
+/* line 117, ../sass/item.scss */
 .item #comments .pagination a.searchPaginationSelected {
   background-color: #f7f7f7;
 }
 
-/* line 118, ../sass/item.scss */
+/* line 119, ../sass/item.scss */
 .item #comments .pagination a.searchPaginationNext, .item #comments a.searchPaginationPrev,
 .item #comments .pagination a.searchPaginationFirst, .item #comments a.searchPaginationLast {
   border: 0px;
   text-decoration: none;
 }
 
-/* line 120, ../sass/item.scss */
+/* line 121, ../sass/item.scss */
 .item #comments .pagination a.searchPaginationNext:hover, .item #comments a.searchPaginationPrev:hover,
 .item #comments .pagination a.searchPaginationFirst:hover, .item #comments a.searchPaginationLast:hover {
   background-color: #ffffff;
 }
 
-/* line 121, ../sass/item.scss */
+/* line 122, ../sass/item.scss */
 .item #comments a:hover {
   background-color: #f7f7f7;
 }

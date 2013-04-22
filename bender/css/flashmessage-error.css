@@ -1,11 +1,11 @@
 /*
 Syntax error: Undefined mixin 'border-radius'.
-        on line 60 of /Users/feralou/git/public/osclass-themes/bender/sass/flashmessage-error.scss, in `border-radius'
-        from line 60 of /Users/feralou/git/public/osclass-themes/bender/sass/flashmessage-error.scss
+        on line 38 of /Users/feralou/git/public/osclass-themes/bender/sass/flashmessage-error.scss, in `border-radius'
+        from line 38 of /Users/feralou/git/public/osclass-themes/bender/sass/flashmessage-error.scss
 
 Backtrace:
-/Users/feralou/git/public/osclass-themes/bender/sass/flashmessage-error.scss:60:in `border-radius'
-/Users/feralou/git/public/osclass-themes/bender/sass/flashmessage-error.scss:60
+/Users/feralou/git/public/osclass-themes/bender/sass/flashmessage-error.scss:38:in `border-radius'
+/Users/feralou/git/public/osclass-themes/bender/sass/flashmessage-error.scss:38
 /Users/feralou/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:253:in `visit_mixin'
 /Users/feralou/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:37:in `visit'
 /Users/feralou/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:100:in `visit'
@@ -80,4 +80,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'border-radius'.\A         on line 60 of /Users/feralou/git/public/osclass-themes/bender/sass/flashmessage-error.scss, in `border-radius'\A         from line 60 of /Users/feralou/git/public/osclass-themes/bender/sass/flashmessage-error.scss"; }
+  content: "Syntax error: Undefined mixin 'border-radius'.\A         on line 38 of /Users/feralou/git/public/osclass-themes/bender/sass/flashmessage-error.scss, in `border-radius'\A         from line 38 of /Users/feralou/git/public/osclass-themes/bender/sass/flashmessage-error.scss"; }
