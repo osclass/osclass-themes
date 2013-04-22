@@ -119,6 +119,9 @@ $(document).ready(function(event){
         thisParent.removeClass('active');
             $('#listing-card-list').removeClass('listing-grid');
         }
+        if (history.pushState) {
+            window.history.pushState($('title').text(), $('title').text(), $(this).prop('href'));
+        }
         event.preventDefault();
         return;
     });
