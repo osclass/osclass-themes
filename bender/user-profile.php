@@ -42,22 +42,6 @@
                 </div>
             </div>
             <div class="control-group">
-                <label class="control-label" for="username"><?php _e('Username', 'bender'); ?></label>
-                <div class="controls">
-                    <?php echo osc_user_username(); ?><br />
-                    <?php if(osc_user_username()==osc_user_id()) { ?>
-                        <a href="<?php echo osc_change_user_username_url(); ?>"><?php _e('Modify username', 'bender'); ?></a>
-                    <?php }; ?>
-                </div>
-            </div>
-            <div class="control-group">
-                <label class="control-label" for="email"><?php _e('E-mail', 'bender'); ?></label>
-                <div class="controls">
-                    <?php echo osc_user_email(); ?><br />
-                    <a href="<?php echo osc_change_user_email_url(); ?>"><?php _e('Modify e-mail', 'bender'); ?></a> <a href="<?php echo osc_change_user_password_url(); ?>" ><?php _e('Modify password', 'bender'); ?></a>
-                </div>
-            </div>
-            <div class="control-group">
                 <label class="control-label" for="user_type"><?php _e('User type', 'bender'); ?></label>
                 <div class="controls">
                     <?php UserForm::is_company_select(osc_user()); ?>

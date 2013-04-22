@@ -19,6 +19,8 @@
      * License along with this program.  If not, see <http://www.gnu.org/licenses/>.
      */
 
+    osc_enqueue_script('jquery-validate');
+
     bender_add_boddy_class('user user-profile');
     osc_add_hook('before-main','sidebar');
     function sidebar(){

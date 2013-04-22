@@ -344,6 +344,21 @@ FUNCTIONS
                 'class' => 'opt_account'
             );
             $options[] = array(
+                'name'  => __('Change email', 'bender'),
+                'url'   => osc_change_user_email_url(),
+                'class' => 'opt_account'
+            );
+            $options[] = array(
+                'name'  => __('Change username', 'bender'),
+                'url'   => osc_change_user_username_url(),
+                'class' => 'opt_account'
+            );
+            $options[] = array(
+                'name'  => __('Change password', 'bender'),
+                'url'   => osc_change_user_password_url(),
+                'class' => 'opt_account'
+            );
+            $options[] = array(
                 'name'  => __('Delete account', 'bender'),
                 'url'   => '#',
                 'class' => 'opt_delete_account'
