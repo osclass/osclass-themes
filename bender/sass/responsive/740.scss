@@ -38,6 +38,9 @@ body.user-public-profile #main{
     padding:15px 40px 15px 15px;
     width:auto;
 }
+.contact_button a{
+    margin-bottom:10px;
+}
 @import "responsive/header.scss";
 @import "responsive/ui.scss";
 @import "responsive/show-hide.scss";

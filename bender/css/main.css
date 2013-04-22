@@ -2218,6 +2218,11 @@ div.mark_as {
     width: auto;
   }
 
+  /* line 41, ../sass/responsive/740.scss */
+  .contact_button a {
+    margin-bottom: 10px;
+  }
+
   /* line 1, ../sass/responsive/header.scss */
   #header {
     height: auto;
@@ -2375,13 +2380,14 @@ div.mark_as {
     height: auto;
   }
 
-  /* line 31, ../sass/responsive/ui.scss */
+  /* line 32, ../sass/responsive/ui.scss */
   textarea,
   body.item #sidebar .form-container .controls input,
   body.item #sidebar .form-container .controls textarea,
   .form-container .controls input,
   #sidebar .input-text,
-  button {
+  button,
+  .ui-button {
     width: 100%;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -2390,7 +2396,7 @@ div.mark_as {
     box-sizing: border-box;
   }
 
-  /* line 39, ../sass/responsive/ui.scss */
+  /* line 40, ../sass/responsive/ui.scss */
   ul.r-list {
     width: 100%;
     float: none;
@@ -2403,7 +2409,7 @@ div.mark_as {
     text-shadow: none;
   }
 
-  /* line 48, ../sass/responsive/ui.scss */
+  /* line 49, ../sass/responsive/ui.scss */
   ul.r-list:after {
     content: ".";
     display: block;
@@ -2413,7 +2419,7 @@ div.mark_as {
     height: 0;
   }
 
-  /* line 56, ../sass/responsive/ui.scss */
+  /* line 57, ../sass/responsive/ui.scss */
   ul.r-list li {
     float: left;
     width: 50%;
@@ -2425,23 +2431,23 @@ div.mark_as {
     box-sizing: border-box;
   }
 
-  /* line 66, ../sass/responsive/ui.scss */
+  /* line 67, ../sass/responsive/ui.scss */
   ul.r-list > li:nth-child(2n) {
     padding-left: 5px;
   }
 
-  /* line 69, ../sass/responsive/ui.scss */
+  /* line 70, ../sass/responsive/ui.scss */
   ul.r-list > li:nth-child(odd) {
     clear: both;
   }
 
-  /* line 73, ../sass/responsive/ui.scss */
+  /* line 74, ../sass/responsive/ui.scss */
   .r-list > li.clear,
   .r-list > li:nth-child(4n) {
     clear: none;
   }
 
-  /* line 76, ../sass/responsive/ui.scss */
+  /* line 77, ../sass/responsive/ui.scss */
   ul.r-list li a {
     text-decoration: none;
     white-space: nowrap;
@@ -2464,17 +2470,17 @@ div.mark_as {
     text-shadow: 0 1px 1px white;
   }
 
-  /* line 94, ../sass/responsive/ui.scss */
+  /* line 95, ../sass/responsive/ui.scss */
   ul.r-list li h1 {
     margin: 0;
   }
 
-  /* line 97, ../sass/responsive/ui.scss */
+  /* line 98, ../sass/responsive/ui.scss */
   ul.r-list li span {
     display: none;
   }
 
-  /* line 100, ../sass/responsive/ui.scss */
+  /* line 101, ../sass/responsive/ui.scss */
   ul.r-list li ul {
     -webkit-transition: opacity 1s ease-out;
     opacity: 0;
@@ -2482,7 +2488,7 @@ div.mark_as {
     overflow: hidden;
   }
 
-  /* line 106, ../sass/responsive/ui.scss */
+  /* line 107, ../sass/responsive/ui.scss */
   ul.r-list li.active a {
     background-color: #35c3d9;
     color: white;
@@ -2490,7 +2496,7 @@ div.mark_as {
     text-shadow: 0 1px 1px #23a4b8;
   }
 
-  /* line 112, ../sass/responsive/ui.scss */
+  /* line 113, ../sass/responsive/ui.scss */
   ul.r-list li.active ul {
     opacity: 1;
     height: auto;
@@ -2499,12 +2505,12 @@ div.mark_as {
     margin-bottom: 5px;
   }
 
-  /* line 119, ../sass/responsive/ui.scss */
+  /* line 120, ../sass/responsive/ui.scss */
   ul.r-list li.active ul li {
     padding: 0;
   }
 
-  /* line 122, ../sass/responsive/ui.scss */
+  /* line 123, ../sass/responsive/ui.scss */
   ul.r-list li.active ul li a {
     border-color: #eaeaea;
     color: #006699;
@@ -2513,13 +2519,13 @@ div.mark_as {
     font-size: 0.82em;
   }
 
-  /* line 126, ../sass/responsive/ui.scss */
+  /* line 127, ../sass/responsive/ui.scss */
   ul.r-list li ul li {
     float: none;
     width: 100%;
   }
 
-  /* line 132, ../sass/responsive/ui.scss */
+  /* line 133, ../sass/responsive/ui.scss */
   .select-box {
     width: 100%;
     -webkit-box-sizing: border-box;
@@ -2529,7 +2535,7 @@ div.mark_as {
     box-sizing: border-box;
   }
 
-  /* line 140, ../sass/responsive/ui.scss */
+  /* line 141, ../sass/responsive/ui.scss */
   .select-box select {
     width: 100%;
   }
