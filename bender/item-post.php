@@ -29,7 +29,7 @@
     ?>
 <?php osc_current_web_theme_path('header.php') ; ?>
 <?php ItemForm::location_javascript_new(); ?>
-<?php //if(osc_images_enabled_at_items()) ItemForm::photos_javascript(); ?>
+<?php if(osc_images_enabled_at_items()) ItemForm::photos_javascript(); ?>
     <div class="form-container form-horizontal">
         <div class="resp-wrapper">
             <div class="header">
@@ -49,7 +49,6 @@
                           <label class="control-label" for="select_1"><?php _e('Category', 'bender'); ?></label>
                           <div class="controls">
                                 <?php ItemForm::category_select(null, null, __('Select a category', 'bender')); ?>
-                                <?php //ItemForm::category_multiple_selects(Category::newInstance()->listAll(false), null, __('Select a category', 'bender')); ?>
                           </div>
                         </div>
                         <div class="control-group">
@@ -82,26 +81,17 @@
                             <div class="control-group">
                               <label class="control-label" for="photos[]"><?php _e('Photos', 'bender'); ?></label>
                               <div class="controls">
-                                <div id="post-photos">
+                                <div id="photos">
                                     <?php ItemForm::photos(); ?>
-                                    <input type="file" name="photos[]" />
                                 </div>
                               </div>
                               <div class="controls">
-                                <a href="#" onclick="bender.addPhotoUploader(4); return false;"><?php _e('Add new photo', 'bender'); ?></a>
+                                <a href="#" onclick="addNewPhoto(); return false;"><?php _e('Add new photo', 'bender'); ?></a>
                               </div>
                             </div>
 
                         </div>
                         <?php } ?>
-                        <?php /*
-                        <div class="generic-input input-big has-placeholder input-file">
-                        <div class="bg"></div>
-                        <div class="label">Attach</div>
-                        <span class="placeholder">CV</span>
-                        <input type="file" name="attachment">
-                        </div>
-                        */ ?>
                         <div class="box location">
                             <h2><?php _e('Listing Location', 'bender'); ?></h2>
 
@@ -193,7 +183,6 @@
             $("#price").prop("value", price);
         });
 
-        bender.photoUploader('input[type="file"]');
     });
     <?php }; ?>
 </script>

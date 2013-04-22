@@ -659,6 +659,11 @@ body.item-post .select-box {
   margin-bottom: 20px;
 }
 
+/* line 121, ../sass/form.scss */
+.form-container .controls #photos a {
+  font-size: 12px !important;
+}
+
 /* line 170, ../sass/ui.scss */
 button {
   background-color: false;
@@ -2707,17 +2712,12 @@ div.mark_as {
   }
 
   /* line 11, ../sass/responsive/item.scss */
-  .item-photos a {
-    text-decoration: none;
-  }
-
-  /* line 14, ../sass/responsive/item.scss */
   .item-photos .main-photo {
     width: 100%;
     float: none;
   }
 
-  /* line 18, ../sass/responsive/item.scss */
+  /* line 15, ../sass/responsive/item.scss */
   .item-photos .main-photo img {
     width: 100%;
   }
