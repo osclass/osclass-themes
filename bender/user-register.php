@@ -19,8 +19,8 @@
      * License along with this program.  If not, see <http://www.gnu.org/licenses/>.
      */
 
-    UserForm::js_validation();
     moder2_add_boddy_class('register');
+    osc_enqueue_script('jquery-validate');
     osc_current_web_theme_path('header.php') ;
 ?>
 <div class="form-container form-horizontal form-container-box">
@@ -28,7 +28,7 @@
         <h1><?php _e('Register an account for free', 'bender'); ?></h1>
     </div>
     <div class="resp-wrapper">
-        <form action="<?php echo osc_base_url(true); ?>" method="post" >
+        <form name="register" action="<?php echo osc_base_url(true); ?>" method="post" >
             <input type="hidden" name="page" value="register" />
             <input type="hidden" name="action" value="register_post" />
             <ul id="error_list"></ul>
@@ -52,11 +52,11 @@
                 </div>
             </div>
             <div class="control-group">
-                <label class="control-label" for="password-2"><?php _e('Re-type password', 'bender'); ?></label>
+                <label class="control-label" for="password-2"><?php _e('Repeat password', 'bender'); ?></label>
                 <div class="controls">
                     <?php UserForm::check_password_text(); ?>
                     <p id="password-error" style="display:none;">
-                        <?php _e("Passwords don't match.", 'bender'); ?>
+                        <?php _e("Passwords don't match", 'bender'); ?>
                     </p>
                 </div>
             </div>
@@ -69,4 +69,5 @@
         </form>
     </div>
 </div>
+<?php UserForm::js_validation(); ?>
 <?php osc_current_web_theme_path('footer.php') ; ?>
