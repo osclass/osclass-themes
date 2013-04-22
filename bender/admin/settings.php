@@ -1,5 +1,5 @@
 <?php if( !osc_get_preference('footer_link', 'bender_theme') && !osc_get_preference('donation', 'bender_theme') ) { ?>
-<form name="_xclick" action="https://www.paypal.com/in/cgi-bin/webscr" method="post">
+<form name="_xclick" action="https://www.paypal.com/in/cgi-bin/webscr" method="post" class="nocsrf">
     <input type="hidden" name="cmd" value="_donations">
     <input type="hidden" name="rm" value="2">
     <input type="hidden" name="business" value="info@osclass.org">
@@ -20,7 +20,7 @@
 </form>
 <?php } ?>
 <h2 class="render-title <?php echo (osc_get_preference('footer_link', 'bender_theme') ? '' : 'separate-top'); ?>"><?php _e('Theme settings', 'bender'); ?></h2>
-<form action="<?php echo osc_admin_render_theme_url('oc-content/themes/bender/admin/settings.php'); ?>" method="post">
+<form action="<?php echo osc_admin_render_theme_url('oc-content/themes/bender/admin/settings.php'); ?>" method="post" class="nocsrf">
     <input type="hidden" name="action_specific" value="settings" />
     <fieldset>
         <div class="form-horizontal">

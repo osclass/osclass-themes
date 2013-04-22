@@ -7,7 +7,7 @@
     <?php if(file_exists( WebThemes::newInstance()->getCurrentThemePath() . "images/logo.jpg" ) ) { ?>
         <h3 class="render-title"><?php _e('Preview', 'bender') ?></h3>
         <img border="0" alt="<?php echo osc_esc_html( osc_page_title() ); ?>" src="<?php echo osc_current_web_theme_url('images/logo.jpg');?>" />
-        <form action="<?php echo osc_admin_render_theme_url('oc-content/themes/bender/admin/header.php');?>" method="post" enctype="multipart/form-data">
+        <form action="<?php echo osc_admin_render_theme_url('oc-content/themes/bender/admin/header.php');?>" method="post" enctype="multipart/form-data" class="nocsrf">
             <input type="hidden" name="action_specific" value="remove" />
             <fieldset>
                 <div class="form-horizontal">
@@ -30,7 +30,7 @@
         <?php _e('<strong>Note:</strong> Uploading another logo will overwrite the current logo.', 'bender'); ?>
         <?php } ?>
     </p>
-    <form action="<?php echo osc_admin_render_theme_url('oc-content/themes/bender/admin/header.php'); ?>" method="post" enctype="multipart/form-data">
+    <form action="<?php echo osc_admin_render_theme_url('oc-content/themes/bender/admin/header.php'); ?>" method="post" enctype="multipart/form-data" class="nocsrf">
         <input type="hidden" name="action_specific" value="upload_logo" />
         <fieldset>
             <div class="form-horizontal">
