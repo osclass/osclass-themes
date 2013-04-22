@@ -1,3 +1,5 @@
+<?php if ( (!defined('ABS_PATH')) ) exit('ABS_PATH is not loaded. Direct access is not allowed.'); ?>
+<?php if ( !OC_ADMIN ) exit('User access is not allowed.'); ?>
 <?php if( !osc_get_preference('footer_link', 'bender_theme') && !osc_get_preference('donation', 'bender_theme') ) { ?>
 <form name="_xclick" action="https://www.paypal.com/in/cgi-bin/webscr" method="post" class="nocsrf">
     <input type="hidden" name="cmd" value="_donations">
