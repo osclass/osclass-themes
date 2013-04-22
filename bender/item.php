@@ -20,7 +20,7 @@
      */
 
     osc_enqueue_script('fancybox');
-    osc_enqueue_style('fancybox', osc_assets_url('js/fancybox/jquery.fancybox.css'));
+    osc_enqueue_style('fancybox', osc_current_web_theme_url('js/fancybox/jquery.fancybox.css'));
     osc_enqueue_script('jquery-validate');
 
 
