@@ -61,8 +61,17 @@
     </ul>
     <?php
     if( osc_get_preference('footer_link', 'bender_theme') !== '0') {
-        echo 'This website is proudly using the <a title="Osclass web" href="http://osclass.org/">classifieds scripts</a> software <strong>Osclass</strong>';
+        echo '<div>This website is proudly using the <a title="Osclass web" href="http://osclass.org/">classifieds scripts</a> software <strong>Osclass</strong></div>';
     }
     ?>
+    <?php if ( osc_count_web_enabled_locales() > 1) { ?>
+        <?php osc_goto_first_locale(); ?>
+        <strong><?php _e('Language:', 'bender'); ?></strong>
+        <?php $i = 0;  ?>
+        <?php while ( osc_has_web_enabled_locales() ) { ?>
+        <span><a id="<?php echo osc_locale_code(); ?>" href="<?php echo osc_change_language_url ( osc_locale_code() ); ?>"><?php echo osc_locale_name(); ?></a></span><?php if( $i == 0 ) { echo " &middot; "; } ?>
+            <?php $i++; ?>
+        <?php } ?>
+    <?php } ?>
 </div>
 <?php osc_run_hook('footer'); ?>
