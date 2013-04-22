@@ -1465,43 +1465,53 @@ body.search .list-header .actions {
   display: none;
 }
 
-/* line 109, ../sass/header.scss */
-#header .nav li a {
+/* line 110, ../sass/header.scss */
+#header .nav li a,
+#header .nav li span {
   color: white;
   font-size: 0.875em;
-  margin-left: 10px;
 }
 
 /* line 114, ../sass/header.scss */
+#header .nav li {
+  color: white;
+}
+
+/* line 117, ../sass/header.scss */
+#header .nav li a {
+  margin-left: 10px;
+}
+
+/* line 120, ../sass/header.scss */
 #header .nav li.publish {
   clear: both;
   float: right;
   margin-top: 10px;
 }
 
-/* line 119, ../sass/header.scss */
+/* line 125, ../sass/header.scss */
 .main-search .select-box .select-box-label {
   line-height: 43px;
 }
 
-/* line 122, ../sass/header.scss */
+/* line 128, ../sass/header.scss */
 .main-search .select-box select {
   width: auto;
   height: 42px;
 }
 
-/* line 126, ../sass/header.scss */
+/* line 132, ../sass/header.scss */
 .main-search .select-box-icon {
   top: 0px;
 }
 
 /* Breadcrumb */
-/* line 132, ../sass/header.scss */
+/* line 138, ../sass/header.scss */
 .wrapper-flash {
   margin-bottom: 35px;
 }
 
-/* line 135, ../sass/header.scss */
+/* line 141, ../sass/header.scss */
 div.breadcrumb {
   line-height: 1.05em;
   font-size: 0.75em;
@@ -1512,14 +1522,14 @@ div.breadcrumb {
   border-bottom: 1px solid #eaeaea;
 }
 
-/* line 144, ../sass/header.scss */
+/* line 150, ../sass/header.scss */
 ul.breadcrumb {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-/* line 149, ../sass/header.scss */
+/* line 155, ../sass/header.scss */
 ul.breadcrumb li {
   float: left;
   padding: 0 2px;

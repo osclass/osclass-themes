@@ -106,9 +106,15 @@ body.has-searchbox #header{
 #header .nav li.cat{
     display:none
 }
-#header .nav li a{
+#header .nav li a,
+#header .nav li span{
     color:white;
     font-size:0.875em;
+}
+#header .nav li{
+    color:white;
+}
+#header .nav li a{
     margin-left:10px;
 }
 #header .nav li.publish{
