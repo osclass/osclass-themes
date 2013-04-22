@@ -638,6 +638,20 @@ body.item-post .select-box {
   width: 300px;
 }
 
+/* line 111, ../sass/form.scss */
+.form-container .photos input {
+  width: 100%;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-shadow: none;
+}
+
+/* line 118, ../sass/form.scss */
+.photos_div {
+  margin-bottom: 20px;
+}
+
 /* line 165, ../sass/ui.scss */
 button {
   background-color: false;
@@ -701,6 +715,16 @@ button {
 /* line 186, ../sass/ui.scss */
 .form-container .photos input {
   width: 100%;
+}
+
+/* line 189, ../sass/ui.scss */
+.form-container .photos img {
+  width: 120px;
+}
+
+/* line 192, ../sass/ui.scss */
+.photos_div a {
+  display: block;
 }
 
 /* line 1, ../sass/pagination.scss */
@@ -1092,6 +1116,28 @@ body.search .list-header .actions {
 /* line 57, ../sass/global.scss */
 .resp-toogle {
   display: none;
+}
+
+/* line 60, ../sass/global.scss */
+.title-has-actions {
+  border-bottom: solid 1px #eaeaea;
+  margin-bottom: 10px;
+}
+
+/* line 66, ../sass/global.scss */
+.title-has-actions h1,
+.title-has-actions h2,
+.title-has-actions h3 {
+  float: left;
+  margin-bottom: 0;
+}
+
+/* line 70, ../sass/global.scss */
+.title-has-actions a {
+  float: left;
+  margin-left: 10px;
+  font-size: 0.825em;
+  line-height: 2em;
 }
 
 /* line 1, ../sass/footer.scss */
@@ -2089,6 +2135,16 @@ div.mark_as {
 /* line 86, ../sass/item.scss */
 .similar_ads h2 {
   margin-top: 35px;
+}
+
+/* line 89, ../sass/item.scss */
+.admin-options {
+  font-size: 0.725em;
+}
+
+/* line 92, ../sass/item.scss */
+.admin-options a {
+  margin: 0 5px;
 }
 
 @media only screen and (max-width: 740px) {

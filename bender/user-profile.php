@@ -29,26 +29,6 @@
 ?>
 <h1><?php _e('Update your profile', 'bender'); ?></h1>
 <?php UserForm::location_javascript(); ?>
-<script type="text/javascript">
-    $(document).ready(function(){
-        $("#delete_account").click(function(){
-            $("#dialog-delete-account").dialog('open');
-        });
-
-        $("#dialog-delete-account").dialog({
-            autoOpen: false,
-            modal: true,
-            buttons: {
-                "<?php echo osc_esc_js(__('Delete', 'bender')); ?>": function() {
-                    window.location = '<?php echo osc_base_url(true).'?page=user&action=delete&id='.osc_user_id().'&secret='.$user['s_secret']; ?>';
-                },
-                "<?php echo osc_esc_js(__('Cancel', 'bender')); ?>": function() {
-                    $( this ).dialog( "close" );
-                }
-            }
-        });
-    });
-</script>
 <div class="form-container form-horizontal">
     <div class="resp-wrapper">
         <ul id="error_list"></ul>
@@ -140,7 +120,6 @@
             <div class="control-group">
                 <div class="controls">
                     <button type="submit" class="ui-button ui-button-middle ui-button-main"><?php _e("Update", 'bender');?></button>
-                    <button id="delete_account" type="button" class="ui-button ui-button-middle ui-button-main"><?php _e("Delete my account", 'bender');?></button>
                 </div>
             </div>
             <div class="control-group">

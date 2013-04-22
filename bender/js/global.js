@@ -31,33 +31,31 @@ var bender = {
         options = $.extend(defaults, options);
         bender.photoUploaderActions($(selector),options);
     },
-    addPhotoUploader: function(){
-
+    addPhotoUploader: function(max){
+        if(max < $('input[name="'+$(this).attr('name')+'"]').length+$('.photos_div').length){
+            var $image = $('<input type="file" name="photos[]">');
+                bender.photoUploaderActions(image);
+            $('#post-photos').append($image);
+        }
+    },
+    removePhotoUploader: function(){
+        //removeAndAdd
     },
     photoUploaderActions: function($element,options){
         $element.on('change',function(){
-            ///
             var input  = $(this)[0];
-
             $(this).next('img').remove();
             $image = $('<img />');
             $image.insertAfter($element);
-
             if (input.files && input.files[0]) {
                 var reader = new FileReader();
                 reader.onload = function (e) {
                     $image.attr('src', e.target.result);
                 };
                 reader.readAsDataURL(input.files[0]);
-                if(options.max < $('input[name="'+$(this).attr('name')+'"]').length){
-                    //console.log('add');
-                }
             } else {
-                //console.log('borrado');
+                $image.remove();
             }
-
-
-
         });
     }
 };

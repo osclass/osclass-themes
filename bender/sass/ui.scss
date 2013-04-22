@@ -186,5 +186,11 @@ button{
 .form-container .photos input{
     width:100%;
 }
+.form-container .photos img{
+    width:120px;
+}
+.photos_div a{
+    display:block;
+}
 @import "pagination.scss";
 @import "flashmessage-error.scss";

@@ -57,3 +57,19 @@ body.search .list-header .actions{
 .resp-toogle{
     display:none;
 }
+.title-has-actions{
+    border-bottom:solid 1px $widgetbordercolor;
+    margin-bottom:10px;
+}
+.title-has-actions h1,
+.title-has-actions h2,
+.title-has-actions h3{
+    float:left;
+    margin-bottom:0;
+}
+.title-has-actions a{
+    float:left;
+    margin-left:10px;
+    font-size:0.825em;
+    line-height: 2em;
+}

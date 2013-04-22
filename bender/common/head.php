@@ -1,5 +1,6 @@
 <?php
 osc_enqueue_script('jquery');
+osc_enqueue_script('jquery-ui');
 osc_register_script('global-theme-js', osc_current_web_theme_js_url('global.js'));
 osc_enqueue_script('global-theme-js');
 ?>
@@ -27,4 +28,7 @@ osc_enqueue_script('global-theme-js');
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
 <link href="<?php echo osc_current_web_theme_url('css/main.css') ; ?>?<?php echo rand(0, pow(10, 5)); ?>" rel="stylesheet" type="text/css" />
+<link href="<?php echo osc_current_web_theme_url('js/jquery-ui/jquery-ui-1.10.2.custom.min.css') ; ?>?<?php echo rand(0, pow(10, 5)); ?>" rel="stylesheet" type="text/css" />
+
+
 <?php osc_run_hook('header') ; ?>
