@@ -48,7 +48,6 @@
 </div>
 </div><!-- main -->
 <div id="sidebar">
-    <?php osc_show_widgets('sidebar'); ?>
     <div class="widget-box">
         <?php if(osc_count_list_regions() > 0 ) { ?>
         <div class="box location">
