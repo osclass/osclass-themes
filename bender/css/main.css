@@ -2244,55 +2244,6 @@ div.mark_as {
   background-color: #f7f7f7;
 }
 
-/* line 116, ../sass/item.scss */
-.item #comments form {
-  clear: both;
-  display: inline;
-  float: left;
-  margin-left: 60px;
-  width: 540px;
-}
-
-/* line 117, ../sass/item.scss */
-.item #comments form h3 {
-  color: #000;
-  margin-bottom: 10px;
-}
-
-/* line 118, ../sass/item.scss */
-.item #comments form label {
-  clear: left;
-  float: left;
-  margin-right: 10px;
-  padding-top: 4px;
-  width: 140px;
-}
-
-/* line 119, ../sass/item.scss */
-.item #comments form input {
-  border: 1px solid #BBB;
-  float: left;
-  margin-bottom: 5px;
-  padding: 5px;
-  width: 250px;
-}
-
-/* line 120, ../sass/item.scss */
-.item #comments form textarea {
-  border: 1px solid #BBB;
-  float: left;
-  padding: 5px;
-  width: 375px;
-  height: 150px;
-}
-
-/* line 121, ../sass/item.scss */
-.item #comments form .button {
-  clear: both;
-  float: left;
-  margin: 10px 0 0 150px;
-}
-
 @media only screen and (max-width: 740px) {
   /* line 2, ../sass/responsive/740.scss */
   .wrapper,
