@@ -27,7 +27,7 @@
     osc_current_web_theme_path('header.php') ;
     $osc_user = osc_user();
 ?>
-<h1><?php _e('User alerts', 'bender'); ?></h1>
+<h1><?php _e('My searches', 'bender'); ?></h1>
 <?php if(osc_count_alerts() == 0) { ?>
     <h3><?php _e('You do not have any alerts yet', 'bender'); ?>.</h3>
 <?php } else { ?>

@@ -60,19 +60,19 @@
                 </div>
             </div>
             <div class="control-group">
-                <label class="control-label" for="country"><?php _e('Country', 'bender'); ?> *</label>
+                <label class="control-label" for="country"><?php _e('Country', 'bender'); ?></label>
                 <div class="controls">
                     <?php UserForm::country_select(osc_get_countries(), osc_user()); ?>
                 </div>
             </div>
             <div class="control-group">
-                <label class="control-label" for="region"><?php _e('Region', 'bender'); ?> *</label>
+                <label class="control-label" for="region"><?php _e('Region', 'bender'); ?></label>
                 <div class="controls">
                     <?php UserForm::region_select(osc_get_regions(), osc_user()); ?>
                 </div>
             </div>
             <div class="control-group">
-                <label class="control-label" for="city"><?php _e('City', 'bender'); ?> *</label>
+                <label class="control-label" for="city"><?php _e('City', 'bender'); ?></label>
                 <div class="controls">
                     <?php UserForm::city_select(osc_get_cities(), osc_user()); ?>
                 </div>
@@ -98,7 +98,7 @@
             <div class="control-group">
                 <label class="control-label" for="s_info"><?php _e('Description', 'bender'); ?></label>
                 <div class="controls">
-                    <?php UserForm::info_textarea('s_info', osc_locale_code(), $osc_user['locale'][$locale['pk_c_code']]['s_info']); ?>
+                    <?php UserForm::info_textarea('s_info', osc_locale_code(), $osc_user['locale'][osc_locale_code()]['s_info']); ?>
                 </div>
             </div>
             <div class="control-group">

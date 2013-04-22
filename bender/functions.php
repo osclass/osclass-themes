@@ -145,8 +145,8 @@ FUNCTIONS
                             <div class="listing-basicinfo">
                                 <a href="<?php echo osc_item_url() ; ?>" class="title" title="<?php echo osc_item_title() ; ?>"><?php echo osc_item_title() ; ?></a>
                                 <div class="listing-attributes">
-                                    <a class="category" href="<?php echo osc_item_category() ; ?>" title="<?php echo osc_item_category() ; ?>"><?php echo osc_item_category() ; ?></a>
-                                    <span class="location"><a href="<?php echo osc_search_url(array('sCity' => osc_item_city())); ?>"><?php echo osc_item_city(); ?></a> (<a href="<?php echo osc_search_url(array('sRegion' => osc_item_region())); ?>"><?php echo osc_item_region(); ?></a>)</span> <span class="g-hide">-</span> <?php echo osc_format_date(osc_item_pub_date()); ?>
+                                    <span class="category"><?php echo osc_item_category() ; ?></span> -
+                                    <span class="location"><?php echo osc_item_city(); ?> (<?php echo osc_item_region(); ?>)</span> <span class="g-hide">-</span> <?php echo osc_format_date(osc_item_pub_date()); ?>
                                     <?php if( osc_price_enabled_at_items() ) { ?><span class="currency-value"><?php echo osc_format_price(osc_item_price()); ?></span><?php } ?>
                                 </div>
                                 <p><?php echo osc_highlight( strip_tags( osc_item_description()) ,250) ; ?></p>
@@ -188,7 +188,10 @@ FUNCTIONS
                  <?php /**/if ( osc_count_subcategories() > 0 ) { ?>
                    <ul>
                          <?php while ( osc_has_subcategories() ) { ?>
-                             <li><a class="category <?php echo osc_category_slug() ; ?>" href="<?php echo osc_search_category_url() ; ?>"><?php echo osc_category_name() ; ?></a> <span>(<?php echo osc_category_total_items() ; ?>)</span></li>
+                             <li>
+                             <?php if( osc_category_total_items() > 0 ) { ?><a class="category <?php echo osc_category_slug() ; ?>" href="<?php echo osc_search_category_url() ; ?>"><?php echo osc_category_name() ; ?></a> <span>(<?php echo osc_category_total_items() ; ?>)</span>
+                             <?php } else { ?><span><?php echo osc_category_name() ; ?> (<?php echo osc_category_total_items() ; ?>)</span></li>
+                             <?php } ?>
                          <?php } ?>
                    </ul>
                  <?php } ?>
@@ -305,7 +308,7 @@ FUNCTIONS
             $lang['user_dashboard_profile'] = __("%s's profile", 'bender');
             $lang['user_account']           = __('Account', 'bender');
             $lang['user_items']             = __('My listings', 'bender');
-            $lang['user_alerts']            = __('My alerts', 'bender');
+            $lang['user_alerts']            = __('My searches', 'bender');
             $lang['user_profile']           = __('Update my profile', 'bender');
             $lang['user_change_email']      = __('Change my email', 'bender');
             $lang['user_change_username']   = __('Change my username', 'bender');
@@ -329,12 +332,7 @@ FUNCTIONS
                 'class' => 'opt_dashboard'
             );
             $options[] = array(
-                'name'  => __('Manage your listings', 'bender'),
-                'url'   => osc_user_list_items_url(),
-                'class' => 'opt_items'
-            );
-            $options[] = array(
-                'name' => __('Manage your alerts', 'bender'),
+                'name' => __('My searches', 'bender'),
                 'url' => osc_user_alerts_url(),
                 'class' => 'opt_alerts'
             );
