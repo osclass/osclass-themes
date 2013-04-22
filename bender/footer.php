@@ -62,7 +62,7 @@
     ?>
     </ul>
     <?php
-    if( osc_get_preference('footer_link', 'modern_theme') ) {
+    if( osc_get_preference('footer_link', 'bender_theme') ) {
         echo 'This website is proudly using the <a title="Osclass web" href="http://osclass.org/">classifieds scripts</a> software <strong>Osclass</strong>';
     }
     ?>
