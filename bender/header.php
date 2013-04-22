@@ -52,7 +52,7 @@
         </ul>
     </div>
     <?php if(osc_is_home_page() || osc_is_search_page()){ ?>
-    <form action="<?php echo osc_base_url(true) ; ?>" method="get" class="search" <?php /* onsubmit="javascript:return doSearch();"*/ ?>>
+    <form action="<?php echo osc_base_url(true) ; ?>" method="get" class="search nocsrf" <?php /* onsubmit="javascript:return doSearch();"*/ ?>>
         <input type="hidden" name="page" value="search" />
         <div class="main-search">
             <div class="cell">

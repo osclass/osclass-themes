@@ -59,7 +59,7 @@ $(document).ready(function(){
     <h3>
         <strong><?php _e('Subscribe to this search', 'bender'); ?></strong>
     </h3>
-    <form action="<?php echo osc_base_url(true); ?>" method="post" name="sub_alert" id="sub_alert">
+    <form action="<?php echo osc_base_url(true); ?>" method="post" name="sub_alert" id="sub_alert" class="nocsrf">
             <?php AlertForm::page_hidden(); ?>
             <?php AlertForm::alert_hidden(); ?>
 
