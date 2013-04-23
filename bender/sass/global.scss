@@ -73,3 +73,50 @@ body.search .list-header .actions{
     font-size:0.825em;
     line-height: 2em;
 }
+
+
+
+.flashmessage-404{
+    background-color: #FCF8E3;
+    border: solid 1px #FBEED5;
+    color: #C09853;
+    border-radius: 5px;
+    font-size:15px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    padding:10px 15px;
+    margin-top:25px;
+}
+.flashmessage-404 ul{
+    list-style: disc;
+    padding:10px 0px 10px 25px;
+}
+body.not-found .categories h2,
+body.not-found .categories h3{
+    float:left;
+    width:25%;
+    font-size:13px;
+    font-weight: normal;
+    margin:3px 0;
+}
+body.not-found .categories{
+    margin-top:10px;
+}
+body.not-found fieldset.main{
+    padding:10px 0;
+}
+body.not-found #uniform-sCategory{
+    display:none;
+}
+body.not-found h1{
+    font-size: 24px;
+    margin-bottom:20px;
+}
+body.not-found #query{
+    @include input-style(#ffffff);
+    width: 280px;
+    padding: 0 10px;
+    height: 34px;
+    line-height: 30px;
+    font-size:1em;
+}

@@ -1173,6 +1173,83 @@ body.search .list-header .actions {
   line-height: 2em;
 }
 
+/* line 79, ../sass/global.scss */
+.flashmessage-404 {
+  background-color: #FCF8E3;
+  border: solid 1px #FBEED5;
+  color: #C09853;
+  border-radius: 5px;
+  font-size: 15px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  padding: 10px 15px;
+  margin-top: 25px;
+}
+
+/* line 90, ../sass/global.scss */
+.flashmessage-404 ul {
+  list-style: disc;
+  padding: 10px 0px 10px 25px;
+}
+
+/* line 95, ../sass/global.scss */
+body.not-found .categories h2,
+body.not-found .categories h3 {
+  float: left;
+  width: 25%;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 3px 0;
+}
+
+/* line 102, ../sass/global.scss */
+body.not-found .categories {
+  margin-top: 10px;
+}
+
+/* line 105, ../sass/global.scss */
+body.not-found fieldset.main {
+  padding: 10px 0;
+}
+
+/* line 108, ../sass/global.scss */
+body.not-found #uniform-sCategory {
+  display: none;
+}
+
+/* line 111, ../sass/global.scss */
+body.not-found h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* line 115, ../sass/global.scss */
+body.not-found #query {
+  background-color: white;
+  border: solid 1px #bfbfbf;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  box-shadow: inset 0 1px 0 0 #E0E0E0;
+  display: inline-block;
+  vertical-align: middle;
+  color: #646464;
+  line-height: 43px;
+  text-decoration: none;
+  padding: 0 15px;
+  box-shadow: inset 0 1px 0 0 #dfd8d8;
+  width: 280px;
+  padding: 0 10px;
+  height: 34px;
+  line-height: 30px;
+  font-size: 1em;
+}
+
 /* line 1, ../sass/footer.scss */
 #footer {
   clear: both;
@@ -1833,6 +1910,23 @@ body.home .listing-grid .first {
 /* line 204, ../sass/list.scss */
 .see_more_link {
   clear: both;
+}
+
+/* line 207, ../sass/list.scss */
+#related-searches {
+  padding-top: 25px;
+}
+
+/* line 210, ../sass/list.scss */
+#related-searches h5 {
+  margin-bottom: 10px;
+  font-size: 1em;
+}
+
+/* line 214, ../sass/list.scss */
+.counter-search {
+  float: left;
+  line-height: 32px;
 }
 
 /* line 1, ../sass/sidebar.scss */
@@ -2508,19 +2602,34 @@ body.item h1 .price {
     margin-top: 0px;
   }
 
+  /* line 16, ../sass/responsive/ui.scss */
+  .alert_form {
+    background-color: transparent;
+  }
+
   /* line 19, ../sass/responsive/ui.scss */
+  #alert_email {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  /* line 29, ../sass/responsive/ui.scss */
   .form-container .controls input,
   #sidebar .input-text {
     height: 32px;
   }
 
-  /* line 22, ../sass/responsive/ui.scss */
+  /* line 32, ../sass/responsive/ui.scss */
   input[type="checkbox"] {
     width: auto;
     height: auto;
   }
 
-  /* line 32, ../sass/responsive/ui.scss */
+  /* line 42, ../sass/responsive/ui.scss */
   textarea,
   body.item #sidebar .form-container .controls input,
   body.item #sidebar .form-container .controls textarea,
@@ -2536,7 +2645,7 @@ body.item h1 .price {
     box-sizing: border-box;
   }
 
-  /* line 40, ../sass/responsive/ui.scss */
+  /* line 50, ../sass/responsive/ui.scss */
   ul.r-list {
     width: 100%;
     float: none;
@@ -2549,7 +2658,7 @@ body.item h1 .price {
     text-shadow: none;
   }
 
-  /* line 49, ../sass/responsive/ui.scss */
+  /* line 59, ../sass/responsive/ui.scss */
   ul.r-list:after {
     content: ".";
     display: block;
@@ -2559,7 +2668,7 @@ body.item h1 .price {
     height: 0;
   }
 
-  /* line 57, ../sass/responsive/ui.scss */
+  /* line 67, ../sass/responsive/ui.scss */
   ul.r-list li {
     float: left;
     width: 50%;
@@ -2571,23 +2680,23 @@ body.item h1 .price {
     box-sizing: border-box;
   }
 
-  /* line 67, ../sass/responsive/ui.scss */
+  /* line 77, ../sass/responsive/ui.scss */
   ul.r-list > li:nth-child(2n) {
     padding-left: 5px;
   }
 
-  /* line 70, ../sass/responsive/ui.scss */
+  /* line 80, ../sass/responsive/ui.scss */
   ul.r-list > li:nth-child(odd) {
     clear: both;
   }
 
-  /* line 74, ../sass/responsive/ui.scss */
+  /* line 84, ../sass/responsive/ui.scss */
   .r-list > li.clear,
   .r-list > li:nth-child(4n) {
     clear: none;
   }
 
-  /* line 77, ../sass/responsive/ui.scss */
+  /* line 87, ../sass/responsive/ui.scss */
   ul.r-list li a {
     text-decoration: none;
     white-space: nowrap;
@@ -2610,17 +2719,17 @@ body.item h1 .price {
     text-shadow: 0 1px 1px white;
   }
 
-  /* line 95, ../sass/responsive/ui.scss */
+  /* line 105, ../sass/responsive/ui.scss */
   ul.r-list li h1 {
     margin: 0;
   }
 
-  /* line 98, ../sass/responsive/ui.scss */
+  /* line 108, ../sass/responsive/ui.scss */
   ul.r-list li span {
     display: none;
   }
 
-  /* line 101, ../sass/responsive/ui.scss */
+  /* line 111, ../sass/responsive/ui.scss */
   ul.r-list li ul {
     -webkit-transition: opacity 1s ease-out;
     opacity: 0;
@@ -2628,7 +2737,7 @@ body.item h1 .price {
     overflow: hidden;
   }
 
-  /* line 107, ../sass/responsive/ui.scss */
+  /* line 117, ../sass/responsive/ui.scss */
   ul.r-list li.active a {
     background-color: #eb6056;
     color: white;
@@ -2636,7 +2745,7 @@ body.item h1 .price {
     text-shadow: 0 1px 1px #e63528;
   }
 
-  /* line 113, ../sass/responsive/ui.scss */
+  /* line 123, ../sass/responsive/ui.scss */
   ul.r-list li.active ul {
     opacity: 1;
     height: auto;
@@ -2645,12 +2754,12 @@ body.item h1 .price {
     margin-bottom: 5px;
   }
 
-  /* line 120, ../sass/responsive/ui.scss */
+  /* line 130, ../sass/responsive/ui.scss */
   ul.r-list li.active ul li {
     padding: 0;
   }
 
-  /* line 123, ../sass/responsive/ui.scss */
+  /* line 133, ../sass/responsive/ui.scss */
   ul.r-list li.active ul li a {
     border-color: #eaeaea;
     color: #006699;
@@ -2659,13 +2768,13 @@ body.item h1 .price {
     font-size: 0.82em;
   }
 
-  /* line 127, ../sass/responsive/ui.scss */
+  /* line 137, ../sass/responsive/ui.scss */
   ul.r-list li ul li {
     float: none;
     width: 100%;
   }
 
-  /* line 133, ../sass/responsive/ui.scss */
+  /* line 143, ../sass/responsive/ui.scss */
   .select-box {
     width: 100%;
     -webkit-box-sizing: border-box;
@@ -2675,7 +2784,7 @@ body.item h1 .price {
     box-sizing: border-box;
   }
 
-  /* line 141, ../sass/responsive/ui.scss */
+  /* line 151, ../sass/responsive/ui.scss */
   .select-box select {
     width: 100%;
   }
@@ -2843,6 +2952,13 @@ body.item h1 .price {
     clear: both;
   }
 
+  /* line 45, ../sass/responsive/list.scss */
+  body.not-found .categories h2,
+  body.not-found .categories h3 {
+    float: none;
+    width: 100%;
+  }
+
   /* line 2, ../sass/responsive/item.scss */
   body.item #sidebar,
   body.user-public-profile #sidebar {
@@ -2879,7 +2995,7 @@ body.item h1 .price {
   /* line 7, ../sass/responsive/structure.scss */
   body.search #content {
     position: relative;
-    padding-top: 80px;
+    padding-top: 100px;
   }
 
   /* line 11, ../sass/responsive/structure.scss */
@@ -2930,9 +3046,10 @@ body.item h1 .price {
   /* line 39, ../sass/responsive/structure.scss */
   body.search .list-header .actions {
     padding: 10px 0;
+    clear: both;
   }
 
-  /* line 42, ../sass/responsive/structure.scss */
+  /* line 43, ../sass/responsive/structure.scss */
   body.display-filters .show-filters-btn {
     background-color: #eb6056;
     border-color: #e63528;

@@ -41,3 +41,8 @@ body.search .listing-grid .listing-card:nth-child(3n+1){
     margin-left:0%;
     clear:both;
 }
+body.not-found .categories h2,
+body.not-found .categories h3{
+    float:none;
+    width:100%;
+}

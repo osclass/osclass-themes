@@ -6,7 +6,7 @@ body.user #sidebar{
 }
 body.search #content{
     position:relative;
-    padding-top:80px;
+    padding-top:100px;
 }
 body.user #sidebar{
     margin-top:15px;
@@ -38,6 +38,7 @@ body.search #content h1{
 }
 body.search .list-header .actions{
     padding:10px 0;
+    clear:both;
 }
 body.display-filters .show-filters-btn{
     background-color:$maincolor;
