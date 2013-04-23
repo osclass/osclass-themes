@@ -100,20 +100,22 @@ FUNCTIONS
     }
     if(!function_exists('bender_nofollow_construct')) {
         /**
-        * Hook for header, meta tags.
+        * Hook for header, meta tags robots nofollos
         */
-        function bender_nofollow_construct(){
-            echo '<meta name="robots" content="noindex, nofollow, noarchive" />';
-            echo '<meta name="googlebot" content="noindex, nofollow, noarchive" />';
+        function bender_nofollow_construct() {
+            echo '<meta name="robots" content="noindex, nofollow, noarchive" />' . PHP_EOL;
+            echo '<meta name="googlebot" content="noindex, nofollow, noarchive" />' . PHP_EOL;
 
         }
     }
-    if(!function_exists('bender_nofollow')) {
+    if( !function_exists('bender_follow_construct') ) {
         /**
-        * Add nofollow, noindex, noarchive meta tags in header.
+        * Hook for header, meta tags robots follow
         */
-        function bender_nofollow(){
-            osc_add_hook('header','bender_nofollow_construct');
+        function bender_follow_construct() {
+            echo '<meta name="robots" content="index, follow" />' . PHP_EOL;
+            echo '<meta name="googlebot" content="index, follow" />' . PHP_EOL;
+
         }
     }
     /* logo */

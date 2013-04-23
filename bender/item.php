@@ -19,6 +19,9 @@
      * License along with this program.  If not, see <http://www.gnu.org/licenses/>.
      */
 
+    // meta tag robots
+    osc_add_hook('header','bender_follow_construct');
+
     osc_enqueue_script('fancybox');
     osc_enqueue_style('fancybox', osc_current_web_theme_url('js/fancybox/jquery.fancybox.css'));
     osc_enqueue_script('jquery-validate');

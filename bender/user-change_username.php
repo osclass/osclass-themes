@@ -19,6 +19,9 @@
      * License along with this program.  If not, see <http://www.gnu.org/licenses/>.
      */
 
+    // meta tag robots
+    osc_add_hook('header','bender_nofollow_construct');
+
     osc_enqueue_script('jquery-validate');
 
     bender_add_boddy_class('user user-profile');

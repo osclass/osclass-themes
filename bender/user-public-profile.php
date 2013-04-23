@@ -18,6 +18,10 @@
      *      You should have received a copy of the GNU Affero General Public
      * License along with this program.  If not, see <http://www.gnu.org/licenses/>.
      */
+
+    // meta tag robots
+    osc_add_hook('header','bender_follow_construct');
+
     $address = '';
     if(osc_user_address()!='') {
         if(osc_user_city_area()!='') {
