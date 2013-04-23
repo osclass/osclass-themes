@@ -24,9 +24,9 @@
 DEFINES
 
 */
-    define('bender_THEME_VERSION', '1.0');
-    if(!osc_get_preference('keyword_placeholder','bender')){
-        osc_set_preference('keyword_placeholder',__('Luxury Villas'),'bender');
+    define('BENDER_THEME_VERSION', '1.0');
+    if( !osc_get_preference('keyword_placeholder','bender') ) {
+        osc_set_preference('keyword_placeholder', __('ie. PHP Programmer', 'bender'), 'bender');
     }
     osc_register_script('fancybox', osc_current_web_theme_url('js/fancybox/jquery.fancybox.pack.js'), array('jquery'));
     osc_enqueue_style('fancybox', osc_current_web_theme_url('js/fancybox/jquery.fancybox.css'));
@@ -45,7 +45,7 @@ FUNCTIONS
     if( !function_exists('benderBodyClass_theme_install') ) {
         function bender_theme_install() {
             osc_set_preference('keyword_placeholder', __('ie. PHP Programmer', 'bender'), 'bender');
-            osc_set_preference('version', bender_THEME_VERSION, 'bender');
+            osc_set_preference('version', BENDER_THEME_VERSION, 'bender');
             osc_set_preference('footer_link', true, 'bender');
             osc_set_preference('donation', '0', 'bender');
             osc_set_preference('default_logo', '1', 'bender');
