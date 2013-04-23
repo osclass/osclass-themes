@@ -56,35 +56,41 @@
     osc_current_web_theme_path('header.php');
 ?>
 <div id="item-content">
-        <div class="user-card">
-            <img src="http://www.gravatar.com/avatar/<?php echo md5( strtolower( trim( osc_user_email() ) ) ); ?>?s=120&d=<?php echo osc_current_web_theme_url('images/user_default.gif') ; ?>" />
-            <ul id="user_data">
-                <li class="name"><?php echo osc_user_name(); ?></li>
-                <li class="website"><a href="<?php echo osc_user_website(); ?>"><?php echo osc_user_website(); ?></a></li>
-                <li class="adress"><?php printf(__('<strong>Address:</strong> %1$s'), $address); ?></li>
-                <li class="location"><?php printf(__('<strong>Location:</strong> %1$s'), $location); ?></li>
-            </ul>
-        </div>
-
-        <h2><?php _e('User description', 'bender'); ?></h2>
-        <?php echo osc_user_info(); ?>
-
+    <div class="user-card">
+        <img src="http://www.gravatar.com/avatar/<?php echo md5( strtolower( trim( osc_user_email() ) ) ); ?>?s=120&d=<?php echo osc_current_web_theme_url('images/user_default.gif') ; ?>" />
+        <ul id="user_data">
+            <li class="name"><?php echo osc_user_name(); ?></li>
+            <?php if( osc_user_website() !== '' ) { ?>
+            <li class="website"><a href="<?php echo osc_user_website(); ?>"><?php echo osc_user_website(); ?></a></li>
+            <?php } ?>
+            <?php if( $address !== '' ) { ?>
+            <li class="adress"><?php printf(__('<strong>Address:</strong> %1$s'), $address); ?></li>
+            <?php } ?>
+            <?php if( $location !== '' ) { ?>
+            <li class="location"><?php printf(__('<strong>Location:</strong> %1$s'), $location); ?></li>
+            <?php } ?>
+        </ul>
+    </div>
+    <?php if( osc_user_info() !== '' ) { ?>
+    <h2><?php _e('User description', 'bender'); ?></h2>
+    <?php } ?>
+    <?php echo osc_user_info(); ?>
     <?php if( osc_count_items() > 0 ) { ?>
-        <div class="similar_ads">
-            <h2><?php _e('Latest listings', 'bender'); ?></h2>
-            <ul class="listing-card-list <?php echo $class. (osc_item_is_premium()?" premium":"") ; ?>" id="related-card-list">
-                <?php
-                $i = 0;
-                while(osc_has_items()) { $i++; ?>
-                        <?php
-                        $class = false;
-                        if($i%4 == 0){
-                            $class = 'last';
-                        }
-                        bender_draw_item($class); ?>
-                <?php } ?>
-            </ul>
-        </div>
+    <div class="similar_ads">
+        <h2><?php _e('Latest listings', 'bender'); ?></h2>
+        <ul class="listing-card-list <?php echo $class. (osc_item_is_premium()?" premium":"") ; ?>" id="related-card-list">
+            <?php
+            $i = 0;
+            while(osc_has_items()) { $i++; ?>
+                    <?php
+                    $class = false;
+                    if($i%4 == 0){
+                        $class = 'last';
+                    }
+                    bender_draw_item($class); ?>
+            <?php } ?>
+        </ul>
+    </div>
     <?php } ?>
 </div>
 <?php osc_current_web_theme_path('footer.php') ; ?>
