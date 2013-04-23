@@ -32,7 +32,7 @@
             <span id="description"><?php echo osc_page_description(); ?></span>
         </div>
         <ul class="nav">
-            <?php if(osc_is_home_page() || osc_is_search_page()){ ?>
+            <?php if(osc_is_static_page()){ ?>
                 <li class="search"><a class="ico-search icons" data-bclass-toggle="display-search"></a></li>
                 <li class="cat"><a class="ico-menu icons" data-bclass-toggle="display-cat"></a></li>
             <?php } ?>
@@ -51,7 +51,7 @@
             <li class="publish"><a href="<?php echo osc_item_post_url_in_category() ; ?>"><?php _e("Publish your ad for free", 'bender');?></a></li>
         </ul>
     </div>
-    <?php if(osc_is_home_page()){ ?>
+    <?php if(osc_is_home_page() || osc_is_static_page()){ ?>
     <form action="<?php echo osc_base_url(true) ; ?>" method="get" class="search nocsrf" <?php /* onsubmit="javascript:return doSearch();"*/ ?>>
         <input type="hidden" name="page" value="search" />
         <div class="main-search">

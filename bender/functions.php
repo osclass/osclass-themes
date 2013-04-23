@@ -447,7 +447,7 @@ TRIGGER FUNCTIONS
 check_install_bender_theme();
 if(osc_is_home_page()){
     osc_add_hook('inside-main','bender_draw_categories_list');
-} else {
+} else if(osc_is_static_page()){
     osc_add_hook('before-content','bender_draw_categories_list');
 }
 
