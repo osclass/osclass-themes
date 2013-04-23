@@ -19,11 +19,11 @@
 <?php if( meta_keywords() != '' ) { ?>
 <meta name="keywords" content="<?php echo osc_esc_html(meta_keywords()); ?>" />
 <?php } ?>
-<!-- canonical -->
 <?php if( osc_get_canonical() != '' ) { ?>
+<!-- canonical -->
 <link rel="canonical" href="<?php echo osc_get_canonical(); ?>"/>
-<?php } ?>
 <!-- /canonical -->
+<?php } ?>
 <meta http-equiv="Cache-Control" content="no-cache" />
 <meta http-equiv="Expires" content="Fri, Jan 01 1970 00:00:00 GMT" />
 
@@ -31,6 +31,14 @@
 
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+<!-- favicon -->
+<link rel="shortcut icon" href="<?php echo osc_current_web_theme_url('favicon/favicon-48.png'); ?>">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php echo osc_current_web_theme_url('favicon/favicon-144.png'); ?>">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php echo osc_current_web_theme_url('favicon/favicon-114.png'); ?>">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo osc_current_web_theme_url('favicon/favicon-72.png'); ?>">
+<link rel="apple-touch-icon-precomposed" href="<?php echo osc_current_web_theme_url('favicon/favicon-57.png'); ?>">
+<!-- /favicon -->
 
 <link href="<?php echo osc_current_web_theme_url('js/jquery-ui/jquery-ui-1.10.2.custom.min.css') ; ?>?<?php echo rand(0, pow(10, 5)); ?>" rel="stylesheet" type="text/css" />
 <link href="<?php echo osc_current_web_theme_url('css/main.css') ; ?>?<?php echo rand(0, pow(10, 5)); ?>" rel="stylesheet" type="text/css" />
