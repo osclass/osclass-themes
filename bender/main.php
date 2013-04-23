@@ -38,9 +38,17 @@
       </span>
     </div>
     <ul class="listing-card-list" id="listing-card-list">
-        <?php while ( osc_has_latest_items() ) { ?>
-            <?php bender_draw_item(); ?>
-        <?php } ?>
+        <?php
+            $i = 0;
+            while ( osc_has_latest_items() ) {
+                $class = '';
+                if($i%3 == 0){
+                    $class = 'first';
+                }
+                bender_draw_item($class);
+                $i++;
+            }
+        ?>
     </ul>
     <?php if( osc_count_latest_items() == osc_max_latest_items() ) { ?>
         <p class="see_more_link"><a href="<?php echo osc_search_show_all_url() ; ?>">

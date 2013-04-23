@@ -1210,9 +1210,10 @@ body.search .list-header .actions {
   list-style: none;
   padding: 0;
   margin: 0;
+  clear: both;
 }
 
-/* line 23, ../sass/footer.scss */
+/* line 24, ../sass/footer.scss */
 .footer-links li {
   float: left;
   width: 31%;
@@ -1221,14 +1222,14 @@ body.search .list-header .actions {
   font-size: 0.725em;
 }
 
-/* line 30, ../sass/footer.scss */
+/* line 31, ../sass/footer.scss */
 #footer .resp-toogle .publish {
   padding: 0;
   margin: 15px 0;
   display: block;
 }
 
-/* line 35, ../sass/footer.scss */
+/* line 36, ../sass/footer.scss */
 #footer .resp-toogle .publish a {
   background-color: #56e1eb;
   background-color: #56e1eb;
@@ -1822,6 +1823,16 @@ body.search .listing-grid .last {
 /* line 198, ../sass/list.scss */
 body.search .listing-grid .listing-card {
   width: 161px;
+}
+
+/* line 201, ../sass/list.scss */
+body.home .listing-grid .first {
+  clear: both;
+}
+
+/* line 204, ../sass/list.scss */
+.see_more_link {
+  clear: both;
 }
 
 /* line 1, ../sass/sidebar.scss */
@@ -2959,10 +2970,15 @@ body.item h1 .price {
     clear: none;
   }
 
-  /* line 22, ../sass/responsive/480.scss */
+  /* line 23, ../sass/responsive/480.scss */
   .listing-grid .listing-card:nth-child(2n+1), body.search .listing-grid .listing-card:nth-child(2n+1) {
     margin-left: 0%;
     margin-right: 1%;
-    clear: both;
+    clear: both !important;
+  }
+
+  /* line 28, ../sass/responsive/480.scss */
+  body.home .listing-grid .first {
+    clear: none;
   }
 }

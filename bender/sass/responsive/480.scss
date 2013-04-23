@@ -17,10 +17,14 @@ ul.r-list li {
     margin-right:0%;
     margin-left:1%;
     clear:none;
+
 }
 #{listToSelector("",".listing-grid .listing-card:nth-child(2n+1)",("","body.search "))}
 {
     margin-left:0%;
     margin-right:1%;
-    clear:both;
+    clear:both !important;
+}
+body.home .listing-grid .first{
+    clear:none;
 }
