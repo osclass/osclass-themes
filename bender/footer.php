@@ -46,9 +46,6 @@
         </li>
     </ul>
     <ul>
-    <li>
-        <a href="<?php echo osc_contact_url(); ?>"><?php _e('Contact', 'bender'); ?></a>
-    </li>
     <?php
     osc_reset_static_pages();
     while( osc_has_static_pages() ) { ?>
@@ -58,6 +55,9 @@
     <?php
     }
     ?>
+        <li>
+            <a href="<?php echo osc_contact_url(); ?>"><?php _e('Contact', 'bender'); ?></a>
+        </li>
     </ul>
     <?php
     if( osc_get_preference('footer_link', 'bender_theme') !== '0') {
