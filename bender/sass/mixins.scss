@@ -54,7 +54,7 @@
     $color:#646464;
     $textShadow:#fff;
     //@debug "lightness " lightness($bg-color);
-    @if lightness($bg-color) < 60{
+    @if lightness($bg-color) > 50{
         $color:white;
         $textShadow:black;
 
@@ -63,12 +63,16 @@
         $color: $textcolor;
         $textShadow:white;
     }
+    @if $text-color-contrasted != false {
+        $color: $text-color-contrasted;
+    }
     @if $base-color == #000000 {
         $color: #ffffff;
     }
     @if $base-color == #ffffff {
         $color: #000000;
     }
+
     color:$color !important;
     line-height: 43px;
     text-decoration: none;
