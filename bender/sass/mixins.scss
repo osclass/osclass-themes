@@ -43,6 +43,7 @@
         $bg-color: $base-color;
         $stop-gradient: adjust-color($base-color, $saturation:  9%,  $lightness: -11%);
     }
+
     background-color: $base-color;
     @include linear-gradient ($bg-color, $stop-gradient);
     border: solid 1px darken($bg-color,15%);
@@ -52,7 +53,8 @@
     //color:#646464;
     $color:#646464;
     $textShadow:#fff;
-    @if lightness($bg-color) > 50{
+    //@debug "lightness " lightness($bg-color);
+    @if lightness($bg-color) < 60{
         $color:white;
         $textShadow:black;
 
@@ -61,7 +63,13 @@
         $color: $textcolor;
         $textShadow:white;
     }
-    color:$color;
+    @if $base-color == #000000 {
+        $color: #ffffff;
+    }
+    @if $base-color == #ffffff {
+        $color: #000000;
+    }
+    color:$color !important;
     line-height: 43px;
     text-decoration: none;
     padding:0 15px;
