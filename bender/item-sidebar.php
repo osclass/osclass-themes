@@ -22,19 +22,18 @@
 <div id="sidebar">
     <?php if(!osc_is_web_user_logged_in() && osc_logged_user_id()!=osc_item_user_id()) { ?>
         <form action="<?php echo osc_base_url(true); ?>" method="post" name="mask_as_form" id="mask_as_form">
-            <input type="hidden" name="id" value="16086" />
+            <input type="hidden" name="id" value="<?php echo osc_item_id(); ?>" />
             <input type="hidden" name="as" value="spam" />
             <input type="hidden" name="action" value="mark" />
             <input type="hidden" name="page" value="item" />
-
-        <select name="as" id="as" class="mark_as">
-                <option><?php _e("Mark as...", 'bender'); ?></option>
-                <option value="spam"><?php _e("Mark as spam", 'bender'); ?></option>
-                <option value="badcat"><?php _e("Mark as misclassified", 'bender'); ?></option>
-                <option value="repeated"><?php _e("Mark as duplicated", 'bender'); ?></option>
-                <option value="expired"><?php _e("Mark as expired", 'bender'); ?></option>
-                <option value="offensive"><?php _e("Mark as offensive", 'bender'); ?></option>
-        </select>
+            <select name="as" id="as" class="mark_as">
+                    <option><?php _e("Mark as...", 'bender'); ?></option>
+                    <option value="spam"><?php _e("Mark as spam", 'bender'); ?></option>
+                    <option value="badcat"><?php _e("Mark as misclassified", 'bender'); ?></option>
+                    <option value="repeated"><?php _e("Mark as duplicated", 'bender'); ?></option>
+                    <option value="expired"><?php _e("Mark as expired", 'bender'); ?></option>
+                    <option value="offensive"><?php _e("Mark as offensive", 'bender'); ?></option>
+            </select>
         </form>
     <?php } ?>
     <div id="contact" class="widget-box form-container form-vertical">
@@ -59,13 +58,13 @@
             <?php if( osc_item_user_id() != null ) { ?>
                 <p class="name"><?php _e('Name', 'bender') ?>: <a href="<?php echo osc_user_public_profile_url( osc_item_user_id() ); ?>" ><?php echo osc_item_contact_name(); ?></a></p>
             <?php } else { ?>
-                <p class="name"><?php _e('Name', 'bender') ?>: <?php echo osc_item_contact_name(); ?></p>
+                <p class="name"><?php printf(__('Name: %s', 'bender'), osc_item_contact_name()); ?></p>
             <?php } ?>
             <?php if( osc_item_show_email() ) { ?>
-                <p class="email"><?php _e('E-mail', 'bender'); ?>: <?php echo osc_item_contact_email(); ?></p>
+                <p class="email"><?php printf(__('E-mail: %s', 'bender'), osc_item_contact_email()); ?></p>
             <?php } ?>
             <?php if ( osc_user_phone() != '' ) { ?>
-                <p class="phone"><?php _e("Tel", 'bender'); ?>.: <?php echo osc_user_phone(); ?></p>
+                <p class="phone"><?php printf(__("Phone: %s", 'bender'), osc_user_phone()); ?></p>
             <?php } ?>
             <ul id="error_list"></ul>
             <form action="<?php echo osc_base_url(true); ?>" method="post" name="contact_form" id="contact_form">
