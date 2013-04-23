@@ -294,6 +294,16 @@ FUNCTIONS
         }
     }
 
+    if( !function_exists('osc_is_contact_page') ) {
+        function osc_is_contact_page() {
+            if( Rewrite::newInstance()->get_location() === 'contact' ) {
+                return true;
+            }
+
+            return false;
+        }
+    }
+
     if( !function_exists('get_breadcrumb_lang') ) {
         function get_breadcrumb_lang() {
             $lang = array();
@@ -447,7 +457,7 @@ TRIGGER FUNCTIONS
 check_install_bender_theme();
 if(osc_is_home_page()){
     osc_add_hook('inside-main','bender_draw_categories_list');
-} else if(osc_is_static_page()){
+} else if( osc_is_static_page() || osc_is_contact_page() ){
     osc_add_hook('before-content','bender_draw_categories_list');
 }
 
