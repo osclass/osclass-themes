@@ -41,7 +41,7 @@
             <?php } else { ?>
             <?php
                 $search_number = bender_search_number();
-                printf('%1$d - %2$d of %3$d ads', $search_number['from'], $search_number['to'], $search_number['of']);
+                printf('%1$d - %2$d of %3$d listings', $search_number['from'], $search_number['to'], $search_number['of']);
             ?>
             <div class="actions">
               <a href="#" data-bclass-toggle="display-filters" class="resp-toogle show-filters-btn"><?php _e('Show filters','bender'); ?></a>
