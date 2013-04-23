@@ -46,10 +46,10 @@
             <?php if(osc_count_items() == 0) { ?>
                 <p class="empty" ><?php printf(__('There are no results matching "%s"', 'bender'), osc_search_pattern()) ; ?></p>
             <?php } else { ?>
-            <?php
+            <span class="counter-search"><?php
                 $search_number = bender_search_number();
                 printf('%1$d - %2$d of %3$d listings', $search_number['from'], $search_number['to'], $search_number['of']);
-            ?>
+            ?></span>
             <div class="actions">
               <a href="#" data-bclass-toggle="display-filters" class="resp-toogle show-filters-btn"><?php _e('Show filters','bender'); ?></a>
               <span class="doublebutton <?php echo $buttonClass; ?>">
@@ -76,12 +76,15 @@
       <?php
       if(osc_rewrite_enabled()){
       $footerLinks = osc_search_footer_links(); ?>
-      <ul class="footer-links">
-        <?php foreach($footerLinks as $f) { View::newInstance()->_exportVariableToView('footer_link', $f); ?>
-        <?php if($f['total'] < 3) continue; ?>
-          <li><a href="<?php echo osc_footer_link_url(); ?>"><?php echo osc_footer_link_title(); ?></a></li>
-        <?php } ?>
-      </ul>
+      <div id="related-searches">
+        <h5><?php _e('Other searches that may interest you','bender'); ?></h5>
+        <ul class="footer-links">
+          <?php foreach($footerLinks as $f) { View::newInstance()->_exportVariableToView('footer_link', $f); ?>
+          <?php if($f['total'] < 3) continue; ?>
+            <li><a href="<?php echo osc_footer_link_url(); ?>"><?php echo osc_footer_link_title(); ?></a></li>
+          <?php } ?>
+        </ul>
+      </div>
       <?php } ?>
      <div class="paginate" >
           <?php echo osc_search_pagination(); ?>
