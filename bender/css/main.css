@@ -3033,7 +3033,7 @@ body.item h1 .price {
 
   /* line 31, ../sass/responsive/structure.scss */
   body.search #content h1 {
-    display: inline-block;
+    display: block;
     margin: 0;
     font-size: 1.5em;
   }
