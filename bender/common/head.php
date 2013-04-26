@@ -5,6 +5,7 @@
     );
 
     osc_enqueue_script('jquery');
+    osc_enqueue_script('jquery-ui');
     osc_register_script('global-theme-js', osc_current_web_theme_js_url('global.js'), 'jquery');
     osc_register_script('delete-user-js', osc_current_web_theme_js_url('delete_user.js'), 'jquery-ui');
     osc_enqueue_script('global-theme-js');
