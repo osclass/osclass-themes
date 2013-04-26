@@ -41,7 +41,7 @@ FUNCTIONS
     // install update options
     if( !function_exists('benderBodyClass_theme_install') ) {
         function bender_theme_install() {
-            osc_set_preference('keyword_placeholder', __('ie. PHP Programmer', 'bender'), 'bender_theme');
+            osc_set_preference('keyword_placeholder', Params::getParam('keyword_placeholder'), 'bender_theme');
             osc_set_preference('version', BENDER_THEME_VERSION, 'bender_theme');
             osc_set_preference('footer_link', '1', 'bender_theme');
             osc_set_preference('donation', '0', 'bender_theme');
