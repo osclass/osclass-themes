@@ -43,6 +43,7 @@
         <div class="resp-wrapper">
             <?php osc_run_hook('search_ads_listing_top'); ?>
             <h1><?php echo search_title(); ?></h1>
+
             <?php if(osc_count_items() == 0) { ?>
                 <p class="empty" ><?php printf(__('There are no results matching "%s"', 'bender'), osc_search_pattern()) ; ?></p>
             <?php } else { ?>
@@ -57,6 +58,25 @@
                    <a href="<?php echo osc_update_search_url(array('sShowAs'=> 'gallery')); ?>" class="grid-button" data-class-toggle="listing-grid" data-destination="#listing-card-list"><span><?php _e('Grid','bender'); ?></span></a>
               </span>
             </div>
+<!--     START sort by       -->
+              <p class="see_by">
+                <?php _e('Sort by', 'bender'); ?>:
+                <?php $i = 0; ?>
+                <?php $orders = osc_list_orders();
+                foreach($orders as $label => $params) {
+                    $orderType = ($params['iOrderType'] == 'asc') ? '0' : '1'; ?>
+                    <?php if(osc_search_order() == $params['sOrder'] && osc_search_order_type() == $orderType) { ?>
+                        <a class="current" href="<?php echo osc_esc_html(osc_update_search_url($params)); ?>"><?php echo $label; ?></a>
+                    <?php } else { ?>
+                        <a href="<?php echo osc_esc_html(osc_update_search_url($params)); ?>"><?php echo $label; ?></a>
+                    <?php } ?>
+                    <?php if ($i != count($orders)-1) { ?>
+                        <span>|</span>
+                    <?php } ?>
+                    <?php $i++; ?>
+                <?php } ?>
+            </p>
+<!--     END sort by       -->
             <?php } ?>
           </div>
      </div>
