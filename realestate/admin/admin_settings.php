@@ -3,7 +3,7 @@
         switch(Params::getParam("action_specific")) {
             case('upload_logo'):
                 $package = Params::getFiles("logo");
-                
+
                 if ($package['error'] == UPLOAD_ERR_OK) {
                     if( move_uploaded_file($package['tmp_name'], WebThemes::newInstance()->getCurrentThemePath() . "images/logo.jpg" ) ){
                         osc_add_flash_ok_message( _m('The logo image has been uploaded correctly'), 'admin');
@@ -16,7 +16,7 @@
             break;
             case('upload_logo_footer'):
                 $package = Params::getFiles("logo");
-                
+
                 if ($package['error'] == UPLOAD_ERR_OK) {
                     if( move_uploaded_file($package['tmp_name'], WebThemes::newInstance()->getCurrentThemePath() . "images/logo-footer.jpg" ) ){
                         osc_add_flash_ok_message( _m('The logo image has been uploaded correctly'), 'admin');
@@ -50,7 +50,7 @@
     <?php osc_show_flash_message('admin') ; ?>
                 <?php if(is_writable( WebThemes::newInstance()->getCurrentThemePath() ."images/") )  { ?>
 
-    
+
     <div id="settings_form" style="border: 1px solid #ccc; background: #eee; ">
         <div style="padding: 20px;">
             <p style="border-bottom: 1px black solid;padding-bottom: 10px;">
@@ -83,7 +83,7 @@
                     <p><?php _e('Has not uploaded any logo image','realestate');?></p>
                 <?php } ?>
             </div>
-        </div>   
+        </div>
     </div>
 
     <div id="settings_form" style="border: 1px solid #ccc; background: #eee; margin-top:20px; ">
@@ -118,9 +118,9 @@
                     <p><?php _e('Has not uploaded any logo image for footer','realestate');?></p>
                 <?php } ?>
             </div>
-        </div>   
+        </div>
     </div>
-    
+
 
             <div style="clear: both;"></div>
 
@@ -130,7 +130,7 @@
                 <p>
                     <?php
                         $msg  = sprintf(__('The images folder %s is not writable on your server','realestate'), WebThemes::newInstance()->getCurrentThemePath() ."images/" ) .", ";
-                        $msg .= __('OSClass can\'t upload logo image from the administration panel','realestate') . '. ';
+                        $msg .= __('Osclass can\'t upload logo image from the administration panel','realestate') . '. ';
                         $msg .= __('Please make the mentioned images folder writable','realestate') . '.';
                         echo $msg;
                     ?>
@@ -142,6 +142,5 @@
                     chmod a+w <?php echo WebThemes::newInstance()->getCurrentThemePath() ."images/" ; ?>
                 </p>
             </div>
-            
+
             <?php } ?>
-        

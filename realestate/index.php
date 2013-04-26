@@ -1,11 +1,11 @@
 <?php
 
 /*
-Theme Name: OSClass realestate Theme
+Theme Name: Osclass realestate Theme
 Theme URI: http://osclass.org
-Description: This is the OSClass realestate theme
-Version: 1.0.8
-Author:OSClass team
+Description: This is the Osclass realestate theme
+Version: 1.0.9
+Author:Osclass team
 Author URI: http://osclass.org
 Widgets: header,footer
 Theme update URI: realestate
@@ -13,10 +13,10 @@ Theme update URI: realestate
 
     function realestate_theme_info() {
         return array(
-             'name'        => 'OSClass realestate Theme'
-            ,'version'     => '1.0.8'
-            ,'description' => 'This is the OSClass realestate theme'
-            ,'author_name' => 'OSClass Team'
+             'name'        => 'Osclass realestate Theme'
+            ,'version'     => '1.0.9'
+            ,'description' => 'This is the Osclass realestate theme'
+            ,'author_name' => 'Osclass Team'
             ,'author_url'  => 'http://osclass.org'
             ,'locations'   => array('header', 'footer')
         );
