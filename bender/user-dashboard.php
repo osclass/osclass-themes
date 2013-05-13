@@ -62,17 +62,6 @@
         }
         ?>
     </ul>
-    <?php
-    if(osc_rewrite_enabled()){
-        $footerLinks = osc_search_footer_links();
-    ?>
-        <ul class="footer-links">
-            <?php foreach($footerLinks as $f) { View::newInstance()->_exportVariableToView('footer_link', $f); ?>
-                <?php if($f['total'] < 3) continue; ?>
-                <li><a href="<?php echo osc_footer_link_url(); ?>"><?php echo osc_footer_link_title(); ?></a></li>
-            <?php } ?>
-        </ul>
-    <?php } ?>
     <div class="paginate" >
         <?php echo osc_search_pagination(); ?>
     </div>
