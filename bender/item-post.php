@@ -152,8 +152,13 @@
                               </div>
                             </div>
                         </div>
-                        <?php }; ?>
-                        <?php ItemForm::plugin_post_item(); ?>
+                        <?php 
+                        }; 
+                        if($edit) {
+                          ItemForm::plugin_edit_item(); 
+                        } else {
+                          ItemForm::plugin_post_item(); 
+                        } ?>
                             <div class="control-group">
                             <?php if( osc_recaptcha_items_enabled() ) {?>
                                 <div class="controls">
@@ -186,7 +191,6 @@
             <?php }; ?>
             $("#price").prop("value", price);
         });
-
     });
     <?php }; ?>
 </script>

@@ -26,6 +26,7 @@
 <!-- footer -->
 <div class="clear"></div>
 <div id="footer">
+  <div class="wrapper">
     <ul class="resp-toogle">
         <?php if( osc_is_web_user_logged_in() ) { ?>
             <li>
@@ -73,5 +74,6 @@
             <?php $i++; ?>
         <?php } ?>
     <?php } ?>
+  </div>
 </div>
 <?php osc_run_hook('footer'); ?>
