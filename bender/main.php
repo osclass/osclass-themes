@@ -22,7 +22,15 @@
     // meta tag robots
     osc_add_hook('header','bender_follow_construct');
 
-    bender_add_boddy_class('home');
+    bender_add_body_class('home');
+
+
+    $buttonClass = '';
+    $listClass   = '';
+    if(osc_search_show_as() == 'gallery'){
+          $listClass = 'listing-grid';
+          $buttonClass = 'active';
+    }
 ?>
 <?php osc_current_web_theme_path('header.php') ; ?>
 <div class="clear"></div>
@@ -37,7 +45,7 @@
            <a href="<?php echo osc_update_search_url(array('sShowAs'=> 'gallery')); ?>" class="grid-button" data-class-toggle="listing-grid" data-destination="#listing-card-list"><span><?php _e('Grid', 'bender'); ?></span></a>
       </span>
     </div>
-    <ul class="listing-card-list" id="listing-card-list">
+    <ul class="listing-card-list <?php echo $listClass; ?>" id="listing-card-list">
         <?php
             $i = 0;
             while ( osc_has_latest_items() ) {
@@ -50,6 +58,7 @@
             }
         ?>
     </ul>
+    <div class="clear"></div>
     <?php if( osc_count_latest_items() == osc_max_latest_items() ) { ?>
         <p class="see_more_link"><a href="<?php echo osc_search_show_all_url() ; ?>">
             <strong><?php _e('See all offers', 'bender') ; ?> &raquo;</strong></a>

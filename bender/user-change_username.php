@@ -24,15 +24,19 @@
 
     osc_enqueue_script('jquery-validate');
 
-    bender_add_boddy_class('user user-profile');
+    bender_add_body_class('user user-profile');
     osc_add_hook('before-main','sidebar');
     function sidebar(){
         osc_current_web_theme_path('user-sidebar.php');
     }
+    osc_add_filter('meta_title_filter','custom_meta_title');
+    function custom_meta_title($data){
+        return __('Change username', 'bender');;
+    }
     osc_current_web_theme_path('header.php') ;
     $osc_user = osc_user();
 ?>
-<h1><?php _e('Change your username', 'bender'); ?></h1>
+<h1><?php _e('Change username', 'bender'); ?></h1>
 <script type="text/javascript">
 $(document).ready(function() {
     $('form#change-username').validate({

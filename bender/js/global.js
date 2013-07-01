@@ -86,6 +86,13 @@ function selectUi(thatSelect){
     uiSelect.click(function(){
         return false;
     });
+    thatSelect.on('focus',function(){
+        console.log(uiWrap);
+        thatSelect.parent().addClass('select-box-focus');
+    });
+    thatSelect.on('blur',function(){
+        thatSelect.parent().removeClass('select-box-focus');
+    });
     thatSelect.change(function(){
         str = thatSelect.find('option:selected').text().replace(/^\s*/gm, '');
         uiSelected.text(str);
@@ -107,10 +114,15 @@ $(document).ready(function(event){
             return false;
         }
     });
+    $('.see_by').hover(function(){
+        $(this).addClass('hover');
+    },function(){
+        $(this).removeClass('hover');
+    })
     //OK
     bender.toggleClass('data-bclass-toggle','body',true);
     //OK
-    $('.doublebutton a').click(function (event) {
+    /*$('.doublebutton a').click(function (event) {
         var thisParent = $(this).parent();
         if($(this).hasClass('grid-button')){
             thisParent.addClass('active');
@@ -124,7 +136,7 @@ $(document).ready(function(event){
         }
         event.preventDefault();
         return;
-    });
+    });*/
 
 
     /////// STARTS PLACE HOLDER

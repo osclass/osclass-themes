@@ -26,11 +26,13 @@ DEFINES
 */
     define('BENDER_THEME_VERSION', '1.0');
     if( !osc_get_preference('keyword_placeholder', 'bender_theme') ) {
-        osc_set_preference('keyword_placeholder', __('ie. PHP Programmer', 'bender_theme'), 'bender');
+        osc_set_preference('keyword_placeholder', __('ie. PHP Programmer', 'bender_theme'), 'bender_theme');
     }
     osc_register_script('fancybox', osc_current_web_theme_url('js/fancybox/jquery.fancybox.pack.js'), array('jquery'));
     osc_enqueue_style('fancybox', osc_current_web_theme_url('js/fancybox/jquery.fancybox.css'));
     osc_enqueue_script('fancybox');
+    // used for date/dateinterval custom fields
+    osc_enqueue_script('php-date');
 
 /**
 
@@ -52,7 +54,7 @@ FUNCTIONS
 
     if(!function_exists('check_install_bender_theme')) {
         function check_install_bender_theme() {
-            $current_version = osc_get_preference('version', 'bender');
+            $current_version = osc_get_preference('version', 'bender_theme');
             //check if current version is installed or need an update<
             if( !$current_version ) {
                 bender_theme_install();
@@ -67,8 +69,8 @@ FUNCTIONS
             return $classes;
         }
     }
-    if(!function_exists('bender_boddy_class')) {
-        function bender_boddy_class($echo = true){
+    if(!function_exists('bender_body_class')) {
+        function bender_body_class($echo = true){
             /**
             * Print body classes.
             *
@@ -84,8 +86,8 @@ FUNCTIONS
             }
         }
     }
-    if(!function_exists('bender_add_boddy_class')) {
-        function bender_add_boddy_class($class){
+    if(!function_exists('bender_add_body_class')) {
+        function bender_add_body_class($class){
             /**
             * Add new body class to body class array.
             *
@@ -127,62 +129,39 @@ FUNCTIONS
         }
     }
     if( !function_exists('bender_draw_item') ) {
-        function bender_draw_item($class = false,$admin = false) {
-            $size = explode('x', osc_thumbnail_dimensions());
-    ?>
-            <li class="listing-card <?php echo $class; ?>">
-                <?php if( osc_images_enabled_at_items() ) { ?>
-                    <?php if(osc_count_item_resources()) { ?>
-                        <a class="listing-thumb" href="<?php echo osc_item_url() ; ?>" title="<?php echo osc_item_title() ; ?>"><img src="<?php echo osc_resource_thumbnail_url(); ?>" title="" alt="<?php echo osc_item_title() ; ?>" width="<?php echo $size[0]; ?>" height="<?php echo $size[1]; ?>"></a>
-                    <?php } else { ?>
-                        <a class="listing-thumb" href="<?php echo osc_item_url() ; ?>" title="<?php echo osc_item_title() ; ?>"><img src="<?php echo osc_current_web_theme_url('images/no_photo.gif'); ?>" title="" alt="<?php echo osc_item_title() ; ?>" width="<?php echo $size[0]; ?>" height="<?php echo $size[1]; ?>"></a>
-                    <?php } ?>
-                <?php } ?>
-                <div class="listing-detail">
-                    <div class="listing-cell">
-                        <div class="listing-data">
-                            <div class="listing-basicinfo">
-                                <a href="<?php echo osc_item_url() ; ?>" class="title" title="<?php echo osc_item_title() ; ?>"><?php echo osc_item_title() ; ?></a>
-                                <div class="listing-attributes">
-                                    <span class="category"><?php echo osc_item_category() ; ?></span> -
-                                    <span class="location"><?php echo osc_item_city(); ?> (<?php echo osc_item_region(); ?>)</span> <span class="g-hide">-</span> <?php echo osc_format_date(osc_item_pub_date()); ?>
-                                    <?php if( osc_price_enabled_at_items() ) { ?><span class="currency-value"><?php echo osc_format_price(osc_item_price()); ?></span><?php } ?>
-                                </div>
-                                <p><?php echo osc_highlight( strip_tags( osc_item_description()) ,250) ; ?></p>
-                            </div>
-                            <?php if($admin){ ?>
-                                <span class="admin-options">
-                                    <a href="<?php echo osc_item_edit_url(); ?>" rel="nofollow"><?php _e('Edit item', 'bender'); ?></a>
-                                    <span>|</span>
-                                    <a class="delete" onclick="javascript:return confirm('<?php echo osc_esc_js(__('This action can not be undone. Are you sure you want to continue?', 'bender')); ?>')" href="<?php echo osc_item_delete_url();?>" ><?php _e('Delete', 'bender'); ?></a>
-                                    <?php if(osc_item_is_inactive()) {?>
-                                    <span>|</span>
-                                    <a href="<?php echo osc_item_activate_url();?>" ><?php _e('Activate', 'bender'); ?></a>
-                                    <?php } ?>
-                                </span>
-                            <?php } ?>
-                        </div>
-                    </div>
-                </div>
-            </li>
-<?php
+        function bender_draw_item($class = false,$admin = false, $premium = false) {
+            $premiumSlug = '';
+            if($premium){
+                $premiumSlug = '-premium';
+            }
+            require WebThemes::newInstance()->getCurrentThemePath().'loop-single'.$premiumSlug.'.php';
         }
     }
     if( !function_exists('bender_draw_categories_list') ) {
         function bender_draw_categories_list(){ ?>
         <?php if(!osc_is_home_page()){ echo '<div class="resp-wrapper">'; } ?>
-        <ul class="r-list">
          <?php
+         //cell_3
+        $total_categories   = osc_count_categories();
+        $col1_max_cat       = ceil($total_categories/3);
+
          osc_goto_first_category();
-         $i= 0;
+         $i      = 0;
+
          while ( osc_has_categories() ) {
-            $liClass = '';
-            if($i%3 == 0){
-                $liClass = 'clear';
-            }
-            $i++;
          ?>
-             <li<?php if($liClass){ echo " class='$liClass'"; } ?>>
+        <?php
+            if($i%$col1_max_cat == 0){
+                if($i > 0) { echo '</div>'; }
+                if($i == 0) {
+                   echo '<div class="cell_3 first_cel">';
+                } else {
+                    echo '<div class="cell_3">';
+                }
+            }
+        ?>
+        <ul class="r-list">
+             <li>
                  <h1><a class="category <?php echo osc_category_slug() ; ?>" href="<?php echo osc_search_category_url() ; ?>"><?php echo osc_category_name() ; ?></a> <span>(<?php echo osc_category_total_items() ; ?>)</span></h1>
                  <?php /**/if ( osc_count_subcategories() > 0 ) { ?>
                    <ul>
@@ -195,8 +174,12 @@ FUNCTIONS
                    </ul>
                  <?php } ?>
              </li>
-        <?php } ?>
         </ul>
+        <?php
+                $i++;
+            }
+            echo '</div>';
+        ?>
         <?php if(!osc_is_home_page()){ echo '</div>'; } ?>
         <?php
         }
@@ -316,59 +299,76 @@ FUNCTIONS
             $lang['user_dashboard']         = __('Dashboard', 'bender');
             $lang['user_dashboard_profile'] = __("%s's profile", 'bender');
             $lang['user_account']           = __('Account', 'bender');
-            $lang['user_items']             = __('My listings', 'bender');
-            $lang['user_alerts']            = __('My searches', 'bender');
-            $lang['user_profile']           = __('Update my profile', 'bender');
-            $lang['user_change_email']      = __('Change my email', 'bender');
-            $lang['user_change_username']   = __('Change my username', 'bender');
-            $lang['user_change_password']   = __('Change my password', 'bender');
+            $lang['user_items']             = __('Listings', 'bender');
+            $lang['user_alerts']            = __('Alerts', 'bender');
+            $lang['user_profile']           = __('Update account', 'bender');
+            $lang['user_change_email']      = __('Change email', 'bender');
+            $lang['user_change_username']   = __('Change username', 'bender');
+            $lang['user_change_password']   = __('Change password', 'bender');
             $lang['login']                  = __('Login', 'bender');
-            $lang['login_recover']          = __('Recover your password', 'bender');
-            $lang['login_forgot']           = __('Change your password', 'bender');
+            $lang['login_recover']          = __('Recover password', 'bender');
+            $lang['login_forgot']           = __('Change password', 'bender');
             $lang['register']               = __('Create a new account', 'bender');
             $lang['contact']                = __('Contact', 'bender');
-
             return $lang;
         }
+    }
+
+    if(!function_exists('user_dashboard_redirect')) {
+        function user_dashboard_redirect() {
+            $page   = Params::getParam('page');
+            $action = Params::getParam('action');
+            if($page=='user' && $action=='dashboard') {
+                if(ob_get_length()>0) {
+                    ob_end_flush();
+                }
+                header("Location: ".osc_user_list_items_url(), TRUE,301);
+            }
+        }
+        osc_add_hook('init', 'user_dashboard_redirect');
     }
 
     if( !function_exists('get_user_menu') ) {
         function get_user_menu() {
             $options   = array();
             $options[] = array(
-                'name'  => __('Dashboard', 'bender'),
-                'url'   => osc_user_dashboard_url(),
-                'class' => 'opt_dashboard'
+                'name'  => __('Listings', 'bender'),
+                'url'   => osc_user_list_items_url(),
+                'class' => 'opt_items'
             );
             $options[] = array(
-                'name' => __('My searches', 'bender'),
+                'name' => __('Alerts', 'bender'),
                 'url' => osc_user_alerts_url(),
                 'class' => 'opt_alerts'
             );
             $options[] = array(
-                'name'  => __('My account', 'bender'),
+                'name'  => __('Account', 'bender'),
                 'url'   => osc_user_profile_url(),
                 'class' => 'opt_account'
             );
             $options[] = array(
                 'name'  => __('Change email', 'bender'),
                 'url'   => osc_change_user_email_url(),
-                'class' => 'opt_account'
+                'class' => 'opt_account',
+                'id' => 'change_email_link'
             );
             $options[] = array(
                 'name'  => __('Change username', 'bender'),
                 'url'   => osc_change_user_username_url(),
-                'class' => 'opt_account'
+                'class' => 'opt_account',
+                'id' => 'change_usename_link'
             );
             $options[] = array(
                 'name'  => __('Change password', 'bender'),
                 'url'   => osc_change_user_password_url(),
-                'class' => 'opt_account'
+                'class' => 'opt_account',
+                'id' => 'change_password_link'
             );
             $options[] = array(
                 'name'  => __('Delete account', 'bender'),
                 'url'   => '#',
-                'class' => 'opt_delete_account'
+                'class' => 'opt_delete_account',
+                'id' => 'delete_account_link'
             );
 
             return $options;
@@ -446,6 +446,15 @@ FUNCTIONS
             break;
         }
     }
+
+    function bender_redirect_user_dashboard()
+    {
+        if( (Rewrite::newInstance()->get_location() === 'user') && (Rewrite::newInstance()->get_section() === 'dashboard') ) {
+            header('Location: ' .osc_user_list_items_url());
+            exit;
+        }
+    }
+    osc_add_hook('init', 'bender_redirect_user_dashboard', 2);
     osc_add_hook('init_admin', 'theme_bender_actions_admin');
     osc_admin_menu_appearance(__('Header logo', 'bender'), osc_admin_render_theme_url('oc-content/themes/bender/admin/header.php'), 'header_bender');
     osc_admin_menu_appearance(__('Theme settings', 'bender'), osc_admin_render_theme_url('oc-content/themes/bender/admin/settings.php'), 'settings_bender');
@@ -462,7 +471,7 @@ if(osc_is_home_page()){
 }
 
 if(osc_is_home_page() || osc_is_search_page()){
-    bender_add_boddy_class('has-searchbox');
+    bender_add_body_class('has-searchbox');
 }
 
 

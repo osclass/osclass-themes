@@ -22,15 +22,19 @@
     // meta tag robots
     osc_add_hook('header','bender_nofollow_construct');
 
-    bender_add_boddy_class('user user-profile');
+    bender_add_body_class('user user-profile');
     osc_add_hook('before-main','sidebar');
     function sidebar(){
         osc_current_web_theme_path('user-sidebar.php');
     }
+    osc_add_filter('meta_title_filter','custom_meta_title');
+    function custom_meta_title($data){
+        return __('Alerts', 'bender');;
+    }
     osc_current_web_theme_path('header.php') ;
     $osc_user = osc_user();
 ?>
-<h1><?php _e('My searches', 'bender'); ?></h1>
+<h1><?php _e('Alerts', 'bender'); ?></h1>
 <?php if(osc_count_alerts() == 0) { ?>
     <h3><?php _e('You do not have any alerts yet', 'bender'); ?>.</h3>
 <?php } else { ?>

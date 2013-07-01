@@ -26,7 +26,7 @@
         osc_add_hook('header','bender_follow_construct');
     }
 
-    bender_add_boddy_class('search');
+    bender_add_body_class('search');
     $listClass = '';
     $buttonClass = '';
     if(osc_search_show_as() == 'gallery'){
@@ -36,6 +36,29 @@
     osc_add_hook('before-main','sidebar');
     function sidebar(){
         osc_current_web_theme_path('search-sidebar.php');
+    }
+    osc_add_hook('footer','autocompleteCity');
+    function autocompleteCity(){ ?>
+    <script type="text/javascript">
+    $(function() {
+                    function log( message ) {
+                        $( "<div/>" ).text( message ).prependTo( "#log" );
+                        $( "#log" ).attr( "scrollTop", 0 );
+                    }
+
+                    $( "#sCity" ).autocomplete({
+                        source: "<?php echo osc_base_url(true); ?>?page=ajax&action=location",
+                        minLength: 2,
+                        select: function( event, ui ) {
+                            $("#sRegion").attr("value", ui.item.region);
+                            log( ui.item ?
+                                "<?php _e('Selected', 'modern'); ?>: " + ui.item.value + " aka " + ui.item.id :
+                                "<?php _e('Nothing selected, input was', 'modern'); ?> " + this.value );
+                        }
+                    });
+                });
+    </script>
+    <?php
     }
 ?>
 <?php osc_current_web_theme_path('header.php') ; ?>
@@ -57,29 +80,60 @@
                    <a href="<?php echo osc_update_search_url(array('sShowAs'=> 'list')); ?>" class="list-button" data-class-toggle="listing-grid" data-destination="#listing-card-list"><span><?php _e('List','bender'); ?></span></a>
                    <a href="<?php echo osc_update_search_url(array('sShowAs'=> 'gallery')); ?>" class="grid-button" data-class-toggle="listing-grid" data-destination="#listing-card-list"><span><?php _e('Grid','bender'); ?></span></a>
               </span>
+            <!--     START sort by       -->
+            <span class="see_by">
+              <span><?php _e('Sort by', 'bender'); ?>:</span>
+              <?php
+              $orders = osc_list_orders();
+              $current = '';
+              foreach($orders as $label => $params) {
+                  $orderType = ($params['iOrderType'] == 'asc') ? '0' : '1';
+                  if(osc_search_order() == $params['sOrder'] && osc_search_order_type() == $orderType) {
+                      $current = $label;
+                  }
+              }
+              ?>
+              <label><?php echo $current; ?><b class="arrow-envelope"><b class="arrow-down"></b></b></label>
+              <?php $i = 0; ?>
+              <ul>
+                  <?php
+                  foreach($orders as $label => $params) {
+                      $orderType = ($params['iOrderType'] == 'asc') ? '0' : '1'; ?>
+                      <?php if(osc_search_order() == $params['sOrder'] && osc_search_order_type() == $orderType) { ?>
+                          <li><a class="current" href="<?php echo osc_esc_html(osc_update_search_url($params)); ?>"><?php echo $label; ?></a></li>
+                      <?php } else { ?>
+                          <li><a href="<?php echo osc_esc_html(osc_update_search_url($params)); ?>"><?php echo $label; ?></a></li>
+                      <?php } ?>
+                      <?php $i++; ?>
+                  <?php } ?>
+                </ul>
+            </span>
+            <!--     END sort by       -->
             </div>
-<!--     START sort by       -->
-              <p class="see_by">
-                <?php _e('Sort by', 'bender'); ?>:
-                <?php $i = 0; ?>
-                <?php $orders = osc_list_orders();
-                foreach($orders as $label => $params) {
-                    $orderType = ($params['iOrderType'] == 'asc') ? '0' : '1'; ?>
-                    <?php if(osc_search_order() == $params['sOrder'] && osc_search_order_type() == $orderType) { ?>
-                        <a class="current" href="<?php echo osc_esc_html(osc_update_search_url($params)); ?>"><?php echo $label; ?></a>
-                    <?php } else { ?>
-                        <a href="<?php echo osc_esc_html(osc_update_search_url($params)); ?>"><?php echo $label; ?></a>
-                    <?php } ?>
-                    <?php if ($i != count($orders)-1) { ?>
-                        <span>|</span>
-                    <?php } ?>
-                    <?php $i++; ?>
-                <?php } ?>
-            </p>
-<!--     END sort by       -->
+
             <?php } ?>
           </div>
      </div>
+        <?php
+            $i = 0;
+            osc_get_premiums();
+            if(osc_count_premiums() > 0) {
+                //echo '<h5>Premium listings</h5>';
+                echo '<ul class="listing-card-list '.$listClass.' premium-list" id="listing-card-list">';
+                while ( osc_has_premiums() ) {
+                    $class = '';
+                    if($i%3 == 0){
+                        $class = 'first';
+                    }
+                    bender_draw_item($class,false,true);
+                    $i++;
+                    if($i == 3){
+                        break;
+                    }
+                }
+                echo '</ul>';
+            }
+        ?>
      <?php if(osc_count_items() > 0) { ?>
      <ul class="listing-card-list <?php echo $listClass; ?>" id="listing-card-list">
           <?php
@@ -93,6 +147,7 @@
                  bender_draw_item($class); ?>
           <?php } ?>
      </ul>
+     <div class="clear"></div>
       <?php
       if(osc_rewrite_enabled()){
       $footerLinks = osc_search_footer_links(); ?>

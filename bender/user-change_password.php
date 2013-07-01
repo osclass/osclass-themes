@@ -22,15 +22,19 @@
     // meta tag robots
     osc_add_hook('header','bender_nofollow_construct');
 
-    bender_add_boddy_class('user user-profile');
+    bender_add_body_class('user user-profile');
     osc_add_hook('before-main','sidebar');
     function sidebar(){
         osc_current_web_theme_path('user-sidebar.php');
     }
+    osc_add_filter('meta_title_filter','custom_meta_title');
+    function custom_meta_title($data){
+        return __('Change password', 'bender');;
+    }
     osc_current_web_theme_path('header.php') ;
     $osc_user = osc_user();
 ?>
-<h1><?php _e('Change your password', 'bender'); ?></h1>
+<h1><?php _e('Change password', 'bender'); ?></h1>
 <div class="form-container form-horizontal">
     <div class="resp-wrapper">
         <ul id="error_list"></ul>

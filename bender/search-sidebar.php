@@ -33,13 +33,13 @@
         <fieldset class="first">
             <h3><?php _e('Your search', 'bender'); ?></h3>
             <div class="row">
-                <input class="input-text" type="text" name="sPattern"  id="query" value="<?php echo osc_search_pattern() ; ?>" />
+                <input class="input-text" type="text" name="sPattern"  id="query" value="<?php echo osc_esc_html(osc_search_pattern()); ?>" />
             </div>
         </fieldset>
         <fieldset>
             <h3><?php _e('City', 'bender'); ?></h3>
             <div class="row">
-                <input class="input-text" type="text" id="sCity" name="sCity" value="<?php echo osc_search_city() ; ?>" />
+                <input class="input-text" type="text" id="sCity" name="sCity" value="<?php echo osc_esc_html(osc_search_city()); ?>" />
             </div>
         </fieldset>
         <?php if( osc_images_enabled_at_items() ) { ?>
@@ -47,7 +47,7 @@
             <h3><?php _e('Show only', 'bender') ; ?></h3>
             <div class="row">
                 <input type="checkbox" name="bPic" id="withPicture" value="1" <?php echo (osc_search_has_pic() ? 'checked' : ''); ?> />
-                <label for="withPicture"><?php _e('Show only items with pictures', 'bender') ; ?></label>
+                <label for="withPicture"><?php _e('listings with pictures', 'bender') ; ?></label>
             </div>
         </fieldset>
         <?php } ?>
@@ -56,50 +56,56 @@
             <div class="row price-slice">
                 <h3><?php _e('Price', 'bender') ; ?></h3>
                 <span><?php _e('Min', 'bender') ; ?>.</span>
-                <input class="input-text" type="text" id="priceMin" name="sPriceMin" value="<?php echo osc_search_price_min() ; ?>" size="6" maxlength="6" />
+                <input class="input-text" type="text" id="priceMin" name="sPriceMin" value="<?php echo osc_esc_html(osc_search_price_min()); ?>" size="6" maxlength="6" />
                 <span><?php _e('Max', 'bender') ; ?>.</span>
-                <input class="input-text" type="text" id="priceMax" name="sPriceMax" value="<?php echo osc_search_price_max() ; ?>" size="6" maxlength="6" />
+                <input class="input-text" type="text" id="priceMax" name="sPriceMax" value="<?php echo osc_esc_html(osc_search_price_max()); ?>" size="6" maxlength="6" />
             </div>
         </fieldset>
         <?php } ?>
-        <?php  osc_get_non_empty_categories(); ?>
-        <?php  if ( osc_count_categories() ) { ?>
-        <fieldset>
-            <div class="row ">
-                <h3><?php _e('Category', 'bender') ; ?></h3>
-                <ul class="category">
-                    <?php // RESET CATEGORIES IF WE USED THEN IN THE HEADER ?>
-                    <?php osc_goto_first_category() ; ?>
-                    <?php while(osc_has_categories()) { ?>
-                        <?php $parentSelected=false; if (in_array(osc_category_id(), osc_search_category()) || in_array(osc_category_slug()."/", osc_search_category()) || in_array(osc_category_slug(), osc_search_category()) || count(osc_search_category())==0 || $category['fk_i_parent_id'] == osc_category_id()){ $parentSelected=true;} ?>
-                        <li class="parent  <?php if($parentSelected && Params::getParam('sCategory') != ''){ echo 'show-sub'; } ?>">
-                            <a href="<?php echo osc_update_search_url(array('sCategory'=> osc_category_id())); ?>"><?php echo osc_category_name(); ?></a>
-                            <?php if(osc_count_subcategories() > 0) { ?>
-                            <ul class="sub">
-                                <?php while(osc_has_subcategories()) { ?>
-                                <li>
-                                    <a href="<?php echo osc_update_search_url(array('sCategory'=> osc_category_id())); ?>"><?php if($category['pk_i_id'] == osc_category_id()){ echo '<strong>'.osc_category_name().'</strong>'; } else { echo osc_category_name(); } ?></a>
-                                </li>
-                                <?php } ?>
-                            </ul>
-                            <?php } ?>
-                        </li>
-                    <?php } ?>
-                </ul>
-            </div>
-            <?php } ?>
+        <div class="plugin-hooks">
             <?php
             if(osc_search_category_id()) {
                 osc_run_hook('search_form', osc_search_category_id()) ;
             } else {
                 osc_run_hook('search_form') ;
             }
-        ?>
-        </fieldset>
+            ?>
+        </div>
+        <?php
+        $aCategories = osc_search_category();
+        foreach($aCategories as $cat_id) { ?>
+            <input type="hidden" name="sCategory[]" value="<?php echo osc_esc_html($cat_id); ?>"/>
+        <?php } ?>
         <div class="actions">
             <button type="submit"><?php _e('Apply', 'bender') ; ?></button>
         </div>
     </form>
-    <?php //osc_alert_form() ; ?>
+    <?php  osc_get_non_empty_categories(); ?>
+    <fieldset>
+        <?php  if ( osc_count_categories() ) { ?>
+        <div class="row ">
+            <h3><?php _e('Refine category', 'bender') ; ?></h3>
+            <ul class="category">
+                <?php // RESET CATEGORIES IF WE USED THEN IN THE HEADER ?>
+                <?php osc_goto_first_category() ; ?>
+                <?php while(osc_has_categories()) { ?>
+                    <?php $parentSelected=false; if (in_array(osc_category_id(), osc_search_category()) || in_array(osc_category_slug()."/", osc_search_category()) || in_array(osc_category_slug(), osc_search_category()) || count(osc_search_category())==0 || $category['fk_i_parent_id'] == osc_category_id()){ $parentSelected=true;} ?>
+                    <li class="parent  <?php if($parentSelected && Params::getParam('sCategory') != ''){ echo 'show-sub'; } ?>">
+                        <a id="cat_<?php echo osc_category_id();?>" href="<?php echo osc_update_search_url(array('sCategory'=> osc_category_id())); ?>"><?php echo osc_category_name(); ?></a>
+                        <?php if(osc_count_subcategories() > 0) { ?>
+                        <ul class="sub">
+                            <?php while(osc_has_subcategories()) { ?>
+                            <li>
+                                <a id="cat_<?php echo osc_esc_html(osc_category_id());?>" href="<?php echo osc_update_search_url(array('sCategory'=> osc_esc_html(osc_category_id()))); ?>"><?php if($category['pk_i_id'] == osc_category_id()){ echo '<strong>'.osc_category_name().'</strong>'; } else { echo osc_category_name(); } ?></a>
+                            </li>
+                            <?php } ?>
+                        </ul>
+                        <?php } ?>
+                    </li>
+                <?php } ?>
+            </ul>
+        </div>
+        <?php } ?>
+    </fieldset>
 </div>
 </div>
