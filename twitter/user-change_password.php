@@ -12,6 +12,10 @@
                 <div class="span16 columns">
                     <?php twitter_user_menu() ; ?>
                     <?php twitter_show_flash_message() ; ?>
+                </div>
+            </div>
+            <div class="row">
+                <div class="span16 columns">
                     <form action="<?php echo osc_base_url(true) ; ?>" method="post" onsubmit="return doUserChangePassword() ;">
                         <input type="hidden" name="page" value="user" />
                         <input type="hidden" name="action" value="change_password_post" />
