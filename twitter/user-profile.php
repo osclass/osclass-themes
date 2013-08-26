@@ -12,6 +12,10 @@
                 <div class="span16 columns">
                     <?php twitter_user_menu() ; ?>
                     <?php twitter_show_flash_message() ; ?>
+                </div>
+            </div>
+            <div class="row">
+                <div class="span16 columns">
                     <form action="<?php echo osc_base_url(true) ; ?>" method="post">
                         <input type="hidden" name="page" value="user" />
                         <input type="hidden" name="action" value="profile_post" />
@@ -100,6 +104,7 @@
                 </div>
             </div>
         </div>
+
         <script type="text/javascript">
             var ajax_region_url    = '<?php echo osc_base_url(true) . "?page=ajax&action=regions&countryId=" ; ?>' ;
             var ajax_city_url      = '<?php echo osc_base_url(true) . "?page=ajax&action=cities&regionId=" ; ?>' ;
