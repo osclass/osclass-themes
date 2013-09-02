@@ -1,5 +1,14 @@
 #CHANGELOG
 
+### v1.3 - 02/09/2013
+
+* Compatible with Osclass 3.2
+* Compatible with custom fields (Osclass v3.2).
+* Fixed layout issues at user account.
+* Fixed issue with plugins and parent categories.
+* Fixed issue with chosen javascript library.
+* No hot linking to Bootstrap.
+
 ### v1.2.4 - 19/07/2012
 
 * Added footer hook
