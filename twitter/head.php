@@ -26,7 +26,6 @@ osc_register_script('chosen-js', osc_current_web_theme_js_url('chosen/chosen.jqu
 osc_enqueue_script('jquery');
 osc_enqueue_script('jquery-ui');
 osc_enqueue_script('chosen-js');
-osc_enqueue_script('php-date');
 osc_enqueue_script('global-theme-js');
 
 osc_run_hook('header') ; ?>
