@@ -2,9 +2,9 @@
 
     function chosen_select_standard() {
         View::newInstance()->_exportVariableToView('categories', Category::newInstance()->toTree() ) ;
-        
+
         if( osc_count_categories() > 0 ) {
-            echo '<select name="sCategory" data-placeholder="' . __('Select a category...', 'twitter') . '" style="width: auto;" class="chzn-select"">' ;
+            echo '<select name="sCategory" data-placeholder="' . __('Select a category...', 'twitter') . '" style="width: auto;" class="chosen-select">' ;
             echo '<option></option>' ;
             while( osc_has_categories() ) {
                 echo '<option value="' . osc_category_name() . '">' . osc_category_name() . '</option>' ;
@@ -16,15 +16,15 @@
             }
             echo '</select>' ;
         }
-        
+
         View::newInstance()->_erase('categories') ;
     }
-    
+
     function chosen_select_optgroup() {
         View::newInstance()->_exportVariableToView('categories', Category::newInstance()->toTree() ) ;
-        
+
         if( osc_count_categories() > 0 ) {
-            echo '<select name="sCategory" data-placeholder="' . __('Select a category...', 'twitter') . '" style="width: auto;" class="chzn-select"">' ;
+            echo '<select name="sCategory" data-placeholder="' . __('Select a category...', 'twitter') . '" style="width: auto;" class="chosen-select">' ;
             echo '<option></option>' ;
             while( osc_has_categories() ) {
                 echo '<optgroup label="' . osc_category_name() . '">' ;
@@ -37,22 +37,22 @@
             }
             echo '</select>' ;
         }
-        
+
         View::newInstance()->_erase('categories') ;
     }
 
     function chosen_region_select() {
         View::newInstance()->_exportVariableToView('list_regions', Search::newInstance()->listRegions('%%%%', '>=', 'region_name ASC') ) ;
-        
+
         if( osc_count_list_regions() > 0 ) {
-            echo '<select name="sRegion" data-placeholder="' . __('Select a region...', 'twitter') . '" style="width: 200px;" class="chzn-select"">' ;
+            echo '<select name="sRegion" data-placeholder="' . __('Select a region...', 'twitter') . '" style="width: 200px;" class="chosen-select">' ;
             echo '<option></option>' ;
             while( osc_has_list_regions() ) {
                 echo '<option value="' . osc_list_region_name() . '">' . osc_list_region_name() . '</option>' ;
             }
             echo '</select>' ;
         }
-        
+
         View::newInstance()->_erase('list_regions') ;
     }
 
@@ -77,7 +77,7 @@
             if( osc_item_country() != '' ) {
                 $location[] = osc_item_country() ;
             }
-            
+
             return $location ;
         }
     }
@@ -172,7 +172,7 @@
 
         osc_add_hook('admin_menu', 'twitter_admin_menu') ;
     }
-    
+
     if( !function_exists('osc_item_category_url') ) {
         function osc_item_category_url($category_id) {
             View::newInstance()->_erase('subcategories') ;
@@ -180,11 +180,11 @@
             View::newInstance()->_exportVariableToView('category', Category::newInstance()->findByPrimaryKey($category_id) ) ;
             $url = osc_search_category_url() ;
             View::newInstance()->_erase('category') ;
-   
+
             return $url ;
         }
     }
-    
+
     if( !function_exists('meta_title') ) {
         function meta_title( ) {
             $location = Rewrite::newInstance()->get_location() ;
@@ -290,7 +290,7 @@
                     $text = osc_page_title() ;
                 break ;
             }
-            
+
             $text = str_replace('"', "'", $text) ;
             return ($text) ;
          }
@@ -345,7 +345,7 @@
                     $text = $result ;
                 break ;
             }
-            
+
             $text = str_replace('"', "'", $text) ;
             return ($text) ;
          }
@@ -371,9 +371,9 @@
 
             foreach($pages['pages'] as $p) {
                 if($p==$this->selected) {
-                    $links[] = '<li class="' . $this->class_selected . '"><a href="' . str_replace('{PAGE}', $p, str_replace(urlencode('{PAGE}'), $p, $this->url)) . '">' . ($p + 1) . '</a></li>';
+                    $links[] = '<li class="' . $this->class_selected . '"><a href="' . str_replace('{PAGE}', $p, str_replace(urlencode('{PAGE}'), $p, $this->url)) . '">' . ($p) . '</a></li>';
                 } else {
-                    $links[] = '<li class="' . $this->class_non_selected . '"><a href="' . str_replace('{PAGE}', $p, str_replace(urlencode('{PAGE}'), $p, $this->url)) . '">' . ($p + 1) . '</a></li>';
+                    $links[] = '<li class="' . $this->class_non_selected . '"><a href="' . str_replace('{PAGE}', $p, str_replace(urlencode('{PAGE}'), $p, $this->url)) . '">' . ($p) . '</a></li>';
                 }
             }
 
@@ -384,7 +384,7 @@
             return $links;
         }
      }
-     
+
     /**
      * Helper to use twitter pagination in user items
      */
@@ -405,7 +405,7 @@
         $pagination = new TwitterPagination($params) ;
         return $pagination->doPagination() ;
     }
-     
+
     /**
      * Helper to use twitter pagination in item comments
      */
@@ -461,11 +461,11 @@
             $item        = osc_item() ;
             $category_id = $item['fk_i_category_id'] ;
         }
-        
+
         if( empty($category_id) ) {
             return "null" ;
         }
-        
+
         if( method_exists( Category::newInstance(), 'is_root' ) ) {
             if( !Category::newInstance()->is_root($category_id) ) {
                 $category = Category::newInstance()->findRootCategory($category_id) ;
@@ -477,10 +477,10 @@
                 return $category['pk_i_id'];
             }
         }
-        
+
         return $category_id ;
     }
-    
+
     function item_selected_subcategory_id () {
         $category_id = Params::getParam('catId') ;
         if(Session::newInstance()->_getForm('catId') != ""){
@@ -491,7 +491,7 @@
             $item        = osc_item() ;
             $category_id = $item['fk_i_category_id'] ;
         }
-        
+
         if( empty($category_id) ) {
             return "null" ;
         }
@@ -580,7 +580,7 @@
             <?php } ?>
         <?php
     }
-    
+
     function item_title_description_box($title_txt, $description_txt, $locales) { ?>
         <?php $l = $locales[0] ; ?>
         <?php $item = (osc_item() != null) ? osc_item() : array() ; ?>
@@ -604,109 +604,109 @@
         if( count($item) == 0 ) {
             return get_item_title_from_session($locale_code) ;
         }
-        
+
         if( !array_key_exists($locale_code, $item['locale']) ) {
             return get_item_title_from_session($locale_code) ;
         }
-        
+
         if( !array_key_exists('s_title', $item['locale'][$locale_code]) ) {
             return get_item_title_from_session($locale_code) ;
         }
-        
+
         $title = $item['locale'][$locale_code]['s_title'] ;
-        
+
         $titleFromSession = get_item_title_from_session($locale_code) ;
         if( $titleFromSession != "" ) {
             return $titleFromSession ;
         }
-        
+
         return $title ;
     }
-    
+
     function get_item_title_from_session($locale_code) {
         $title     = "" ;
-        
+
         $titleForm = Session::newInstance()->_getForm('title');
         if( !is_array($titleForm) ) {
             return $title ;
         }
-        
+
         if( array_key_exists($locale_code, $titleForm) && ($titleForm[$locale_code] != "" ) ) {
             $title = $titleForm[$locale_code];
         }
-        
+
         return $title ;
     }
-    
+
     function get_item_description($item, $locale_code) {
         $description = "" ;
         if( count($item) == 0 ) {
             return get_item_description_from_session($locale_code) ;
         }
-        
+
         if( !array_key_exists($locale_code, $item['locale']) ) {
             return get_item_description_from_session($locale_code) ;
         }
-        
+
         if( !array_key_exists('s_description', $item['locale'][$locale_code]) ) {
             return get_item_description_from_session($locale_code) ;
         }
-        
+
         $description = $item['locale'][$locale_code]['s_description'] ;
-        
+
         $descriptionFromSession = get_item_description_from_session($locale_code) ;
         if( $descriptionFromSession != "" ) {
             return $descriptionFromSession ;
         }
-        
+
         return $description ;
     }
-    
+
     function get_item_description_from_session($locale_code) {
         $description     = "" ;
-        
+
         $descriptionForm = Session::newInstance()->_getForm('description');
         if( !is_array($descriptionForm) ) {
             return $description ;
         }
-        
+
         if( array_key_exists($locale_code, $descriptionForm) && ($descriptionForm[$locale_code] != "" ) ) {
             $description = $descriptionForm[$locale_code];
         }
-        
+
         return $description ;
     }
-    
+
     function item_price_input() { ?>
         <?php $item = (osc_item() != null) ? osc_item() : array() ; ?>
         <input type="text" id="price" class="medium" name="price" value="<?php echo get_item_price($item) ; ?>">
         <?php
     }
-    
+
     function get_item_price($item) {
         $priceFromSession = Session::newInstance()->_getForm('price');
-        
+
         if( count($item) == 0 ) {
             if( osc_version() >= 230 ) {
                 $priceFromSession = osc_prepare_price( $priceFromSession ) ;
             }
             return $priceFromSession ;
         }
-        
+
         if( $priceFromSession != '' ) {
             if( osc_version() >= 230 ) {
                 $priceFromSession = osc_prepare_price( $priceFromSession ) ;
             }
             return $priceFromSession ;
         }
-        
+
         if( osc_version() < 230 ) {
             return $item['f_price'] ;
         }
 
         return osc_prepare_price( $item['i_price'] ) ;
     }
-    
+
     function item_currency_select() {
         $item = (osc_item() != null) ? osc_item() : array() ;
         $aCurrencies = osc_get_currencies() ;
@@ -718,7 +718,7 @@
         </select>
         <?php
     }
-    
+
     function get_item_currency($item) {
         $currencyFromSession = Session::newInstance()->_getForm('currency') ;
 
@@ -738,47 +738,47 @@
         <input type="text" id="contactName" class="large" name="contactName" value="<?php echo get_item_contact_name($item) ; ?>">
         <?php
     }
-    
+
     function get_item_contact_name($item) {
         $contactNameFromSession = Session::newInstance()->_getForm('contactName');
-        
+
         if( count($item) == 0) {
             return $contactNameFromSession ;
         }
-        
+
         if( $contactNameFromSession != '' ) {
             return $contactNameFromSession ;
         }
-        
+
         return $item['s_contact_name'] ;
     }
-    
+
     function item_contact_mail_input() { ?>
         <?php $item = (osc_item() != null) ? osc_item() : array() ; ?>
         <input type="text" id="contactEmail" class="large" name="contactEmail" value="<?php echo get_item_contact_mail($item) ; ?>">
         <?php
     }
-    
+
     function get_item_contact_mail($item) {
         $contactMailFromSession = Session::newInstance()->_getForm('contactEmail');
-        
+
         if( count($item) == 0) {
             return $contactMailFromSession ;
         }
-        
+
         if( $contactMailFromSession != '' ) {
             return $contactMailFromSession ;
         }
-        
+
         return $item['s_contact_email'] ;
     }
-    
+
     function item_contact_show_email_checkbox() { ?>
         <?php $item = (osc_item() != null) ? osc_item() : array() ; ?>
         <input type="checkbox" id="showEmail" name="showEmail" value="1" <?php echo get_item_contact_show_email($item) ; ?>>
         <?php
     }
-    
+
     function get_item_contact_show_email($item) {
         $showMailFromSession = false;
 
@@ -789,18 +789,18 @@
         if( count($item) != 0) {
             $showMailFromSession = $item['b_show_email'] ;
         }
-        
+
         if( $showMailFromSession ) {
             return 'checked="checked"' ;
         }
-        
+
         return "" ;
     }
 
     function item_country_box($country_txt, $country_select_txt) {
         $aCountries = osc_get_countries() ;
         $item       = (osc_item() != null) ? osc_item() : array() ;
-        
+
         switch( count($aCountries) ) {
             case 0:     // no country, show input ?>
                         <div class="clearfix">
@@ -831,21 +831,21 @@
             break;
         }
     }
-    
+
     function get_country_name($item) {
         $country_name = "" ;
-        
+
         if( array_key_exists('s_country', $item) ) {
             $country_name = $item['s_country'] ;
         }
-                
+
         if( Session::newInstance()->_getForm('country') != '' ) {
             $country_name = Session::newInstance()->_getForm('country') ;
         }
-        
+
         return $country_name;
     }
-    
+
     function get_country_id($item) {
         $country_id = "" ;
         $aCountries = osc_get_countries() ;
@@ -857,18 +857,18 @@
         if( array_key_exists('fk_c_country_code', $item) ) {
             $country_id = $item['fk_c_country_code'] ;
         }
-                
+
         if( Session::newInstance()->_getForm('countryId') != '' ) {
             $country_id = Session::newInstance()->_getForm('countryId') ;
         }
-        
+
         return $country_id ;
     }
-    
+
     function item_region_box($region_txt, $region_select_txt) {
         $aRegions   = osc_get_regions() ;
         $item       = (osc_item() != null) ? osc_item() : array() ;
-        
+
         switch( count($aRegions) ) {
             case 0:     // 0 regions ?>
                         <div class="clearfix">
@@ -899,21 +899,21 @@
             break;
         }
     }
-    
+
     function get_region_name($item) {
         $region_name = "" ;
-        
+
         if( array_key_exists('s_region', $item) ) {
             $region_name = $item['s_region'] ;
         }
-                
+
         if( Session::newInstance()->_getForm('region') != '' ) {
             $region_name = Session::newInstance()->_getForm('region') ;
         }
-        
+
         return $region_name;
     }
-    
+
     function get_region_id($item) {
         $region_id = "" ;
         $aRegions  = osc_get_regions() ;
@@ -925,18 +925,18 @@
         if( array_key_exists('fk_i_region_id', $item) ) {
             $region_id = $item['fk_i_region_id'] ;
         }
-                
+
         if( Session::newInstance()->_getForm('regionId') != '' ) {
             $region_id = Session::newInstance()->_getForm('regionId') ;
         }
-        
+
         return $region_id ;
     }
-    
+
     function item_city_box($city_txt, $city_select_txt) {
         $aCities    = osc_get_cities() ;
         $item       = (osc_item() != null) ? osc_item() : array() ;
-        
+
         switch( count($aCities) ) {
             case 0:     // 0 regions ?>
                         <div class="clearfix">
@@ -970,69 +970,69 @@
 
     function get_city_name($item) {
         $city_name = "" ;
-        
+
         if( array_key_exists('s_city', $item) ) {
             $city_name = $item['s_city'] ;
         }
-                
+
         if( Session::newInstance()->_getForm('city') != '' ) {
             $city_name = Session::newInstance()->_getForm('city') ;
         }
-        
+
         return $city_name;
     }
-    
+
     function get_city_id($item) {
         $city_id = "" ;
-        
+
         if( array_key_exists('fk_i_city_id', $item) ) {
             $city_id = $item['fk_i_city_id'] ;
         }
-                
+
         if( Session::newInstance()->_getForm('cityId') != '' ) {
             $city_id = Session::newInstance()->_getForm('cityId') ;
         }
-        
+
         return $city_id ;
     }
-    
+
     function item_city_area() { ?>
         <?php $item = (osc_item() != null) ? osc_item() : array() ; ?>
         <input type="text" id="cityArea" name="cityArea" value="<?php echo get_item_city_area($item) ; ?>" />
-        <?php        
+        <?php
     }
-    
+
     function get_item_city_area($item) {
         $city_area = "" ;
-        
+
         if( array_key_exists('s_city_area', $item) ) {
             $city_area = $item['s_city_area'] ;
         }
-                
+
         if( Session::newInstance()->_getForm('cityArea') != '' ) {
             $city_area = Session::newInstance()->_getForm('cityArea') ;
         }
-        
+
         return $city_area ;
     }
-    
+
     function item_address() { ?>
         <?php $item = (osc_item() != null) ? osc_item() : array() ; ?>
         <input type="text" id="address" name="address" value="<?php echo get_item_address($item) ; ?>" />
-        <?php        
+        <?php
     }
-    
+
     function get_item_address($item) {
         $address = "" ;
-        
+
         if( array_key_exists('s_address', $item) ) {
             $address = $item['s_address'] ;
         }
-                
+
         if( Session::newInstance()->_getForm('address') != '' ) {
             $address = Session::newInstance()->_getForm('address') ;
         }
-        
+
         return $address ;
     }
 
@@ -1089,7 +1089,7 @@
 
                 if($b_show_all) {
                     $text = $page_title . '<li>' . __('Search', 'twitter') . '</li>' ;
-                    break; 
+                    break;
                 }
 
                 // init
@@ -1174,5 +1174,5 @@
 
         return '<ul class="breadcrumb">' . $text . '</ul>';
     }
-    
+
 ?>

@@ -35,7 +35,7 @@ function add_photo_field() {
 		}) ;
         var remove      = $("<span>").addClass("help-inline").html(twitter_theme.remove_link) ;
 		var div         = $("<div>").addClass('input-file').append(file).append(remove) ;
-		
+
 		$(".more-photos").append(div) ;
     } else {
         alert(twitter_theme.max_images_fields_txt) ;
@@ -165,7 +165,7 @@ $(document).ready(function() {
 	/* JS location end */
 
 	/* Plugins hooks */
-    $("select.subcategory").bind('change', function(event) {
+    $("select.subcategory, select.category").bind('change', function(event) {
         var cat_id = $(this).val();
         if( cat_id != "" ) {
             $.ajax({

@@ -12,14 +12,19 @@
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 
-<!-- css -->
-<link rel="stylesheet" type="text/css" href="http://twitter.github.com/bootstrap/1.3.0/bootstrap.min.css" />
-<link rel="stylesheet" type="text/css" href="<?php echo osc_current_web_theme_js_url('chosen/chosen.css') ; ?>" />
-<link rel="stylesheet" type="text/css" href="<?php echo osc_current_web_theme_styles_url('custom.css') ; ?>" />
+<?php
+osc_enqueue_style('bootstrap', osc_current_web_theme_styles_url('bootstrap.min.css') );
+osc_enqueue_style('custom', osc_current_web_theme_styles_url('custom.css') );
+osc_enqueue_style('jquery-ui-datepicker', osc_assets_url('css/jquery-ui/jquery-ui.css'));
+osc_enqueue_style('chosen-css', osc_current_web_theme_js_url('chosen/chosen.css') );
 
-<!-- js -->
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-<script type="text/javascript" src="<?php echo osc_current_web_theme_js_url('global.js') ; ?>"></script>
-<script type="text/javascript" src="<?php echo osc_current_web_theme_js_url('chosen/chosen.min.js') ; ?>"></script>
 
-<?php osc_run_hook('header') ; ?>
+osc_register_script('global-theme-js', osc_current_web_theme_js_url('global.js'), 'jquery');
+osc_register_script('chosen-js', osc_current_web_theme_js_url('chosen/chosen.jquery.min.js'), 'jquery');
+
+osc_enqueue_script('jquery');
+osc_enqueue_script('jquery-ui');
+osc_enqueue_script('chosen-js');
+osc_enqueue_script('global-theme-js');
+
+osc_run_hook('header') ; ?>

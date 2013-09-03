@@ -1,4 +1,4 @@
-        <!-- header --> 
+        <!-- header -->
         <div id="header-main">
             <div id="header-inner">
                 <div id="logo">
@@ -13,7 +13,7 @@
                 <ul id="nav">
                     <?php if( osc_users_enabled() ) { ?>
                         <?php if( osc_is_web_user_logged_in() ) { ?>
-                            <li><?php printf(__('Hi %s', 'twitter'), osc_logged_user_name() . '!'); ?></li>
+                            <li><span class="link"><?php printf(__('Hi %s', 'twitter'), osc_logged_user_name() . '!'); ?></span></li>
                             <li><a href="<?php echo osc_user_dashboard_url() ; ?>"><?php _e('My account', 'twitter') ; ?></a></li>
                             <li><a href="<?php echo osc_user_logout_url() ; ?>"><?php _e('Logout', 'twitter') ; ?></a></li>
                         <?php } else { ?>
@@ -34,7 +34,9 @@
                         </ul>
                     </li>
                 <?php } ?>
-                    <a class="publish-btn" href="<?php echo osc_item_post_url_in_category() ; ?>"><?php _e("Publish your ad for free", 'twitter'); ?></a>
+                    <li>
+                        <a class="publish-btn" href="<?php echo osc_item_post_url_in_category() ; ?>"><?php _e("Publish your ad for free", 'twitter'); ?></a>
+                    </li>
                 </ul>
             </div>
         </div>

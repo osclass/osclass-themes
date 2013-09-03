@@ -24,19 +24,21 @@ $(document).ready(function(){
     // Close alerts
     // ===============================
     $(".alert-message .close").bind("click", function(e) {
-       $(this).parent().fadeOut('slow'); 
+       $(this).parent().fadeOut('slow');
     });
     // Close item contact modal
     // ===============================
     $(".item-contact .close").bind("click", function(e) {
-       $(this).parent().parent().parent().fadeOut('slow'); 
+       $(this).parent().parent().parent().fadeOut('slow');
     });
     $(".item-sendfriend .close").bind("click", function(e) {
-       $(this).parent().parent().parent().fadeOut('slow'); 
+       $(this).parent().parent().parent().fadeOut('slow');
     });
     // Select with choosen
     // ===============================
-    $(".chzn-select").chosen();
+    if($(".chosen-select").length>0) {
+        $(".chosen-select").chosen();
+    }
 });
 
 function text_validation (element) {
