@@ -2,7 +2,7 @@
     $is_expired          = osc_item_is_expired () ;
     $is_user             = !( ( osc_logged_user_id() == osc_item_user_id() ) && osc_logged_user_id() != 0 ) ;
     $is_can_contact      = osc_reg_user_can_contact() && osc_is_web_user_logged_in() || !osc_reg_user_can_contact() ;
-    
+
     $is_comments_enabled = osc_comments_enabled() ;
     $is_can_comment      = osc_reg_user_post_comments () && osc_is_web_user_logged_in() || !osc_reg_user_post_comments() ;
 ?>
@@ -24,7 +24,7 @@
                 $('#item-contact .close').bind('click', function(event) {
                     $(this).modal('hide') ;
                 }) ;
-                
+
                 $('#item-sendfriend .close').bind('click', function(event) {
                     $(this).modal('hide') ;
                 }) ;
@@ -171,7 +171,7 @@
         </div>
         <?php if ( !$is_expired && $is_user && $is_can_contact ) { ?>
         <!-- item contact -->
-        <div id="item-contact" class="modal hide fade item-contact">
+        <div id="item-contact" class="modal hide item-contact">
             <form class="form-stacked" action="<?php echo osc_base_url(true) ; ?>" method="post" name="contact_form" id="contact_form" onsubmit="return doItemContact() ;">
                 <input type="hidden" name="action" value="contact_post" />
                 <input type="hidden" name="page" value="item" />
@@ -221,7 +221,7 @@
         <!-- item contact end -->
         <?php } ?>
         <!-- item send friend -->
-        <div id="item-sendfriend" class="modal hide fade item-sendfriend">
+        <div id="item-sendfriend" class="modal hide item-sendfriend">
             <form class="form-stacked" action="<?php echo osc_base_url(true) ; ?>" method="post" name="sendfriend" onsubmit="return doItemSendFriend() ;">
                 <input type="hidden" name="action" value="send_friend_post" />
                 <input type="hidden" name="page" value="item" />
