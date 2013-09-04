@@ -71,6 +71,7 @@ div.topbar-wrapper div.topbar .fill { padding-left: 20px; padding-right: 20px; -
 /* INCLUDE SEARCH */
 .inc-search input, .inc-search select, .inc-search button, .inc-search .chosen-container { float: left; margin: 0 2px; }
 .chosen-container .chosen-results { clear: left; }
+.chosen-container .chosen-single { padding: 2px 2px 2px 8px!important; }
 .inc-search .publish { margin-bottom: 18px;	padding-top: 18px; text-align: right; }
 .row.inc-search { margin-bottom: 0px; }
 /* FOOTER */
