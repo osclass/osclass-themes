@@ -933,7 +933,21 @@
         return $region_id ;
     }
 
-    function item_city_box($city_txt, $city_select_txt) {
+    function item_city_box($city_txt, $city_select_txt, $k = false) {
+
+        if($k) { ?>
+        <div class="clearfix">
+                <label><?php echo $city_txt; ?></label>
+                <div class="input">
+                        <select class="city_id" id="city_id" name="cityId">
+                                <option value=""><?php echo $city_select_txt; ?></option>
+                        </select>
+                </div>
+        </div>
+            <?php
+            return;
+        }
+
         $aCities    = osc_get_cities() ;
         $item       = (osc_item() != null) ? osc_item() : array() ;
 
