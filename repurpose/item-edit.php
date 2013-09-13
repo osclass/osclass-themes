@@ -80,7 +80,7 @@
                                 <!-- photo -->
                                 <h3><?php _e('Photos', 'twitter') ; ?></h3>
                                 <div class="clearfix photos">
-                                    <?php 
+                                    <?php
                                         $resources = osc_get_item_resources();
                                         if( $resources != null && is_array($resources) && count($resources) > 0) { ?>
                                             <ul class="media-grid">
@@ -113,7 +113,7 @@
                             <h3><?php _e('Location', 'twitter') ?></h3>
                             <?php item_country_box(__("Country", "twitter"), __("Select a country...", "twitter")) ; ?>
                             <?php item_region_box(__("Region", "twitter"), __("Select a region...", "twitter")) ; ?>
-                            <?php item_city_box(__("City", "twitter"), __("Select a city...", "twitter")) ; ?>
+                            <?php item_city_box(__("City", "twitter"), __("Select a city...", "twitter"), true) ; ?>
                             <div class="clearfix">
                                 <label for="cityArea"><?php _e('Neighborhood', 'twitter') ; ?></label>
                                 <div class="input">
