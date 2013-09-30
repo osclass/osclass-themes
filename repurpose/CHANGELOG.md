@@ -1,5 +1,9 @@
 #CHANGELOG
 
+### v1.2.1 - 30/09/2013
+
+* Fixed description element id. (add/edit listing)
+
 ### v1.2 - 03/09/2013
 
 * Compatible with Osclass 3.2
