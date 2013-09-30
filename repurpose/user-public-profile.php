@@ -66,7 +66,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="span16 columns">
+                <div class="span10 columns">
                     <div id="description">
                         <h2><?php _e('Profile', 'twitter'); ?></h2>
                         <ul id="user_data">
@@ -77,14 +77,11 @@
                             <li><?php _e('User Description', 'twitter'); ?>: <?php echo osc_user_info(); ?></li>
                         </ul>
                     </div>
-                </div>
-            </div>
-            <div class="row">
-                <!-- item detail -->
-                <div class="span16 columns">
+
+
                     <h2><?php _e('Latest listings', 'twitter'); ?></h2>
                     <?php while ( osc_has_items() ) { ?>
-                    <div class="line span11 columns">
+                    <div class="line span10 columns">
                         <div class="photo">
                             <?php if( osc_count_item_resources() ) { ?>
                             <a href="<?php echo osc_item_url() ; ?>">
@@ -116,66 +113,62 @@
                         </div>
                     </div>
                     <?php } ?>
-                </div>
-            </div>
-            <div class="row">
-                <?php if($total_items < $items_per_page) { ?>
-                <div class="span11 columns">
-                <p class="see_more_link"><a href="<?php echo osc_base_url(true).'?page=search&sUser[]='.osc_user_id(); ?>"><strong><?php _e('See all offers', 'twitter'); ?> »</strong></a></p>
-                </div>
-                <?php } ?>
-            </div>
-        </div>
-        <!-- user contact -->
-        <div id="item-contact" class="modal hide item-contact">
-            <form class="form-stacked" action="<?php echo osc_base_url(true) ; ?>" method="post" name="contact_form" id="contact_form" onsubmit="return doItemContact() ;">
-                <input type="hidden" name="action" value="contact_post" />
-                <input type="hidden" name="page" value="user" />
-                <input type="hidden" name="id" value="<?php echo osc_item_id() ; ?>" />
-                <div class="modal-header">
-                    <a href="#" class="close">×</a>
-                    <h3><?php _e('Contact publisher', 'twitter') ; ?></h3>
-                </div>
-                <div class="modal-body">
-                    <?php osc_prepare_user_info() ; ?>
-                    <div class="clearfix">
-                        <label for="contact-yourName"><?php _e('Your name', 'twitter') ; ?></label>
-                        <div class="input">
-                            <input class="xlarge contact-yourName" id="contact-yourName" name="yourName" type="text" value="<?php echo osc_logged_user_name(); ?>" />
-                        </div>
+                    <?php if($total_items < $items_per_page) { ?>
+                    <div class="span10 columns">
+                    <p class="see_more_link"><a href="<?php echo osc_base_url(true).'?page=search&sUser[]='.osc_user_id(); ?>"><strong><?php _e('See all offers', 'twitter'); ?> »</strong></a></p>
                     </div>
-                    <div class="clearfix">
-                        <label for="contact-yourEmail"><?php _e('Your e-mail', 'twitter') ; ?></label>
-                        <div class="input">
-                            <input class="xlarge contact-yourEmail" id="contact-yourEmail" name="yourEmail" type="text" value="<?php echo osc_logged_user_email();?>" />
-                        </div>
-                    </div>
-                    <div class="clearfix">
-                        <label for="contact-phoneNumber"><?php _e('Phone number', 'twitter') ; ?></label>
-                        <div class="input">
-                            <input class="xlarge contact-phoneNumber" id="contact-phoneNumber" name="phoneNumber" type="text" value="" />
-                        </div>
-                    </div>
-                    <div class="clearfix">
-                        <label for="contact-message"><?php _e('Message', 'twitter') ; ?></label>
-                        <div class="input">
-                            <textarea class="xlarge contact-message" id="contact-message" name="message" rows="6"></textarea>
-                        </div>
-                    </div>
-                    <?php /*
-                    <div class="clearfix">
-                        <?php osc_show_recaptcha(); ?>
-                    </div>
-                    */ ?>
+                    <?php } ?>
                 </div>
-                <div class="modal-footer">
-                    <button class="btn primary" type="submit"><?php _e('Send', 'twitter') ; ?></button>
-                    <a class="btn item-contact-button-cancel" href="javascript://"><?php _e('Cancel', 'twitter') ; ?></a>
-                </div>
-            </form>
-        </div>
-        <!-- user contact end -->
 
+                <!-- user contact -->
+                <div id="item-contact" class="item-contact span5">
+                    <form class="form-stacked" action="<?php echo osc_base_url(true) ; ?>" method="post" name="contact_form" id="contact_form" onsubmit="return doItemContact() ;">
+                        <input type="hidden" name="action" value="contact_post" />
+                        <input type="hidden" name="page" value="user" />
+                        <input type="hidden" name="id" value="<?php echo osc_user_id() ; ?>" />
+                        <div class="">
+                            <h3><?php _e('Contact publisher', 'twitter') ; ?></h3>
+                        </div>
+                        <div class="">
+                            <?php osc_prepare_user_info() ; ?>
+                            <div class="clearfix">
+                                <label for="contact-yourName"><?php _e('Your name', 'twitter') ; ?></label>
+                                <div class="input">
+                                    <input class="xlarge contact-yourName" id="contact-yourName" name="yourName" type="text" value="<?php echo osc_logged_user_name(); ?>" />
+                                </div>
+                            </div>
+                            <div class="clearfix">
+                                <label for="contact-yourEmail"><?php _e('Your e-mail', 'twitter') ; ?></label>
+                                <div class="input">
+                                    <input class="xlarge contact-yourEmail" id="contact-yourEmail" name="yourEmail" type="text" value="<?php echo osc_logged_user_email();?>" />
+                                </div>
+                            </div>
+                            <div class="clearfix">
+                                <label for="contact-phoneNumber"><?php _e('Phone number', 'twitter') ; ?></label>
+                                <div class="input">
+                                    <input class="xlarge contact-phoneNumber" id="contact-phoneNumber" name="phoneNumber" type="text" value="" />
+                                </div>
+                            </div>
+                            <div class="clearfix">
+                                <label for="contact-message"><?php _e('Message', 'twitter') ; ?></label>
+                                <div class="input">
+                                    <textarea class="xlarge contact-message" id="contact-message" name="message" rows="6"></textarea>
+                                </div>
+                            </div>
+                            <div class="clearfix">
+                                <?php osc_show_recaptcha(); ?>
+                            </div>
+                        </div>
+                        <div class="pull-right">
+                            <button class="btn primary" type="submit"><?php _e('Send', 'twitter') ; ?></button>
+                            <a class="btn item-contact-button-cancel" href="javascript://"><?php _e('Cancel', 'twitter') ; ?></a>
+                        </div>
+                    </form>
+                </div>
+                <!-- user contact end -->
+
+            </div>
+        </div>
         <script type="text/javascript">
             var text_error_required = '' ;
             var text_valid_email    = '' ;
