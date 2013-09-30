@@ -52,7 +52,27 @@
             <div class="row">
                 <!-- item detail -->
                 <div class="span16 columns">
-                    <h1><?php if( osc_price_enabled_at_items() ) { ?><small><?php echo osc_item_formated_price() ; ?></small> &middot; <?php } ?><?php echo osc_item_title(); ?></h1>
+                    <div id="item_head">
+                        <h1><?php if( osc_price_enabled_at_items() ) { ?><small><?php echo osc_item_formated_price() ; ?></small> &middot; <?php } ?><?php echo osc_item_title(); ?></h1>
+                        <?php if(osc_is_web_user_logged_in() && osc_logged_user_id()==osc_item_user_id()) { ?>
+                            <p id="edit_item_view">
+                                <strong>
+                                    <a href="<?php echo osc_item_edit_url(); ?>" rel="nofollow"><?php _e('Edit item', 'modern'); ?></a>
+                                </strong>
+                            </p>
+                        <?php } else { ?>
+                            <p id="report">
+                                <strong><?php _e('Mark as', 'modern'); ?></strong>
+                                <span>
+                                    <a id="item_spam" href="<?php echo osc_item_link_spam(); ?>" rel="nofollow"><?php _e('spam', 'modern'); ?></a>
+                                    <a id="item_bad_category" href="<?php echo osc_item_link_bad_category(); ?>" rel="nofollow"><?php _e('misclassified', 'modern'); ?></a>
+                                    <a id="item_repeated" href="<?php echo osc_item_link_repeated(); ?>" rel="nofollow"><?php _e('duplicated', 'modern'); ?></a>
+                                    <a id="item_expired" href="<?php echo osc_item_link_expired(); ?>" rel="nofollow"><?php _e('expired', 'modern'); ?></a>
+                                    <a id="item_offensive" href="<?php echo osc_item_link_offensive(); ?>" rel="nofollow"><?php _e('offensive', 'modern'); ?></a>
+                                </span>
+                            </p>
+                        <?php }; ?>
+                    </div>
                     <p class="no-margin"><?php printf(__('<strong>Published date:</strong> %s %s', 'twitter'), osc_format_date( osc_item_pub_date() ), date(osc_time_format(), strtotime(osc_item_pub_date())) ) ; ?></p>
                     <?php if ( osc_item_mod_date() != '' ) { ?>
                     <p class="no-margin"><?php printf(__('<strong>Modified date:</strong> %s %s', 'twitter'), osc_format_date( osc_item_mod_date() ), date(osc_time_format(), strtotime(osc_item_mod_date())) ) ; ?></p>

@@ -287,7 +287,7 @@ div.topbar-wrapper {width:980px; margin:0 auto; }
 .modal form { padding-left: 0px; margin-bottom: 0px; }
 .item-contact.modal, .item-sendfriend.modal { width:320px; margin: -280px 0 0 -120px; }
 .item-contact input.xlarge, .item-sendfriend input.xlarge, .item-contact textarea.xlarge, .item-sendfriend textarea.xlarge { width: 260px; }
-.item-detail h1 { font-size: 20px; border-bottom: 1px dotted #CCCCCC; }
+.item-detail h1 { font-size: 20px; }
 .item-detail h1 small { font-size: 16px; color: #404040; }
 .item-detail .photos a img { text-decoration: none; }
 .item-detail .comments { margin-top: 10px; }
@@ -361,11 +361,27 @@ h6 {
    padding-bottom:15px;
 }
 
+#item_head {
+    clear: both;
+    float: left;
+    width: 100%;
+}
+
+#item_head.breadcrumb h1 {
+    margin-left: 30px;
+}
+
 #item_head h1 {
+    float:left;
     font-size: 22px;
     width: 700px;
-    margin: 0;
-    margin-left: 30px;
+    margin-bottom: 0px;
+}
+
+.item-detail #item_head {
+    float:left;
+    margin-bottom: 18px;
+    border-bottom: 1px dotted #CCCCCC;
 }
 
 .user-public-profile h2 {
@@ -373,6 +389,13 @@ h6 {
     margin-bottom: 15px;
     padding-bottom: 5px;
 }
+
+#item_head #report { background:url(../images/report_flag.gif) no-repeat 0 4px; float:right; padding:2px 0 0 20px; position:relative; width: 90px; }
+#item_head #report strong {background:url(../images/language_arrow.gif) no-repeat right center; color:#999; font-size:11px; font-weight:normal; padding-right:9px; }
+#item_head #report span { background:#FFF; border:1px solid #333; display:none; left:7px; padding:10px 15px; position:absolute; top:19px; -moz-border-radius:5px; border-radius:5px; }
+#item_head #report span a { display:block; font-size:11px; margin:4px 0;}
+#item_head #edit_item_view { float:right; padding:5px 0 0 20px; position:relative; width: 90px; }
+#item_head #edit_item_view strong { color:#999; font-size:11px; font-weight:normal; padding-right:9px; }
 
 #user_data {
     list-style: none;

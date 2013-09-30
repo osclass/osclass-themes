@@ -11,7 +11,7 @@ $(document).ready(function(){
             $(this).find("ul").hide();
         }
     );
-	// Dropdown topbar nav
+    // Dropdown topbar nav
     // ===============================
     $("body").bind("click", function (e) {
         $('a.menu').parent("li").removeClass("open");
@@ -39,6 +39,15 @@ $(document).ready(function(){
     if($(".chosen-select").length>0) {
         $(".chosen-select").chosen();
     }
+    // Show report listings
+    // ===============================
+    // Show/hide Report as
+    $("#report").hover(function(){
+        $(this).find("span").show();
+    },
+    function(){
+        $(this).find("span").hide();
+    });
 });
 
 function text_validation (element) {
