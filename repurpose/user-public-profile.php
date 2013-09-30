@@ -161,7 +161,6 @@
                         </div>
                         <div class="pull-right">
                             <button class="btn primary" type="submit"><?php _e('Send', 'twitter') ; ?></button>
-                            <a class="btn item-contact-button-cancel" href="javascript://"><?php _e('Cancel', 'twitter') ; ?></a>
                         </div>
                     </form>
                 </div>
