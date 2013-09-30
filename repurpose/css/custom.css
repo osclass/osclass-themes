@@ -235,11 +235,15 @@ div.topbar-wrapper {width:980px; margin:0 auto; }
 .search .content h1 { float: left; margin-bottom: 5px; }
 .search .content p.filters { float: right; margin-top: 14px; }
 .search .content p.filters a.current { background:url(../images/order_by_current.gif) no-repeat right 45%; padding-right:12px; }
-.search .content .photo { width: 100px; float: left; display: inline; margin: 5px; }
-.search .content .description { display: inline; width: 600px; }
+.search .content .photo,
+.user-public-profile .photo{ width: 100px; float: left; display: inline; margin: 5px; }
+.search .content .description,
+.user-public-profile .description { display: inline; width: 600px; }
 .search .content h3 { font-size: 14px; line-height: 18px }
-.search .content p { margin-bottom: 0px; }
-.search .content p.gray { color: #BFBFBF; }
+.search .content p,
+.user-public-profile p{ margin-bottom: 0px; }
+.search .content p.gray
+.user-public-profile p.gray { color: #BFBFBF; }
 .search .content .premium { padding: 10px; width: 620px;
     background-color: #EEDC94;
     background-repeat: repeat-x;
@@ -263,10 +267,12 @@ div.topbar-wrapper {width:980px; margin:0 auto; }
     -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25);
     -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25);
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25); }
-.search .content .premium h3 small, .search .content .premium h3 small {
+.search .content .premium h3 small, .search .content .premium h3 small,
+.user-public-profile h3 small{
     color: black;
 }
-.search .content .line { border-bottom: 1px dotted #cccccc; margin-bottom: 10px; padding-bottom: 10px; min-height: 80px; }
+.search .content .line,
+.user-public-profile .line{ border-bottom: 1px dotted #cccccc; margin-bottom: 10px; padding-bottom: 10px; min-height: 80px; }
 .search .pagination { float: right; }
 /* CONTACT */
 .contact { width: 600px; margin: 25px auto; }
@@ -354,3 +360,25 @@ h6 {
    padding-top:15px;
    padding-bottom:15px;
 }
+
+#item_head h1 {
+    font-size: 22px;
+    width: 700px;
+    margin: 0;
+    margin-left: 30px;
+}
+
+.user-public-profile h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+}
+
+#user_data {
+    list-style: none;
+}
+#user_data li{
+    color: black;
+}
+
+.see_more_link { font-size:14px; padding:15px 20px 20px; text-align:right;}

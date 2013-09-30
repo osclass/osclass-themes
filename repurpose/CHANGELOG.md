@@ -3,6 +3,7 @@
 ### v1.2.1 - 30/09/2013
 
 * Fixed description element id. (add/edit listing)
+* Added user-public-profile.php template file.
 
 ### v1.2 - 03/09/2013
 
