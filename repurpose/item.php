@@ -192,7 +192,7 @@
         <?php if ( !$is_expired && $is_user && $is_can_contact ) { ?>
         <!-- item contact -->
         <div id="item-contact" class="modal hide item-contact">
-            <form class="form-stacked" action="<?php echo osc_base_url(true) ; ?>" method="post" name="contact_form" id="contact_form" onsubmit="return doItemContact() ;">
+            <form <?php if( osc_item_attachment() ) { ?>enctype="multipart/form-data"<?php } ?> class="form-stacked" action="<?php echo osc_base_url(true) ; ?>" method="post" name="contact_form" id="contact_form" onsubmit="return doItemContact() ;">
                 <input type="hidden" name="action" value="contact_post" />
                 <input type="hidden" name="page" value="item" />
                 <input type="hidden" name="id" value="<?php echo osc_item_id() ; ?>" />
@@ -220,17 +220,23 @@
                             <input class="xlarge contact-phoneNumber" id="contact-phoneNumber" name="phoneNumber" type="text" value="" />
                         </div>
                     </div>
+                    <?php if( osc_item_attachment() ) { ?>
+                    <div class="clearfix">
+                        <label for="contact-attachment"><?php _e('Attachments', 'twitter') ; ?></label>
+                        <div class="input">
+                            <?php ContactForm::your_attachment() ; ?>
+                        </div>
+                    </div>
+                    <?php } ?>
                     <div class="clearfix">
                         <label for="contact-message"><?php _e('Message', 'twitter') ; ?></label>
                         <div class="input">
                             <textarea class="xlarge contact-message" id="contact-message" name="message" rows="6"></textarea>
                         </div>
                     </div>
-                    <?php /*
                     <div class="clearfix">
                         <?php osc_show_recaptcha(); ?>
                     </div>
-                    */ ?>
                 </div>
                 <div class="modal-footer">
                     <button class="btn primary" type="submit"><?php _e('Send', 'twitter') ; ?></button>
