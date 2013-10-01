@@ -7,7 +7,7 @@
             echo '<select name="sCategory" data-placeholder="' . __('Select a category...', 'twitter') . '" style="width: auto;" class="chosen-select">' ;
             echo '<option></option>' ;
             while( osc_has_categories() ) {
-                echo '<option value="' . osc_category_name() . '">' . osc_category_name() . '</option>' ;
+                echo '<option value="' . osc_category_id() . '">' . osc_category_name() . '</option>' ;
                 if( osc_count_subcategories() > 0 ) {
                     while( osc_has_subcategories() ) {
                         echo '<option value="' . osc_category_name() . '">&nbsp;&nbsp;&nbsp;&nbsp;' . osc_category_name() . '</option>' ;
@@ -48,7 +48,7 @@
             echo '<select name="sRegion" data-placeholder="' . __('Select a region...', 'twitter') . '" style="width: 200px;" class="chosen-select">' ;
             echo '<option></option>' ;
             while( osc_has_list_regions() ) {
-                echo '<option value="' . osc_list_region_name() . '">' . osc_list_region_name() . '</option>' ;
+                echo '<option value="' . osc_list_region_id() . '">' . osc_list_region_name() . '</option>' ;
             }
             echo '</select>' ;
         }
