@@ -34,9 +34,9 @@
                             <input type="text" name="sCity" id="sCity" value="<?php echo osc_search_city() ; ?>" />
                         </div>
                     </fieldset>
-                    <?php 
+                    <?php
                         View::newInstance()->_erase('subcategories') ;
-                        View::newInstance()->_erase('categories') ; 
+                        View::newInstance()->_erase('categories') ;
                     ?>
                     <?php if ( osc_count_categories() ) { ?>
                     <fieldset>
@@ -49,29 +49,20 @@
                                 <li>
                                     <label>
                                         <?php
-                                            $rootCategory = Category::newInstance()->findSubcategories(osc_category_id()) ; 
+                                            $rootCategory = Category::newInstance()->findSubcategories(osc_category_id()) ;
                                             $isParent     = false ;
                                             foreach($rootCategory as $c) {
                                                 if( in_array($c['pk_i_id'], osc_search_category()) ) {
                                                     $isParent = true ;
                                                 }
+                                                if( in_array($c['s_slug'], osc_search_category()) ) {
+                                                    $isParent = true ;
+                                                }
                                             }
                                         ?>
-                                        <input type="checkbox" id="cat<?php echo osc_category_id(); ?>" name="sCategory[]" value="<?php echo osc_category_id(); ?>" <?php echo ( (in_array(osc_category_id(), osc_search_category()) || $isParent || in_array(osc_category_slug() . "/", osc_search_category()) || count(osc_search_category()) == 0 )  ? 'checked' : '') ; ?> />
+                                        <input type="checkbox" id="cat<?php echo osc_category_id(); ?>" name="sCategory[]" value="<?php echo osc_category_id(); ?>" <?php echo ( (in_array(osc_category_id(), osc_search_category()) || $isParent || in_array(osc_category_slug(), osc_search_category()) || count(osc_search_category()) == 0 )  ? 'checked' : '') ; ?> />
                                         <span><?php echo osc_category_name(); ?></span>
                                     </label>
-                                    <!--
-                                    <?php if ( osc_count_subcategories() > 0 ) { ?>
-                                    <ul class="inputs-list">
-                                        <?php while ( osc_has_subcategories() ) { ?>
-                                        <li>
-                                            <input type="checkbox" id="cat<?php echo osc_category_id(); ?>" name="sCategory[]" value="<?php echo osc_category_id(); ?>" <?php echo ( (in_array(osc_category_id(), osc_search_category())  || in_array(osc_category_slug()."/", osc_search_category()) || count(osc_search_category())==0 )  ? 'checked' : '') ; ?> />
-                                            <span><?php echo osc_category_name(); ?></span>
-                                        </li>
-                                        <?php } ?>
-                                    </ul>
-                                    <?php } ?>
-                                    -->
                                 </li>
                                 <?php } ?>
                             </ul>
