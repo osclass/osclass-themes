@@ -5,10 +5,9 @@
 * Fixed description element id. (add/edit listing)
 * Added user-public-profile.php template file.
 * Fixed issue with richedit plugin.
-* Added 'report listing as' at item detail.
-* Fixed search sidebar issue with categories.
-* Fixed user listings pagination.
-* Added attachments when contact sellers.
+* Added 'report listing as' links at item detail.
+* Fixed search page sidebar, issues with categories when permalinks was enabled.
+* Added contact with attachment feature. (contact seller only)
 
 ### v1.2 - 03/09/2013
 
