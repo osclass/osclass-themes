@@ -13,7 +13,7 @@
             </div>
             <?php echo twitter_breadcrumb('&raquo;') ; ?>
             <div class="contact well">
-                <form action="<?php echo osc_base_url(true); ?>" method="post" name="contact_form" onsubmit="return doItemContact();" >
+                    <form <?php if( osc_item_attachment() ) { ?>enctype="multipart/form-data"<?php } ?> action="<?php echo osc_base_url(true) ; ?>" method="post" name="contact_form" id="contact_form" onsubmit="return doItemContact();">
                     <?php ContactForm::primary_input_hidden() ; ?>
                     <?php ContactForm::action_hidden() ; ?>
                     <?php ContactForm::page_hidden() ; ?>
@@ -53,6 +53,14 @@
                                 <input class="xlarge contact-phoneNumber" type="text" value="" name="phoneNumber" id="contact-phoneNumber">
                             </div>
                         </div>
+                        <?php if( osc_item_attachment() ) { ?>
+                        <div class="clearfix">
+                            <label for="contact-attachment"><?php _e('Attachments', 'twitter') ; ?></label>
+                            <div class="input">
+                                <?php ContactForm::your_attachment() ; ?>
+                            </div>
+                        </div>
+                        <?php } ?>
                         <div class="clearfix">
                             <label for="contact-message"><?php _e('Message', 'twitter') ; ?> *</label>
                             <div class="input">
