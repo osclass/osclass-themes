@@ -1,9 +1,14 @@
 #CHANGELOG
 
-### v1.2.1 - 30/09/2013
+### v1.2.1 - 01/10/2013
 
 * Fixed description element id. (add/edit listing)
 * Added user-public-profile.php template file.
+* Fixed issue with richedit plugin.
+* Added 'report listing as' at item detail.
+* Fixed search sidebar issue with categories.
+* Fixed user listings pagination.
+* Added attachments when contact sellers.
 
 ### v1.2 - 03/09/2013
 
