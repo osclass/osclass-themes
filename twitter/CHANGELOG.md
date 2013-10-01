@@ -1,5 +1,14 @@
 #CHANGELOG
 
+### v1.3.1 - 01/10/2013
+
+* Fixed issue with richedit plugin.
+* Added user-public-profile.php template.
+* Recaptcha on contact seller.
+* Added report listing links in the listing template.
+* Added contact with attachment feature. (contact seller only)
+* Fixed search page sidebar, issues with categories when permalinks was enabled.
+
 ### v1.3 - 02/09/2013
 
 * Compatible with Osclass 3.2
