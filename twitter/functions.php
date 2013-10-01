@@ -572,7 +572,7 @@
                     <div class="clearfix">
                         <label><?php echo $description_txt ; ?></label>
                         <div class="input">
-                            <textarea name="description[<?php echo $l['pk_c_code'] ; ?>]" class="xxlarge" rows="9"><?php echo get_item_description($item, $l['pk_c_code']) ; ?></textarea>
+                            <textarea id="description[<?php echo $l['pk_c_code'] ; ?>]" name="description[<?php echo $l['pk_c_code'] ; ?>]" class="xxlarge" rows="9"><?php echo get_item_description($item, $l['pk_c_code']) ; ?></textarea>
                         </div>
                     </div>
                 </div>
@@ -593,7 +593,7 @@
         <div class="clearfix">
             <label><?php echo $description_txt ; ?></label>
             <div class="input">
-                <textarea name="description[<?php echo $l['pk_c_code'] ; ?>]" class="xxlarge" rows="9"><?php echo get_item_description($item, $l['pk_c_code']) ; ?></textarea>
+                <textarea id="description[<?php echo $l['pk_c_code'] ; ?>]" name="description[<?php echo $l['pk_c_code'] ; ?>]" class="xxlarge" rows="9"><?php echo get_item_description($item, $l['pk_c_code']) ; ?></textarea>
             </div>
         </div>
         <?php
