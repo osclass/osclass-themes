@@ -41,6 +41,15 @@ $(document).ready(function(){
     if($(".chosen-select").length>0) {
         $(".chosen-select").chosen();
     }
+    // Show report listings
+    // ===============================
+    // Show/hide Report as
+    $("#report").hover(function(){
+        $(this).find("span").show();
+    },
+    function(){
+        $(this).find("span").hide();
+    });
 });
 
 function text_validation (element) {
