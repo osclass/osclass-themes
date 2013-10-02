@@ -173,9 +173,6 @@
                                     <textarea class="xlarge comment-body" id="comment-body" name="body" rows="6"></textarea>
                                 </div>
                             </div>
-                            <div class="clearfix">
-                                <?php osc_show_recaptcha(); ?>
-                            </div>
                             <div class="actions">
                                 <button class="btn" type="submit"><?php _e('Post comment', 'twitter') ; ?></button>
                             </div>
@@ -233,7 +230,9 @@
                         </div>
                     </div>
                     <div class="clearfix">
-                        <?php osc_show_recaptcha(); ?>
+                        <div class="recaptcha_container">
+                            <?php osc_show_recaptcha(); ?>
+                        </div>
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -285,11 +284,11 @@
                             <textarea class="xlarge sendfriend-message" id="sendfriend-message" name="message" rows="6"></textarea>
                         </div>
                     </div>
-                    <?php /*
                     <div class="clearfix">
-                        <?php osc_show_recaptcha(); ?>
+                        <div class="recaptcha_container">
+                            <?php osc_show_recaptcha(); ?>
+                        </div>
                     </div>
-                    */ ?>
                 </div>
                 <div class="modal-footer">
                     <button class="btn primary" type="submit"><?php _e('Send', 'twitter') ; ?></button>
