@@ -10,7 +10,7 @@
                 echo '<option value="' . osc_category_id() . '">' . osc_category_name() . '</option>' ;
                 if( osc_count_subcategories() > 0 ) {
                     while( osc_has_subcategories() ) {
-                        echo '<option value="' . osc_category_name() . '">&nbsp;&nbsp;&nbsp;&nbsp;' . osc_category_name() . '</option>' ;
+                        echo '<option class="level-1" value="' . osc_category_name() . '">' . osc_category_name() . '</option>' ;
                     }
                 }
             }
