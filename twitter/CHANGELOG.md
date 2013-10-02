@@ -8,6 +8,7 @@
 * Added report listing links in the listing template.
 * Added contact with attachment feature. (contact seller only)
 * Fixed search page sidebar, issues with categories when permalinks was enabled.
+* Fixed issue with chosen  dropdown and &nbsp;
 
 ### v1.3 - 02/09/2013
 
