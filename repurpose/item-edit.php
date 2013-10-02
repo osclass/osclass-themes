@@ -130,11 +130,9 @@
                             <div class="clearfix">
                                 <div id="plugin-hook"></div>
                             </div>
-                            <?php if( osc_recaptcha_items_enabled() ) { ?>
                             <div class="clearfix">
                                 <?php osc_show_recaptcha(); ?>
                             </div>
-                            <?php } ?>
                             <div class="actions">
                                 <button class="btn" type="submit"><?php _e('Update', 'twitter') ; ?></button>
                                 <a class="btn" href="javascript:history.back(-1)"><?php _e('Cancel', 'twitter') ; ?></a>

@@ -81,7 +81,7 @@
                                         <input type="file" name="photos[]" />
                                     </div>
                                     <div class="more-photos input">
-                                        
+
                                     </div>
                                     <div class="input">
                                         <a href="javascript://" onclick="return add_photo_field();"><?php _e('Add new photo', 'modern'); ?></a>
@@ -139,11 +139,9 @@
                             <div class="clearfix">
                                 <div id="plugin-hook"></div>
                             </div>
-                            <?php if( osc_recaptcha_items_enabled() ) { ?>
                             <div class="clearfix">
                                 <?php osc_show_recaptcha(); ?>
                             </div>
-                            <?php } ?>
                             <div class="actions">
                                 <button class="btn" type="submit"><?php _e('Publish your ad', 'twitter') ; ?></button>
                             </div>
