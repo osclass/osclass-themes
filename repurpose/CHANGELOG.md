@@ -8,6 +8,7 @@
 * Added 'report listing as' links at item detail.
 * Fixed search page sidebar, issues with categories when permalinks was enabled.
 * Added contact with attachment feature. (contact seller only)
+* Fixed issue with chosen  dropdown and &nbsp;
 
 ### v1.2 - 03/09/2013
 
