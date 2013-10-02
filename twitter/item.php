@@ -174,11 +174,9 @@
                                     <textarea class="xlarge comment-body" id="comment-body" name="body" rows="6"></textarea>
                                 </div>
                             </div>
-                            <?php /*
                             <div class="clearfix">
                                 <?php osc_show_recaptcha(); ?>
                             </div>
-                            */ ?>
                             <div class="actions">
                                 <button class="btn" type="submit"><?php _e('Post comment', 'twitter') ; ?></button>
                             </div>
