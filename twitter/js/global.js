@@ -50,6 +50,16 @@ $(document).ready(function(){
     function(){
         $(this).find("span").hide();
     });
+
+    // multiple recaptchas in the same page
+    // duplicate content to each other
+    if($('#recaptcha_area').parents('div.recaptcha_container').length > 0) {
+        $('div.recaptcha_container').each(function() {
+            if( $(this).find('#recaptcha_area').length === 0 ) {
+                $(this).html( $('#recaptcha_area').parents('div.recaptcha_container').clone(true, true) );
+            }
+        });
+    }
 });
 
 function text_validation (element) {

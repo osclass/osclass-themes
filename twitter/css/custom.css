@@ -147,7 +147,7 @@ div.topbar-wrapper div.topbar .fill { padding-left: 20px; padding-right: 20px; -
 .container.user .item-alert h6 { line-height: 8px; }
 /* ITEM */
 .modal form { padding-left: 0px; margin-bottom: 0px; }
-.item-contact.modal, .item-sendfriend.modal { width:320px; margin: -280px 0 0 -120px; }
+.item-contact.modal, .item-sendfriend.modal { width:345px; margin: -280px 0 0 -120px; }
 .item-contact input.xlarge, .item-sendfriend input.xlarge, .item-contact textarea.xlarge, .item-sendfriend textarea.xlarge { width: 260px; }
 .item-detail h1 { font-size: 20px; }
 .item-detail h1 small { font-size: 16px; color: #404040; }
