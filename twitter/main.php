@@ -26,7 +26,7 @@
                     </div>
                 </div>
                 <?php if ( !View::newInstance()->_exists('list_contries') ) {
-                            View::newInstance()->_exportVariableToView('list_regions', Search::newInstance()->listRegions('%%%%', '>=', 'region_name ASC') ) ; 
+                            View::newInstance()->_exportVariableToView('list_regions', Search::newInstance()->listRegions('%%%%', '>=', 'region_name ASC') ) ;
                       }
 
                       if( osc_count_list_regions() ) { ?>
@@ -36,7 +36,7 @@
                         <ul class="unstyled">
                             <?php while( osc_has_list_regions() ) { ?>
                             <li>
-                                <a href="<?php echo osc_search_url( array( 'sRegion' => osc_list_region_name() ) ) ; ?>"><?php echo osc_list_region_name() ; ?></a> (<?php echo osc_list_region_items() ; ?>)
+                                <a href="<?php echo osc_search_url( array( 'sRegion' => osc_list_region_id() ) ) ; ?>"><?php echo osc_list_region_name() ; ?></a> (<?php echo osc_list_region_items() ; ?>)
                             </li>
                             <?php } ?>
                         </ul>
