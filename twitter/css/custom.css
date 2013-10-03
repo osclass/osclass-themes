@@ -144,7 +144,7 @@ div.topbar-wrapper div.topbar .fill { padding-left: 20px; padding-right: 20px; -
 /* USER */
 .container.user { margin-top: 20px; margin-bottom: 20px; }
 .container.user  p { margin-bottom: 0px; }
-.container.user .item-alert h6 { line-height: 8px; }
+.container.user .item-alert h6 { line-height: 20px; }
 /* ITEM */
 .modal form { padding-left: 0px; margin-bottom: 0px; }
 .item-contact.modal, .item-sendfriend.modal { width:345px; margin: -280px 0 0 -120px; }
