@@ -1,5 +1,9 @@
 #CHANGELOG
 
+### v1.3.1 - 03/10/2013
+
+* Fixed issue with permalinks enabled, home page region links.
+
 ### v1.3.1 - 01/10/2013
 
 * Fixed issue with richedit plugin.
