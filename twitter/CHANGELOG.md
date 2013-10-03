@@ -1,6 +1,6 @@
 #CHANGELOG
 
-### v1.3.1 - 03/10/2013
+### v1.3.2 - 03/10/2013
 
 * Fixed issue with permalinks enabled, home page region links.
 
