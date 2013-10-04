@@ -1,0 +1,815 @@
+# Translation of 1.2.x in Lithuanian
+# This file is distributed under the same license as the 1.2.x package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2013-10-04 11:05+0100\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n"
+"%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Poedit 1.5.5\n"
+"Project-Id-Version: 1.2.x\n"
+"POT-Creation-Date: \n"
+"Last-Translator: Juan Ramón <juanramon.diaz@gmail.com>\n"
+"Language-Team: \n"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/404.php:14
+msgid "Page not found"
+msgstr "Puslapis nerastas"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/alert-form.php:7
+msgid "You have sucessfully subscribed to the alert"
+msgstr "Jūs sėkmingai užsiprenumeravote įspėjimus"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/alert-form.php:9
+msgid "Invalid email address"
+msgstr "Neteisingas el. pašto adresas"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/alert-form.php:11
+msgid "There was a problem with the alert"
+msgstr "Įspėjimo klaida"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/alert-form.php:19
+msgid "Subscribe to this search"
+msgstr "Prenumeruoti paiešką"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/alert-form.php:31
+msgid "Subscribe now!"
+msgstr "Prenumeruok dabar!"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/contact.php:20
+msgid "Contact us"
+msgstr "Susisiekite su mumis"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/contact.php:22
+msgid "Subject"
+msgstr "Pavadinimas"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/contact.php:28
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-contact.php:57
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-send-friend.php:55
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item.php:204
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item.php:259
+msgid "Message"
+msgstr "Žinutė"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/contact.php:34
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-contact.php:39
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-send-friend.php:31
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item.php:133
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item.php:186
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item.php:235
+msgid "Your name"
+msgstr "Jūsų vardas"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/contact.php:40
+msgid "Your e-mail address"
+msgstr "Jūsų el. pašto adresas"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/contact.php:54
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-send-friend.php:64
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item.php:216
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item.php:271
+msgid "Send"
+msgstr "Siųsti"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/contact.php:61
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-contact.php:73
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-send-friend.php:71
+msgid "This field is required"
+msgstr "Šis laukas yra privalomas"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/contact.php:62
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-contact.php:74
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-send-friend.php:72
+msgid "Enter a valid e-mail address"
+msgstr "Įvesti galiojantį el. pašto adresą"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/footer.php:7
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/functions.php:287
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/functions.php:1163
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/main.php:24
+msgid "Contact"
+msgstr "Kontaktai"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/footer.php:8
+msgid ""
+"This website is proudly using the <a title=\"OSClass web\" href=\"http://"
+"osclass.org/\">open source classifieds</a> software <strong>OSClass</strong> "
+"and <a href=\"http://twitter.github.com/bootstrap/\">twitter bootstrap</a>"
+msgstr ""
+"Šis tinklalapis sukurtas naudojant <a title=\"OSClass web\" href=\"http://"
+"osclass.org/\">open source classifieds</a> programinę įrangą "
+"<strong>OSClass</strong> ir <a href=\"http://twitter.github.com/bootstrap/"
+"\">twitter bootstrap</a> "
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/functions.php:7
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/functions.php:27
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-edit.php:52
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-post.php:49
+msgid "Select a category..."
+msgstr "Pasirinkti kategoriją"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/functions.php:48
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-edit.php:20
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-edit.php:115
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-post.php:20
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-post.php:95
+msgid "Select a region..."
+msgstr "Pasirinkiti regioną"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/functions.php:104
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/functions.php:276
+msgid "Dashboard"
+msgstr "Valdymo skydas"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/functions.php:105
+msgid "Manage your items"
+msgstr "Valdyti skelbimus"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/functions.php:106
+msgid "Manage your alerts"
+msgstr "Valdyti įspėjimus"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/functions.php:107
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/header.php:9
+msgid "My account"
+msgstr "Mano paskyra"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/functions.php:167
+msgid "Twitter theme"
+msgstr "Twitter šablonas"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/functions.php:169
+msgid "Settings theme"
+msgstr "Nustatymų šablonas"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/functions.php:196
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/functions.php:1060
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-post.php:44
+msgid "Publish an item"
+msgstr "Paskelbti skelbimą"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/functions.php:197
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/functions.php:1061
+msgid "Edit your item"
+msgstr "Redaguoti skelbimą"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/functions.php:198
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/functions.php:1062
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-send-friend.php:21
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item.php:231
+msgid "Send to a friend"
+msgstr "Siųsti draugui"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/functions.php:199
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/functions.php:1063
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-contact.php:21
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item.php:90
+msgid "Contact seller"
+msgstr "Susisiekti su pardavėju"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/functions.php:207
+msgid "Error"
+msgstr "Klaida"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/functions.php:219
+msgid "page"
+msgstr "puslapis"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/functions.php:229
+msgid "Show all items"
+msgstr "Rodyti visus skelbimus"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/functions.php:259
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/functions.php:1085
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/inc.search.php:11
+msgid "Search"
+msgstr "Ieškoti"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/functions.php:266
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/functions.php:1154
+msgid "Recover your password"
+msgstr "Priminti slaptažodį"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/functions.php:268
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/functions.php:1156
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/header.php:12
+msgid "Login"
+msgstr "Prisijungti"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/functions.php:272
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/functions.php:1160
+msgid "Create a new account"
+msgstr "Sukurti naują slaptažodį"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/functions.php:277
+msgid "Manage my items"
+msgstr "Valdyti skelbimus"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/functions.php:278
+msgid "Manage my alerts"
+msgstr "Valdyti įspėjimus"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/functions.php:279
+msgid "Update my profile"
+msgstr "Atnaujinti mano profilį"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/functions.php:280
+msgid "Change my email"
+msgstr "Pakeisti mano el. paštą"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/functions.php:281
+msgid "Change my password"
+msgstr "Pakeisti mano slaptažodį"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/functions.php:282
+msgid "Recover my password"
+msgstr "Priminti mano slaptažodį"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/functions.php:399
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/functions.php:420
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/functions.php:441
+msgid "%s Previous"
+msgstr "%s Ankstesni"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/functions.php:400
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/functions.php:421
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/functions.php:442
+msgid "Next %s"
+msgstr "Sekantys %s"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/functions.php:1145
+msgid "Search Results"
+msgstr "Paieškos rezultatai"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/header.php:8
+msgid "Hi %s"
+msgstr "Sveiki %s"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/header.php:10
+msgid "Logout"
+msgstr "Atsijungti"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/header.php:13
+msgid "Register"
+msgstr "Registruotis"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/header.php:21
+msgid "Language"
+msgstr "Kalba"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/header.php:69
+msgid "Publish your ad for free"
+msgstr "Įdėti skelbimą"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-contact.php:23
+msgid "To"
+msgstr "Kam"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-contact.php:31
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-send-friend.php:23
+msgid "Item"
+msgstr "Skelbimas"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-contact.php:45
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-send-friend.php:37
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item.php:139
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item.php:192
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item.php:241
+msgid "Your e-mail"
+msgstr "Jūsų el. paštas"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-contact.php:51
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item.php:198
+msgid "Phone number"
+msgstr "Telefono numeris"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-contact.php:66
+msgid "Send message"
+msgstr "Siųsti žinutę"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-edit.php:9
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-post.php:9
+msgid "Select a subcategory..."
+msgstr "Pasirinkti kategoriją"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-edit.php:13
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-post.php:13
+msgid "Remove"
+msgstr "Pašalinti"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-edit.php:14
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-post.php:14
+msgid "Sorry, you have reached the maximum number of images per ad"
+msgstr "Atsiprašome, Jūs jau prisegėte maksimalų nuotraukų skaičių"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-edit.php:19
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-edit.php:114
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-post.php:19
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-post.php:94
+msgid "Select a country..."
+msgstr "Pasirinkti šalį"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-edit.php:21
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-edit.php:116
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-post.php:21
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-post.php:96
+msgid "Select a city..."
+msgstr "Pasirinkti miestą"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-edit.php:22
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-post.php:22
+msgid "No regions available"
+msgstr "Nėra pasirinktinų regionų"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-edit.php:23
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-post.php:23
+msgid "No cities available"
+msgstr "Nėra pasirinktinų miestų"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-edit.php:26
+msgid "This action cannot be undone. Are you sure you want to continue?"
+msgstr "Šis veiksmas negali būti atšauktas. Ar tikrai norite tęsti?"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-edit.php:47
+msgid "Update your item"
+msgstr "Atnaujinti skelbimą"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-edit.php:50
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-post.php:47
+msgid "Category"
+msgstr "Kategorija"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-edit.php:59
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-edit.php:61
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-post.php:56
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-post.php:58
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item.php:145
+msgid "Title"
+msgstr "Pavadinimas"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-edit.php:59
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-edit.php:61
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-post.php:56
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-post.php:58
+msgid "Description"
+msgstr "Aprašymas"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-edit.php:68
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-post.php:65
+msgid "Price"
+msgstr "Kaina"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-edit.php:73
+msgid ""
+"<strong>Note:</strong> If you are giving away your item, enter a price of 0. "
+"If you don't want to publish the price, leave empty the field"
+msgstr ""
+"<strong>Pastaba:</strong> Jei Jūs nenorite skelbti kainos ar sutinkate "
+"paslaugas suteikti nemokamai, palikite 0."
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-edit.php:81
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-post.php:78
+msgid "Photos"
+msgstr "Nuotraukos"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-edit.php:93
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item.php:110
+msgid "Delete"
+msgstr "Ištrinti"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-edit.php:107
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-post.php:87
+msgid "Add new photo"
+msgstr "Pridėti naują nuotrauką"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-edit.php:113
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-post.php:93
+msgid "Location"
+msgstr "Vieta"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-edit.php:114
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-post.php:94
+msgid "Country"
+msgstr "Šalis"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-edit.php:115
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-post.php:95
+msgid "Region"
+msgstr "Regionas"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-edit.php:116
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-post.php:96
+msgid "City"
+msgstr "Miestas"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-edit.php:118
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-post.php:98
+msgid "Neighborhood"
+msgstr "Apylinkė"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-edit.php:124
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-post.php:104
+msgid "Address"
+msgstr "Adresas"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-edit.php:139
+msgid "Update"
+msgstr "Atnaujinti"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-edit.php:140
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item.php:217
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item.php:272
+msgid "Cancel"
+msgstr "Atšaukti"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-post.php:70
+msgid ""
+"<strong>Note:</strong> If you are giving away your item, enter a price of 0. "
+"Leave it blank if you don't want to publish a price."
+msgstr ""
+"<strong>Pastaba:</strong> Jei Jūs nenorite skelbti kainos ar sutinkate "
+"paslaugas suteikti nemokamai, palikite 0. "
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-post.php:112
+msgid "Seller's information"
+msgstr "Pardavėjo informacija"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-post.php:114
+msgid "Name"
+msgstr "Vardas"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-post.php:120
+msgid "E-mail"
+msgstr "El. paštas"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-post.php:131
+msgid "Show e-mail on the item page"
+msgstr "Prie skelbimo rodyti el. paštą"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-post.php:148
+msgid "Publish your ad"
+msgstr "Paskelbti Jūsų skelbimą"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-send-friend.php:43
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item.php:247
+msgid "Your friend's name"
+msgstr "Jūsų draugo vardas"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-send-friend.php:49
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item.php:253
+msgid "Your friend's e-mail"
+msgstr "Jūsų draugo el. paštas"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item.php:56
+msgid "<strong>Published date:</strong> %s %s"
+msgstr "<strong>Paskelbimo data:</strong> %s %s"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item.php:58
+msgid "<strong>Modified date:</strong> %s %s"
+msgstr "<strong>Keitimo data:</strong> %s %s"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item.php:62
+msgid "<strong>Location:</strong> %s"
+msgstr "<strong>Vietovė:</strong> %s"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item.php:92
+msgid "Share"
+msgstr "Dalintis"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item.php:101
+msgid "Comments"
+msgstr "Komentarai"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item.php:106
+msgid "by"
+msgstr "pagal"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item.php:110
+msgid "Delete your comment"
+msgstr "Ištrinti komentarą"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item.php:131
+msgid "Leave your comment"
+msgstr "Palikti komentarą"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item.php:151
+msgid "Comment"
+msgstr "Komentaras"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item.php:162
+msgid "Post comment"
+msgstr "Paskelbti komentarą"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item.php:181
+msgid "Contact publisher"
+msgstr "Susisiekti su skelbėju"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/main.php:19
+msgid "Pages"
+msgstr "Puslapiai"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/main.php:35
+msgid "Regions"
+msgstr "Regionai"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/main.php:48
+msgid "Latest Items"
+msgstr "Naujausi skelbimai"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/main.php:51
+msgid "No Latest Items"
+msgstr "Nėra naujų skelbimų"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/main.php:66
+msgid "Premium"
+msgstr "Priedas"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/main.php:67
+msgid "<strong>Publish date</strong>: %s"
+msgstr "<strong>Paskelbimo data</strong>: %s"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/main.php:71
+msgid "<strong>Country</strong>: %s"
+msgstr "<strong>Šalis</strong>: %s"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/main.php:74
+msgid "<strong>Region</strong>: %s"
+msgstr "<strong>Regionas</strong>: %s"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/main.php:77
+msgid "<strong>City</strong>: %s"
+msgstr "<strong>Miestas</strong>: %s"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/main.php:90
+msgid "See all offers"
+msgstr "Žiūrėti visus pasiūlymus"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/search.php:26
+msgid "Your search"
+msgstr "Jūsų paieška"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/search.php:43
+msgid "Categories"
+msgstr "Kategorijos"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/search.php:89
+msgid "Apply"
+msgstr "Taikyti"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/search_gallery.php:4
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/search_gallery.php:15
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/search_list.php:4
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/search_list.php:15
+msgid "Search results"
+msgstr "Paieškos rezultatai"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/search_gallery.php:8
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/search_list.php:8
+msgid "There are no results"
+msgstr "Nėra rezultatų"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/search_gallery.php:10
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/search_list.php:10
+msgid "There are no results matching \"%s\""
+msgstr "Nėra rezultatų atitinkančių \"%s\""
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/search_gallery.php:17
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/search_list.php:17
+msgid "Sort by"
+msgstr "Rūšiuoti pagal"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-alerts.php:15
+msgid "Your alerts"
+msgstr "Jūsų įspėjimai"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-alerts.php:21
+msgid "You do not have any alerts yet"
+msgstr "Jūs dar neturite įspėjimų"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-alerts.php:28
+msgid "Alert"
+msgstr "Įspėjimas"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-alerts.php:28
+msgid "This action can\\'t be undone. Are you sure you want to continue?"
+msgstr "Šis veiksmas negali būti atšauktas. Ar tikrai norite tęsti?"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-alerts.php:28
+msgid "Delete this alert"
+msgstr "Ištrinti šį įspėjimą"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-change_email.php:19
+msgid "Change your e-mail"
+msgstr "Pakeisti el. paštą"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-change_email.php:21
+msgid "Current e-mail"
+msgstr "Dabartinis el. paštas"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-change_email.php:27
+msgid "New e-mail"
+msgstr "Naujas el. paštas"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-change_password.php:19
+msgid "Change your password"
+msgstr "Pakeisti slaptažodį"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-change_password.php:21
+msgid "Current password"
+msgstr "Dabartinis slaptažodis"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-change_password.php:27
+msgid "New password"
+msgstr "Naujas slaptažodis"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-change_password.php:33
+msgid "Repeat new password"
+msgstr "Pakartoti naują slaptažodį"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-dashboard.php:15
+msgid "Latest items of %s"
+msgstr "Naujausi %s skelbimai"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-dashboard.php:21
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-items.php:21
+msgid "You don't have any items yet"
+msgstr "Jūs dar neturite skelbimų"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-dashboard.php:47
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-items.php:47
+msgid "Edit"
+msgstr "Redaguoti"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-dashboard.php:49
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-items.php:49
+msgid "This action can not be undone. Are you sure you want to continue?"
+msgstr "Šis veiksmas negali būti atšauktas. Ar tikrai norite tęsti?"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-dashboard.php:52
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-items.php:52
+msgid "Activate"
+msgstr "Aktyvuoti"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-forgot_password.php:26
+msgid "New pasword"
+msgstr "Naujas slaptažodis"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-forgot_password.php:32
+msgid "Repeat new pasword"
+msgstr "Pakartoti naują slaptažodį"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-forgot_password.php:38
+msgid "Change password"
+msgstr "Pakeisti slaptažodį"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-items.php:15
+msgid "Your items"
+msgstr "Jūsų skelbimai"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-login.php:22
+msgid "Access to your account"
+msgstr "Prisijungti prie Jūsų paskyros"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-login.php:30
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-register.php:30
+msgid "Password"
+msgstr "Slaptažodis"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-login.php:41
+msgid "Remember me"
+msgstr "Prisiminti mane"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-login.php:48
+msgid "Log in"
+msgstr "Prisijungti"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-login.php:52
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-recover.php:37
+msgid "Register for a free account"
+msgstr "Registruokis nemokamai"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-login.php:52
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-register.php:56
+msgid "Forgot password?"
+msgstr "Pamiršai slaptažodį?"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-profile.php:19
+msgid "Update your profile"
+msgstr "Atnaujinti profilį"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-profile.php:31
+msgid "Modify e-mail"
+msgstr "Pakeisti el. paštą"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-profile.php:31
+msgid "Modify password"
+msgstr "Pakeisti slaptažodį"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-profile.php:36
+msgid "User type"
+msgstr "Vartotojo tipas"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-profile.php:39
+msgid "User"
+msgstr "Vartotojas"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-profile.php:40
+msgid "Company"
+msgstr "Įmonė"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-profile.php:45
+msgid "Mobile phone"
+msgstr "Mobilusis telefonas"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-profile.php:51
+msgid "Phone"
+msgstr "Telefonas"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-profile.php:75
+msgid "City area"
+msgstr "Miesto rajonas"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-profile.php:87
+msgid "Website"
+msgstr "Tinklalapis"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-recover.php:33
+msgid "Send me a new password"
+msgstr "Siųsti man naują slaptažodį"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-register.php:22
+msgid "Register an account for free"
+msgstr "Registruokis nemokamai"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-register.php:36
+msgid "Re-type password"
+msgstr "Pakartoti slaptažodį"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-register.php:52
+msgid "Create"
+msgstr "Sukurti"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/admin/admin_settings.php:8
+msgid "The logo image has been uploaded correctly"
+msgstr "Logotipas buvo įkeltas sėkmingai"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/admin/admin_settings.php:10
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/admin/admin_settings.php:13
+msgid "An error has occurred, please try again"
+msgstr "Klaida, prašome bandyti dar kartą"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/admin/admin_settings.php:19
+msgid "The logo image has been removed"
+msgstr "Logotipas buvo pašalintas"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/admin/admin_settings.php:21
+msgid "Image not found"
+msgstr "Paveikslėlis nerastas"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/admin/admin_settings.php:34
+msgid "The preferred size of the logo is 600x100"
+msgstr "Pageidautinas logotipo dydis yra 600x100"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/admin/admin_settings.php:36
+msgid "Note: Uploading another logo will overwrite current logo"
+msgstr "Pastaba: Naujas logotipas bus įrašytas vietoje senojo"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/admin/admin_settings.php:42
+msgid "Logo image"
+msgstr "Logotipo paveikslėlis"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/admin/admin_settings.php:45
+msgid "Upload"
+msgstr "Įkelti"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/admin/admin_settings.php:50
+msgid "Preview"
+msgstr "Pažiūrėti"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/admin/admin_settings.php:54
+msgid "Remove logo"
+msgstr "Pašalinti logotipą"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/admin/admin_settings.php:58
+msgid "Has not uploaded any logo image"
+msgstr "Nepasirinktas joks logotipo paveikslėlis"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/admin/admin_settings.php:66
+msgid "The images folder %s is not writable on your server"
+msgstr "Paveikslėlių aplankas %s negali būti įrašytas į serverį "
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/admin/admin_settings.php:67
+msgid "OSClass can't upload logo image from the administration panel"
+msgstr "OSClass negali įkelti logotipo iš administratoriaus skyrelio"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/admin/admin_settings.php:68
+msgid "Please make the mentioned images folder writable"
+msgstr "Prašome pabandyti įrašyti"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/admin/admin_settings.php:73
+msgid ""
+"To make a directory writable under UNIX execute this command from the shell"
+msgstr "Norėdami įrašyti, vykdykite šią komandą"

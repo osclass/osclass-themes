@@ -1,5 +1,13 @@
 #CHANGELOG
 
+### v1.3.3 - 03/10/2013
+
+* Added the following languages:
+    * German
+    * Hungarian
+    * Lithuanian
+    * Romanian
+
 ### v1.3.2 - 03/10/2013
 
 * Fixed issue with permalinks enabled, home page region links.

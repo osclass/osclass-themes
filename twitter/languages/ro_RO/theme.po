@@ -1,0 +1,823 @@
+# Translation of 1.2.x in Romanian
+# This file is distributed under the same license as the 1.2.x package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2013-10-04 11:02+0100\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
+"20)) ? 1 : 2);\n"
+"X-Generator: Poedit 1.5.5\n"
+"Project-Id-Version: 1.2.x\n"
+"POT-Creation-Date: \n"
+"Last-Translator: Juan Ramón <juanramon.diaz@gmail.com>\n"
+"Language-Team: \n"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/404.php:14
+msgid "Page not found"
+msgstr "Pagina nu a fost gasita"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/alert-form.php:7
+msgid "You have sucessfully subscribed to the alert"
+msgstr "Alerta a fost activata cu succes"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/alert-form.php:9
+msgid "Invalid email address"
+msgstr "Adresa de e-mail nu este valida"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/alert-form.php:11
+msgid "There was a problem with the alert"
+msgstr "A fost o problema cu alerta"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/alert-form.php:19
+msgid "Subscribe to this search"
+msgstr "Aboneaza-te la aceasta cautare"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/alert-form.php:31
+msgid "Subscribe now!"
+msgstr "Aboneaza-te acum!"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/contact.php:20
+msgid "Contact us"
+msgstr "Contacteaza-ne"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/contact.php:22
+msgid "Subject"
+msgstr "Subiect"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/contact.php:28
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-contact.php:57
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-send-friend.php:55
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item.php:204
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item.php:259
+msgid "Message"
+msgstr "Mesaj"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/contact.php:34
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-contact.php:39
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-send-friend.php:31
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item.php:133
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item.php:186
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item.php:235
+msgid "Your name"
+msgstr "Numele tau"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/contact.php:40
+msgid "Your e-mail address"
+msgstr "Adresa ta de e-mail"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/contact.php:54
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-send-friend.php:64
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item.php:216
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item.php:271
+msgid "Send"
+msgstr "Trimite"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/contact.php:61
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-contact.php:73
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-send-friend.php:71
+msgid "This field is required"
+msgstr "Acest camp este obligatoriu"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/contact.php:62
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-contact.php:74
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-send-friend.php:72
+msgid "Enter a valid e-mail address"
+msgstr "Te rugam sa introduci o adresa de e-mail valida"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/footer.php:7
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/functions.php:287
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/functions.php:1163
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/main.php:24
+msgid "Contact"
+msgstr "Contact"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/footer.php:8
+msgid ""
+"This website is proudly using the <a title=\"OSClass web\" href=\"http://"
+"osclass.org/\">open source classifieds</a> software <strong>OSClass</strong> "
+"and <a href=\"http://twitter.github.com/bootstrap/\">twitter bootstrap</a>"
+msgstr ""
+"Acest website foloseste platforma open source de anunturi <a title=\"OSClass "
+"web\" href=\"http://osclass.org/\"> </a><strong>OSClass</strong>  si <a href="
+"\"http://twitter.github.com/bootstrap/\">twitter bootstrap</a>"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/functions.php:7
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/functions.php:27
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-edit.php:52
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-post.php:49
+msgid "Select a category..."
+msgstr "Selecteaza o categorie"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/functions.php:48
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-edit.php:20
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-edit.php:115
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-post.php:20
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-post.php:95
+msgid "Select a region..."
+msgstr "Selecteaza un judet"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/functions.php:104
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/functions.php:276
+msgid "Dashboard"
+msgstr "Panou de control"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/functions.php:105
+msgid "Manage your items"
+msgstr "Administreaza anunturile"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/functions.php:106
+msgid "Manage your alerts"
+msgstr "Administreaza alertele"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/functions.php:107
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/header.php:9
+msgid "My account"
+msgstr "Contul meu"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/functions.php:167
+msgid "Twitter theme"
+msgstr "Tema twitter"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/functions.php:169
+msgid "Settings theme"
+msgstr "Setarile temei"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/functions.php:196
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/functions.php:1060
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-post.php:44
+msgid "Publish an item"
+msgstr "Publica un anunt"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/functions.php:197
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/functions.php:1061
+msgid "Edit your item"
+msgstr "Editeaza anuntul"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/functions.php:198
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/functions.php:1062
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-send-friend.php:21
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item.php:231
+msgid "Send to a friend"
+msgstr "Trimite catre un prieten"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/functions.php:199
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/functions.php:1063
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-contact.php:21
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item.php:90
+msgid "Contact seller"
+msgstr "Contacteaza vanzatorul"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/functions.php:207
+msgid "Error"
+msgstr "Eroare"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/functions.php:219
+msgid "page"
+msgstr "pagina"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/functions.php:229
+msgid "Show all items"
+msgstr "Arata toate anunturile"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/functions.php:259
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/functions.php:1085
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/inc.search.php:11
+msgid "Search"
+msgstr "Cauta"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/functions.php:266
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/functions.php:1154
+msgid "Recover your password"
+msgstr "Recuperaza parola"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/functions.php:268
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/functions.php:1156
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/header.php:12
+msgid "Login"
+msgstr "Autentificare"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/functions.php:272
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/functions.php:1160
+msgid "Create a new account"
+msgstr "Creaza un cont nou"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/functions.php:277
+msgid "Manage my items"
+msgstr "Administreaza anunturile"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/functions.php:278
+msgid "Manage my alerts"
+msgstr "Administreaza alertele"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/functions.php:279
+msgid "Update my profile"
+msgstr "Actualizeaza profilul"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/functions.php:280
+msgid "Change my email"
+msgstr "Schimba adresa de e-mail"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/functions.php:281
+msgid "Change my password"
+msgstr "Schimba parola"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/functions.php:282
+msgid "Recover my password"
+msgstr "Recupereaza parola"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/functions.php:399
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/functions.php:420
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/functions.php:441
+msgid "%s Previous"
+msgstr "%s Inapoi"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/functions.php:400
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/functions.php:421
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/functions.php:442
+msgid "Next %s"
+msgstr "Inainte %s"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/functions.php:1145
+msgid "Search Results"
+msgstr "Rezultatul cautarii"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/header.php:8
+msgid "Hi %s"
+msgstr "Salut, %s"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/header.php:10
+msgid "Logout"
+msgstr "Iesire"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/header.php:13
+msgid "Register"
+msgstr "Inregistrare"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/header.php:21
+msgid "Language"
+msgstr "Limba"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/header.php:69
+msgid "Publish your ad for free"
+msgstr "Publica gratuit anuntul tau"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-contact.php:23
+msgid "To"
+msgstr "Catre"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-contact.php:31
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-send-friend.php:23
+msgid "Item"
+msgstr "Anunt"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-contact.php:45
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-send-friend.php:37
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item.php:139
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item.php:192
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item.php:241
+msgid "Your e-mail"
+msgstr "Adresa ta de e-mail"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-contact.php:51
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item.php:198
+msgid "Phone number"
+msgstr "Numar de telefon"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-contact.php:66
+msgid "Send message"
+msgstr "Trimite mesaj"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-edit.php:9
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-post.php:9
+msgid "Select a subcategory..."
+msgstr "Selecteaza o sub-categorie"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-edit.php:13
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-post.php:13
+msgid "Remove"
+msgstr "Sterge"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-edit.php:14
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-post.php:14
+msgid "Sorry, you have reached the maximum number of images per ad"
+msgstr ""
+"Ne pare rau, dar ati atins limita maxima de poze care pot fi atasate unui "
+"anunt"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-edit.php:19
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-edit.php:114
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-post.php:19
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-post.php:94
+msgid "Select a country..."
+msgstr "Selecteaza o tara"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-edit.php:21
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-edit.php:116
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-post.php:21
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-post.php:96
+msgid "Select a city..."
+msgstr "Selecteaza un oras"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-edit.php:22
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-post.php:22
+msgid "No regions available"
+msgstr "Nici un judet disponibil"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-edit.php:23
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-post.php:23
+msgid "No cities available"
+msgstr "Nici un oras disponibil"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-edit.php:26
+msgid "This action cannot be undone. Are you sure you want to continue?"
+msgstr ""
+"Aceasta actiune nu poate fi revocata. Esti sigur/a ca vrei sa continui?"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-edit.php:47
+msgid "Update your item"
+msgstr "Actualizeaza anuntul"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-edit.php:50
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-post.php:47
+msgid "Category"
+msgstr "Categorie"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-edit.php:59
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-edit.php:61
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-post.php:56
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-post.php:58
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item.php:145
+msgid "Title"
+msgstr "Titlu"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-edit.php:59
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-edit.php:61
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-post.php:56
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-post.php:58
+msgid "Description"
+msgstr "Descriere"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-edit.php:68
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-post.php:65
+msgid "Price"
+msgstr "Pret"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-edit.php:73
+msgid ""
+"<strong>Note:</strong> If you are giving away your item, enter a price of 0. "
+"If you don't want to publish the price, leave empty the field"
+msgstr ""
+"<strong>Nota:</strong> Daca oferi gratuit produsul tau, atunci trece la pret "
+"\"0\". Lasa campul gol daca nu vrei sa publici nici un pret."
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-edit.php:81
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-post.php:78
+msgid "Photos"
+msgstr "Imagini"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-edit.php:93
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item.php:110
+msgid "Delete"
+msgstr "Sterge"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-edit.php:107
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-post.php:87
+msgid "Add new photo"
+msgstr "Adauga o imagine noua"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-edit.php:113
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-post.php:93
+msgid "Location"
+msgstr "Locatie"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-edit.php:114
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-post.php:94
+msgid "Country"
+msgstr "Tara"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-edit.php:115
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-post.php:95
+msgid "Region"
+msgstr "Judet"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-edit.php:116
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-post.php:96
+msgid "City"
+msgstr "Oras"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-edit.php:118
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-post.php:98
+msgid "Neighborhood"
+msgstr "Vecinatate"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-edit.php:124
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-post.php:104
+msgid "Address"
+msgstr "Adresa"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-edit.php:139
+msgid "Update"
+msgstr "Actualizeaza"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-edit.php:140
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item.php:217
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item.php:272
+msgid "Cancel"
+msgstr "Anuleaza"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-post.php:70
+msgid ""
+"<strong>Note:</strong> If you are giving away your item, enter a price of 0. "
+"Leave it blank if you don't want to publish a price."
+msgstr ""
+"<strong>Nota:</strong> Daca oferi gratuit produsul tau, atunci trece la pret "
+"\"0\". Lasa campul gol daca nu vrei sa publici nici un pret."
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-post.php:112
+msgid "Seller's information"
+msgstr "Informatii despre vanzator"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-post.php:114
+msgid "Name"
+msgstr "Nume"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-post.php:120
+msgid "E-mail"
+msgstr "E-mail"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-post.php:131
+msgid "Show e-mail on the item page"
+msgstr "Afiseaza adresa de e-mail pe pagina anuntului"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-post.php:148
+msgid "Publish your ad"
+msgstr "Publica anuntul"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-send-friend.php:43
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item.php:247
+msgid "Your friend's name"
+msgstr "Numele prietenului"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item-send-friend.php:49
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item.php:253
+msgid "Your friend's e-mail"
+msgstr "Adresa de e-mail a prietenului"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item.php:56
+msgid "<strong>Published date:</strong> %s %s"
+msgstr "<strong>Publicat in data de:</strong> %s %s"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item.php:58
+msgid "<strong>Modified date:</strong> %s %s"
+msgstr "<strong>Modificat in data de:</strong> %s %s"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item.php:62
+msgid "<strong>Location:</strong> %s"
+msgstr "<strong>Locatie:</strong> %s"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item.php:92
+msgid "Share"
+msgstr "Da mai departe"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item.php:101
+msgid "Comments"
+msgstr "Comentarii"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item.php:106
+msgid "by"
+msgstr "de catre"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item.php:110
+msgid "Delete your comment"
+msgstr "Sterge comentariu"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item.php:131
+msgid "Leave your comment"
+msgstr "Lasa un comentariu"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item.php:151
+msgid "Comment"
+msgstr "Comentariu"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item.php:162
+msgid "Post comment"
+msgstr "Posteaza comentariu"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/item.php:181
+msgid "Contact publisher"
+msgstr "Contacteaza vanzatorul"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/main.php:19
+msgid "Pages"
+msgstr "Pagini"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/main.php:35
+msgid "Regions"
+msgstr "Judete"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/main.php:48
+msgid "Latest Items"
+msgstr "Ultimele anunturi"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/main.php:51
+msgid "No Latest Items"
+msgstr "Momentan nu exista anunturi adaugate"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/main.php:66
+msgid "Premium"
+msgstr "Premium"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/main.php:67
+msgid "<strong>Publish date</strong>: %s"
+msgstr "<strong>Publicat la data de</strong>: %s"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/main.php:71
+msgid "<strong>Country</strong>: %s"
+msgstr "<strong>Tara</strong>: %s"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/main.php:74
+msgid "<strong>Region</strong>: %s"
+msgstr "<strong>Judet</strong>: %s"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/main.php:77
+msgid "<strong>City</strong>: %s"
+msgstr "<strong>Oras</strong>: %s"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/main.php:90
+msgid "See all offers"
+msgstr "Vezi toate ofertele"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/search.php:26
+msgid "Your search"
+msgstr "Cautarea ta"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/search.php:43
+msgid "Categories"
+msgstr "Categorii"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/search.php:89
+msgid "Apply"
+msgstr "Aplica"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/search_gallery.php:4
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/search_gallery.php:15
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/search_list.php:4
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/search_list.php:15
+msgid "Search results"
+msgstr "Rezultatele cautarii"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/search_gallery.php:8
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/search_list.php:8
+msgid "There are no results"
+msgstr "Nu exista rezultate"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/search_gallery.php:10
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/search_list.php:10
+msgid "There are no results matching \"%s\""
+msgstr "Nu exista rezultate care sa se potriveasca \"%s\" "
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/search_gallery.php:17
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/search_list.php:17
+msgid "Sort by"
+msgstr "Sorteaza dupa"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-alerts.php:15
+msgid "Your alerts"
+msgstr "Alertele tale"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-alerts.php:21
+msgid "You do not have any alerts yet"
+msgstr "Deocamdata nu ai nici o alerta "
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-alerts.php:28
+msgid "Alert"
+msgstr "Alerta"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-alerts.php:28
+msgid "This action can\\'t be undone. Are you sure you want to continue?"
+msgstr ""
+"Aceasta actiune nu poate fi revocata. Esti sigur/a ca vrei sa continui?"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-alerts.php:28
+msgid "Delete this alert"
+msgstr "Sterge aceasta alerta"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-change_email.php:19
+msgid "Change your e-mail"
+msgstr "Schimba adresa de e-mail"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-change_email.php:21
+msgid "Current e-mail"
+msgstr "Adresa de e-mail folosita"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-change_email.php:27
+msgid "New e-mail"
+msgstr "Noua adresa de e-mail"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-change_password.php:19
+msgid "Change your password"
+msgstr "Schimba parola"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-change_password.php:21
+msgid "Current password"
+msgstr "Parola curenta"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-change_password.php:27
+msgid "New password"
+msgstr "Parola noua "
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-change_password.php:33
+msgid "Repeat new password"
+msgstr "Repeta parola noua "
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-dashboard.php:15
+msgid "Latest items of %s"
+msgstr "Ultimele anunturi ale lui %s"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-dashboard.php:21
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-items.php:21
+msgid "You don't have any items yet"
+msgstr "Momentan nu ai nici un anunt"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-dashboard.php:47
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-items.php:47
+msgid "Edit"
+msgstr "Editeaza"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-dashboard.php:49
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-items.php:49
+msgid "This action can not be undone. Are you sure you want to continue?"
+msgstr ""
+"Aceasta actiune nu poate fi revocata. Esti sigur/sigura ca vrei sa continui?"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-dashboard.php:52
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-items.php:52
+msgid "Activate"
+msgstr "Activeaza"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-forgot_password.php:26
+msgid "New pasword"
+msgstr "Noua parola"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-forgot_password.php:32
+msgid "Repeat new pasword"
+msgstr "Repeta noua parola"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-forgot_password.php:38
+msgid "Change password"
+msgstr "Schimba parola"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-items.php:15
+msgid "Your items"
+msgstr "Anunturile tale"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-login.php:22
+msgid "Access to your account"
+msgstr "Intra in cont"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-login.php:30
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-register.php:30
+msgid "Password"
+msgstr "Parola"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-login.php:41
+msgid "Remember me"
+msgstr "Tine-ma minte"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-login.php:48
+msgid "Log in"
+msgstr "Autentificare"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-login.php:52
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-recover.php:37
+msgid "Register for a free account"
+msgstr "Inregistreaza-te pentru un cont gratuit"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-login.php:52
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-register.php:56
+msgid "Forgot password?"
+msgstr "Ai uitat parola?"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-profile.php:19
+msgid "Update your profile"
+msgstr "Actualizeaza profilul"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-profile.php:31
+msgid "Modify e-mail"
+msgstr "Modifica adresa de e-mail"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-profile.php:31
+msgid "Modify password"
+msgstr "Modifica parola"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-profile.php:36
+msgid "User type"
+msgstr "Tip de utilizator"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-profile.php:39
+msgid "User"
+msgstr "Utilizator"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-profile.php:40
+msgid "Company"
+msgstr "Companie"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-profile.php:45
+msgid "Mobile phone"
+msgstr "Telefon mobil"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-profile.php:51
+msgid "Phone"
+msgstr "Telefon"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-profile.php:75
+msgid "City area"
+msgstr "Cartier/Sector"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-profile.php:87
+msgid "Website"
+msgstr "Site web"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-recover.php:33
+msgid "Send me a new password"
+msgstr "Trimite o noua parola"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-register.php:22
+msgid "Register an account for free"
+msgstr "Creaza un cont gratuit"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-register.php:36
+msgid "Re-type password"
+msgstr "Introdu din nou parola "
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/user-register.php:52
+msgid "Create"
+msgstr "Creaza"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/admin/admin_settings.php:8
+msgid "The logo image has been uploaded correctly"
+msgstr "Imaginea logo-ului a fost incarcata cu succes"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/admin/admin_settings.php:10
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/admin/admin_settings.php:13
+msgid "An error has occurred, please try again"
+msgstr "A avut loc o eroare, te rugam sa incerci din nou"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/admin/admin_settings.php:19
+msgid "The logo image has been removed"
+msgstr "Imaginea logo-ului a fost stearsa"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/admin/admin_settings.php:21
+msgid "Image not found"
+msgstr "Imaginea nu a fost gasita"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/admin/admin_settings.php:34
+msgid "The preferred size of the logo is 600x100"
+msgstr "Dimensiunea recomandata pentru logo este 600x100"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/admin/admin_settings.php:36
+msgid "Note: Uploading another logo will overwrite current logo"
+msgstr "Nota: Incarcand un alt logo, logo-ul actual va fi suprascris"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/admin/admin_settings.php:42
+msgid "Logo image"
+msgstr "Imagine logo"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/admin/admin_settings.php:45
+msgid "Upload"
+msgstr "Incarca"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/admin/admin_settings.php:50
+msgid "Preview"
+msgstr "Previzualizare"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/admin/admin_settings.php:54
+msgid "Remove logo"
+msgstr "Sterge logo"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/admin/admin_settings.php:58
+msgid "Has not uploaded any logo image"
+msgstr "Nu s-a incarcat nici un logo"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/admin/admin_settings.php:66
+msgid "The images folder %s is not writable on your server"
+msgstr ""
+"Nu sunt date drepturi de scriere in directorul de imagini %s de pe server"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/admin/admin_settings.php:67
+msgid "OSClass can't upload logo image from the administration panel"
+msgstr ""
+"OSClass nu poate incarca imaginea logo-ului de la panoul de administrare"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/admin/admin_settings.php:68
+msgid "Please make the mentioned images folder writable"
+msgstr "Te rugam sa dai drepturi de scriere in directorul de imagini"
+
+#: /Users/juanramon/htdocs/osclass-themes-git/twitter/admin/admin_settings.php:73
+msgid ""
+"To make a directory writable under UNIX execute this command from the shell"
+msgstr ""
+"Pentru a da drepturi de scriere intr-un director in UNIX, executa această "
+"comandă din shell"
