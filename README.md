@@ -1,3 +1,17 @@
+IMPORTANT
+=========
+
+This repository is no longer active, if you want to report issues of any theme, please do it on the specific repository
+
+[List of repositories](https://github.com/osclass/)
+
+
+Note: Country specific themes are in theme-maps repository
+
+
+
+
+
 OSClass Themes
 ==============
 
