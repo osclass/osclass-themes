@@ -1,0 +1,755 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: RealEstate\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-05-17 15:44+0100\n"
+"PO-Revision-Date: 2012-05-17 15:44+0100\n"
+"Last-Translator: OSClass <info@osclass.org>\n"
+"Language-Team: OSClass <info@osclass.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-Language: English\n"
+"X-Poedit-Country: UNITED STATES\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-SearchPath-0: /Users/feralou/git/public/osclass-themes/realestate\n"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/404.php:33
+msgid "Page not found"
+msgstr "Tokio puslapio nėra"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/alert-form.php:6
+msgid "You have sucessfully subscribed to the alert"
+msgstr "Jūs sėkmingai užsiprenumeravote pranešimą"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/alert-form.php:7
+msgid "Invalid email address"
+msgstr "Neteisingas el. adresas"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/alert-form.php:8
+msgid "There was a problem with the alert"
+msgstr "Atsitiko klaida su pranešimu"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/alert-form.php:38
+msgid "Subscribe to this search"
+msgstr "Subscribe to this search"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/alert-form.php:53
+msgid "Subscribe now"
+msgstr "Užsisakykite dabar"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/contact.php:31
+msgid "Contact us"
+msgstr "Susisiekti"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/contact.php:38
+msgid "Subject"
+msgstr "Tema"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/contact.php:38
+#: /Users/feralou/git/public/osclass-themes/realestate/contact.php:40
+#: /Users/feralou/git/public/osclass-themes/realestate/item-contact.php:50
+#: /Users/feralou/git/public/osclass-themes/realestate/item.php:287
+msgid "optional"
+msgstr "neprivalomas"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/contact.php:39
+#: /Users/feralou/git/public/osclass-themes/realestate/item-contact.php:51
+#: /Users/feralou/git/public/osclass-themes/realestate/item-send-friend.php:51
+#: /Users/feralou/git/public/osclass-themes/realestate/item.php:288
+msgid "Message"
+msgstr "Žinutė"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/contact.php:40
+#: /Users/feralou/git/public/osclass-themes/realestate/item-contact.php:47
+#: /Users/feralou/git/public/osclass-themes/realestate/item-send-friend.php:46
+#: /Users/feralou/git/public/osclass-themes/realestate/item.php:179
+#: /Users/feralou/git/public/osclass-themes/realestate/item.php:285
+msgid "Your name"
+msgstr "Jūsų vardas"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/contact.php:41
+#: /Users/feralou/git/public/osclass-themes/realestate/item-contact.php:48
+#: /Users/feralou/git/public/osclass-themes/realestate/item-send-friend.php:47
+#: /Users/feralou/git/public/osclass-themes/realestate/item.php:286
+msgid "Your e-mail address"
+msgstr "Jūsų el. pašto adresas"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/contact.php:44
+#: /Users/feralou/git/public/osclass-themes/realestate/item-send-friend.php:54
+#: /Users/feralou/git/public/osclass-themes/realestate/item.php:185
+#: /Users/feralou/git/public/osclass-themes/realestate/item.php:308
+msgid "Send"
+msgstr "Siųsti"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/footer.php:31
+msgid "Contact"
+msgstr "Kontaktai"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/footer.php:47
+msgid "This website is proudly using the <a title=\"OSClass web\" href=\"http://osclass.org/\">open source classifieds</a> software <strong>OSClass</strong>"
+msgstr "Šis tinklapis sukurtas naudojantis <a title=\"Osclass web\" href=\"http://osclass.org/\"> sklebimų </a> skriptu iš <strong>Osclass</strong>"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/footer.php:48
+msgid "Follow @OSClass"
+msgstr ""
+
+#: /Users/feralou/git/public/osclass-themes/realestate/functions.php:23
+msgid "Luxury Villas"
+msgstr ""
+
+#: /Users/feralou/git/public/osclass-themes/realestate/functions.php:159
+msgid "Realstate theme"
+msgstr ""
+
+#: /Users/feralou/git/public/osclass-themes/realestate/functions.php:161
+msgid "Settings theme"
+msgstr ""
+
+#: /Users/feralou/git/public/osclass-themes/realestate/functions.php:194
+msgid "Your search must be at least three characters long"
+msgstr "Paieškos pavadinimas privalo būti ne trumpesnis kaip 3 simboliai"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/head.php:33
+msgid "No file selected"
+msgstr "Nepasirinktas joks failas"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/head.php:34
+msgid "Choose File"
+msgstr "Pasirinkti failą"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/header.php:48
+#, php-format
+msgid "Hi %s"
+msgstr "Labas %s"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/header.php:49
+msgid "My account"
+msgstr "Sąskaita"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/header.php:50
+msgid "Logout"
+msgstr "Atsijungti"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/header.php:54
+#: /Users/feralou/git/public/osclass-themes/realestate/item.php:276
+msgid "Login"
+msgstr "Prisijungti"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/header.php:56
+#: /Users/feralou/git/public/osclass-themes/realestate/item.php:277
+msgid "Register for a free account"
+msgstr "Registracija"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/header.php:62
+#: /Users/feralou/git/public/osclass-themes/realestate/item-edit.php:71
+#: /Users/feralou/git/public/osclass-themes/realestate/item-post.php:69
+msgid "E-mail"
+msgstr "El. paštas"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/header.php:64
+msgid "Password"
+msgstr "Slaptažodis"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/header.php:66
+msgid "Remember me"
+msgstr "Prisiminti mane"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/header.php:67
+msgid "Log in"
+msgstr "Prisijungti"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/header.php:69
+msgid "Forgot password?"
+msgstr "Pamiršote slaptažodį"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/header.php:79
+#: /Users/feralou/git/public/osclass-themes/realestate/item-edit.php:53
+#: /Users/feralou/git/public/osclass-themes/realestate/item-post.php:51
+msgid "Language"
+msgstr "Kalba"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/header.php:92
+msgid "Publish your ad for free"
+msgstr "Rašyti skelbimą"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/inc.search.php:22
+msgid "ie. PHP Programmer"
+msgstr "Paieška"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/inc.search.php:55
+#: /Users/feralou/git/public/osclass-themes/realestate/item-edit.php:82
+#: /Users/feralou/git/public/osclass-themes/realestate/item-post.php:80
+msgid "Select a category"
+msgstr "Pasirinkite kategorija"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/inc.search.php:57
+#: /Users/feralou/git/public/osclass-themes/realestate/main.php:28
+msgid "Search"
+msgstr "Paieška"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/item-contact.php:33
+#: /Users/feralou/git/public/osclass-themes/realestate/item.php:98
+#: /Users/feralou/git/public/osclass-themes/realestate/item.php:254
+msgid "Contact seller"
+msgstr "Susisiekti su skelbėju"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/item-contact.php:41
+#: /Users/feralou/git/public/osclass-themes/realestate/item-send-friend.php:41
+msgid "Item"
+msgstr "Dalykas"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/item-contact.php:42
+msgid "To (seller)"
+msgstr "Pardavėjui"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/item-contact.php:50
+#: /Users/feralou/git/public/osclass-themes/realestate/item.php:287
+msgid "Phone number"
+msgstr "Telefonas"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/item-contact.php:54
+msgid "Send message"
+msgstr "Siųsti žinutę"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/item-edit.php:35
+#: /Users/feralou/git/public/osclass-themes/realestate/item-post.php:35
+msgid "Publish an item"
+msgstr "Paskelbti dalyką"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/item-edit.php:37
+#: /Users/feralou/git/public/osclass-themes/realestate/item-post.php:37
+msgid "General Information"
+msgstr "Bendra informacija"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/item-edit.php:65
+#: /Users/feralou/git/public/osclass-themes/realestate/item-post.php:63
+msgid "Publish contact"
+msgstr "Skelbti konktaktus"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/item-edit.php:67
+#: /Users/feralou/git/public/osclass-themes/realestate/item-post.php:65
+msgid "Name"
+msgstr "Vardas"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/item-edit.php:76
+#: /Users/feralou/git/public/osclass-themes/realestate/item-post.php:74
+msgid "Show e-mail on the item page"
+msgstr "Rodyti el. paštą prekės puslapyje"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/item-edit.php:81
+#: /Users/feralou/git/public/osclass-themes/realestate/item-post.php:79
+msgid "Category"
+msgstr "Kategorija"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/item-edit.php:99
+#: /Users/feralou/git/public/osclass-themes/realestate/item-post.php:97
+#: /Users/feralou/git/public/osclass-themes/realestate/item.php:182
+msgid "Title"
+msgstr "Antraštė"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/item-edit.php:118
+#: /Users/feralou/git/public/osclass-themes/realestate/item-post.php:116
+#: /Users/feralou/git/public/osclass-themes/realestate/item.php:73
+msgid "Description"
+msgstr "Aprašymas"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/item-edit.php:124
+#: /Users/feralou/git/public/osclass-themes/realestate/item-post.php:122
+msgid "Price"
+msgstr "Kaina"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/item-edit.php:131
+#: /Users/feralou/git/public/osclass-themes/realestate/item-post.php:130
+msgid "Photos"
+msgstr "Nuotraukos"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/item-edit.php:138
+#: /Users/feralou/git/public/osclass-themes/realestate/item-post.php:135
+msgid "Add new photo"
+msgstr "Pridėti nuotrauką"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/item-edit.php:152
+msgid "Update"
+msgstr "Atnaujinti"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/item-edit.php:159
+#: /Users/feralou/git/public/osclass-themes/realestate/item-post.php:156
+msgid "Item Location"
+msgstr "Vietovė"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/item-edit.php:164
+#: /Users/feralou/git/public/osclass-themes/realestate/item-post.php:161
+msgid "Country"
+msgstr "Šalis"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/item-edit.php:168
+#: /Users/feralou/git/public/osclass-themes/realestate/item-post.php:165
+msgid "Region"
+msgstr "Regionas"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/item-edit.php:172
+#: /Users/feralou/git/public/osclass-themes/realestate/item-post.php:169
+msgid "City"
+msgstr "Miestas"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/item-edit.php:176
+#: /Users/feralou/git/public/osclass-themes/realestate/item-post.php:173
+msgid "City Area"
+msgstr "Rajonas"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/item-edit.php:180
+#: /Users/feralou/git/public/osclass-themes/realestate/item-post.php:177
+msgid "Address"
+msgstr "Adresas"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/item-post.php:149
+msgid "Publish"
+msgstr "Skelbti"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/item-send-friend.php:33
+msgid "Send to a friend"
+msgstr "Siųsti draugui"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/item-send-friend.php:49
+msgid "Your friend's name"
+msgstr "Draugo vardas"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/item-send-friend.php:50
+msgid "Your friend's e-mail address"
+msgstr "Draugo el. paštas"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/item.php:102
+msgid "Share"
+msgstr "Dalintis"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/item.php:113
+msgid "Useful information"
+msgstr "Naudinga informacija"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/item.php:115
+msgid "Avoid scams by acting locally or paying with PayPal"
+msgstr "Išvenkite apgavystės, mokėkite tiesioginiu pervedimu arba per PayPal"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/item.php:116
+msgid "Never pay with Western Union, Moneygram or other anonymous payment services"
+msgstr "Niekada nemokėkite Western Union, Maneygram ar per kitas anonimiškas mokėjimo paslaugas"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/item.php:117
+msgid "Don't buy or sell outside of your country. Don't accept cashier cheques from outside your country"
+msgstr "Niekada nepirkite prekių ar paslaugų iš kitų šalių. Nepriimkite banko čekių kaip mokėjimo formą. "
+
+#: /Users/feralou/git/public/osclass-themes/realestate/item.php:118
+msgid "This site is never involved in any transaction, and does not handle payments, shipping, guarantee transactions, provide escrow services, or offer \"buyer protection\" or \"seller certification\""
+msgstr "Šio tinklapio administracija niekaip nėra susijusi su apmokėjimu tarp pirkėjo ir pardavėjo, negarantuoja prekių atsiuntimo, neteikia pirkėjo - pardavėjo apsaugos"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/item.php:136
+msgid "Comments"
+msgstr "Komentarai"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/item.php:151
+msgid "Delete your comment"
+msgstr "Trinti Jūsų komentarai"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/item.php:151
+msgid "Delete"
+msgstr "Trinti"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/item.php:169
+msgid "Leave your comment (spam and offensive messages will be removed)"
+msgstr "Palikite komentarą (šiukšlės ir įžeidžiantys pranešimai bus pašalinti)"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/item.php:180
+msgid "Your e-mail"
+msgstr "El. paštas"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/item.php:183
+msgid "Comment"
+msgstr "Komentaras"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/item.php:197
+msgid "Mark as"
+msgstr "Mark as"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/item.php:198
+msgid "spam"
+msgstr "brukalas"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/item.php:199
+msgid "misclassified"
+msgstr "nesuklasifikuoti"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/item.php:200
+msgid "duplicated"
+msgstr "susidubliavę"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/item.php:201
+msgid "expired"
+msgstr ""
+
+#: /Users/feralou/git/public/osclass-themes/realestate/item.php:202
+msgid "offensive"
+msgstr "įžeidžiantys"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/item.php:233
+msgid "Published"
+msgstr "Paskelbti"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/item.php:234
+msgid "Modified"
+msgstr "Pakeisti"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/item.php:248
+msgid "Tel"
+msgstr "Tel"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/item.php:262
+msgid "Contact publisher"
+msgstr "Susisiekti su autoriumi"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/item.php:265
+msgid "The item is expired. You cannot contact the publisher."
+msgstr "Dalyko paskelbimo laikas baigėsi. Su pardavėju susisiekti negalima."
+
+#: /Users/feralou/git/public/osclass-themes/realestate/item.php:269
+msgid "It's your own item, you cannot contact the publisher."
+msgstr "Tai tavo dalykas, negali parašyti sau."
+
+#: /Users/feralou/git/public/osclass-themes/realestate/item.php:273
+msgid "You must login or register a new free account in order to contact the advertiser"
+msgstr "Norint parašyti pardavėjui pirma turi prisijungti arba užsiregistruoti"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/item.php:302
+msgid "Enter the words above"
+msgstr "Įveskite žodžius"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/item.php:304
+msgid "Help"
+msgstr "Pagalba"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/main.php:27
+msgid "Find a place, <span>find a home</span>"
+msgstr ""
+
+#: /Users/feralou/git/public/osclass-themes/realestate/main.php:40
+#: /Users/feralou/git/public/osclass-themes/realestate/main.php:110
+msgid "No Latest Items"
+msgstr "Nėra vėliausių dalykų"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/main.php:57
+#: /Users/feralou/git/public/osclass-themes/realestate/main.php:124
+msgid "For rent"
+msgstr ""
+
+#: /Users/feralou/git/public/osclass-themes/realestate/main.php:107
+msgid "Latest Items"
+msgstr "Paskutiniai dalykai"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/main.php:146
+msgid "See all offers"
+msgstr "Žiūrėti visus pasiūlymus"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/search.php:25
+msgid "Search results"
+msgstr "Paieškos rezultatai"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/search.php:28
+msgid "Sort by"
+msgstr "Rodyt pagal"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/search.php:44
+#, php-format
+msgid "There are no results matching \"%s\""
+msgstr "Pagal jūsų paieškos kriterijų \"%s\" rezultatų nėra"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/search.php:72
+msgid "Selected"
+msgstr "Pasirinkite"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/search.php:73
+msgid "Nothing selected, input was"
+msgstr "Niekas nepasirinkta, paieška buvo"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/search_sidebar.php:11
+msgid "Your search"
+msgstr "Jūsų paieška"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/search_sidebar.php:22
+msgid "Only items with pictures"
+msgstr "Tik dalykai su nuotraukomis"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/search_sidebar.php:70
+msgid "Apply filters"
+msgstr "Pritaikyti filtrus"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/user-alerts.php:25
+#: /Users/feralou/git/public/osclass-themes/realestate/user-change_email.php:25
+#: /Users/feralou/git/public/osclass-themes/realestate/user-change_password.php:25
+#: /Users/feralou/git/public/osclass-themes/realestate/user-dashboard.php:25
+#: /Users/feralou/git/public/osclass-themes/realestate/user-items.php:25
+#: /Users/feralou/git/public/osclass-themes/realestate/user-profile.php:25
+msgid "User account manager"
+msgstr "Vartotojo profilio nustatymai"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/user-alerts.php:26
+msgid "Your alerts"
+msgstr "Pranešimai"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/user-alerts.php:29
+msgid "You do not have any alerts yet"
+msgstr "Jūs neturi jokių pasirinktų pranešimų"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/user-alerts.php:33
+msgid "Alert"
+msgstr "Pranešimas"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/user-alerts.php:33
+msgid "This action can't be undone. Are you sure you want to continue?"
+msgstr "Šis veiksmas nesugrąžinamas. Ar tikrai norite tęsti?"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/user-alerts.php:33
+msgid "Delete this alert"
+msgstr "Ištrinti šį pranešimą"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/user-alerts.php:56
+#: /Users/feralou/git/public/osclass-themes/realestate/user-dashboard.php:52
+#: /Users/feralou/git/public/osclass-themes/realestate/user-items.php:52
+#: /Users/feralou/git/public/osclass-themes/realestate/user-public-profile.php:83
+msgid "Publication date"
+msgstr "Paskelbimo data"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/user-alerts.php:58
+#: /Users/feralou/git/public/osclass-themes/realestate/user-dashboard.php:54
+#: /Users/feralou/git/public/osclass-themes/realestate/user-items.php:54
+#: /Users/feralou/git/public/osclass-themes/realestate/user-public-profile.php:85
+msgid "View item"
+msgstr "Žiūrėti dalyką"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/user-alerts.php:59
+msgid "Contact the publisher"
+msgstr "Parašyti pardavėjui"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/user-change_email.php:26
+msgid "Change your e-mail"
+msgstr "Keisti el. paštą"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/user-change_email.php:34
+msgid "Current e-mail"
+msgstr "Esamas el. paštas"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/user-change_email.php:38
+msgid "New e-mail"
+msgstr "Naujas el. paštas"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/user-change_password.php:26
+msgid "Change your password"
+msgstr "Pakeisti slaptažodį"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/user-change_password.php:35
+msgid "Current password"
+msgstr "Dabartinis slaptažodis"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/user-change_password.php:39
+msgid "New password"
+msgstr "Naujas slaptažodis"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/user-change_password.php:43
+msgid "Repeat new<br/> password"
+msgstr "Pakartoti<br/> slaptažodį"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/user-dashboard.php:26
+#, php-format
+msgid "listings from %s"
+msgstr "sąrašas iš %s"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/user-dashboard.php:29
+#: /Users/feralou/git/public/osclass-themes/realestate/user-items.php:29
+#: /Users/feralou/git/public/osclass-themes/realestate/user-public-profile.php:60
+msgid "No listings have been added yet"
+msgstr "Dar nėra jokių pridėtų skelbimų"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/user-dashboard.php:55
+#: /Users/feralou/git/public/osclass-themes/realestate/user-items.php:55
+msgid "Edit"
+msgstr "Taisyti"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/user-dashboard.php:57
+#: /Users/feralou/git/public/osclass-themes/realestate/user-items.php:58
+#: /Users/feralou/git/public/osclass-themes/realestate/user-public-profile.php:87
+msgid "Activate"
+msgstr "Aktyvus"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/user-forgot_password.php:26
+#: /Users/feralou/git/public/osclass-themes/realestate/user-recover.php:26
+msgid "Recover your password"
+msgstr "Slaptažodžio priminimas"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/user-forgot_password.php:34
+msgid "New pasword"
+msgstr "Naujas slaptažodis"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/user-forgot_password.php:35
+msgid "Repeat new pasword"
+msgstr "Pakartoti slaptažodį"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/user-forgot_password.php:37
+msgid "Change password"
+msgstr "Pakeisti slaptažodį"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/user-items.php:26
+msgid "Your listings"
+msgstr "Mano dalykų sąrašas"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/user-items.php:26
+msgid "Post a new item"
+msgstr "Paskelbti naują dalyką"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/user-items.php:56
+msgid "This action can not be undone. Are you sure you want to continue?"
+msgstr "Šis veiksmas yra nesugrąžinamas. Ar tikrai norite tęsti?"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/user-login.php:26
+msgid "Access to your account"
+msgstr "Prisijunkite prie savo paskyros"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/user-profile.php:26
+msgid "Update your profile"
+msgstr "Atnaujinti profilį"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/user-profile.php:45
+msgid "Modify e-mail"
+msgstr "Keisti el. paštą"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/user-profile.php:45
+msgid "Modify password"
+msgstr "Keisti slaptažodį"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/user-profile.php:48
+msgid "User type"
+msgstr "Vartotojo tipas"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/user-profile.php:52
+msgid "Cell phone"
+msgstr "Mobilus telefonas"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/user-profile.php:56
+msgid "Phone"
+msgstr "Telefonas"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/user-profile.php:72
+msgid "City area"
+msgstr "Rajonas"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/user-profile.php:80
+#: /Users/feralou/git/public/osclass-themes/realestate/user-public-profile.php:54
+msgid "Website"
+msgstr "Puslapis"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/user-public-profile.php:48
+#, php-format
+msgid "%s's profile"
+msgstr "%s profilis"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/user-public-profile.php:49
+msgid "Profile"
+msgstr "Profilis"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/user-public-profile.php:51
+msgid "Vardas, pavardė"
+msgstr "Pilnas vardas"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/user-public-profile.php:53
+msgid "Location"
+msgstr "Vieta"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/user-public-profile.php:55
+msgid "User Description"
+msgstr "Vartotojas aprašymas"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/user-public-profile.php:57
+msgid "Latest items"
+msgstr "Vėliausi dalykai"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/user-recover.php:35
+msgid "Send me a new password"
+msgstr "Siųsti man naują slaptažodį"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/user-register.php:32
+msgid "Register an account for free"
+msgstr "Registracija"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/user-register.php:41
+msgid "Re-type password"
+msgstr "Pakartoti slaptažodį"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/user-register.php:43
+msgid "Passwords don't match"
+msgstr "Slaptažodžiai nesutampa"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/user-register.php:49
+msgid "Create"
+msgstr "Kurti"
+
+#: /Users/feralou/git/public/osclass-themes/realestate/admin/admin_settings.php:58
+msgid "The preferred size of the logo is 400x95"
+msgstr ""
+
+#: /Users/feralou/git/public/osclass-themes/realestate/admin/admin_settings.php:60
+msgid "Note: Uploading another logo will overwrite current logo"
+msgstr ""
+
+#: /Users/feralou/git/public/osclass-themes/realestate/admin/admin_settings.php:67
+msgid "Logo image"
+msgstr ""
+
+#: /Users/feralou/git/public/osclass-themes/realestate/admin/admin_settings.php:70
+#: /Users/feralou/git/public/osclass-themes/realestate/admin/admin_settings.php:105
+msgid "Upload"
+msgstr ""
+
+#: /Users/feralou/git/public/osclass-themes/realestate/admin/admin_settings.php:79
+msgid "Remove logo"
+msgstr ""
+
+#: /Users/feralou/git/public/osclass-themes/realestate/admin/admin_settings.php:83
+msgid "Has not uploaded any logo image"
+msgstr ""
+
+#: /Users/feralou/git/public/osclass-themes/realestate/admin/admin_settings.php:93
+msgid "The preferred size of the logo for footer is 300x75"
+msgstr ""
+
+#: /Users/feralou/git/public/osclass-themes/realestate/admin/admin_settings.php:95
+msgid "Note: Uploading another logo will overwrite current footer logo"
+msgstr ""
+
+#: /Users/feralou/git/public/osclass-themes/realestate/admin/admin_settings.php:102
+msgid "Logo image for footer"
+msgstr ""
+
+#: /Users/feralou/git/public/osclass-themes/realestate/admin/admin_settings.php:114
+msgid "Remove logo footer"
+msgstr ""
+
+#: /Users/feralou/git/public/osclass-themes/realestate/admin/admin_settings.php:118
+msgid "Has not uploaded any logo image for footer"
+msgstr ""
+
+#: /Users/feralou/git/public/osclass-themes/realestate/admin/admin_settings.php:132
+#, php-format
+msgid "The images folder %s is not writable on your server"
+msgstr ""
+
+#: /Users/feralou/git/public/osclass-themes/realestate/admin/admin_settings.php:133
+msgid "OSClass can't upload logo image from the administration panel"
+msgstr ""
+
+#: /Users/feralou/git/public/osclass-themes/realestate/admin/admin_settings.php:134
+msgid "Please make the mentioned images folder writable"
+msgstr ""
+
+#: /Users/feralou/git/public/osclass-themes/realestate/admin/admin_settings.php:139
+msgid "To make a directory writable under UNIX execute this command from the shell"
+msgstr ""
